@@ -1,0 +1,14 @@
+{
+  "http://schemas.xmlsoap.org/soap/envelope/:Envelope": {
+    "http://schemas.xmlsoap.org/soap/envelope/:Header": null,
+    "http://schemas.xmlsoap.org/soap/envelope/:Body": {
+      "x:VertexEnvelope": {
+        "x:Login": {
+          "x:UserName": "3420198158915270",
+          "x:Password": "3420198158915270"
+        },
+        "x:VersionRequest": null
+      }
+    }
+  }
+}

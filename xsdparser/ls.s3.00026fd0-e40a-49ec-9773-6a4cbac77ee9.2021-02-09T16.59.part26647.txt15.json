@@ -1,0 +1,146 @@
+{
+  "http://schemas.xmlsoap.org/soap/envelope/:Envelope": {
+    "http://schemas.xmlsoap.org/soap/envelope/:Body": {
+      "x:VertexEnvelope": {
+        "x:Login": {
+          "x:TrustedId": "3998310596563499"
+        },
+        "x:QuotationRequest": {
+          "@documentDate": "2021-02-09",
+          "@transactionType": "SALE",
+          "@xmlns": {
+            "soapenv": "http://schemas.xmlsoap.org/soap/envelope/",
+            "xsd": "http://www.w3.org/2001/XMLSchema",
+            "xsi": "http://www.w3.org/2001/XMLSchema-instance",
+            "": "urn:vertexinc:o-series:tps:7:0"
+          },
+          "x:Seller": {
+            "x:Company": "899",
+            "x:PhysicalOrigin": {
+              "x:City": "Groveport",
+              "x:MainDivision": "OH",
+              "x:PostalCode": "43215",
+              "x:Country": "USA"
+            },
+            "x:AdministrativeOrigin": {
+              "x:City": "Groveport",
+              "x:MainDivision": "OH",
+              "x:PostalCode": "43215",
+              "x:Country": "USA"
+            }
+          },
+          "x:Customer": null,
+          "x:LineItem": [
+            {
+              "@lineItemId": "PRODUCT??1166867",
+              "@lineItemNumber": "1",
+              "x:Customer": {
+                "x:Destination": {
+                  "x:StreetAddress1": "12700 Tamworth Dr",
+                  "x:City": "Fishers",
+                  "x:MainDivision": "IN",
+                  "x:PostalCode": "46037-7395",
+                  "x:Country": "us"
+                }
+              },
+              "x:Product": {
+                "@productClass": "0821",
+                "#text": "Lisette New York Shorts"
+              },
+              "x:Quantity": "1.0",
+              "x:ExtendedPrice": "20.00",
+              "x:Discount": {
+                "x:DiscountAmount": "0.0"
+              }
+            },
+            {
+              "@lineItemId": "PRODUCT??1338185",
+              "@lineItemNumber": "2",
+              "x:Customer": {
+                "x:Destination": {
+                  "x:StreetAddress1": "12700 Tamworth Dr",
+                  "x:City": "Fishers",
+                  "x:MainDivision": "IN",
+                  "x:PostalCode": "46037-7395",
+                  "x:Country": "us"
+                }
+              },
+              "x:Product": {
+                "@productClass": "0810",
+                "#text": "Red Venus Velvet Cropped Bikini Top"
+              },
+              "x:Quantity": "1.0",
+              "x:ExtendedPrice": "26.95",
+              "x:Discount": {
+                "x:DiscountAmount": "0.0"
+              }
+            },
+            {
+              "@lineItemId": "PRODUCT??1338359",
+              "@lineItemNumber": "3",
+              "x:Customer": {
+                "x:Destination": {
+                  "x:StreetAddress1": "12700 Tamworth Dr",
+                  "x:City": "Fishers",
+                  "x:MainDivision": "IN",
+                  "x:PostalCode": "46037-7395",
+                  "x:Country": "us"
+                }
+              },
+              "x:Product": {
+                "@productClass": "0811",
+                "#text": "Red Venus Velvet Sporty Bikini Bottom"
+              },
+              "x:Quantity": "1.0",
+              "x:ExtendedPrice": "24.95",
+              "x:Discount": {
+                "x:DiscountAmount": "0.0"
+              }
+            },
+            {
+              "@lineItemId": "PRODUCT??1095322",
+              "@lineItemNumber": "4",
+              "x:Customer": {
+                "x:Destination": {
+                  "x:StreetAddress1": "12700 Tamworth Dr",
+                  "x:City": "Fishers",
+                  "x:MainDivision": "IN",
+                  "x:PostalCode": "46037-7395",
+                  "x:Country": "us"
+                }
+              },
+              "x:Product": {
+                "@productClass": "0870",
+                "#text": "Bungee Strap Mini Dress"
+              },
+              "x:Quantity": "1.0",
+              "x:ExtendedPrice": "25.86",
+              "x:Discount": {
+                "x:DiscountAmount": "11.090000000000003"
+              }
+            },
+            {
+              "@lineItemId": "SHIPPING??STANDARD_SHIPPING",
+              "@lineItemNumber": "5",
+              "x:Customer": {
+                "x:Destination": {
+                  "x:StreetAddress1": "12700 Tamworth Dr",
+                  "x:City": "Fishers",
+                  "x:MainDivision": "IN",
+                  "x:PostalCode": "46037-7395",
+                  "x:Country": "us"
+                }
+              },
+              "x:Product": "SHP",
+              "x:Quantity": "1.0",
+              "x:ExtendedPrice": "0.00",
+              "x:Discount": {
+                "x:DiscountAmount": "6.0"
+              }
+            }
+          ]
+        }
+      }
+    }
+  }
+}

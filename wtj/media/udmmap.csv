@@ -1,0 +1,425 @@
+longName,tableName,wtjColumn,notes,description,format,ussales,usproc,vatsales,vatproc,esreturn,invoiceEvent,invoicePerspective,factType
+Bill To Location Code,"LINEITEMLOCATION, LINEITEM",ad_LocationCode,,"Location Code, such as a store number or unit number.",String,,,N,N,,All,All,Taxpayer Address Fact
+Sold To Location Code,"LINEITEMLOCATION
+",ad_LocationCode,,"Location Code, such as a store number or unit number.",String,,,,,,All,All,Sold To
+Bill To Postal Code,LINEITEMLOCATION,ad_PostalCode,,Five-digit or nine-digit postal codes for the US or various global zip codes.,String,,,Y,Y,,All,All,Taxpayer Address Fact
+Sold To Postal Code,LINEITEMLOCATION,ad_postalCode,,Five-digit or nine-digit postal codes for the US or various global zip codes.,String,,,,,,All,All,Sold To
+Bill To Street Address2,LINEITEMLOCATION,ad_StreetInfo2Desc,,Street address,String,,,Y,Y,,All,All,Taxpayer Address Fact
+Sold To Street Address2,LINEITEMLOCATION,ad_streetInfo2Desc,,Street address,String,,,,,,All,All,Sold To
+Bill To Street Address1,LINEITEMLOCATION,ad_StreetInfoDesc,,Street address,String,,,Y,Y,,All,All,Taxpayer Address Fact
+Sold To Street Address1,LINEITEMLOCATION,ad_streetInfoDesc,"Unsure how ""Sold to"" differs from the buyer or the bill to.  Assumption made to replicate buyer fields here.",Street address,String,,,,,,All,All,Sold To
+Bill To City/Township,LINEITEMLOCATION,"ad_TaxAreaCity
+","For each location role , all 7,  include tax area city name.",The full name of the City or Township. For example: Seattle or Camden.,String,,,Y,Y,,All,All,Taxpayer Address Fact
+Bill To City/Township,LINEITEMLOCATION,ad_CityName,"For each location role , all 7,  include tax area city name.",The full name of the City or Township. For example: Seattle or Camden.,String,,,Y,Y,,All,All,Taxpayer Address Fact
+Sold To City/Township,LINEITEMLOCATION,ad_taxAreaCity,"For each location role , all 7,  include tax area city name.","The full name of the City or Township. For example: Seattle, Camden, etc.",String,,,,,,All,All,Sold To
+Sold To City/Township,LINEITEMLOCATION,ad_CityName,"For each location role , all 7,  include tax area city name.","The full name of the City or Township. For example: Seattle, Camden, etc.",String,,,,,,All,All,Sold To
+Sold To Country,LINEITEMLOCATION,ad_taxAreaCountry,,The two-digit Country Abbreviation.,String,,,,,,All,All,Sold To
+Bill To Country,LINEITEMLOCATION,"ad_TaxAreaCountry
+",,The two-digit Country Abbreviation,String,,,Y,Y,,All,All,Taxpayer Address Fact
+Bill To Geographical Code (geocode),LINEITEMLOCATION,ad_TaxAreaID,,Geographical Code assigned to the origin or destination.,String,,,Y,Y,,All,All,Taxpayer Address Fact
+Sold To Geographical Code,LINEITEMLOCATION,ad_taxAreaID,,Indicates whether or not there is a physical presence within the jurisdiction.,String,,,,,,All,All,Sold To
+Bill To State/Province,LINEITEMLOCATION,ad_TaxAreaMainDivision,"For each location role , all 7,  include tax area main division name.",The full name of the State or Province. For example: California or Alberta.,String,,,Y,Y,,All,All,Taxpayer Address Fact
+Bill To State/Province,LINEITEMLOCATION,ad_MainDivisionName,"For each location role , all 7,  include tax area main division name.",The full name of the State or Province. For example: California or Alberta.,String,,,Y,Y,,All,All,Taxpayer Address Fact
+Sold To State/Province,LINEITEMLOCATION,ad_TaxAreaMainDivision,"For each location role , all 7,  include tax area main division ame.",The full name of the State or Province. For example: California or Alberta.,String,,,,,,All,All,Sold To
+Sold To State/Province,LINEITEMLOCATION,ad_MainDivisionName,"For each location role , all 7,  include tax area main division ame.",The full name of the State or Province. For example: California or Alberta.,String,,,,,,All,All,Sold To
+Bill To County/Parish,LINEITEMLOCATION,ad_TaxAreaSubDivision,,The full name of the County or Parish. For example: Orange or Baton Rouge.,String,,,N,N,,All,All,Taxpayer Address Fact
+Sold To County/Parish,LINEITEMLOCATION,ad_taxAreaSubDivision,,Geographical Code assigned to the origin or destination.,String,,,,,,All,All,Sold To
+Vendor Bill From Vendor Site/Location Code,LINEITEMLOCATION,ao_LocationCode,,Location code,String,,,Y,N,Y,Purchase,Procurement,Vendor Fact
+Bill From Location Code,"LINEITEMLOCATION
+","ao_LocationCode
+",,"Location Code, such as a store number or unit number.",String,,,N,N,,All,All,Taxpayer Address Fact
+Bill From Postal Code,LINEITEMLOCATION,ao_PostalCode,,Five-digit or nine-digit postal codes for the US or various global zip codes.,String,,,Y,Y,,All,All,Taxpayer Address Fact
+Bill From Street Address2,LINEITEMLOCATION,ao_StreetInfo2Desc,,Street address,String,,,Y,Y,,All,All,Taxpayer Address Fact
+Bill From Street Address1,LINEITEMLOCATION,ao_StreetInfoDesc,,Street address,String,,,Y,Y,,All,All,Taxpayer Address Fact
+Bill From City/Township,LINEITEMLOCATION,ao_TaxAreaCity,"For each location role , all 7,  include tax area city name.",The full name of the City or Township. For example: Seattle or Camden.,String,,,Y,Y,,All,All,Taxpayer Address Fact
+Bill From City/Township,LINEITEMLOCATION,ao_CityName,"For each location role , all 7,  include tax area city name.",The full name of the City or Township. For example: Seattle or Camden.,String,,,Y,Y,,All,All,Taxpayer Address Fact
+Bill From Country,LINEITEMLOCATION,"ao_TaxAreaCountry
+
+",,The two-digit Country Abbreviation,String,,,Y,Y,,All,All,Taxpayer Address Fact
+Bill From Geographical Code (geocode),LINEITEMLOCATION,ao_TaxAreaID,,Geographical Code assigned to the origin or destination.,String,,,Y,Y,,All,All,Taxpayer Address Fact
+Bill From State/Province,LINEITEMLOCATION,ao_TaxAreaMainDivision,"For each location role , all 7,  include tax area main division name.",The full name of the State or Province. For example: California or Alberta.,String,,,Y,Y,,All,All,Taxpayer Address Fact
+Bill From State/Province,LINEITEMLOCATION,ao_MainDivisionName,"For each location role , all 7,  include tax area main division name.",The full name of the State or Province. For example: California or Alberta.,String,,,Y,Y,,All,All,Taxpayer Address Fact
+Bill From County/Parish,LINEITEMLOCATION,"ao_TaxAreaSubDivision
+
+
+
+",,The full name of the County or Parish. For example: Orange or Baton Rouge.,String,,,N,N,,All,All,Taxpayer Address Fact
+,LineItemTaxOvrflw,basisApportionmentRuleId,,,numeric,,,,,,,,
+,LineItemTaxOvrflw,basisApportionmentRuleSrcId,,,numeric,,,,,,,,
+,LineItemTaxOverflow,basisRuleId,,,numeric,,,,,,,,
+,LineItemTaxOverflow,basisRuleSrcId,,,numeric,,,,,,,,
+Transaction Billing Type,LINEITEM,billingType,,"Billing type. Identifier used in your financial system to indicate types of billing documents such as credit memos, debit memos, invoices, and cancellation documents.  For example, ""CR"" can indicate Credit Memo.  Used at the trans level for VAT to classify billing documents and is provided for Intrastat reporting.",String,,,,,,,,Transaction Fact
+,LINEITEM,buyerExemptInd,,,boolean,,,,,,,,
+Bill To Customer Name,LINEITEM,"buyerName
+",,A user-defined name associated with the customer code or number representing a customer.,String,,,N,Y,N,Sale,Supplier,Customer Fact
+Sold To Customer Name,LINEITEM,"buyerName
+",,"Status of Customs. Values include the following: No Customs Status, Bonded Warehouse, Free Circulation, Free Trade Zone, Inward Processing Relief, Outward Processing Relief, Temporary Import.",String,,,Y,N,,All,All,Sold To
+,LINEITEM,buyerPartyType,,,nvarchar,,,,,,,,
+Bill To Physical Presence Indicator,LINEITEMTAXOVERFLOW,"buyerPhysicalPresInd
+",,Indicates whether or not there is a physical presence within the jurisdiction.,Boolean,,,Y,Y,,All,All,Taxpayer Address Fact
+Sold To Physical Presence Indicator,LINEITEMTAXOVERFLOW,"buyerPhysicalPresInd
+",,Indicates whether or not there is a physical presence within the jurisdiction.,Boolean,,,,,,All,All,Sold To
+,LineItemTaxOverflow,buyerRegCountryISO2Code,,,nvarchar,,,,,,,,
+Bill To Business Indicator,LINEITEM,"buyrBusinessInd
+",,Indicates whether or not a business.,Boolean,,,Y,Y,,All,All,Taxpayer Fact
+Sold To Business Indicator,LINEITEM,"buyrBusinessInd
+",,Indicates whether or not a business.,Boolean,,,,,,All,All,Sold To
+Bill To Exemption Certificate Number,LINEITEM,"buyrExmptCertCode
+",,Exemption certificate number,String,,,,,,All,All,Taxpayer Fact
+Sold To Exemption Certificate Number,LINEITEM,"buyrExmptCertCode
+",,"Location Name, such as a store number or unit number.",String,,,Y,Y,,All,All,Sold To
+Bill To Customer Classification Code,LINEITEM,"buyrPartyClassCode
+",,A user-defined classification code representing a group of customers.,String,,,N,Y,N,Sale,Supplier,Customer Fact
+Sold To Customer Classification Name,LINEITEM,"buyrPartyClassCode
+",,Two-digit or three-digit alpha (alpha-2; alpha-3) or three -digit numeric (numeric-3) ISO 3166 Country Code.,string,,,Y,N,,All,All,Sold To
+Bill To Customer Code,LINEITEM,"buyrPrimPartyCode
+",,A user-defined code or number representing a customer.,String,,,N,Y,N,Sale,Supplier,Customer Fact
+Sold To Customer Code,LINEITEM,"buyrPrimPartyCode
+",,"Location Code, such as a store number or unit number.",String,,,Y,N,,All,All,Sold To
+Bill To Tax Registration Number,LINEITEMTAXOVERFLOW,"buyrRegIdCode
+",The bill to is the buyer.  The ship to is the recipient if specified.,The tax registration number for the Taxpayer.,String,,,Y,Y,,All,All,Taxpayer Fact
+,LineItemTaxOverflow,byrInputTaxAmt,Would this use currRoleName on InvoiceLineTaxMonetary Table to identify Buyer?,,numeric,,,,,,,,
+Line Certificate Type,LINEITEMTAXOVERFLOW,certClassType,"CertClassType.certClassTypeName
+
+Exemption Certificate, Direct Pay Permit, Net Exporter Certificate, Reverse Charge Certificate, Zero Rate Certificate, Special Condition",The certificate type associated with the line item tax.,String,,,N,N,,All,All,Invoice Line Fact
+Line Certificate Number,LINEITEMTAXOVERFLOW,certificateIdCode,,The certificate number associated with the line item tax.,String,,,N,N,,All,All,Invoice Line Fact
+Line Vendor Charged Tax,LINEITEM,chargedTaxAmount,,The amount of tax charged to the taxpayer for purchases.,Double,,,N,N,,Purchase,Buyer,Invoice Line Tax Fact
+Company Currency Tax Charged,LINEITEM,chargedTaxAmount,,Parent company fields are used when there is a need to see transaction events under the parent company currency. This value is used when the buyer has paid a portion of the tax due on the invoice and is reported in the parent company currency.,Double,,,,,,Purchase,Buyer,Operating Unit Fact
+Line Commodity Code,LINEITEM,commodityCode,,"A standardized, unique code for the product or service. In VAT scenario, this can be a commodity code. ",String,,,Y,Y,Y,Purchase,Buyer,Invoice Line Fact
+Line Commodity Code Description,LINEITEM,commodityName,,"A standardized, unique code description for the product or service.",String,,,Y,Y,,Purchase,Buyer,Invoice Line Fact
+,LineItem,companyCodeCurrencyTaxableAmt,,,numeric,,,,,,,,
+,LineItem,companyCodeCurrencyTaxAmt,,,numeric,,,,,,,,
+,LineItem,companyCodeCurrencyUnit,,,nvarchar,,,,,,,,
+Cost Center,LINEITEM,costCenterCode,,"The value defining a functional area of the business. Frequently, this is called a department.",String,,,Y,Y,,All,All,Taxpayer Fact
+Cost Center Name,LINEITEM,costCenterName,,The name associated with the Cost Center.,String,,,Y,Y,,All,All,Taxpayer Fact
+Intrastat - Country of Origin ISO2,LINEITEM,countryOfOrigin,,The two-digit ISO 3166 code of the country where the product was produced or manufactured.,String,,,Y,Y,,All,All,Intrastat
+Transaction ISO Currency Code,"LINEITEM
+
+","currencyUnit
+
+","Booked is what is passed in O Series
+Entered is the original from ERP",The three-digit alpha (alpha-3) ISO 4217 Currency Code.,String,,,Y,Y,,All,All,Invoice Line Fact
+Company ISO Currency Code,"LINEITEM
+LINEITEM
+","currencyUnit
+origCurrencyUnit 
+",Functional currency is for customers that process in one currency and need to convert to another for tracking purposes,Parent company fields are used when there is a need to see transaction events under the parent company currency. The three-digit alpha (alpha-3) ISO 4217 Currency Code.,String,,,,,,All,All,Operating Unit Fact
+Filing Currency Conversion Rate,LINEITEMTAXOVERFLOW,cvtRateUsed,,Filing fields are normally used for VAT return purposes. Currency conversion rate.,Double,,,,,,All,All,Tax Return Fact
+Ship To Location Code,"LINEITEMLOCATION
+",d_LocationCode,,"Location Code, such as a store number or unit number.",String,,,,,,Purchase,Buyer,Taxpayer Address Fact
+Ship To Postal Code,LINEITEMLOCATION,d_PostalCode,,Five-digit or nine-digit postal codes for the US or various global zip codes.,String,,,,,,Purchase,Buyer,Taxpayer Address Fact
+Ship To Street Address2,LINEITEMLOCATION,d_StreetInfo2Desc,,Street address,String,,,,,,Purchase,Buyer,Taxpayer Address Fact
+Ship To Street Address1,LINEITEMLOCATION,d_StreetInfoDesc,,Street address,String,,,,,,Purchase,Buyer,Taxpayer Address Fact
+Ship To City/Township,LINEITEMLOCATION,"d_TaxAreaCity
+d_CityName
+",,The full name of the City or Township. For example: Seattle or Camden,String,,,,,,Purchase,Buyer,Taxpayer Address Fact
+Ship To Country,LINEITEMLOCATION,d_TaxAreaCountry,,The two-digit Country Abbreviation,String,,,,,,Purchase,Buyer,Taxpayer Address Fact
+Ship To Geographical Code,LINEITEMLOCATION,d_TaxAreaID,,Geographical Code assigned to the origin or destination.,String,,,,,,Purchase,Buyer,Taxpayer Address Fact
+Ship To State/Province,LINEITEMLOCATION,"d_TaxAreaMainDivision
+d_MainDivisionName",,The full name of the State or Province. For example: California or Alberta.,String,,,,,,Purchase,Buyer,Taxpayer Address Fact
+Ship To County/Parish,LINEITEMLOCATION,d_TaxAreaSubDivision,,The full name of the County or Parish. For example: Orange or Baton Rouge.,String,,,,,,Purchase,Buyer,Taxpayer Address Fact
+,LINEITEM,dateFlxFld1Name,,,nvarchar,,,,,,,,
+,LINEITEM,dateFlxFld1Value,,,numeric,,,,,,,,
+,LINEITEM,dateFlxFld5Name,,,nvarchar,,,,,,,,
+,LINEITEM,dateFlxFld5Value,,,numeric,,,,,,,,
+,LineItemTaxOverflow,dedReasonCatId,,,numeric,,,,,,,,
+Department,LINEITEM,"departmentCode
+","This will need to be conditional based on the transactionPerspective which would select either the selrTrtryPartyCode, buyrTrtryPartyCode, ownrTrtryPartyCode, dispTrtryPartyCode, or recpTrtryPartyCode (although currently O Series transactions never have the taxpayer as the Dispatcher or the Recipient.",The value defining an additional level of the organization.,String,,,Y,Y,,All,All,Taxpayer Fact
+Department Name,LINEITEM,departmentName,"IF the buyrTrtryPartyCode is not supplied and the departmentCode field is, we could put the departmentCode field here.",The name associated with the Department.,String,,,Y,Y,,All,All,Taxpayer Fact
+Line Discount Amount,LINEITEM,discountAmt,,"The discount to be applied, expressed as an amount.",Double,,,Y,Y,,All,All,Invoice Line Fact
+Filing Discount Amount,LINEITEM,discountAmt,,Filing fields are normally used for VAT return purposes. The discount to be applied that is expressed as an amount and is reported in the filing currency.,Double,,,,,,All,All,Tax Return Fact
+,LINEITEM,discountCatName,,,nvarchar,,,,,,,,
+Line Discount Code,LINEITEM,discountCode,,A user-defined code identifying the type of discount applied.,String,,,Y,Y,,All,All,Invoice Line Fact
+Filing Discount Code,LINEITEM,discountCode,,Filing fields are normally used for VAT return purposes. A user-defined code identifying the type of discount applied.,String,,,Y,Y,,All,All,Tax Return Fact
+Line Discount Percent,LINEITEM,discountPct,,"The discount to be applied, expressed as a percentage. ",Double,,,Y,Y,,All,All,Invoice Line Fact
+Filing Discount Percent,LINEITEM,discountPct,,Filing fields are normally used for VAT return purposes. The discount to be applied expressed as a percent.,Double,,,,,,All,All,Tax Return Fact
+,LINEITEM,dispExemptCertCode,,,nvarchar,,,,,,,,
+,LINEITEM,dispExemptInd,,,boolean,,,,,,,,
+,LINEITEM,dispPartyClassCode,,,nvarchar,,,,,,,,
+Vendor Ship From Vendor Name,LINEITEM,"dispPartyName
+selrPartyName","Use disp if available, otherwise use selr",A user-defined name associated with the vendor code.,String,,,,,,Purchase,Buyer,Vendor Fact
+,LINEITEM,dispPartyType,,,nvarchar,,,,,,,,
+Ship From Physical Presence Indicator,LINEITEMTAXOVERFLOW,"dispPhysicalPresInd
+selrPhysicalPresInd","Use disp if available, otherwise use selr",Indicates whether or not there is a physical presence within the jurisdiction.,Boolean,,,,,,Sale,Supplier,Taxpayer Address Fact
+Vendor Ship From Vendor Code,LINEITEM,"dispPrimPartyCode
+selrPrimPartyCode","Use disp if available, otherwise use selr",A user-defined code representing a vendor.,String,,,,,,Purchase,Buyer,Vendor Fact
+,LineItemTaxOverflow,dispRegCountryISO2Code,,,nvarchar,,,,,,,,
+Ship From Tax Registration Number,LINEITEMTAXOVERFLOW,"dispRegIdCode
+selrRegIdCode","Use disp if available, otherwise use selr",The tax registration number for the taxpayer.,String,,,,,,Sale,Supplier,Taxpayer Fact
+,LINEITEM,documentSequenceIdCode,,,nvarchar,,,,,,,,
+Transaction Document Type,LINEITEM,documentType,,"Document type. An identifier used in your financial system to indicate the 
+type of business transaction. For example, RE can indicate a Return. It is provided for Intrastat reporting purposes.",String,,,,,,,,Transaction Fact
+Line Exempt Amount,LINEITEMTAXOVERFLOW,exemptAmount,,Amount of the line item not subject to tax due to exempt status.,Double,,,Y,Y,,All,All,Invoice Line Tax Fact
+Company Currency Exempt Amount,LINEITEMTAXOVERFLOW,exemptAmount,,Parent company fields are used when there is a need to see transaction events under the parent company currency. The exempt amount for the line item that is reported in the parent company currency.,Double,,,,,,All,All,Operating Unit Fact
+Export Procedure,LINEITEM,exportProcedure,,Vertex indirect Tax returns field ,String ,,,Y,Y,Y,All,All,VAT Returns Fact
+Line Extended Amount,LINEITEM,extendedPrice,,This specifies the actual price of the line item. Item Amount x Qty - Discounts.,Double,,,Y,Y,,All,All,Invoice Line Fact
+,LineItemLocation,externalJurisdictionCode,,,nvarchar,,,,,,,,
+Filing Extended Amount,LINEITEMTAXOVERFLOW,filingBasisAmount,,Filing fields are normally used for VAT return purposes. This specifies the actual price of the line item. Item Amount x Qty - Discounts and is reported in the filing currency.,Double,,,,,,All,All,Tax Return Fact
+,LineItemTaxOverflow,filingBasisAmount,,,numeric,,,,,,,,
+Filing Category Code,LINEITEMTAXOVERFLOW,filingCategoryCode,,"Filing fields are normally used for VAT return purposes. Denotes specific revenue types or sources that the jurisdiction may require to be listed individually on the tax return. For example, 1022 (Property Rentals for Sweden).",String,,,Y,Y,Y,All,All,Tax Return Fact
+Filing Category Code Name,LINEITEMTAXOVERFLOW,filingCategoryName,,"Filing fields are normally used for VAT return purposes. The category code name associated with the category code representing the revenue types or sources that the jurisdiction may require to be listed individually on the tax return. For example, 1022 (Property Rentals for Sweden).",String,,,Y,Y,,All,All,Tax Return Fact
+Filing ISO Currency Code,LINEITEMTAXOVERFLOW,filingCurcyUnitId ,,Filing fields are normally used for VAT return purposes. The three-digit alpha (alpha-3) ISO 4217 Currency Code.,String,,,,,,All,All,Tax Return Fact
+Filing Exempt Amount,LINEITEMTAXOVERFLOW,filingexemptAmount,,Filing fields are normally used for VAT return purposes. The exempt amount for the line item and is reported in the filing currency.,Double,,,,,,All,All,Tax Return Fact
+Filing Nontaxable Amount,LINEITEMTAXOVERFLOW,filingnontaxableAmount,,Filing fields are normally used for VAT return purposes. The non-taxable amount for the line item and is reported in the filing currency.,Double,,,,,,All,All,Tax Return Fact
+Company Currency Recoverable Amount,LINEITEMTAXOVERFLOW,filingRecAmt,,Parent company fields are used when there is a need to see transaction events under the parent company currency. The recoverable amount for the VAT line item and is reported in the parent company currency.,Double,,,,,,Purchase,Buyer,Operating Unit Fact
+Filing Recoverable Amount,LINEITEMTAXOVERFLOW,filingRecAmt,,Filing fields are normally used for VAT return purposes. The recoverable amount for the VAT line item and is reported in the filing currency.,Double,,,,,,Purchase,Buyer,Tax Return Fact
+Filing Taxable Amount ,LINEITEMTAXOVERFLOW,filingtaxableAmount,,Filing fields are normally used for VAT return purposes. The taxable amount for the line item and is reported in the filing currency.,Double,,,,,,All,All,Tax Return Fact
+Filing Tax Amount,LINEITEMTAXOVERFLOW,filingtaxAmount,,Filing fields are normally used for VAT return purposes. The amount of tax determined for the line item and is reported in the filing currency.,Double,,,,,,All,All,Tax Return Fact
+Filing Total Tax Amount,LINEITEM,filingTaxAmt,,Filing fields are normally used for VAT return purposes. Amount of tax for the entire invoice that is based on variables of the transaction and is reported in the filing currency.,Double,,,,,,All,All,Tax Return Fact
+Company Currency Unrecoverable Amount,LINEITEMTAXOVERFLOW,filingUnRecAmt,,Parent company fields are used when there is a need to see transaction events under the parent company currency. The unrecoverable amount for the VAT line item and is reported in the parent company currency.,Double,,,,,,Purchase,Buyer,Operating Unit Fact
+Filing Unrecoverable Amount,LINEITEMTAXOVERFLOW,filingUnRecAmt,,Filing fields are normally used for VAT return purposes. The unrecoverable amount for the VAT line item and is reported in the filing currency.,Double,,,,,,Purchase,Buyer,Tax Return Fact
+Line Freight Amount,LINEITEM,freightChargeAmount,,This is the freight charge associated with the line item.,Double,,,Y,Y,,All,All,Invoice Line Fact
+Filing Freight Amount,LINEITEM,freightChargeAmt,,Filing fields are normally used for VAT return purposes. This is the freight charge associated with the line item and is reported in the filing currency.,Double,,,,,,All,All,Tax Return Fact
+GL Account Combination ID - Tax,LINEITEM,genLdgrAcctCode,,GL Account Reference - Accounting entry for relevant to the data represented at the either Tax level line level ,String,,,,,,,,
+GL Account Combination ID - Liability,LINEITEM,genLdgrAcctCode,,GL Account Reference - Accounting entry for relevant to the data represented at the either Tax level line level or invoice level ,String,,,Y,Y,,All,All,GL Reference Fact
+GL Account Combination ID - Expense,LINEITEM,genLdgrAcctCode,,GL Account Reference - Accounting entry for relevant to the data represented at the either Tax level line level or invoice level ,String,,,Y,Y,,All,All,GL Reference Fact
+GL Account Combination ID - Other,LINEITEM,genLdgrAcctCode,,GL Account Reference - Accounting entry for relevant to the data represented at the either Tax level line level or invoice level ,String,,,Y,Y,,All,All,GL Reference Fact
+GL Account Combination - Liability,LINEITEM,genLdgrAcctName,,"The account string: For example: Company, Cost Center, Account, Product. The code combination for GL Account 1",String,,,Y,Y,,All,All,GL Reference Fact
+GL Account Combination - Expense,LINEITEM,genLdgrAcctName,,"The account string: For example: Company, Cost Center, Account, Product. The code combination for GL Account 2",String,,,Y,Y,,All,All,GL Reference Fact
+GL Account Combination - Other,LINEITEM,genLdgrAcctName,,"The account string: For example: Company, Cost Center, Account, Product. The code combination for GL Account 3",String,,,Y,Y,,All,All,GL Reference Fact
+Invoice Line Gross Amount,LINEITEM,grossAmt,,"The basis price at which the asset could be sold to the public. This could be an extended amount. In some systems, this is the gross line amount which includes the extended amount + freight + tax.",Double,,,Y,Y,,All,All,Invoice Line Fact
+Filing Gross Amount,LINEITEM,grossAmt,,Filing fields are normally used for VAT return purposes. The basis price at which goods or services can be sold to the public and is reported in the filing currency.,Double,,,,,,All,All,Tax Return Fact
+Tax Unrecoverable Amount,LINEITEMTAXOVERFLOW,inpTaxNonRecAmt,,The amount of input or import tax that the taxpayer is not able to recover.,Double,,,N,Y,,Purchase,Buyer,Invoice Line Tax Fact
+Tax Recoverable Amount,LINEITEMTAXOVERFLOW,inpTaxRecAmt,,The amount of input or import tax that the buyer is able to recover on a transaction. This is the amount that the buyer puts on their returns in order to recover these funds.,Double,,,N,Y,,Purchase,Buyer,Invoice Line Tax Fact
+Tax Recoverable Percent,,inpTaxRecPct,,"The percent of the tax that is recoverable as calculated and is based on the past recoverable amount/tax. Expressed as a decimal, such as: 1.0 for 100%, .8 for 80%, .5 for 50%.",Double,,,N,Y,,Purchase,Buyer,Invoice Line Tax Fact
+,LINEITEM,inputCostAmt,,,numeric,,,,,,,,
+,LINEITEM,inputExtendedPrice,,,numeric,,,,,,,,
+Tax Input Output Type,LINEITEMTAXOVERFLOW,inputOutputType,,"Identifies whether tax is Input VAT, Output VAT, Both, Import, or No Tax according to the perspective of the transaction to allow for Reverse Charges.",String,,,Y,Y,,All,All,Invoice Line Tax Fact
+,LINEITEM,inputUndiscountedPrice,,,numeric,,,,,,,,
+,LineItemTaxOvrflw,invoiceTextRuleId,,,numeric,,,,,,,,
+,LineItemTaxOvrflw,invoiceTextRuleSrcId,,,numeric,,,,,,,,
+Line Product Class,LINEITEM,itemClassCode,,A code used to represent groups or categories of products or services that have similar taxability. This can be a tax category value. ,String,,,Y,Y,,All,All,Invoice Line Fact
+Line Product Class Name,LINEITEM,itemClassName,,A name used to represent groups or categories of products or services with similar taxability. ,String,,,Y,Y,,All,All,Invoice Line Fact
+Line Quantity,LINEITEM,itemQuantity,,The number of units included in the line item that is based on quantity and is not a currency amount. This value is applied on a line item basis to the quantity level of the product. ,Double,,,Y,Y,Y,All,All,Invoice Line Fact
+Line Product Code,LINEITEM,itemTypeCode,,"A code from the host system that identifies the product, material, service, or SKU number. This could be the same as a material code or an item code. If there is a need, this can be an alternate item code value. ",String,,,Y,Y,,All,All,Invoice Line Fact
+Line Product Code Name,LINEITEM,itemTypeName,,"A name from the host system that identifies the name of the product, material, service, or SKU number.",String,,,Y,Y,,All,All,Invoice Line Fact
+Tax Jurisdiction Code,LINEITEMTAXOVERFLOW,jurisdictionId,Need a code for jurisdiction as well as a name for identification,A code that identifies the jurisdiction of the tax imposition on the line item tax.,String,,,,,,,,
+Tax Jurisdiction Name,LINEITEMTAXOVERFLOW,jurisdictionName,Jurisdiction.name,"The jurisdiction name for the specific jurisdiction level. If the source system stores tax information at the line level, then use the invoice line fields as attributes of the line. ",String,,,Y,Y,,All,All,Invoice Line Tax Fact
+Tax Jurisdiction Level,LINEITEMTAXOVERFLOW,jurisdictionType,"COUNTRY, STATE, PROVINCE, TERRITORY, TRADE BLOCK, COUNTY, PARISH, BOROUGH, CITY, APO, FPO, TOWNSHIP, TRANSIT DISTRICT, SPECIAL PURPOSES DISTRICT, LOCAL IMPROVEMENT DISTRICT, SALES TAX DISTRICT","Relates to the jurisdictional level of the tax, such as Federal, Provincial/State, City, or District.",String,,,Y,Y,,All,All,Invoice Line Tax Fact
+,LINEITEM,lastUpdateDate,,,numeric,,,,,,,,
+Transaction Line ID,LINEITEM,lineItemId,JG: parentLineItemIdCode was added as a separate field.,"An identifier that further defines the line item and corresponds to the transaction stored in the host system. This could be the same value as the document line ID or, along with the document line ID, this could be a key element that is needed to uniquely identify the transaction line. ",String,,,Y,Y,,All,All,Host Reference Fact
+Line Item Number,LINEITEM,lineItemNumber,,A number for the line item. This could be the line item number or the child line item number of a model item. ,String,,,Y,Y,Y,All,All,Invoice Line Fact
+,LineItemTaxOverflow,lineItemTaxAssistedState,,,nvarchar,,,,,,,,
+,LineItem,materialOriginCode,,,nvarchar,,,,,,,,
+,LineItem,materialOriginName,,,nvarchar,,,,,,,,
+,LineItemTaxOvrflw,maxRuleCvtRateUsed,,,numeric,,,,,,,,
+,LineItemTaxOverflow,maxTaxRuleId,,,numeric,,,,,,,,
+,LineItemTaxOverflow,maxTaxRuleSrcId,,,numeric,,,,,,,,
+Movement Method,LINEITEM,modeOfTransport,,Vertex indirect Tax returns field ,String ,,,Y,Y,,All,All,VAT Returns Fact
+Intrastat - Date of Supply,,movementMethod,,The date when VAT becomes due is called the “date of supply” or “tax point”. The tax point for goods is the transfer of ownership of the goods. The tax point for services is the date of completion of the service. VAT also becomes due on the date of the receipt of an advance payment for supplies of goods or services to the extent of the payment received. ,Date,,,Y,Y,,All,All,Intrastat
+Intrastat - Mode of Transport,LINEITEM,natureOfTrans,,Vertex indirect Tax returns field ,String ,,,Y,Y,Y,All,All,VAT Returns Fact
+Negative Indicator,"LINEITEMLine
+",negTaxInd,,Vertex indirect Tax returns field ,String ,,,Y,Y,,All,All,VAT Returns Fact
+Line Distribution Line Number,,netMassKilograms,,A reference to show the distribution of an invoice line that is used as a source for an accounting entry generated from the invoice. ,String,,,Y,Y,,All,All,Invoice Line Fact
+Line Nontaxable Amount,LINEITEMTAXOVERFLOW,nontaxableAmount,,Amount of the line item not subject to tax due to nontaxable status.,Double,,,Y,Y,,All,All,Invoice Line Tax Fact
+Company Currency Nontaxable Amount,LINEITEMTAXOVERFLOW,nontaxableAmount,,Parent company fields are used when there is a need to see transaction events under the parent company currency. The non-taxable amount for the line item and is reported in the parent company currency.,Double,,,,,,All,All,Operating Unit Fact
+,LINEITEM,numFlxFld10Name,,,nvarchar,,,,,,,,
+,LINEITEM,numFlxFld10Value,,,numeric,,,,,,,,
+,LINEITEM,numFlxFld1Name,,,nvarchar,,,,,,,,
+,LINEITEM,numFlxFld1Value,,,numeric,,,,,,,,
+Line Order Type ,LINEITEM,orderType,,The type of order for the transaction that typically involves transfers. Order in chain transaction. ,String,,,Y,Y,,All,All,Invoice Line Fact
+Tax Output Notice Code,LINEITEMTAXOVERFLOW,"outputNotice1Id
+outputNotice2Id
+outputNotice3Id
+outputNotice4Id
+outputNotice5Id",,This code further defines the tax treatment for reporting purposes.,String,,,Y,Y,,All,All,Invoice Line Tax Fact
+,LINEITEM,ownerExemptInd,,,boolean,,,,,,,,
+,LINEITEM,ownerPartyType,Invoice Line Location - Location Role Name?,,nvarchar,,,,,,,,
+,LineItemTaxOverflow,ownerRegCountryISO2Code,,,nvarchar,,,,,,,,
+,LINEITEM,ownrPartyClassCode,,,nvarchar,,,,,,,,
+,LINEITEM,ownrPrimPartyCode,,,nvarchar,,,,,,,,
+,LINEITEM,ownrScndPartyCode,,,nvarchar,,,,,,,,
+,LINEITEM,ownrTrtryPartyCode,,,nvarchar,,,,,,,,
+Payment Date,LINEITEM,paymentDate,,The date of payment for the invoice. ,Date,,,,,,,,Date Fact
+Ship From Location Code,"LINEITEMLOCATION
+",po_LocationCode,,"Location Code, such as a store number or unit number.",String,,,,,,Sale,Supplier,Taxpayer Address Fact
+Vendor Ship From Vendor Site/Location Code,LINEITEMLOCATION,po_LocationCode,,Location code,String,,,,,,Purchase,Procurement,Vendor Fact
+Ship From Postal Code,LINEITEMLOCATION,po_PostalCode,,Five-digit or nine-digit postal codes for the US or various global zip codes.,String,,,,,,Sale,Supplier,Taxpayer Address Fact
+Retail Location Postal Code,LINEITEMLOCATION,"po_postalCode
+d_postalCode",,"Location Postal Code. For example: store, warehouse, distribution center location, Postal Code.",String ,,,,,,sale,supplier,Store Location
+Ship From Street Address2,LINEITEMLOCATION,po_StreetInfo2Desc,,Street address,String,,,,,,Sale,Supplier,Taxpayer Address Fact
+Retail Location Street Address 2,LINEITEMLOCATION,po_streetInfo2Desc,,"Location Street Address 2. For example: store, warehouse, distribution center location, Street Address 2.",String ,,,,,,sale,supplier,Store Location
+Retail Location Street Address 2,LINEITEMLOCATION,d_streetinfo2Desc,,"Location Street Address 2. For example: store, warehouse, distribution center location, Street Address 2.",String ,,,,,,sale,supplier,Store Location
+Ship From Street Address1,LINEITEMLOCATION,po_StreetInfoDesc,,Street address,String,,,,,,Sale,Supplier,Taxpayer Address Fact
+Retail Location Street Address 1,LINEITEMLOCATION,"d_streetInfoDesc
+","If sale is at retail store location, use destination.  If a send sale use origin PO (ship from)and customer at D (ship to).
+Use the PO if it exists and D otherwise","Location Street Address 1. For example: store, warehouse, distribution center location, Street Address 1.",String ,,,,,,sale,supplier,Store Location
+Retail Location Street Address 1,LINEITEMLOCATION,"po_streetInfoDesc
+","If sale is at retail store location, use destination.  If a send sale use origin PO (ship from)and customer at D (ship to).
+Use the PO if it exists and D otherwise","Location Street Address 1. For example: store, warehouse, distribution center location, Street Address 1.",String ,,,,,,sale,supplier,Store Location
+Ship From City/Township,LINEITEMLOCATION,"cityName
+",,The full name of the City or Township. For example: Seattle or Camden.,String,,,,,,Sale,Supplier,Taxpayer Address Fact
+Ship From City/Township,LINEITEMLOCATION,"po_taxAreaCity
+",,The full name of the City or Township. For example: Seattle or Camden.,String,,,,,,Sale,Supplier,Taxpayer Address Fact
+Retail Location City/Township,LINEITEMLOCATION,po_taxAreaCity,,"Location City/Township. For example: store, warehouse, distribution center location, City/Township.",String ,,,,,,sale,supplier,Store Location
+Retail Location City/Township,LINEITEMLOCATION,d_taxAreaCity,,"Location City/Township. For example: store, warehouse, distribution center location, City/Township.",String ,,,,,,sale,supplier,Store Location
+Retail Location City/Township,LINEITEMLOCATION,po_cityName,,"Location City/Township. For example: store, warehouse, distribution center location, City/Township.",String ,,,,,,sale,supplier,Store Location
+Retail Location City/Township,LINEITEMLOCATION,d_cityName,,"Location City/Township. For example: store, warehouse, distribution center location, City/Township.",String ,,,,,,sale,supplier,Store Location
+Ship From Country,LINEITEMLOCATION,po_taxAreaCountry,,The two-digit Country Abbreviation,String,,,,,,Sale,Supplier,Taxpayer Address Fact
+Retail Location Country,LINEITEMLOCATION,"po_taxAreaCountry
+
+",,"Location Country. For example: store, warehouse, distribution center location, Country.",String ,,,,,,sale,supplier,Store Location
+Retail Location Country,LINEITEMLOCATION,"d_taxAreaCountry
+",,"Location Country. For example: store, warehouse, distribution center location, Country.",String ,,,,,,sale,supplier,Store Location
+Ship From Geographical Code,LINEITEMLOCATION,po_TaxAreaID,,Geographical Code assigned to the origin or destination.,String,,,,,,Sale,Supplier,Taxpayer Address Fact
+Retail Location Geographical Code,LINEITEMLOCATION,po_taxAreaID,,"Location Geographical Code. For example: store, warehouse, distribution center location, Geographical Code.",String ,,,,,,sale,Supplier,Store Location
+Retail Location Geographical Code,LINEITEMLOCATION,d_taxAreaId,,"Location Geographical Code. For example: store, warehouse, distribution center location, Geographical Code.",String ,,,,,,sale,Supplier,Store Location
+Ship From State/Province,LINEITEMLOCATION,po_taxAreaMainDivision,,The full name of the State or Province. For example: California or Alberta.,String,,,,,,Sale,Supplier,Taxpayer Address Fact
+Retail Location State/Province,LINEITEMLOCATION,po_taxAreaMainDivision,,"Location State/Province. For example: store, warehouse, distribution center location, State/Province.",String ,,,,,,sale,supplier,Store Location
+Retail Location State/Province,LINEITEMLOCATION,"d_taxAreaMainDivision
+",,"Location State/Province. For example: store, warehouse, distribution center location, State/Province.",String ,,,,,,sale,supplier,Store Location
+Retail Location State/Province,LINEITEMLOCATION,po_MainDivisionName,,"Location State/Province. For example: store, warehouse, distribution center location, State/Province.",String ,,,,,,sale,supplier,Store Location
+Retail Location State/Province,LINEITEMLOCATION,d_mainDivisionName,,"Location State/Province. For example: store, warehouse, distribution center location, State/Province.",String ,,,,,,sale,supplier,Store Location
+Ship From County/Parish,LINEITEMLOCATION,po_taxAreaSubDivision,,The full name of the County or Parish. For example: Orange or Baton Rouge.,String,,,,,,Sale,Supplier,Taxpayer Address Fact
+Retail Location County/Parish,LINEITEMLOCATION,po_taxAreaSubDivision,,"Location Description County/Parish. For example: store, warehouse, distribution center location, County/Parish.",String ,,,,,,sale,supplier,Store Location
+Retail Location County/Parish,LINEITEMLOCATION,d_taxAreaSubDivision,,"Location Description County/Parish. For example: store, warehouse, distribution center location, County/Parish.",String ,,,,,,sale,supplier,Store Location
+GL/Accounting Posting Date,LINEITEM,postingDate,,The date when the transaction is posted to the financial system.,Date,,,Y,Y,Y,All,All,Date Fact
+Project Number,LINEITEM,projectCode,,The project number associated with the transaction. This typically involves internal projects.,String,,,Y,Y,,Purchase,Buyer,Project Fact
+Project Name,LINEITEM,projectName,,The project name associated with the transaction. This typically involves internal projects.,String,,,Y,Y,,Purchase,Buyer,Project Fact
+Tax Rate Classification,LINEITEMTAXOVERFLOW,rateClassification,,"Used to classify line item taxes as Standard Rated, Reduced Rated (1-5), Luxury Rated, Zero-Rated, Exempt, and Outside the Scope.",String,,,Y,Y,Y,All,All,Invoice Line Tax Fact
+Recoverable Date,LINEITEM,recovAmtDate,,The date of which input tax can be recovered.,Date,,,N,Y,,Purchase,Buyer,Date Fact
+,LineItemTaxOverflow,recoverabilityRuleId,,,numeric,,,,,,,,
+,LineItemTaxOverflow,recoverabilityRuleSrcId,,,numeric,,,,,,,,
+Ship To Business Indicator,LINEITEM,recpBusinessInd,"Recp if supplied, otherwise use buyr",Indicates whether or not a business.,Boolean,,,,,,Purchase,Buyer,Taxpayer Fact
+Ship To Business Indicator,LINEITEM,buyrBusinessInd,"Recp if supplied, otherwise use buyr",Indicates whether or not a business.,Boolean,,,,,,Purchase,Buyer,Taxpayer Fact
+,LINEITEM,recpExemptInd,,,boolean,,,,,,,,
+Ship To Customer Classification Code,LINEITEM,recpPartyClassCode,"Recp if supplied, otherwise use buyr",A user-defined classification code representing a group of customers.,String,,,,,,Sale,Supplier,Customer Fact
+Ship To Customer Classification Code,LINEITEM,buyrPartyClassCode,"Recp if supplied, otherwise use buyr",A user-defined classification code representing a group of customers.,String,,,,,,Sale,Supplier,Customer Fact
+Ship To Customer Name,LINEITEM,recpPartyName,,A user-defined name associated with the customer code or number representing a customer.,String,,,,,,Sale,Supplier,Customer Fact
+Ship To Customer Name,LINEITEM,buyerName,,A user-defined name associated with the customer code or number representing a customer.,String,,,,,,Sale,Supplier,Customer Fact
+,LINEITEM,recpPartyType,,,nvarchar,,,,,,,,
+Ship To Physical Presence Indicator,LINEITEMTAXOVERFLOW,recpPhysicalPresInd,"Recp if supplied, otherwise use buyr",Indicates whether or not there is a physical presence within the jurisdiction.,Boolean,,,,,,Purchase,Buyer,Taxpayer Address Fact
+Ship To Physical Presence Indicator,LINEITEMTAXOVERFLOW,buyerPhysicalPresInd,"Recp if supplied, otherwise use buyr",Indicates whether or not there is a physical presence within the jurisdiction.,Boolean,,,,,,Purchase,Buyer,Taxpayer Address Fact
+Ship To Customer Code,LINEITEM,recpPrimPartyCode,"Recp if supplied, otherwise use buyr",A user-defined code or number representing a customer.,String,,,,,,Sale,Supplier,Customer Fact
+Ship To Customer Code,LINEITEM,buyrPrimPartyCode,"Recp if supplied, otherwise use buyr",A user-defined code or number representing a customer.,String,,,,,,Sale,Supplier,Customer Fact
+,LineItemTaxOverflow,recpRegCountryISO2Code,,,nvarchar,,,,,,,,
+Ship To Tax Registration Number,LINEITEMTAXOVERFLOW,buyrRegIdCode,"Recp if supplied, otherwise use buyr",The tax registration number for the taxpayer.,String,,,,,,Purchase,Buyer,Taxpayer Fact
+Ship To Tax Registration Number,LINEITEMTAXOVERFLOW,recpRegIdCode,"Recp if supplied, otherwise use buyr",The tax registration number for the taxpayer.,String,,,,,,Purchase,Buyer,Taxpayer Fact
+Ship To Exemption Certificate Number,LINEITEM,recptExmptCertCode,"Recp if supplied, otherwise use buyr",Exemption certificate number,String,,,Y,N,,Sale,Supplier,Customer Fact
+Ship To Exemption Certificate Number,LINEITEM,buyrExmptCertCode,"Recp if supplied, otherwise use buyr",Exemption certificate number,String,,,Y,N,,Sale,Supplier,Customer Fact
+,LineItemReturnField,returnsCodeField1Name ,,,nvarchar,,,,,,,,
+,LineItemReturnField,returnsCodeField1Value ,,,nvarchar,,,,,,,,
+,LineItemReturnField,returnsCodeField5Name,,,nvarchar,,,,,,,,
+,LineItemReturnField,returnsCodeField5Value ,,,nvarchar,,,,,,,,
+,LineItemReturnField,returnsDateField1Name ,,,nvarchar,,,,,,,,
+,LineItemReturnField,returnsDateField1Value ,,,numeric,,,,,,,,
+,LineItemReturnField,returnsDateField5Name ,,,nvarchar,,,,,,,,
+,LineItemReturnField,returnsDateField5Value ,,,numeric,,,,,,,,
+,LineItemReturnField,returnsIndicatorField1Name ,,,nvarchar,,,,,,,,
+,LineItemReturnField,returnsIndicatorField1Value,,,boolean,,,,,,,,
+,LineItemReturnField,returnsIndicatorField5Name,,,nvarchar,,,,,,,,
+,LineItemReturnField,returnsIndicatorField5Value,,,boolean,,,,,,,,
+,LineItemReturnField,returnsNumericField1Name ,,,nvarchar,,,,,,,,
+,LineItemReturnField,returnsNumericField1Value ,,,numeric,,,,,,,,
+,LineItemReturnField,returnsNumericField5Name,,,nvarchar,,,,,,,,
+,LineItemReturnField,returnsNumericField5Value,,,numeric,,,,,,,,
+Bill From Business Indicator,LINEITEM,"sellerBusinessInd
+
+",,Indicates whether or not a business.,Boolean,,,Y,Y,,All,All,Taxpayer Fact
+,LINEITEM,sellerExemptInd,,,boolean,,,,,,,,
+Company Name,LINEITEM,sellerName,,The name associated with the Company.,String,,,Y,Y,,All,All,Taxpayer Fact
+,LINEITEM,sellerPartyType,,,nvarchar,,,,,,,,
+Bill From Physical Presence Indicator,LINEITEMTAXOVERFLOW,"sellerPhysicalPresInd
+",,Indicates whether or not there is a physical presence within the jurisdiction.,Boolean,,,Y,Y,,All,All,Taxpayer Address Fact
+,LineItemTaxOverflow,sellerRegCountryISO2Code,,,nvarchar,,,,,,,,
+,LINEITEM,selrExemptCertCode,,,nvarchar,,,,,,,,
+,LINEITEM,selrPartyClassCode,,,nvarchar,,,,,,,,
+Vendor Bill From Vendor Name,LINEITEM,selrPartyName,,A user-defined name associated with the vendor code.,String,,,Y,N,Y,Purchase,Buyer,Vendor Fact
+Company,LINEITEM,selrPrimPartyCode,"This will need to be conditional based on the transactionPerspective which would select either the selrPrimPartyCode, buyrPrimPartyCode, ownrPrimPartyCode, dispPrimPartyCode, or recpPrimPartyCode (although currently O Series transactions never have the taxpayer as the Dispatcher or the Recipient.
+
+Added role specific columns and expect the mapping of selrPrimPartyCode to go to billFromVendorCompanyCode.  
+
+Similar for other columns below.",The value defining the Legal Entity within an organization. Use the value that is relevant to taxation on the transaction. ,String,,,Y,Y,Y,All,All,Taxpayer Fact
+Vendor Bill From Vendor Code,LINEITEM,selrPrimPartyCode,,A user-defined code representing a vendor.,String,,,Y,N,Y,Purchase,Buyer,Vendor Fact
+Bill From Tax Registration Number,LINEITEMTAXOVERFLOW,"selrRegIdCode
+","Bill From should always be the seller.  Dispatcher, if supplied would be the shipFrom.",The tax registration number for the Taxpayer.,String,,,Y,Y,,All,All,Taxpayer Fact
+Division,LINEITEM,selrScndPartyCode,"This will need to be conditional based on the transactionPerspective which would select either the selrScndPartyCode, buyrScndPartyCode, ownrScndPartyCode, dispScndPartyCode, or recpScndPartyCode (although currently O Series transactions never have the taxpayer as the Dispatcher or the Recipient.",The value defining an additional level of the organization. ,String,,,Y,Y,Y,All,All,Taxpayer Fact
+Tax is Service Indicator,LINEITEMTAXOVERFLOW,serviceInd,,Indicates whether or not the product is a service.,Boolean,,,Y,Y,Y,All,All,Invoice Line Tax Fact
+Shipping Terms,LINEITEM,shippingTerms,,Shipping Terms - also referred to as Delivery Terms and/or Incoterms.,String,,,Y,Y,Y,All,All,Invoice Line Fact
+Simplification Type ID,LINEITEM,simplificationType,Transform in WTJ - Derive from simpTypeId and SimplicationType.simpTypeName,"Consignment,Call-Off,Triangulation,Registration Group
+Vertex indirect Tax returns field 
+",String ,,,Y,Y,Y,All,All,Taxpayer Fact
+Tax Situs,LINEITEMTAXOVERFLOW,situsLocRoleType,,The jurisdiction relevant to the tax determination. For example: Destination or Origin.,String,,,Y,Y,,All,All,Invoice Line Tax Fact
+Tax Situs Geographical Code,LINEITEMTAXOVERFLOW,situsTaxAreaId,,The geographical code assigned to the relevant jurisdiction: Destination or Origin.,String,,,Y,Y,,All,All,Invoice Line Tax Fact
+Transaction Source,LINEITEM,sourceName,Transform in WTJ - Derive from sourceId and Source.sourceName (same as Partition ID),"The source of input for the transaction. Example - Manual, Sales Order, Contract Based, Project Based, Converted, Interfaced, Online Sales, EDI, ERS.",String,,,,,,,,Invoice Fact
+,LineItem,specialTaxBasis,,,numeric,,,,,,,,
+Intrastat - Statistical Value,LINEITEM,StatisticalValue,Not in data model,Vertex indirect Tax returns field ,Double,,,Y,Y,,All,All,VAT Returns Fact
+Intrastat - Statistical Value Currency Code,LINEITEM ,statisticalValueCurrencyUnitName,Not in data model,Vertex indirect Tax returns field ,String ,,,Y,Y,,All,All,VAT Returns Fact
+,LINEITEM,strgFlxFld1Name,,,nvarchar,,,,,,,,
+,LINEITEM,strgFlxFld1Value,,,nvarchar,,,,,,,,
+,LINEITEM,strgFlxFld25Name,,,nvarchar,,,,,,,,
+,LINEITEM,strgFlxFld25Value,,,nvarchar,,,,,,,,
+,LineItemTaxOvrflw,summaryInvoiceText,,,nvarchar,,,,,,,,
+Intrastat - Supplementary Unit Type,LINEITEM ,supplementaryUnit,Column has been renamed suppUnitValue.,Vertex indirect Tax returns field ,String ,,,Y,Y,Y,All,All,VAT Returns Fact
+Intrastat - Supplementary Unit,LINEITEM ,supplementaryUnitType ,suppUnitOfMeasCode is now the type,Vertex indirect Tax returns field ,String ,,,Y,Y,Y,All,All,VAT Returns Fact
+Line Taxable Amount,LINEITEMTAXOVERFLOW,taxableAmount,,Amount of the line item subject to tax.,Double,,,Y,Y,,All,All,Invoice Line Tax Fact
+Company Currency Taxable Amount,LINEITEMTAXOVERFLOW,taxableAmount,,Parent company fields are used when there is a need to see transaction events under the parent company currency. The taxable amount for the line item and is reported in the parent company currency.,Double,,,,,,All,All,Operating Unit Fact
+Tax Amount,LINEITEMTAXOVERFLOW,taxAmount,,Amount of tax calculated by the calculation engine.,Double,,,Y,Y,,All,All,Invoice Line Tax Fact
+Company Currency Tax Amount,LINEITEMTAXOVERFLOW,taxAmount,,Parent company fields are used when there is a need to see transaction events under the parent company currency. The amount of tax determined for the line item and is reported in the parent company currency.,Double,,,,,,All,All,Operating Unit Fact
+,LineItemTaxOvrflw,taxAmountBeforeCredit,,,numeric,,,,,,,,
+,LineItemTaxOvrflw,taxApportionmentRuleId,,,numeric,,,,,,,,
+,LineItemTaxOvrflw,taxApportionmentRuleSourceId,,,numeric,,,,,,,,
+,LINEITEM,taxAreaDistrict1,Derive from taxAreaId,,nvarchar,,,,,,,,
+,LINEITEM,taxAreaDistrict2,Derive from taxAreaId,,nvarchar,,,,,,,,
+,LINEITEM,taxAreaDistrict3,Derive from taxAreaId,,nvarchar,,,,,,,,
+,LINEITEM,taxAreaDistrict4,Derive from taxAreaId,,nvarchar,,,,,,,,
+Tax Code,LINEITEMTAXOVERFLOW,taxCode,,A user-defined tax code having assignment to the transaction.,String,,,Y,Y,,All,All,Invoice Line Tax Fact
+,LineItemTaxOvrflw,taxCreditRuleId,,,numeric,,,,,,,,
+,LineItemTaxOvrflw,taxCreditRuleSrcId,,,numeric,,,,,,,,
+Tax Date ,LINEITEM,taxDate,,Date for which the tax calculation was based.,Date,,,Y,Y,,All,All,Date Fact
+Tax Imposition Type Name,LINEITEMTAXOVERFLOW,taxImpsnName ,,The name associated with the type of tax imposed on the taxpayer. For example: Environmental Fee or 911 Surcharge.,String,,,Y,Y,,All,All,Invoice Line Tax Fact
+Tax Imposition Type,LINEITEMTAXOVERFLOW,taxImpsnTypeName,,The type of tax imposed on the taxpayer. For example: Fee or Surcharge.,String,,,Y,Y,Y,All,All,Invoice Line Tax Fact
+,LineItemTaxOvrflw,taxInclusionRuleId,,,numeric,,,,,,,,
+,LineItemTaxOvrflw,taxInclusionRuleSrcId,,,numeric,,,,,,,,
+,LINEITEM,taxpayerTaxOverThresholdAmount,From PartyDetail.taxOverThresholdAmt and PartyDetail.PartyType = 1,,numeric,,,,,,,,
+,LINEITEM,taxpayerTaxOverThresholdPercent,From PartyDetail.taxOverThresholdPct and PartyDetail.PartyType = 1,,numeric,,,,,,,,
+,LINEITEM,taxpayerTaxUnderThresholdAmount,From PartyDetail.taxThresholdAmt and PartyDetail.PartyType = 1,,numeric,,,,,,,,
+,LINEITEM,taxpayerTaxUnderThresholdPercent,From PartyDetail.taxThresholdPct and PartyDetail.PartyType = 1,,numeric,,,,,,,,
+,LineItem,taxPointDate,,,numeric,,,,,,,,
+Tax Rate,LINEITEMTAXOVERFLOW,taxRate,,The tax rate that is applied. This is used for reference purposes to supply previous rates. This rate refers to the jurisdictional rates.,Double,,,Y,Y,Y,All,All,Invoice Line Tax Fact
+,LineItemTaxOvrflw,taxRateAdjustmentRuleId,,,numeric,,,,,,,,
+,LineItemTaxOvrflw,taxRateAdjustmentRuleSourceId,,,numeric,,,,,,,,
+Tax Result,LINEITEMTAXOVERFLOW,taxResultType,,"Identifies the taxability of a transaction (Taxable, Exempt, Nontaxable, No Tax, and DPP Applied).",String,,,Y,Y,,All,All,Invoice Line Tax Fact
+,LineItemTaxOvrflw,taxRuleCvtRateUsed,,,numeric,,,,,,,,
+,LineItemTaxOverflow,taxRuleId,,,numeric,,,,,,,,
+,LineItemTaxOverflow,taxRuleSrcId,,,numeric,,,,,,,,
+Tax Type,LINEITEMTAXOVERFLOW,taxType,,"The tax type, such as Federal, State, Local, Sales, Sellers Use, Consumer Use, Rental.",String,,,Y,Y,,All,All,Invoice Line Tax Fact
+Intrastat - Net Mass,LINEITEM,titletransfer,,Vertex indirect Tax returns field ,Double,,,Y,Y,Y,All,All,VAT Returns Fact
+Line Combined Tax Rate,LINEITEM,totalCombinedRate,,"The combination of Country, State, County, and City rates for the transaction line item.",String,,,Y,Y,,All,All,Invoice Line Tax Fact
+Transaction Total Tax,LINEITEM,totalTax,,Amount of tax for the entire invoice based on variables of the transaction.,Double,,,Y,Y,,All,All,Invoice Line Tax Fact
+Transaction ID ,LINEITEM,transactionId,,"A code used to define a source system's internal invoice identification - Host or User-defined. In most scenarios, this is a document ID. It can also be used to store other key elements that make identification of the transactions unique. ",String,,,,,,,,Host Reference Fact
+Transaction Type,LINEITEM,"transactionType
+financialEventType","Transform in WTJ - Derive from transactionTypeId and TransactionType.transactionTypeName
+
+Derive from busTransType","Values include Sale, Lease, Rental, Purchase, Asset Movement, Inventory Removal. It could be the same as the distribution channel.",String,,,,,,,,Invoice Fact
+,LineItem,transForcedInd,,,boolean,,,,,,,,
+,LINEITEM,transOrigType,Transform From WTJ - Derive from transOrigType and TransOrigType.transOrigTypeName,"Invoice,Purchase Order,Quote,Evaluated Receipts Settlement,Managed Compliance Agreement",nvarchar,,,,,,,,
+Transaction Perspective,LINEITEM,transPerspective,Transform in WTJ - Derive from transPrspctvTypeId and transactionTypeId (using TrnasTypePrspctv and PartyRoleType),"The perspective of the transaction. Examples are: Sale, Procurement, Self Assessment, or this value could be empty if just a manual journal entry is brought in. ",String,,,,,Y,,,Invoice Fact
+,LINEITEM,transprocTime,,,datetime,,,,,,,,
+Original Transaction Number,LINEITEM,transSyncIdCode,"An identifier assigned by the user to reference the transaction.
+Can leave blank in udm  if user does not pass in TransSyncIdCode",The original invoice number in the host application that references previous events (such as reversing entries). This could be the invoice number that is referenced either on a credit memo or on an invoice credit scenario. ,String,,,,,,,,Invoice Fact
+Line Quantity UOM,LINEITEM,unitOfMeasureISOCode,,The unit of measure for the line item to be used in surcharges based on quantity and not on price.,String,,,Y,Y,,All,All,Invoice Line Fact
+Line Unit Price,LINEITEM,unitPrice,,The price of a single unit or item. This could be an extended price or the list price prior to price modification. ,Double,,,Y,Y,,All,All,Invoice Line Fact
+Filing Unit Price,LINEITEM,unitPrice,,Filing fields are normally used for VAT return purposes. The price of a single unit or item of goods or services and is reported in the filing currency.,Double,,,,,,All,All,Tax Return Fact
+Line Usage Class,LINEITEM,usageClassCode,,The identifier of a class of usage codes from the host system. ,String,,,Y,Y,,Purchase,Buyer,Invoice Line Fact
+Line Usage Code,LINEITEM,usageTypeCode,,"A code from the host system that identifies usage of an item, such as a product or material.",String,,,Y,Y,,Purchase,Buyer,Invoice Line Fact
+,LINEITEM,usageTypeName,,,nvarchar,,,,,,,,
+Retail Location Code,"LINEITEM
+",userLocationCode,,"Location Code. For example: store, warehouse, distribution center location code.",String ,,,N,N,,sale,supplier,Store Location
+,LINEITEM,userLocationCode,,,nvarchar,,,,,,,,
+Transaction Number,LINEITEM,userTransIDCode,,"The invoice number in the host application that references the event. This is the unique external representation of the transaction.
+
+An identifier assigned by the user to reference the transaction.   
+
+Depending on the type of the source system, this may be a duplicate value. ",String,,,,,Y,,,Invoice Fact
+,LINEITEM,vendorTaxOverThresholdAmount,From PartyDetail.taxOverThresholdAmt and PartyDetail.PartyType = 3,,numeric,,,,,,,,
+,LINEITEM,vendorTaxOverThresholdPercent,From PartyDetail.taxOverThresholdPct and PartyDetail.PartyType = 3,,numeric,,,,,,,,
+,LINEITEM,vendorTaxUnderThresholdAmount,From PartyDetail.taxThresholdAmt and PartyDetail.PartyType = 3,,numeric,,,,,,,,
+,LINEITEM,vendorTaxUnderThresholdPercent,From PartyDetail.taxThresholdPct and PartyDetail.PartyType = 3,,numeric,,,,,,,,
+Vertex O Tax code ,LINEITEMTAXOVERFLOW,vertexTaxCode,,Vertex indirect Tax returns field ,String ,,,Y,Y,,All,All,VAT Returns Fact
+Line Volume,LINEITEM,volume,,The volume of the product.,Double,,,Y,Y,,All,All,Invoice Line Fact
+Line Volume UOM,LINEITEM,volume,,The unit of measure for the line item based on quantity (not price). ,String,,,Y,Y,,All,All,Invoice Line Fact
+Line Weight,LINEITEM,volumeUnitCode,Need to allow for multiples in 8.0,The weight of the product.,Double,,,Y,Y,,All,All,Invoice Line Fact
+,LineItem,wageBasis,,,numeric,,,,,,,,
+Line Weight UOM,LINEITEM,weight,,The unit of measure for the line item based on quantity (not price). ,String,,,Y,Y,,All,All,Invoice Line Fact
+Line Internal or External,LINEITEM,weightUnitCode ,Need to allow for multiples in 8.0,"The type of location associated with the transaction that typically involves transfer activities. This can be either internal or external. In the case of drop ship, this could be an internal location. Shipment to a customer or a vendor is external. ",String,,,Y,Y,,All,All,Invoice Line Fact

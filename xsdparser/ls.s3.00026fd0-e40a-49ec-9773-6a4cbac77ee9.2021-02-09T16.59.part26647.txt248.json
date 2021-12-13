@@ -1,0 +1,100 @@
+{
+  "http://schemas.xmlsoap.org/soap/envelope/:Envelope": {
+    "http://schemas.xmlsoap.org/soap/envelope/:Header": null,
+    "http://schemas.xmlsoap.org/soap/envelope/:Body": {
+      "x:VertexEnvelope": {
+        "x:Login": {
+          "x:TrustedId": "7561636305862266"
+        },
+        "x:QuotationRequest": {
+          "@transactionType": "SALE",
+          "@documentDate": "2021-02-09",
+          "@documentNumber": "16803549-0",
+          "@xmlns": {
+            "soapenv": "http://schemas.xmlsoap.org/soap/envelope/",
+            "": "urn:vertexinc:o-series:tps:7:0"
+          },
+          "x:Seller": {
+            "x:Company": "Acme-Prod",
+            "x:PhysicalOrigin": {
+              "x:StreetAddress1": "1851 S 48th St",
+              "x:StreetAddress2": null,
+              "x:City": "GRAND FORKS",
+              "x:MainDivision": "ND",
+              "x:PostalCode": "58201",
+              "x:Country": "USA"
+            }
+          },
+          "x:Customer": {
+            "x:CustomerCode": {
+              "@classCode": "NULL",
+              "#text": "W693285"
+            },
+            "x:Destination": {
+              "x:StreetAddress1": "20815 ALBURTIS AVE",
+              "x:StreetAddress2": null,
+              "x:City": "LAKEWOOD",
+              "x:MainDivision": "CA",
+              "x:PostalCode": "90715-1342",
+              "x:Country": "USA"
+            }
+          },
+          "x:LineItem": [
+            {
+              "@lineItemNumber": "1",
+              "@locationCode": "610",
+              "x:Product": null,
+              "x:Quantity": "1.00",
+              "x:UnitPrice": "27.9900",
+              "x:ExtendedPrice": ".0000",
+              "x:FlexibleFields": {
+                "x:FlexibleCodeField": [
+                  {
+                    "@fieldId": "3",
+                    "#text": "49-36-2438"
+                  },
+                  {
+                    "@fieldId": "4",
+                    "#text": "MILWAUKEE M12 Polisher/Sander"
+                  },
+                  {
+                    "@fieldId": "5",
+                    "#text": "EDWARD ESTRELLA"
+                  },
+                  {
+                    "@fieldId": "6"
+                  }
+                ]
+              }
+            },
+            {
+              "@lineItemNumber": "2",
+              "@locationCode": "610",
+              "x:Product": "FREIGHT",
+              "x:Quantity": "1.00",
+              "x:UnitPrice": "6.4900",
+              "x:ExtendedPrice": "6.4900",
+              "x:FlexibleFields": {
+                "x:FlexibleCodeField": [
+                  {
+                    "@fieldId": "3"
+                  },
+                  {
+                    "@fieldId": "4"
+                  },
+                  {
+                    "@fieldId": "5",
+                    "#text": "EDWARD ESTRELLA"
+                  },
+                  {
+                    "@fieldId": "6"
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      }
+    }
+  }
+}

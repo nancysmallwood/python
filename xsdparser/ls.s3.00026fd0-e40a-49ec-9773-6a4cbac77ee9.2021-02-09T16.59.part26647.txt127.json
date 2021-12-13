@@ -1,0 +1,245 @@
+{
+  "http://schemas.xmlsoap.org/soap/envelope/:Envelope": {
+    "http://schemas.xmlsoap.org/soap/envelope/:Body": {
+      "urn:vertexinc:o-series:tps:6:0:VertexEnvelope": {
+        "urn:vertexinc:o-series:tps:6:0:Login": {
+          "urn:vertexinc:o-series:tps:6:0:TrustedId": "7853138124233551"
+        },
+        "urn:vertexinc:o-series:tps:6:0:InvoiceRequest": {
+          "@documentNumber": "114810108",
+          "@postingDate": "2021-02-09",
+          "@documentDate": "2021-01-09",
+          "@transactionType": "SALE",
+          "@xmlns": {
+            "SOAP-ENV": "http://schemas.xmlsoap.org/soap/envelope/",
+            "ns1": "urn:vertexinc:o-series:tps:6:0"
+          },
+          "urn:vertexinc:o-series:tps:6:0:LineItem": [
+            {
+              "@lineItemNumber": "1",
+              "@locationCode": "hq",
+              "@lineItemId": "0",
+              "urn:vertexinc:o-series:tps:6:0:Seller": {
+                "urn:vertexinc:o-series:tps:6:0:Company": "grommet",
+                "urn:vertexinc:o-series:tps:6:0:PhysicalOrigin": {
+                  "urn:vertexinc:o-series:tps:6:0:StreetAddress1": null,
+                  "urn:vertexinc:o-series:tps:6:0:StreetAddress2": null,
+                  "urn:vertexinc:o-series:tps:6:0:City": "Lancaster",
+                  "urn:vertexinc:o-series:tps:6:0:MainDivision": "PA",
+                  "urn:vertexinc:o-series:tps:6:0:PostalCode": "17601",
+                  "urn:vertexinc:o-series:tps:6:0:Country": "USA"
+                }
+              },
+              "urn:vertexinc:o-series:tps:6:0:Customer": {
+                "urn:vertexinc:o-series:tps:6:0:CustomerCode": {
+                  "@classCode": "Retail Customer",
+                  "#text": "General"
+                },
+                "urn:vertexinc:o-series:tps:6:0:Destination": {
+                  "urn:vertexinc:o-series:tps:6:0:StreetAddress1": "2713 COUNTRYSIDE BLVD",
+                  "urn:vertexinc:o-series:tps:6:0:StreetAddress2": "Apt 105",
+                  "urn:vertexinc:o-series:tps:6:0:City": "Clearwater",
+                  "urn:vertexinc:o-series:tps:6:0:MainDivision": "FL",
+                  "urn:vertexinc:o-series:tps:6:0:PostalCode": "33761",
+                  "urn:vertexinc:o-series:tps:6:0:Country": "USA"
+                }
+              },
+              "urn:vertexinc:o-series:tps:6:0:Product": {
+                "@productClass": "Tangible Personal Property",
+                "#text": "3440-S-101"
+              },
+              "urn:vertexinc:o-series:tps:6:0:Quantity": "1.0000",
+              "urn:vertexinc:o-series:tps:6:0:UnitPrice": "-15",
+              "urn:vertexinc:o-series:tps:6:0:ExtendedPrice": "-13.5"
+            },
+            {
+              "@lineItemNumber": "2",
+              "@locationCode": "hq",
+              "@lineItemId": "1",
+              "urn:vertexinc:o-series:tps:6:0:Seller": {
+                "urn:vertexinc:o-series:tps:6:0:Company": "grommet",
+                "urn:vertexinc:o-series:tps:6:0:PhysicalOrigin": {
+                  "urn:vertexinc:o-series:tps:6:0:StreetAddress1": "87 Elmwood St",
+                  "urn:vertexinc:o-series:tps:6:0:StreetAddress2": null,
+                  "urn:vertexinc:o-series:tps:6:0:City": "Somerville",
+                  "urn:vertexinc:o-series:tps:6:0:MainDivision": "MA",
+                  "urn:vertexinc:o-series:tps:6:0:PostalCode": "02144",
+                  "urn:vertexinc:o-series:tps:6:0:Country": "USA"
+                }
+              },
+              "urn:vertexinc:o-series:tps:6:0:Customer": {
+                "urn:vertexinc:o-series:tps:6:0:CustomerCode": {
+                  "@classCode": "Retail Customer",
+                  "#text": "General"
+                },
+                "urn:vertexinc:o-series:tps:6:0:Destination": {
+                  "urn:vertexinc:o-series:tps:6:0:StreetAddress1": "2713 COUNTRYSIDE BLVD",
+                  "urn:vertexinc:o-series:tps:6:0:StreetAddress2": "Apt 105",
+                  "urn:vertexinc:o-series:tps:6:0:City": "Clearwater",
+                  "urn:vertexinc:o-series:tps:6:0:MainDivision": "FL",
+                  "urn:vertexinc:o-series:tps:6:0:PostalCode": "33761",
+                  "urn:vertexinc:o-series:tps:6:0:Country": "USA"
+                }
+              },
+              "urn:vertexinc:o-series:tps:6:0:Product": {
+                "@productClass": "Shipping",
+                "#text": "shipwire_total"
+              },
+              "urn:vertexinc:o-series:tps:6:0:Quantity": "1",
+              "urn:vertexinc:o-series:tps:6:0:UnitPrice": "-0",
+              "urn:vertexinc:o-series:tps:6:0:ExtendedPrice": "-0"
+            },
+            {
+              "@lineItemNumber": "3",
+              "@locationCode": "hq",
+              "@lineItemId": "2",
+              "urn:vertexinc:o-series:tps:6:0:Seller": {
+                "urn:vertexinc:o-series:tps:6:0:Company": "grommet",
+                "urn:vertexinc:o-series:tps:6:0:PhysicalOrigin": {
+                  "urn:vertexinc:o-series:tps:6:0:StreetAddress1": "87 Elmwood St",
+                  "urn:vertexinc:o-series:tps:6:0:StreetAddress2": null,
+                  "urn:vertexinc:o-series:tps:6:0:City": "Somerville",
+                  "urn:vertexinc:o-series:tps:6:0:MainDivision": "MA",
+                  "urn:vertexinc:o-series:tps:6:0:PostalCode": "02144",
+                  "urn:vertexinc:o-series:tps:6:0:Country": "USA"
+                }
+              },
+              "urn:vertexinc:o-series:tps:6:0:Customer": {
+                "urn:vertexinc:o-series:tps:6:0:CustomerCode": {
+                  "@classCode": "Retail Customer",
+                  "#text": "General"
+                },
+                "urn:vertexinc:o-series:tps:6:0:Destination": {
+                  "urn:vertexinc:o-series:tps:6:0:StreetAddress1": "2713 COUNTRYSIDE BLVD",
+                  "urn:vertexinc:o-series:tps:6:0:StreetAddress2": "Apt 105",
+                  "urn:vertexinc:o-series:tps:6:0:City": "Clearwater",
+                  "urn:vertexinc:o-series:tps:6:0:MainDivision": "FL",
+                  "urn:vertexinc:o-series:tps:6:0:PostalCode": "33761",
+                  "urn:vertexinc:o-series:tps:6:0:Country": "USA"
+                }
+              },
+              "urn:vertexinc:o-series:tps:6:0:Product": {
+                "@productClass": "Refund Adjustments",
+                "#text": "adjustment-positive"
+              },
+              "urn:vertexinc:o-series:tps:6:0:Quantity": "1",
+              "urn:vertexinc:o-series:tps:6:0:UnitPrice": "-0",
+              "urn:vertexinc:o-series:tps:6:0:ExtendedPrice": "-0"
+            },
+            {
+              "@lineItemNumber": "4",
+              "@locationCode": "hq",
+              "@lineItemId": "3",
+              "urn:vertexinc:o-series:tps:6:0:Seller": {
+                "urn:vertexinc:o-series:tps:6:0:Company": "grommet",
+                "urn:vertexinc:o-series:tps:6:0:PhysicalOrigin": {
+                  "urn:vertexinc:o-series:tps:6:0:StreetAddress1": "87 Elmwood St",
+                  "urn:vertexinc:o-series:tps:6:0:StreetAddress2": null,
+                  "urn:vertexinc:o-series:tps:6:0:City": "Somerville",
+                  "urn:vertexinc:o-series:tps:6:0:MainDivision": "MA",
+                  "urn:vertexinc:o-series:tps:6:0:PostalCode": "02144",
+                  "urn:vertexinc:o-series:tps:6:0:Country": "USA"
+                }
+              },
+              "urn:vertexinc:o-series:tps:6:0:Customer": {
+                "urn:vertexinc:o-series:tps:6:0:CustomerCode": {
+                  "@classCode": "Retail Customer",
+                  "#text": "General"
+                },
+                "urn:vertexinc:o-series:tps:6:0:Destination": {
+                  "urn:vertexinc:o-series:tps:6:0:StreetAddress1": "2713 COUNTRYSIDE BLVD",
+                  "urn:vertexinc:o-series:tps:6:0:StreetAddress2": "Apt 105",
+                  "urn:vertexinc:o-series:tps:6:0:City": "Clearwater",
+                  "urn:vertexinc:o-series:tps:6:0:MainDivision": "FL",
+                  "urn:vertexinc:o-series:tps:6:0:PostalCode": "33761",
+                  "urn:vertexinc:o-series:tps:6:0:Country": "USA"
+                }
+              },
+              "urn:vertexinc:o-series:tps:6:0:Product": {
+                "@productClass": "Refund Adjustments",
+                "#text": "adjustment-negative"
+              },
+              "urn:vertexinc:o-series:tps:6:0:Quantity": "1",
+              "urn:vertexinc:o-series:tps:6:0:UnitPrice": "0.0000",
+              "urn:vertexinc:o-series:tps:6:0:ExtendedPrice": "0.0000"
+            },
+            {
+              "@lineItemNumber": "5",
+              "@locationCode": "hq",
+              "@lineItemId": "4",
+              "urn:vertexinc:o-series:tps:6:0:Seller": {
+                "urn:vertexinc:o-series:tps:6:0:Company": "grommet",
+                "urn:vertexinc:o-series:tps:6:0:PhysicalOrigin": {
+                  "urn:vertexinc:o-series:tps:6:0:StreetAddress1": "87 Elmwood St",
+                  "urn:vertexinc:o-series:tps:6:0:StreetAddress2": null,
+                  "urn:vertexinc:o-series:tps:6:0:City": "Somerville",
+                  "urn:vertexinc:o-series:tps:6:0:MainDivision": "MA",
+                  "urn:vertexinc:o-series:tps:6:0:PostalCode": "02144",
+                  "urn:vertexinc:o-series:tps:6:0:Country": "USA"
+                }
+              },
+              "urn:vertexinc:o-series:tps:6:0:Customer": {
+                "urn:vertexinc:o-series:tps:6:0:CustomerCode": {
+                  "@classCode": "Retail Customer",
+                  "#text": "General"
+                },
+                "urn:vertexinc:o-series:tps:6:0:Destination": {
+                  "urn:vertexinc:o-series:tps:6:0:StreetAddress1": "2713 COUNTRYSIDE BLVD",
+                  "urn:vertexinc:o-series:tps:6:0:StreetAddress2": "Apt 105",
+                  "urn:vertexinc:o-series:tps:6:0:City": "Clearwater",
+                  "urn:vertexinc:o-series:tps:6:0:MainDivision": "FL",
+                  "urn:vertexinc:o-series:tps:6:0:PostalCode": "33761",
+                  "urn:vertexinc:o-series:tps:6:0:Country": "USA"
+                }
+              },
+              "urn:vertexinc:o-series:tps:6:0:Product": {
+                "@productClass": "Order Gift Wrapping",
+                "#text": "order-gift-wrapping"
+              },
+              "urn:vertexinc:o-series:tps:6:0:Quantity": "1",
+              "urn:vertexinc:o-series:tps:6:0:UnitPrice": "0",
+              "urn:vertexinc:o-series:tps:6:0:ExtendedPrice": "0"
+            },
+            {
+              "@lineItemNumber": "6",
+              "@locationCode": "hq",
+              "@lineItemId": "5",
+              "urn:vertexinc:o-series:tps:6:0:Seller": {
+                "urn:vertexinc:o-series:tps:6:0:Company": "grommet",
+                "urn:vertexinc:o-series:tps:6:0:PhysicalOrigin": {
+                  "urn:vertexinc:o-series:tps:6:0:StreetAddress1": "87 Elmwood St",
+                  "urn:vertexinc:o-series:tps:6:0:StreetAddress2": null,
+                  "urn:vertexinc:o-series:tps:6:0:City": "Somerville",
+                  "urn:vertexinc:o-series:tps:6:0:MainDivision": "MA",
+                  "urn:vertexinc:o-series:tps:6:0:PostalCode": "02144",
+                  "urn:vertexinc:o-series:tps:6:0:Country": "USA"
+                }
+              },
+              "urn:vertexinc:o-series:tps:6:0:Customer": {
+                "urn:vertexinc:o-series:tps:6:0:CustomerCode": {
+                  "@classCode": "Retail Customer",
+                  "#text": "General"
+                },
+                "urn:vertexinc:o-series:tps:6:0:Destination": {
+                  "urn:vertexinc:o-series:tps:6:0:StreetAddress1": "2713 COUNTRYSIDE BLVD",
+                  "urn:vertexinc:o-series:tps:6:0:StreetAddress2": "Apt 105",
+                  "urn:vertexinc:o-series:tps:6:0:City": "Clearwater",
+                  "urn:vertexinc:o-series:tps:6:0:MainDivision": "FL",
+                  "urn:vertexinc:o-series:tps:6:0:PostalCode": "33761",
+                  "urn:vertexinc:o-series:tps:6:0:Country": "USA"
+                }
+              },
+              "urn:vertexinc:o-series:tps:6:0:Product": {
+                "@productClass": "Gift Certificates",
+                "#text": "printed-giftcard"
+              },
+              "urn:vertexinc:o-series:tps:6:0:Quantity": "1",
+              "urn:vertexinc:o-series:tps:6:0:UnitPrice": "0",
+              "urn:vertexinc:o-series:tps:6:0:ExtendedPrice": "0"
+            }
+          ]
+        }
+      }
+    }
+  }
+}

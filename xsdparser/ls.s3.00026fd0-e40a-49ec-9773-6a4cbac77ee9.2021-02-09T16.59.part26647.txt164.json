@@ -1,0 +1,231 @@
+{
+  "http://schemas.xmlsoap.org/soap/envelope/:Envelope": {
+    "http://schemas.xmlsoap.org/soap/envelope/:Header": null,
+    "http://schemas.xmlsoap.org/soap/envelope/:Body": {
+      "x:VertexEnvelope": {
+        "x:Login": {
+          "x:TrustedId": "0939980848291182"
+        },
+        "x:QuotationRequest": {
+          "@documentDate": "2021-02-02",
+          "@documentNumber": "1212893",
+          "@postingDate": "2021-02-09",
+          "@transactionType": "SALE",
+          "@xmlns": {
+            "SOAP-ENV": "http://schemas.xmlsoap.org/soap/envelope/",
+            "ns2": "urn:vertexinc:o-series:tps:7:0"
+          },
+          "x:Seller": {
+            "x:Company": "PREMPACK"
+          },
+          "x:LineItem": [
+            {
+              "@deliveryTerm": "DDP",
+              "@lineItemNumber": "1",
+              "x:Seller": {
+                "x:PhysicalOrigin": {
+                  "x:StreetAddress1": "8004 S. 198TH ST",
+                  "x:City": "KENT",
+                  "x:MainDivision": "WA",
+                  "x:PostalCode": "98032",
+                  "x:Country": "US"
+                }
+              },
+              "x:Customer": {
+                "x:CustomerCode": {
+                  "@classCode": "CFTNW",
+                  "#text": "AZGSWA"
+                },
+                "x:Destination": {
+                  "x:StreetAddress1": "11710 118TH AVE NE BLDG B",
+                  "x:City": "KIRKLAND",
+                  "x:MainDivision": "WA",
+                  "x:PostalCode": "98034",
+                  "x:Country": "USA"
+                }
+              },
+              "x:Product": {
+                "@productClass": "VTX04-00353",
+                "#text": "48 121711EGGWA"
+              },
+              "x:Quantity": "3200.0",
+              "x:UnitPrice": "0.2512",
+              "x:FlexibleFields": {
+                "x:FlexibleCodeField": [
+                  {
+                    "@fieldId": "1",
+                    "#text": "1282478"
+                  },
+                  {
+                    "@fieldId": "2",
+                    "#text": "205839"
+                  },
+                  {
+                    "@fieldId": "3"
+                  },
+                  {
+                    "@fieldId": "4"
+                  },
+                  {
+                    "@fieldId": "5"
+                  },
+                  {
+                    "@fieldId": "6"
+                  },
+                  {
+                    "@fieldId": "8",
+                    "#text": "INVLINE"
+                  },
+                  {
+                    "@fieldId": "9",
+                    "#text": "202102086359105524974"
+                  },
+                  {
+                    "@fieldId": "10",
+                    "#text": "EXEMPT"
+                  }
+                ]
+              }
+            },
+            {
+              "@deliveryTerm": "DDP",
+              "@lineItemNumber": "2",
+              "x:Seller": {
+                "x:PhysicalOrigin": {
+                  "x:StreetAddress1": "8004 S. 198TH ST",
+                  "x:City": "KENT",
+                  "x:MainDivision": "WA",
+                  "x:PostalCode": "98032",
+                  "x:Country": "US"
+                }
+              },
+              "x:Customer": {
+                "x:CustomerCode": {
+                  "@classCode": "CFTNW",
+                  "#text": "AZGSWA"
+                },
+                "x:Destination": {
+                  "x:StreetAddress1": "11710 118TH AVE NE BLDG B",
+                  "x:City": "KIRKLAND",
+                  "x:MainDivision": "WA",
+                  "x:PostalCode": "98034",
+                  "x:Country": "USA"
+                }
+              },
+              "x:Product": {
+                "@productClass": "VTX04-00353",
+                "#text": "48 1524PBQSR5WA"
+              },
+              "x:Quantity": "33000.0",
+              "x:UnitPrice": "0.0252",
+              "x:FlexibleFields": {
+                "x:FlexibleCodeField": [
+                  {
+                    "@fieldId": "1",
+                    "#text": "1282478"
+                  },
+                  {
+                    "@fieldId": "2",
+                    "#text": "205839"
+                  },
+                  {
+                    "@fieldId": "3"
+                  },
+                  {
+                    "@fieldId": "4"
+                  },
+                  {
+                    "@fieldId": "5"
+                  },
+                  {
+                    "@fieldId": "6"
+                  },
+                  {
+                    "@fieldId": "8",
+                    "#text": "INVLINE"
+                  },
+                  {
+                    "@fieldId": "9",
+                    "#text": "202102086359205524978"
+                  },
+                  {
+                    "@fieldId": "10",
+                    "#text": "EXEMPT"
+                  }
+                ]
+              }
+            },
+            {
+              "@deliveryTerm": "DDP",
+              "@lineItemNumber": "3",
+              "x:Seller": {
+                "x:PhysicalOrigin": {
+                  "x:StreetAddress1": "8004 S. 198TH ST",
+                  "x:City": "KENT",
+                  "x:MainDivision": "WA",
+                  "x:PostalCode": "98032",
+                  "x:Country": "US"
+                }
+              },
+              "x:Customer": {
+                "x:CustomerCode": {
+                  "@classCode": "CFTNW",
+                  "#text": "AZGSWA"
+                },
+                "x:Destination": {
+                  "x:StreetAddress1": "11710 118TH AVE NE BLDG B",
+                  "x:City": "KIRKLAND",
+                  "x:MainDivision": "WA",
+                  "x:PostalCode": "98034",
+                  "x:Country": "USA"
+                }
+              },
+              "x:Product": {
+                "@productClass": "VTX04-00353",
+                "#text": "48 REDMESH4SWA"
+              },
+              "x:Quantity": "4000.0",
+              "x:UnitPrice": "0.0499",
+              "x:FlexibleFields": {
+                "x:FlexibleCodeField": [
+                  {
+                    "@fieldId": "1",
+                    "#text": "1282478"
+                  },
+                  {
+                    "@fieldId": "2",
+                    "#text": "205839"
+                  },
+                  {
+                    "@fieldId": "3"
+                  },
+                  {
+                    "@fieldId": "4"
+                  },
+                  {
+                    "@fieldId": "5"
+                  },
+                  {
+                    "@fieldId": "6"
+                  },
+                  {
+                    "@fieldId": "8",
+                    "#text": "INVLINE"
+                  },
+                  {
+                    "@fieldId": "9",
+                    "#text": "202102086359305524982"
+                  },
+                  {
+                    "@fieldId": "10",
+                    "#text": "EXEMPT"
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      }
+    }
+  }
+}

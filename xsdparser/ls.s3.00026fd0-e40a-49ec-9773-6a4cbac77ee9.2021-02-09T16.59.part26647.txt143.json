@@ -1,0 +1,72 @@
+{
+  "http://schemas.xmlsoap.org/soap/envelope/:Envelope": {
+    "http://schemas.xmlsoap.org/soap/envelope/:Body": {
+      "x:VertexEnvelope": {
+        "x:Login": {
+          "x:TrustedId": "7649555430638576"
+        },
+        "x:QuotationRequest": {
+          "@documentDate": "2021-02-09 21:59",
+          "@documentNumber": "R367195",
+          "@transactionType": "SALE",
+          "@xmlns": {
+            "ns2": "http://schemas.xmlsoap.org/soap/envelope/",
+            "": "urn:vertexinc:o-series:tps:7:0"
+          },
+          "x:Currency": {
+            "@isoCurrencyCodeAlpha": "USD"
+          },
+          "x:Seller": {
+            "x:Company": "1000",
+            "x:Division": "michaels-us",
+            "x:AdministrativeOrigin": {
+              "x:City": "Irving",
+              "x:MainDivision": "Texas",
+              "x:PostalCode": "75063",
+              "x:Country": "US"
+            }
+          },
+          "x:LineItem": {
+            "@lineItemId": "49",
+            "@taxDate": "2021-01-11 00:00",
+            "@taxIncludedIndicator": "false",
+            "x:Seller": {
+              "x:PhysicalOrigin": {
+                "x:City": "Fort Worth",
+                "x:MainDivision": "TX",
+                "x:PostalCode": "76177",
+                "x:Country": "US"
+              }
+            },
+            "x:Customer": {
+              "x:Destination": {
+                "x:StreetAddress1": "724 Otis Pl NW",
+                "x:City": "Washington",
+                "x:MainDivision": "DC",
+                "x:PostalCode": "20010-1704",
+                "x:Country": "US"
+              },
+              "x:ExemptionCertificate": null
+            },
+            "x:Product": {
+              "@productClass": "100",
+              "#text": "10649373"
+            },
+            "x:Quantity": {
+              "@unitOfMeasure": "EA",
+              "#text": "1.0"
+            },
+            "x:UnitPrice": "-13.99",
+            "x:ExtendedPrice": "-13.990",
+            "x:FlexibleFields": {
+              "x:FlexibleDateField": {
+                "@fieldId": "1",
+                "#text": "2021-01-11 00:53"
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,103 @@
+{
+  "http://schemas.xmlsoap.org/soap/envelope/:Envelope": {
+    "http://schemas.xmlsoap.org/soap/envelope/:Header": null,
+    "http://schemas.xmlsoap.org/soap/envelope/:Body": {
+      "urn:vertexinc:o-series:tps:6:0:VertexEnvelope": {
+        "Login": {
+          "TrustedId": "2887267389996541"
+        },
+        "QuotationRequest": {
+          "@documentNumber": "PND10999998",
+          "@documentDate": "2021-02-09T17:17:46+00:00",
+          "@postingDate": "2021-02-09",
+          "@transactionType": "SALE",
+          "@xmlns": {
+            "SOAP-ENV": "http://schemas.xmlsoap.org/soap/envelope/",
+            "vtx": "urn:vertexinc:o-series:tps:6:0"
+          },
+          "Currency": {
+            "@isoCurrencyCodeAlpha": "USD",
+            "@isoCurrencyName": "USD"
+          },
+          "Seller": {
+            "Company": "USE",
+            "AdministrativeOrigin": {
+              "StreetAddress1": "250 W Pratt St",
+              "City": "Baltimore",
+              "MainDivision": "MD",
+              "PostalCode": "21201",
+              "Country": "US"
+            }
+          },
+          "Customer": {
+            "CustomerCode": "PNDCUS05144908",
+            "Destination": {
+              "StreetAddress1": "13142 kiso ct",
+              "StreetAddress2": null,
+              "City": "eastvale",
+              "MainDivision": "CA",
+              "PostalCode": "92880",
+              "Country": "US"
+            }
+          },
+          "LineItem": [
+            {
+              "@lineItemId": "SHIPPING202102091724031198447054",
+              "@lineItemNumber": "0",
+              "Product": {
+                "@productClass": "SHIP"
+              },
+              "ExtendedPrice": "16.95",
+              "Seller": {
+                "PhysicalOrigin": {
+                  "StreetAddress1": "9250 N Royal Lane",
+                  "StreetAddress2": null,
+                  "City": "Irving",
+                  "MainDivision": "TX",
+                  "PostalCode": "75063",
+                  "Country": "US"
+                }
+              }
+            },
+            {
+              "@lineItemId": "202102091724031198447057",
+              "@lineItemNumber": "1",
+              "Product": {
+                "@productClass": "",
+                "#text": "198696C00-58"
+              },
+              "Quantity": {
+                "@unitOfMeasure": "EA",
+                "#text": "2.00"
+              },
+              "ExtendedPrice": "81.0",
+              "Customer": {
+                "Destination": {
+                  "StreetAddress1": "13142 kiso ct",
+                  "StreetAddress2": null,
+                  "City": "eastvale",
+                  "MainDivision": "CA",
+                  "PostalCode": "92880",
+                  "Country": "US"
+                }
+              },
+              "Seller": {
+                "PhysicalOrigin": {
+                  "StreetAddress1": "9250 N Royal Lane",
+                  "StreetAddress2": null,
+                  "City": "Irving",
+                  "MainDivision": "TX",
+                  "PostalCode": "75063",
+                  "Country": "US"
+                }
+              }
+            }
+          ]
+        },
+        "ApplicationData": {
+          "Sender": "OMS"
+        }
+      }
+    }
+  }
+}

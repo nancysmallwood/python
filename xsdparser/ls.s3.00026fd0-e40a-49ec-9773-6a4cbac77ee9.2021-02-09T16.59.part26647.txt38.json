@@ -1,0 +1,110 @@
+{
+  "http://schemas.xmlsoap.org/soap/envelope/:Envelope": {
+    "http://schemas.xmlsoap.org/soap/envelope/:Header": null,
+    "http://schemas.xmlsoap.org/soap/envelope/:Body": {
+      "x:VertexEnvelope": {
+        "x:Login": {
+          "x:TrustedId": "7703947169151051"
+        },
+        "x:QuotationRequest": {
+          "@documentDate": "2021-2-9",
+          "@documentNumber": "150234665",
+          "@transactionId": "",
+          "@postingDate": "2021-2-9",
+          "@postToJournal": "false",
+          "@transactionType": "SALE",
+          "@returnAssistedParametersIndicator": "true",
+          "@xmlns": {
+            "soapenv": "http://schemas.xmlsoap.org/soap/envelope/",
+            "urn": "urn:vertexinc:o-series:tps:7:0",
+            "": "urn:vertexinc:o-series:tps:7:0",
+            "xsi": "http://www.w3.org/2001/XMLSchema-instance"
+          },
+          "x:LineItem": [
+            {
+              "@lineItemNumber": "1",
+              "@lineItemId": "item|1",
+              "@locationCode": "3PL Warehouse",
+              "x:Seller": {
+                "x:Company": "100",
+                "x:AdministrativeOrigin": {
+                  "x:StreetAddress1": "224 Datura St Ste 101",
+                  "x:City": "West Palm Beach",
+                  "x:MainDivision": "FL",
+                  "x:PostalCode": "33401-5649",
+                  "x:Country": "USA"
+                }
+              },
+              "x:Customer": {
+                "x:CustomerCode": null,
+                "x:Destination": {
+                  "x:StreetAddress1": "607 S 8th St.",
+                  "x:City": "Onida",
+                  "x:MainDivision": "SD",
+                  "x:PostalCode": "57564",
+                  "x:Country": "USA"
+                },
+                "x:AdministrativeDestination": {
+                  "x:StreetAddress1": "607 S 8th St.",
+                  "x:City": "Onida",
+                  "x:MainDivision": "SD",
+                  "x:PostalCode": "57564",
+                  "x:Country": "USA"
+                }
+              },
+              "x:Product": "WUS460061",
+              "x:Quantity": "1",
+              "x:ExtendedPrice": "26.99",
+              "x:DiscountAmount": "0",
+              "x:FlexibleFields": null
+            },
+            {
+              "@lineItemNumber": "1",
+              "@lineItemId": "FREIGHT|1",
+              "@locationCode": "3PL Warehouse",
+              "x:Seller": {
+                "x:Company": "100",
+                "x:PhysicalOrigin": {
+                  "x:StreetAddress1": null,
+                  "x:City": null,
+                  "x:MainDivision": null,
+                  "x:PostalCode": null,
+                  "x:Country": "USA"
+                },
+                "x:AdministrativeOrigin": {
+                  "x:StreetAddress1": "224 Datura St Ste 101",
+                  "x:City": "West Palm Beach",
+                  "x:MainDivision": "FL",
+                  "x:PostalCode": "33401-5649",
+                  "x:Country": "USA"
+                }
+              },
+              "x:Customer": {
+                "x:CustomerCode": null,
+                "x:Destination": {
+                  "x:StreetAddress1": "607 S 8th St.",
+                  "x:City": "Onida",
+                  "x:MainDivision": "SD",
+                  "x:PostalCode": "57564",
+                  "x:Country": "USA"
+                },
+                "x:AdministrativeDestination": {
+                  "x:StreetAddress1": "607 S 8th St.",
+                  "x:City": "Onida",
+                  "x:MainDivision": "SD",
+                  "x:PostalCode": "57564",
+                  "x:Country": "USA"
+                }
+              },
+              "x:Product": {
+                "@productClass": "Freight",
+                "#text": "Flat Rate"
+              },
+              "x:ExtendedPrice": "5"
+            }
+          ]
+        }
+      }
+    }
+  }
+}

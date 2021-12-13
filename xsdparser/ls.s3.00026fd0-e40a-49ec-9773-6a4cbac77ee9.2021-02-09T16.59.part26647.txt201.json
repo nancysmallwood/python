@@ -1,0 +1,91 @@
+{
+  "http://schemas.xmlsoap.org/soap/envelope/:Envelope": {
+    "http://schemas.xmlsoap.org/soap/envelope/:Body": {
+      "x:VertexEnvelope": {
+        "x:Login": {
+          "x:TrustedId": "5124736437179285"
+        },
+        "x:QuotationRequest": {
+          "@documentNumber": "1c9aaf743fccf0645e7bb10bb2",
+          "@deliveryTerm": "DDP",
+          "@documentDate": "2021-02-09Z",
+          "@transactionId": "1c9aaf743fccf0645e7bb10bb2",
+          "@transactionType": "SALE",
+          "@xmlns": {
+            "soap": "http://schemas.xmlsoap.org/soap/envelope/",
+            "": "urn:vertexinc:o-series:tps:7:0"
+          },
+          "x:Seller": {
+            "x:Company": "PopSockets Live",
+            "x:PhysicalOrigin": {
+              "x:StreetAddress1": "921 W Artesia Blvd",
+              "x:City": "Compton",
+              "x:MainDivision": "CA",
+              "x:PostalCode": "90220",
+              "x:Country": "US"
+            },
+            "x:AdministrativeOrigin": {
+              "x:StreetAddress1": "5757 Central Ave",
+              "x:City": "Boulder",
+              "x:MainDivision": "CO",
+              "x:PostalCode": "80301",
+              "x:Country": "US"
+            }
+          },
+          "x:Customer": {
+            "x:Destination": {
+              "x:StreetAddress1": "2092 Fullwood Dr",
+              "x:City": "Brownsburg",
+              "x:MainDivision": "IN",
+              "x:PostalCode": "46112-8080",
+              "x:Country": "US"
+            }
+          },
+          "x:LineItem": [
+            {
+              "@lineItemNumber": "1",
+              "@deliveryTerm": "DDP",
+              "@projectNumber": "me",
+              "@lineItemId": "PRODUCT??805285",
+              "x:Product": {
+                "@productClass": "TPP",
+                "#text": "805285"
+              },
+              "x:Quantity": "1.0",
+              "x:FairMarketValue": "59.95",
+              "x:ExtendedPrice": "59.95",
+              "x:Discount": {
+                "x:Amount": "0.00"
+              },
+              "x:FlexibleFields": {
+                "x:FlexibleCodeField": {
+                  "@fieldId": "1",
+                  "#text": "Not VAT Inclusive"
+                }
+              }
+            },
+            {
+              "@lineItemNumber": "1",
+              "@deliveryTerm": "DDP",
+              "@projectNumber": "me",
+              "@lineItemId": "SHIPPING??STANDARD_SHIPPING",
+              "x:Product": "USPS-Ground",
+              "x:Quantity": "1.0",
+              "x:FairMarketValue": "3.99",
+              "x:ExtendedPrice": "0.00",
+              "x:Discount": {
+                "x:Amount": "3.99"
+              },
+              "x:FlexibleFields": {
+                "x:FlexibleCodeField": {
+                  "@fieldId": "1",
+                  "#text": "Not VAT Inclusive"
+                }
+              }
+            }
+          ]
+        }
+      }
+    }
+  }
+}

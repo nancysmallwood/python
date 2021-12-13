@@ -1,0 +1,329 @@
+{
+  "http://schemas.xmlsoap.org/soap/envelope/:Envelope": {
+    "http://schemas.xmlsoap.org/soap/envelope/:Header": null,
+    "http://schemas.xmlsoap.org/soap/envelope/:Body": {
+      "x:VertexEnvelope": {
+        "x:Login": {
+          "x:TrustedId": "8105174526942882"
+        },
+        "x:QuotationRequest": {
+          "@documentDate": "2021-02-02",
+          "@documentNumber": "W01005736982012",
+          "@transactionType": "SALE",
+          "@xmlns": {
+            "SOAP-ENV": "http://schemas.xmlsoap.org/soap/envelope/",
+            "ns2": "urn:vertexinc:o-series:tps:7:0"
+          },
+          "x:LineItem": [
+            {
+              "@lineItemId": "240321339_ITM",
+              "@lineItemNumber": "240321339",
+              "x:Seller": {
+                "x:Company": "81",
+                "x:PhysicalOrigin": {
+                  "@taxAreaId": "360412760"
+                }
+              },
+              "x:Customer": {
+                "@isTaxExempt": "false",
+                "x:Destination": {
+                  "x:StreetAddress1": "214 S Barrett St",
+                  "x:City": "Niles",
+                  "x:MainDivision": "MI",
+                  "x:PostalCode": "49120-3149",
+                  "x:Country": "USA"
+                }
+              },
+              "x:Product": {
+                "@productClass": "01",
+                "#text": "214891"
+              },
+              "x:Quantity": "2.0",
+              "x:ExtendedPrice": "49.98",
+              "x:FlexibleFields": {
+                "x:FlexibleCodeField": [
+                  {
+                    "@fieldId": "1",
+                    "#text": "Original"
+                  },
+                  {
+                    "@fieldId": "2",
+                    "#text": "WEB"
+                  },
+                  {
+                    "@fieldId": "8",
+                    "#text": "214891"
+                  },
+                  {
+                    "@fieldId": "9",
+                    "#text": "1012"
+                  },
+                  {
+                    "@fieldId": "11",
+                    "#text": "GPT"
+                  },
+                  {
+                    "@fieldId": "15",
+                    "#text": "MI"
+                  },
+                  {
+                    "@fieldId": "20",
+                    "#text": "Kristin Pinter"
+                  },
+                  {
+                    "@fieldId": "21"
+                  },
+                  {
+                    "@fieldId": "22",
+                    "#text": "Niles"
+                  },
+                  {
+                    "@fieldId": "23",
+                    "#text": "MI"
+                  },
+                  {
+                    "@fieldId": "3",
+                    "#text": "01"
+                  }
+                ],
+                "x:FlexibleNumericField": {
+                  "@fieldId": "3",
+                  "#text": "1.0"
+                }
+              }
+            },
+            {
+              "@lineItemId": "240321339_FRT",
+              "@lineItemNumber": "240321339",
+              "x:Seller": {
+                "x:Company": "81",
+                "x:PhysicalOrigin": {
+                  "@taxAreaId": "360412760"
+                }
+              },
+              "x:Customer": {
+                "@isTaxExempt": "false",
+                "x:Destination": {
+                  "x:StreetAddress1": "214 S Barrett St",
+                  "x:City": "Niles",
+                  "x:MainDivision": "MI",
+                  "x:PostalCode": "49120-3149",
+                  "x:Country": "USA"
+                }
+              },
+              "x:Product": {
+                "@productClass": "01",
+                "#text": "FRT"
+              },
+              "x:ExtendedPrice": "12.99",
+              "x:FlexibleFields": {
+                "x:FlexibleCodeField": [
+                  {
+                    "@fieldId": "1",
+                    "#text": "Original"
+                  },
+                  {
+                    "@fieldId": "2",
+                    "#text": "WEB"
+                  },
+                  {
+                    "@fieldId": "8",
+                    "#text": "214891"
+                  },
+                  {
+                    "@fieldId": "9",
+                    "#text": "1012"
+                  },
+                  {
+                    "@fieldId": "11",
+                    "#text": "GPT"
+                  },
+                  {
+                    "@fieldId": "15",
+                    "#text": "MI"
+                  },
+                  {
+                    "@fieldId": "20",
+                    "#text": "Kristin Pinter"
+                  },
+                  {
+                    "@fieldId": "21"
+                  },
+                  {
+                    "@fieldId": "22",
+                    "#text": "Niles"
+                  },
+                  {
+                    "@fieldId": "23",
+                    "#text": "MI"
+                  },
+                  {
+                    "@fieldId": "3",
+                    "#text": "01"
+                  }
+                ],
+                "x:FlexibleNumericField": {
+                  "@fieldId": "3",
+                  "#text": "1.0"
+                }
+              }
+            },
+            {
+              "@lineItemId": "279118983_ITM",
+              "@lineItemNumber": "279118983",
+              "x:Seller": {
+                "x:Company": "81",
+                "x:PhysicalOrigin": {
+                  "@taxAreaId": "360412760"
+                }
+              },
+              "x:Customer": {
+                "@isTaxExempt": "false",
+                "x:Destination": {
+                  "x:StreetAddress1": "4316 Preston Arch",
+                  "x:City": "Chesapeake",
+                  "x:MainDivision": "VA",
+                  "x:PostalCode": "23321-6005",
+                  "x:Country": "USA"
+                }
+              },
+              "x:Product": {
+                "@productClass": "01",
+                "#text": "214891"
+              },
+              "x:Quantity": "1.0",
+              "x:ExtendedPrice": "49.98",
+              "x:FlexibleFields": {
+                "x:FlexibleCodeField": [
+                  {
+                    "@fieldId": "1",
+                    "#text": "Original"
+                  },
+                  {
+                    "@fieldId": "2",
+                    "#text": "WEB"
+                  },
+                  {
+                    "@fieldId": "8",
+                    "#text": "214891"
+                  },
+                  {
+                    "@fieldId": "9",
+                    "#text": "1012"
+                  },
+                  {
+                    "@fieldId": "11",
+                    "#text": "GPT"
+                  },
+                  {
+                    "@fieldId": "15",
+                    "#text": "VA"
+                  },
+                  {
+                    "@fieldId": "20",
+                    "#text": "Natalie Ollinger"
+                  },
+                  {
+                    "@fieldId": "21"
+                  },
+                  {
+                    "@fieldId": "22",
+                    "#text": "Chesapeake"
+                  },
+                  {
+                    "@fieldId": "23",
+                    "#text": "VA"
+                  },
+                  {
+                    "@fieldId": "3",
+                    "#text": "01"
+                  }
+                ],
+                "x:FlexibleNumericField": {
+                  "@fieldId": "3",
+                  "#text": "2.0"
+                }
+              }
+            },
+            {
+              "@lineItemId": "279118983_FRT",
+              "@lineItemNumber": "279118983",
+              "x:Seller": {
+                "x:Company": "81",
+                "x:PhysicalOrigin": {
+                  "@taxAreaId": "360412760"
+                }
+              },
+              "x:Customer": {
+                "@isTaxExempt": "false",
+                "x:Destination": {
+                  "x:StreetAddress1": "4316 Preston Arch",
+                  "x:City": "Chesapeake",
+                  "x:MainDivision": "VA",
+                  "x:PostalCode": "23321-6005",
+                  "x:Country": "USA"
+                }
+              },
+              "x:Product": {
+                "@productClass": "01",
+                "#text": "FRT"
+              },
+              "x:ExtendedPrice": "9.99",
+              "x:FlexibleFields": {
+                "x:FlexibleCodeField": [
+                  {
+                    "@fieldId": "1",
+                    "#text": "Original"
+                  },
+                  {
+                    "@fieldId": "2",
+                    "#text": "WEB"
+                  },
+                  {
+                    "@fieldId": "8",
+                    "#text": "214891"
+                  },
+                  {
+                    "@fieldId": "9",
+                    "#text": "1012"
+                  },
+                  {
+                    "@fieldId": "11",
+                    "#text": "GPT"
+                  },
+                  {
+                    "@fieldId": "15",
+                    "#text": "VA"
+                  },
+                  {
+                    "@fieldId": "20",
+                    "#text": "Natalie Ollinger"
+                  },
+                  {
+                    "@fieldId": "21"
+                  },
+                  {
+                    "@fieldId": "22",
+                    "#text": "Chesapeake"
+                  },
+                  {
+                    "@fieldId": "23",
+                    "#text": "VA"
+                  },
+                  {
+                    "@fieldId": "3",
+                    "#text": "01"
+                  }
+                ],
+                "x:FlexibleNumericField": {
+                  "@fieldId": "3",
+                  "#text": "2.0"
+                }
+              }
+            }
+          ]
+        }
+      }
+    }
+  }
+}

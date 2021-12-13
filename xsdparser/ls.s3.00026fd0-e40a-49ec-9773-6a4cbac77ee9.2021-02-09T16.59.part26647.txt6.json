@@ -1,0 +1,255 @@
+{
+  "http://schemas.xmlsoap.org/soap/envelope/:Envelope": {
+    "http://schemas.xmlsoap.org/soap/envelope/:Body": {
+      "x:VertexEnvelope": {
+        "x:Login": {
+          "x:UserName": null,
+          "x:TrustedId": "2776081307334352"
+        },
+        "x:QuotationRequest": {
+          "@transactionType": "SALE",
+          "@documentDate": "2021-02-09",
+          "@locationCode": "079",
+          "@documentNumber": "079-079-01-38753",
+          "@xmlns": {
+            "s": "http://schemas.xmlsoap.org/soap/envelope/",
+            "xsi": "http://www.w3.org/2001/XMLSchema-instance",
+            "xsd": "http://www.w3.org/2001/XMLSchema",
+            "": "urn:vertexinc:o-series:tps:7:0"
+          },
+          "x:Currency": {
+            "@isoCurrencyCodeAlpha": "USD"
+          },
+          "x:Seller": {
+            "x:Company": "BGHT",
+            "x:PhysicalOrigin": {
+              "x:StreetAddress1": "3137 Dixie Highway",
+              "x:City": "Erlanger",
+              "x:MainDivision": "KY",
+              "x:PostalCode": "41018",
+              "x:Country": "USA"
+            },
+            "x:AdministrativeOrigin": {
+              "x:StreetAddress1": "3137 Dixie Highway",
+              "x:City": "Erlanger",
+              "x:MainDivision": "KY",
+              "x:PostalCode": "41018",
+              "x:Country": "USA"
+            }
+          },
+          "x:Customer": {
+            "x:CustomerCode": {
+              "@classCode": "04 RETAIL",
+              "#text": "CUST-29118"
+            },
+            "x:Destination": {
+              "x:StreetAddress1": "3137 Dixie Highway",
+              "x:City": "Erlanger",
+              "x:MainDivision": "KY",
+              "x:PostalCode": "41018",
+              "x:Country": "USA"
+            }
+          },
+          "x:LineItem": [
+            {
+              "@lineItemId": "1.0",
+              "@lineItemNumber": "0",
+              "@locationCode": "079",
+              "x:Seller": {
+                "x:Company": "BGHT",
+                "x:PhysicalOrigin": {
+                  "x:StreetAddress1": "3137 Dixie Highway",
+                  "x:City": "Erlanger",
+                  "x:MainDivision": "KY",
+                  "x:PostalCode": "41018",
+                  "x:Country": "USA"
+                },
+                "x:AdministrativeOrigin": {
+                  "x:StreetAddress1": "3137 Dixie Highway",
+                  "x:City": "Erlanger",
+                  "x:MainDivision": "KY",
+                  "x:PostalCode": "41018",
+                  "x:Country": "USA"
+                }
+              },
+              "x:Customer": {
+                "x:CustomerCode": {
+                  "@classCode": "04 RETAIL",
+                  "#text": "CUST-29118"
+                },
+                "x:Destination": {
+                  "x:StreetAddress1": "3137 Dixie Highway",
+                  "x:City": "Erlanger",
+                  "x:MainDivision": "KY",
+                  "x:PostalCode": "41018",
+                  "x:Country": "USA"
+                }
+              },
+              "x:Product": {
+                "@productClass": "101011",
+                "#text": "0004782107"
+              },
+              "x:Quantity": {
+                "@unitOfMeasure": "Ea",
+                "#text": "1.00"
+              },
+              "x:ExtendedPrice": "1.00",
+              "x:Discount": {
+                "@userDefinedDiscountCode": "",
+                "x:DiscountAmount": "0"
+              },
+              "x:FlexibleFields": null
+            },
+            {
+              "@lineItemId": "2.0",
+              "@lineItemNumber": "0",
+              "@locationCode": "079",
+              "x:Seller": {
+                "x:Company": "BGHT",
+                "x:PhysicalOrigin": {
+                  "x:StreetAddress1": "3137 Dixie Highway",
+                  "x:City": "Erlanger",
+                  "x:MainDivision": "KY",
+                  "x:PostalCode": "41018",
+                  "x:Country": "USA"
+                },
+                "x:AdministrativeOrigin": {
+                  "x:StreetAddress1": "3137 Dixie Highway",
+                  "x:City": "Erlanger",
+                  "x:MainDivision": "KY",
+                  "x:PostalCode": "41018",
+                  "x:Country": "USA"
+                }
+              },
+              "x:Customer": {
+                "x:CustomerCode": {
+                  "@classCode": "04 RETAIL",
+                  "#text": "CUST-29118"
+                },
+                "x:Destination": {
+                  "x:StreetAddress1": "3137 Dixie Highway",
+                  "x:City": "Erlanger",
+                  "x:MainDivision": "KY",
+                  "x:PostalCode": "41018",
+                  "x:Country": "USA"
+                }
+              },
+              "x:Product": {
+                "@productClass": "101011",
+                "#text": "0004782107"
+              },
+              "x:Quantity": {
+                "@unitOfMeasure": "Ea",
+                "#text": "1.00"
+              },
+              "x:ExtendedPrice": "1.00",
+              "x:Discount": {
+                "@userDefinedDiscountCode": "",
+                "x:DiscountAmount": "0"
+              },
+              "x:FlexibleFields": null
+            },
+            {
+              "@lineItemId": "3.0",
+              "@lineItemNumber": "0",
+              "@locationCode": "079",
+              "x:Seller": {
+                "x:Company": "BGHT",
+                "x:PhysicalOrigin": {
+                  "x:StreetAddress1": "3137 Dixie Highway",
+                  "x:City": "Erlanger",
+                  "x:MainDivision": "KY",
+                  "x:PostalCode": "41018",
+                  "x:Country": "USA"
+                },
+                "x:AdministrativeOrigin": {
+                  "x:StreetAddress1": "3137 Dixie Highway",
+                  "x:City": "Erlanger",
+                  "x:MainDivision": "KY",
+                  "x:PostalCode": "41018",
+                  "x:Country": "USA"
+                }
+              },
+              "x:Customer": {
+                "x:CustomerCode": {
+                  "@classCode": "04 RETAIL",
+                  "#text": "CUST-29118"
+                },
+                "x:Destination": {
+                  "x:StreetAddress1": "3137 Dixie Highway",
+                  "x:City": "Erlanger",
+                  "x:MainDivision": "KY",
+                  "x:PostalCode": "41018",
+                  "x:Country": "USA"
+                }
+              },
+              "x:Product": {
+                "@productClass": "101011",
+                "#text": "0004782107"
+              },
+              "x:Quantity": {
+                "@unitOfMeasure": "Ea",
+                "#text": "1.00"
+              },
+              "x:ExtendedPrice": "1.00",
+              "x:Discount": {
+                "@userDefinedDiscountCode": "",
+                "x:DiscountAmount": "0"
+              },
+              "x:FlexibleFields": null
+            },
+            {
+              "@lineItemId": "4.0",
+              "@lineItemNumber": "0",
+              "@locationCode": "079",
+              "x:Seller": {
+                "x:Company": "BGHT",
+                "x:PhysicalOrigin": {
+                  "x:StreetAddress1": "3137 Dixie Highway",
+                  "x:City": "Erlanger",
+                  "x:MainDivision": "KY",
+                  "x:PostalCode": "41018",
+                  "x:Country": "USA"
+                },
+                "x:AdministrativeOrigin": {
+                  "x:StreetAddress1": "3137 Dixie Highway",
+                  "x:City": "Erlanger",
+                  "x:MainDivision": "KY",
+                  "x:PostalCode": "41018",
+                  "x:Country": "USA"
+                }
+              },
+              "x:Customer": {
+                "x:CustomerCode": {
+                  "@classCode": "04 RETAIL",
+                  "#text": "CUST-29118"
+                },
+                "x:Destination": {
+                  "x:StreetAddress1": "3137 Dixie Highway",
+                  "x:City": "Erlanger",
+                  "x:MainDivision": "KY",
+                  "x:PostalCode": "41018",
+                  "x:Country": "USA"
+                }
+              },
+              "x:Product": {
+                "@productClass": "101011",
+                "#text": "0004782107"
+              },
+              "x:Quantity": {
+                "@unitOfMeasure": "Ea",
+                "#text": "1.00"
+              },
+              "x:ExtendedPrice": "1.00",
+              "x:Discount": {
+                "@userDefinedDiscountCode": "",
+                "x:DiscountAmount": "0"
+              },
+              "x:FlexibleFields": null
+            }
+          ]
+        }
+      }
+    }
+  }
+}

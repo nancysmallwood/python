@@ -1,0 +1,362 @@
+{
+  "http://schemas.xmlsoap.org/soap/envelope/:Envelope": {
+    "http://schemas.xmlsoap.org/soap/envelope/:Header": null,
+    "http://schemas.xmlsoap.org/soap/envelope/:Body": {
+      "x:VertexEnvelope": {
+        "x:Login": {
+          "x:TrustedId": "1235769293676012"
+        },
+        "x:InvoiceRequest": {
+          "@documentDate": "2021-02-09",
+          "@documentNumber": "OMS-63162853",
+          "@transactionType": "SALE",
+          "@xmlns": {
+            "SOAP-ENV": "http://schemas.xmlsoap.org/soap/envelope/",
+            "ns2": "urn:vertexinc:o-series:tps:7:0"
+          },
+          "x:Currency": {
+            "@isoCurrencyCodeAlpha": "USD"
+          },
+          "x:LineItem": [
+            {
+              "@lineItemId": "4",
+              "@lineItemNumber": "1",
+              "@taxIncludedIndicator": "false",
+              "x:Seller": {
+                "x:Company": "1000",
+                "x:PhysicalOrigin": {
+                  "@locationCode": "1970"
+                },
+                "x:AdministrativeOrigin": {
+                  "@locationCode": "1970"
+                }
+              },
+              "x:Customer": {
+                "x:CustomerCode": "5247e9a7-4b89-4199-83fb-2b858361faaa",
+                "x:Destination": {
+                  "@locationCode": "1970"
+                }
+              },
+              "x:Product": {
+                "@productClass": "P0000000",
+                "#text": "5151918"
+              },
+              "x:Quantity": {
+                "@unitOfMeasure": "EA",
+                "#text": "1.0"
+              },
+              "x:ExtendedPrice": "3.79",
+              "x:Discount": {
+                "x:DiscountAmount": "0.0"
+              },
+              "x:FlexibleFields": {
+                "x:FlexibleCodeField": [
+                  {
+                    "@fieldId": "16",
+                    "#text": "Customer pickup"
+                  },
+                  {
+                    "@fieldId": "8",
+                    "#text": "Specialt"
+                  },
+                  {
+                    "@fieldId": "7",
+                    "#text": "097612240030"
+                  },
+                  {
+                    "@fieldId": "15",
+                    "#text": "1970"
+                  },
+                  {
+                    "@fieldId": "17",
+                    "#text": "60857617"
+                  }
+                ]
+              }
+            },
+            {
+              "@lineItemId": "5",
+              "@lineItemNumber": "2",
+              "@taxIncludedIndicator": "false",
+              "x:Seller": {
+                "x:Company": "1000",
+                "x:PhysicalOrigin": {
+                  "@locationCode": "1970"
+                },
+                "x:AdministrativeOrigin": {
+                  "@locationCode": "1970"
+                }
+              },
+              "x:Customer": {
+                "x:CustomerCode": "5247e9a7-4b89-4199-83fb-2b858361faaa",
+                "x:Destination": {
+                  "@locationCode": "1970"
+                }
+              },
+              "x:Product": {
+                "@productClass": "P0000000",
+                "#text": "5143265"
+              },
+              "x:Quantity": {
+                "@unitOfMeasure": "EA",
+                "#text": "1.0"
+              },
+              "x:ExtendedPrice": "2.29",
+              "x:Discount": {
+                "x:DiscountAmount": "0.0"
+              },
+              "x:FlexibleFields": {
+                "x:FlexibleCodeField": [
+                  {
+                    "@fieldId": "16",
+                    "#text": "Customer pickup"
+                  },
+                  {
+                    "@fieldId": "8",
+                    "#text": "Specialt"
+                  },
+                  {
+                    "@fieldId": "7",
+                    "#text": "737257200562"
+                  },
+                  {
+                    "@fieldId": "15",
+                    "#text": "1970"
+                  },
+                  {
+                    "@fieldId": "17",
+                    "#text": "60857617"
+                  }
+                ]
+              }
+            },
+            {
+              "@lineItemId": "1",
+              "@lineItemNumber": "3",
+              "@taxIncludedIndicator": "false",
+              "x:Seller": {
+                "x:Company": "1000",
+                "x:PhysicalOrigin": {
+                  "@locationCode": "1970"
+                },
+                "x:AdministrativeOrigin": {
+                  "@locationCode": "1970"
+                }
+              },
+              "x:Customer": {
+                "x:CustomerCode": "5247e9a7-4b89-4199-83fb-2b858361faaa",
+                "x:Destination": {
+                  "@locationCode": "1970"
+                }
+              },
+              "x:Product": {
+                "@productClass": "P0000000",
+                "#text": "2031208"
+              },
+              "x:Quantity": {
+                "@unitOfMeasure": "EA",
+                "#text": "1.0"
+              },
+              "x:ExtendedPrice": "3.99",
+              "x:Discount": {
+                "x:DiscountAmount": "0.0"
+              },
+              "x:FlexibleFields": {
+                "x:FlexibleCodeField": [
+                  {
+                    "@fieldId": "16",
+                    "#text": "Customer pickup"
+                  },
+                  {
+                    "@fieldId": "8",
+                    "#text": "Specialt"
+                  },
+                  {
+                    "@fieldId": "7",
+                    "#text": "046798162681"
+                  },
+                  {
+                    "@fieldId": "15",
+                    "#text": "1970"
+                  },
+                  {
+                    "@fieldId": "17",
+                    "#text": "60857617"
+                  }
+                ]
+              }
+            },
+            {
+              "@lineItemId": "3",
+              "@lineItemNumber": "4",
+              "@taxIncludedIndicator": "false",
+              "x:Seller": {
+                "x:Company": "1000",
+                "x:PhysicalOrigin": {
+                  "@locationCode": "1970"
+                },
+                "x:AdministrativeOrigin": {
+                  "@locationCode": "1970"
+                }
+              },
+              "x:Customer": {
+                "x:CustomerCode": "5247e9a7-4b89-4199-83fb-2b858361faaa",
+                "x:Destination": {
+                  "@locationCode": "1970"
+                }
+              },
+              "x:Product": {
+                "@productClass": "PP051195",
+                "#text": "5141667"
+              },
+              "x:Quantity": {
+                "@unitOfMeasure": "EA",
+                "#text": "1.0"
+              },
+              "x:ExtendedPrice": "2.29",
+              "x:Discount": {
+                "x:DiscountAmount": "0.0"
+              },
+              "x:FlexibleFields": {
+                "x:FlexibleCodeField": [
+                  {
+                    "@fieldId": "16",
+                    "#text": "Customer pickup"
+                  },
+                  {
+                    "@fieldId": "8",
+                    "#text": "Specialt"
+                  },
+                  {
+                    "@fieldId": "7",
+                    "#text": "015905060516"
+                  },
+                  {
+                    "@fieldId": "15",
+                    "#text": "1970"
+                  },
+                  {
+                    "@fieldId": "17",
+                    "#text": "60857617"
+                  }
+                ]
+              }
+            },
+            {
+              "@lineItemId": "6",
+              "@lineItemNumber": "5",
+              "@taxIncludedIndicator": "false",
+              "x:Seller": {
+                "x:Company": "1000",
+                "x:PhysicalOrigin": {
+                  "@locationCode": "1970"
+                },
+                "x:AdministrativeOrigin": {
+                  "@locationCode": "1970"
+                }
+              },
+              "x:Customer": {
+                "x:CustomerCode": "5247e9a7-4b89-4199-83fb-2b858361faaa",
+                "x:Destination": {
+                  "@locationCode": "1970"
+                }
+              },
+              "x:Product": {
+                "@productClass": "P0000000",
+                "#text": "1833511"
+              },
+              "x:Quantity": {
+                "@unitOfMeasure": "EA",
+                "#text": "2.0"
+              },
+              "x:ExtendedPrice": "7.98",
+              "x:Discount": {
+                "x:DiscountAmount": "0.0"
+              },
+              "x:FlexibleFields": {
+                "x:FlexibleCodeField": [
+                  {
+                    "@fieldId": "16",
+                    "#text": "Customer pickup"
+                  },
+                  {
+                    "@fieldId": "8",
+                    "#text": "Specialt"
+                  },
+                  {
+                    "@fieldId": "7",
+                    "#text": "737257178540"
+                  },
+                  {
+                    "@fieldId": "15",
+                    "#text": "1970"
+                  },
+                  {
+                    "@fieldId": "17",
+                    "#text": "60857617"
+                  }
+                ]
+              }
+            },
+            {
+              "@lineItemId": "2",
+              "@lineItemNumber": "6",
+              "@taxIncludedIndicator": "false",
+              "x:Seller": {
+                "x:Company": "1000",
+                "x:PhysicalOrigin": {
+                  "@locationCode": "1970"
+                },
+                "x:AdministrativeOrigin": {
+                  "@locationCode": "1970"
+                }
+              },
+              "x:Customer": {
+                "x:CustomerCode": "5247e9a7-4b89-4199-83fb-2b858361faaa",
+                "x:Destination": {
+                  "@locationCode": "1970"
+                }
+              },
+              "x:Product": {
+                "@productClass": "PP051195",
+                "#text": "5267298"
+              },
+              "x:Quantity": {
+                "@unitOfMeasure": "EA",
+                "#text": "1.0"
+              },
+              "x:ExtendedPrice": "3.37",
+              "x:Discount": {
+                "x:DiscountAmount": "0.0"
+              },
+              "x:FlexibleFields": {
+                "x:FlexibleCodeField": [
+                  {
+                    "@fieldId": "16",
+                    "#text": "Customer pickup"
+                  },
+                  {
+                    "@fieldId": "8",
+                    "#text": "Specialt"
+                  },
+                  {
+                    "@fieldId": "7",
+                    "#text": "737257742505"
+                  },
+                  {
+                    "@fieldId": "15",
+                    "#text": "1970"
+                  },
+                  {
+                    "@fieldId": "17",
+                    "#text": "60857617"
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      }
+    }
+  }
+}

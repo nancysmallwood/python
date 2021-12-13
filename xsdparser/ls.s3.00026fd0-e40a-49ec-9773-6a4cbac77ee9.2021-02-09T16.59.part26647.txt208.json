@@ -1,0 +1,97 @@
+{
+  "http://schemas.xmlsoap.org/soap/envelope/:Envelope": {
+    "http://schemas.xmlsoap.org/soap/envelope/:Body": {
+      "x:VertexEnvelope": {
+        "x:Login": {
+          "x:TrustedId": "7649555430638576"
+        },
+        "x:QuotationRequest": {
+          "@documentNumber": "Micls",
+          "@returnAssistedParametersIndicator": "true",
+          "@documentDate": "2021-02-09-06:00",
+          "@transactionType": "SALE",
+          "@xmlns": {
+            "soap": "http://schemas.xmlsoap.org/soap/envelope/",
+            "": "urn:vertexinc:o-series:tps:7:0"
+          },
+          "x:Currency": {
+            "@isoCurrencyCodeAlpha": "USD"
+          },
+          "x:Seller": {
+            "x:Company": "1000"
+          },
+          "x:LineItem": [
+            {
+              "@lineItemNumber": "1",
+              "@lineItemId": "d53e8c40ba0f6b947e7fbecbc6",
+              "x:Customer": {
+                "x:Destination": {
+                  "@locationCode": "9445"
+                }
+              },
+              "x:Product": {
+                "@productClass": "100"
+              },
+              "x:Quantity": {
+                "@unitOfMeasure": "EA",
+                "#text": "1.0"
+              },
+              "x:ExtendedPrice": "3.99"
+            },
+            {
+              "@lineItemNumber": "2",
+              "@lineItemId": "950430af145481dfff86122ca7",
+              "x:Customer": {
+                "x:Destination": {
+                  "@locationCode": "9445"
+                }
+              },
+              "x:Product": {
+                "@productClass": "100"
+              },
+              "x:Quantity": {
+                "@unitOfMeasure": "EA",
+                "#text": "1.0"
+              },
+              "x:ExtendedPrice": "5.99"
+            },
+            {
+              "@lineItemNumber": "3",
+              "@lineItemId": "3fbda542c91a7a2afc16f962b9",
+              "x:Customer": {
+                "x:Destination": {
+                  "@locationCode": "9445"
+                }
+              },
+              "x:Product": {
+                "@productClass": "100"
+              },
+              "x:Quantity": {
+                "@unitOfMeasure": "EA",
+                "#text": "1.0"
+              },
+              "x:ExtendedPrice": "2.99"
+            },
+            {
+              "@lineItemNumber": "4",
+              "@lineItemId": "e8e645a7ba056e44e881425023",
+              "x:Customer": {
+                "x:Destination": {
+                  "@locationCode": "9445"
+                }
+              },
+              "x:Product": {
+                "@productClass": "199"
+              },
+              "x:Quantity": {
+                "@unitOfMeasure": "EA",
+                "#text": "1.0"
+              },
+              "x:ExtendedPrice": "0.0"
+            }
+          ]
+        }
+      }
+    }
+  }
+}

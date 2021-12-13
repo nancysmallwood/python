@@ -1,0 +1,119 @@
+{
+  "http://schemas.xmlsoap.org/soap/envelope/:Envelope": {
+    "http://schemas.xmlsoap.org/soap/envelope/:Header": null,
+    "http://schemas.xmlsoap.org/soap/envelope/:Body": {
+      "x:VertexEnvelope": {
+        "x:Login": {
+          "x:TrustedId": "0543161726331727"
+        },
+        "x:QuotationRequest": {
+          "@documentDate": "2021-02-09",
+          "@documentNumber": "AC1034632DFC4A44924E161997",
+          "@transactionType": "SALE",
+          "@xmlns": {
+            "SOAP-ENV": "http://schemas.xmlsoap.org/soap/envelope/",
+            "ns2": "urn:vertexinc:o-series:tps:7:0"
+          },
+          "x:Seller": {
+            "x:Company": "Summit Group"
+          },
+          "x:LineItem": [
+            {
+              "@deliveryTerm": "FOB",
+              "@lineItemNumber": "0",
+              "x:Seller": {
+                "x:PhysicalOrigin": {
+                  "x:StreetAddress1": "280 Madsen Dr Ste 100",
+                  "x:City": "Bloomingdale",
+                  "x:MainDivision": "IL",
+                  "x:PostalCode": "60108-2693",
+                  "x:Country": "USA"
+                }
+              },
+              "x:Customer": {
+                "x:CustomerCode": {
+                  "@classCode": "custclass",
+                  "#text": "cust"
+                },
+                "x:Destination": {
+                  "x:StreetAddress1": "1205 SW 21st Ave",
+                  "x:City": "Battle Ground",
+                  "x:MainDivision": "WA",
+                  "x:PostalCode": "98604",
+                  "x:Country": "USA"
+                }
+              },
+              "x:Product": {
+                "@productClass": "0103",
+                "#text": "MOT19013X"
+              },
+              "x:Quantity": "1.0",
+              "x:UnitPrice": "38.65"
+            },
+            {
+              "@deliveryTerm": "FOB",
+              "@lineItemNumber": "1",
+              "x:Seller": {
+                "x:PhysicalOrigin": {
+                  "x:StreetAddress1": "280 Madsen Dr Ste 100",
+                  "x:City": "Bloomingdale",
+                  "x:MainDivision": "IL",
+                  "x:PostalCode": "60108-2693",
+                  "x:Country": "USA"
+                }
+              },
+              "x:Customer": {
+                "x:CustomerCode": {
+                  "@classCode": "custclass",
+                  "#text": "cust"
+                },
+                "x:Destination": {
+                  "x:StreetAddress1": "1205 SW 21st Ave",
+                  "x:City": "Battle Ground",
+                  "x:MainDivision": "WA",
+                  "x:PostalCode": "98604",
+                  "x:Country": "USA"
+                }
+              },
+              "x:Product": {
+                "@productClass": "0201",
+                "#text": "MOT1838"
+              },
+              "x:Quantity": "1.0",
+              "x:UnitPrice": "10.95"
+            },
+            {
+              "@deliveryTerm": "FOB",
+              "@lineItemNumber": "2",
+              "x:Seller": {
+                "x:PhysicalOrigin": {
+                  "x:StreetAddress1": "280 Madsen Dr Ste 100",
+                  "x:City": "Bloomingdale",
+                  "x:MainDivision": "IL",
+                  "x:PostalCode": "60108-2693",
+                  "x:Country": "USA"
+                }
+              },
+              "x:Customer": {
+                "x:CustomerCode": {
+                  "@classCode": "custclass",
+                  "#text": "cust"
+                },
+                "x:Destination": {
+                  "x:StreetAddress1": "1205 SW 21st Ave",
+                  "x:City": "Battle Ground",
+                  "x:MainDivision": "WA",
+                  "x:PostalCode": "98604",
+                  "x:Country": "USA"
+                }
+              },
+              "x:Product": "SHIPPING",
+              "x:Quantity": "1.0",
+              "x:UnitPrice": "0.0"
+            }
+          ]
+        }
+      }
+    }
+  }
+}

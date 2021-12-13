@@ -1,0 +1,247 @@
+{
+  "http://schemas.xmlsoap.org/soap/envelope/:Envelope": {
+    "http://schemas.xmlsoap.org/soap/envelope/:Header": null,
+    "http://schemas.xmlsoap.org/soap/envelope/:Body": {
+      "x:VertexEnvelope": {
+        "x:Login": {
+          "x:TrustedId": "9045229623646798"
+        },
+        "x:QuotationRequest": {
+          "@documentNumber": "0061L000018bpgfQAA",
+          "@transactionType": "SALE",
+          "@xmlns": {
+            "SOAP-ENV": "http://schemas.xmlsoap.org/soap/envelope/",
+            "ns2": "urn:vertexinc:o-series:tps:7:0"
+          },
+          "x:Seller": {
+            "x:Company": "Vivint"
+          },
+          "x:Customer": {
+            "@isTaxExempt": "false",
+            "x:Destination": {
+              "x:Country": "US"
+            }
+          },
+          "x:LineItem": [
+            {
+              "@lineItemNumber": "1",
+              "@taxDate": "2021-02-09",
+              "@taxIncludedIndicator": "false",
+              "x:Customer": {
+                "@isTaxExempt": "false",
+                "x:Destination": {
+                  "x:PostalCode": "75965-1566",
+                  "x:Country": "US"
+                }
+              },
+              "x:Product": {
+                "@productClass": "EQUIPMENT",
+                "#text": "2c92a0f844fc66a801450a0da4653520"
+              },
+              "x:Quantity": "1.0",
+              "x:UnitPrice": "0.0"
+            },
+            {
+              "@lineItemNumber": "2",
+              "@taxDate": "2021-02-09",
+              "@taxIncludedIndicator": "false",
+              "x:Customer": {
+                "@isTaxExempt": "false",
+                "x:Destination": {
+                  "x:PostalCode": "75965-1566",
+                  "x:Country": "US"
+                }
+              },
+              "x:Product": {
+                "@productClass": "EQUIPMENT",
+                "#text": "2c92a0f844fc66a801450a0dd1813592"
+              },
+              "x:Quantity": "1.0",
+              "x:UnitPrice": "0.0"
+            },
+            {
+              "@lineItemNumber": "3",
+              "@taxDate": "2021-02-09",
+              "@taxIncludedIndicator": "false",
+              "x:Customer": {
+                "@isTaxExempt": "false",
+                "x:Destination": {
+                  "x:PostalCode": "75965-1566",
+                  "x:Country": "US"
+                }
+              },
+              "x:Product": {
+                "@productClass": "EQUIPMENT",
+                "#text": "2c92a0f844fc66a801450a0dd635359e"
+              },
+              "x:Quantity": "1.0",
+              "x:UnitPrice": "0.0"
+            },
+            {
+              "@lineItemNumber": "4",
+              "@taxDate": "2021-02-09",
+              "@taxIncludedIndicator": "false",
+              "x:Customer": {
+                "@isTaxExempt": "false",
+                "x:Destination": {
+                  "x:PostalCode": "75965-1566",
+                  "x:Country": "US"
+                }
+              },
+              "x:Product": {
+                "@productClass": "EQUIPMENT",
+                "#text": "2c92a0fc590128e801591e821ff00b39"
+              },
+              "x:Quantity": "1.0",
+              "x:UnitPrice": "0.0"
+            },
+            {
+              "@lineItemNumber": "5",
+              "@taxDate": "2021-02-09",
+              "@taxIncludedIndicator": "false",
+              "x:Customer": {
+                "@isTaxExempt": "false",
+                "x:Destination": {
+                  "x:PostalCode": "75965-1566",
+                  "x:Country": "US"
+                }
+              },
+              "x:Product": {
+                "@productClass": "EQUIPMENT",
+                "#text": "2c92a0fc6fbcd9e4016fc90769074096"
+              },
+              "x:Quantity": "1.0",
+              "x:UnitPrice": "1799.99"
+            },
+            {
+              "@lineItemNumber": "6",
+              "@taxDate": "2021-02-09",
+              "@taxIncludedIndicator": "false",
+              "x:Customer": {
+                "@isTaxExempt": "false",
+                "x:Destination": {
+                  "x:PostalCode": "75965-1566",
+                  "x:Country": "US"
+                }
+              },
+              "x:Product": {
+                "@productClass": "ALARM SRVS",
+                "#text": "2c92a0fd5925bb0b01596be15dd05fa6"
+              },
+              "x:Quantity": "1.0",
+              "x:UnitPrice": "49.0"
+            },
+            {
+              "@lineItemNumber": "7",
+              "@taxDate": "2021-02-09",
+              "@taxIncludedIndicator": "false",
+              "x:Customer": {
+                "@isTaxExempt": "false",
+                "x:Destination": {
+                  "x:PostalCode": "75965-1566",
+                  "x:Country": "US"
+                }
+              },
+              "x:Product": {
+                "@productClass": "ALARM SRVS",
+                "#text": "2c92a0fd67589f23016761963886045c"
+              },
+              "x:Quantity": "1.0",
+              "x:UnitPrice": "24.99"
+            },
+            {
+              "@lineItemNumber": "8",
+              "@taxDate": "2021-02-09",
+              "@taxIncludedIndicator": "false",
+              "x:Customer": {
+                "@isTaxExempt": "false",
+                "x:Destination": {
+                  "x:PostalCode": "75965-1566",
+                  "x:Country": "US"
+                }
+              },
+              "x:Product": {
+                "@productClass": "EQUIPMENT",
+                "#text": "2c92a0ff5901456501591e717bca4a2d"
+              },
+              "x:Quantity": "1.0",
+              "x:UnitPrice": "0.0"
+            },
+            {
+              "@lineItemNumber": "9",
+              "@taxDate": "2021-02-09",
+              "@taxIncludedIndicator": "false",
+              "x:Customer": {
+                "@isTaxExempt": "false",
+                "x:Destination": {
+                  "x:PostalCode": "75965-1566",
+                  "x:Country": "US"
+                }
+              },
+              "x:Product": {
+                "@productClass": "EQUIPMENT",
+                "#text": "2c92a0ff5901456501591e717bca4a2d"
+              },
+              "x:Quantity": "1.0",
+              "x:UnitPrice": "0.0"
+            },
+            {
+              "@lineItemNumber": "10",
+              "@taxDate": "2021-02-09",
+              "@taxIncludedIndicator": "false",
+              "x:Customer": {
+                "@isTaxExempt": "false",
+                "x:Destination": {
+                  "x:PostalCode": "75965-1566",
+                  "x:Country": "US"
+                }
+              },
+              "x:Product": {
+                "@productClass": "EQUIPMENT",
+                "#text": "2c92a0ff5901456501591e717bca4a2d"
+              },
+              "x:Quantity": "1.0",
+              "x:UnitPrice": "0.0"
+            },
+            {
+              "@lineItemNumber": "11",
+              "@taxDate": "2021-02-09",
+              "@taxIncludedIndicator": "false",
+              "x:Customer": {
+                "@isTaxExempt": "false",
+                "x:Destination": {
+                  "x:PostalCode": "75965-1566",
+                  "x:Country": "US"
+                }
+              },
+              "x:Product": {
+                "@productClass": "EQUIPMENT",
+                "#text": "2c92a0ff5901456501591e729bb754cd"
+              },
+              "x:Quantity": "1.0",
+              "x:UnitPrice": "0.0"
+            },
+            {
+              "@lineItemNumber": "12",
+              "@taxDate": "2021-02-09",
+              "@taxIncludedIndicator": "false",
+              "x:Customer": {
+                "@isTaxExempt": "false",
+                "x:Destination": {
+                  "x:PostalCode": "75965-1566",
+                  "x:Country": "US"
+                }
+              },
+              "x:Product": {
+                "@productClass": "ALARM SRVS",
+                "#text": "2c92a0ff67bbb02e0167c69273a87d8e"
+              },
+              "x:Quantity": "1.0",
+              "x:UnitPrice": "1.48"
+            }
+          ]
+        }
+      }
+    }
+  }
+}

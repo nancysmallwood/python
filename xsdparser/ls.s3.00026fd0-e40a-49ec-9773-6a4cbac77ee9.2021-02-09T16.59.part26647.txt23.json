@@ -1,0 +1,264 @@
+{
+  "http://schemas.xmlsoap.org/soap/envelope/:Envelope": {
+    "http://schemas.xmlsoap.org/soap/envelope/:Header": null,
+    "http://schemas.xmlsoap.org/soap/envelope/:Body": {
+      "x:VertexEnvelope": {
+        "x:Login": {
+          "x:TrustedId": "7022983137252641"
+        },
+        "x:QuotationRequest": {
+          "@documentDate": "2021-2-8",
+          "@documentNumber": "SO-119246",
+          "@transactionId": "",
+          "@postingDate": "2021-2-8",
+          "@postToJournal": "false",
+          "@transactionType": "SALE",
+          "@returnAssistedParametersIndicator": "true",
+          "@xmlns": {
+            "soapenv": "http://schemas.xmlsoap.org/soap/envelope/",
+            "urn": "urn:vertexinc:o-series:tps:7:0",
+            "": "urn:vertexinc:o-series:tps:7:0",
+            "xsi": "http://www.w3.org/2001/XMLSchema-instance"
+          },
+          "x:Currency": {
+            "@isoCurrencyCodeAlpha": "USD"
+          },
+          "x:LineItem": [
+            {
+              "@lineItemNumber": "1",
+              "@lineItemId": "item|1",
+              "@locationCode": "WS1 - Stock",
+              "x:Seller": {
+                "x:Company": "warnerstellian",
+                "x:PhysicalOrigin": {
+                  "x:StreetAddress1": "550 Atwater Cir",
+                  "x:City": "Saint Paul",
+                  "x:MainDivision": "MN",
+                  "x:PostalCode": "55103-4401",
+                  "x:Country": "USA"
+                },
+                "x:AdministrativeOrigin": {
+                  "x:StreetAddress1": "550 Atwater Circle",
+                  "x:City": "St. Paul",
+                  "x:MainDivision": "MN",
+                  "x:PostalCode": "55103",
+                  "x:Country": "USA"
+                }
+              },
+              "x:Customer": {
+                "x:CustomerCode": {
+                  "@classCode": "TAXABLE",
+                  "#text": "CUS-129448-1 3670 Gettysburg Ave"
+                },
+                "x:Destination": {
+                  "x:StreetAddress1": "3670 Gettysburg Ave",
+                  "x:City": "St. Louis Park",
+                  "x:MainDivision": "MN",
+                  "x:PostalCode": "55426",
+                  "x:Country": "USA"
+                },
+                "x:AdministrativeDestination": {
+                  "x:StreetAddress1": "101 Broadway St W Ste 104",
+                  "x:City": "Osseo",
+                  "x:MainDivision": "MN",
+                  "x:PostalCode": "55369-1549",
+                  "x:Country": "USA"
+                }
+              },
+              "x:Product": "FFTR1425VW 13.9 Cu. Ft. Top Freezer Refr",
+              "x:Quantity": "1",
+              "x:ExtendedPrice": "500",
+              "x:DiscountAmount": "0",
+              "x:FlexibleFields": {
+                "x:FlexibleCodeField": [
+                  {
+                    "@fieldId": "4",
+                    "#text": "10001"
+                  },
+                  {
+                    "@fieldId": "2",
+                    "#text": "00-HQ"
+                  }
+                ]
+              }
+            },
+            {
+              "@lineItemNumber": "2",
+              "@lineItemId": "item|2",
+              "@locationCode": "WS1 - Stock",
+              "x:Seller": {
+                "x:Company": "warnerstellian",
+                "x:PhysicalOrigin": {
+                  "x:StreetAddress1": "550 Atwater Cir",
+                  "x:City": "Saint Paul",
+                  "x:MainDivision": "MN",
+                  "x:PostalCode": "55103-4401",
+                  "x:Country": "USA"
+                },
+                "x:AdministrativeOrigin": {
+                  "x:StreetAddress1": "550 Atwater Circle",
+                  "x:City": "St. Paul",
+                  "x:MainDivision": "MN",
+                  "x:PostalCode": "55103",
+                  "x:Country": "USA"
+                }
+              },
+              "x:Customer": {
+                "x:CustomerCode": {
+                  "@classCode": "TAXABLE",
+                  "#text": "CUS-129448-1 3670 Gettysburg Ave"
+                },
+                "x:Destination": {
+                  "x:StreetAddress1": "3670 Gettysburg Ave",
+                  "x:City": "St. Louis Park",
+                  "x:MainDivision": "MN",
+                  "x:PostalCode": "55426",
+                  "x:Country": "USA"
+                },
+                "x:AdministrativeDestination": {
+                  "x:StreetAddress1": "101 Broadway St W Ste 104",
+                  "x:City": "Osseo",
+                  "x:MainDivision": "MN",
+                  "x:PostalCode": "55369-1549",
+                  "x:Country": "USA"
+                }
+              },
+              "x:Product": "FFMV1846VW 1.8 cu 1,000 Watt Over-The-Ra",
+              "x:Quantity": "1",
+              "x:ExtendedPrice": "205",
+              "x:DiscountAmount": "0",
+              "x:FlexibleFields": {
+                "x:FlexibleCodeField": [
+                  {
+                    "@fieldId": "4",
+                    "#text": "11013"
+                  },
+                  {
+                    "@fieldId": "2",
+                    "#text": "00-HQ"
+                  }
+                ]
+              }
+            },
+            {
+              "@lineItemNumber": "3",
+              "@lineItemId": "item|3",
+              "@locationCode": "WS1 - Stock",
+              "x:Seller": {
+                "x:Company": "warnerstellian",
+                "x:PhysicalOrigin": {
+                  "x:StreetAddress1": "550 Atwater Cir",
+                  "x:City": "Saint Paul",
+                  "x:MainDivision": "MN",
+                  "x:PostalCode": "55103-4401",
+                  "x:Country": "USA"
+                },
+                "x:AdministrativeOrigin": {
+                  "x:StreetAddress1": "550 Atwater Circle",
+                  "x:City": "St. Paul",
+                  "x:MainDivision": "MN",
+                  "x:PostalCode": "55103",
+                  "x:Country": "USA"
+                }
+              },
+              "x:Customer": {
+                "x:CustomerCode": {
+                  "@classCode": "TAXABLE",
+                  "#text": "CUS-129448-1 3670 Gettysburg Ave"
+                },
+                "x:Destination": {
+                  "x:StreetAddress1": "3670 Gettysburg Ave",
+                  "x:City": "St. Louis Park",
+                  "x:MainDivision": "MN",
+                  "x:PostalCode": "55426",
+                  "x:Country": "USA"
+                },
+                "x:AdministrativeDestination": {
+                  "x:StreetAddress1": "101 Broadway St W Ste 104",
+                  "x:City": "Osseo",
+                  "x:MainDivision": "MN",
+                  "x:PostalCode": "55369-1549",
+                  "x:Country": "USA"
+                }
+              },
+              "x:Product": "INSTALL OTR - STANDARD OTR INSTALL - STA",
+              "x:Quantity": "1",
+              "x:ExtendedPrice": "85",
+              "x:DiscountAmount": "0",
+              "x:FlexibleFields": {
+                "x:FlexibleCodeField": [
+                  {
+                    "@fieldId": "4",
+                    "#text": "50000.1"
+                  },
+                  {
+                    "@fieldId": "2",
+                    "#text": "00-HQ"
+                  }
+                ]
+              }
+            },
+            {
+              "@lineItemNumber": "4",
+              "@lineItemId": "item|4",
+              "@locationCode": "WS1 - Stock",
+              "x:Seller": {
+                "x:Company": "warnerstellian",
+                "x:PhysicalOrigin": {
+                  "x:StreetAddress1": "550 Atwater Cir",
+                  "x:City": "Saint Paul",
+                  "x:MainDivision": "MN",
+                  "x:PostalCode": "55103-4401",
+                  "x:Country": "USA"
+                },
+                "x:AdministrativeOrigin": {
+                  "x:StreetAddress1": "550 Atwater Circle",
+                  "x:City": "St. Paul",
+                  "x:MainDivision": "MN",
+                  "x:PostalCode": "55103",
+                  "x:Country": "USA"
+                }
+              },
+              "x:Customer": {
+                "x:CustomerCode": {
+                  "@classCode": "TAXABLE",
+                  "#text": "CUS-129448-1 3670 Gettysburg Ave"
+                },
+                "x:Destination": {
+                  "x:StreetAddress1": "3670 Gettysburg Ave",
+                  "x:City": "St. Louis Park",
+                  "x:MainDivision": "MN",
+                  "x:PostalCode": "55426",
+                  "x:Country": "USA"
+                },
+                "x:AdministrativeDestination": {
+                  "x:StreetAddress1": "101 Broadway St W Ste 104",
+                  "x:City": "Osseo",
+                  "x:MainDivision": "MN",
+                  "x:PostalCode": "55369-1549",
+                  "x:Country": "USA"
+                }
+              },
+              "x:Product": "Package Recycling Fee PackageRecyclingFe",
+              "x:Quantity": "1",
+              "x:ExtendedPrice": "15",
+              "x:DiscountAmount": "0",
+              "x:FlexibleFields": {
+                "x:FlexibleCodeField": [
+                  {
+                    "@fieldId": "4",
+                    "#text": "55012.1"
+                  },
+                  {
+                    "@fieldId": "2",
+                    "#text": "00-HQ"
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      }
+    }
+  }
+}

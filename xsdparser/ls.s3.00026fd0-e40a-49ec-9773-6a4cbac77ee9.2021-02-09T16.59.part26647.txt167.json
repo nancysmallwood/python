@@ -1,0 +1,88 @@
+{
+  "http://schemas.xmlsoap.org/soap/envelope/:Envelope": {
+    "http://schemas.xmlsoap.org/soap/envelope/:Header": null,
+    "http://schemas.xmlsoap.org/soap/envelope/:Body": {
+      "x:VertexEnvelope": {
+        "x:Login": {
+          "x:TrustedId": "7102830324822222"
+        },
+        "x:QuotationRequest": {
+          "@returnAssistedParametersIndicator": "true",
+          "@transactionType": "SALE",
+          "@xmlns": {
+            "SOAP-ENV": "http://schemas.xmlsoap.org/soap/envelope/",
+            "ns2": "urn:vertexinc:o-series:tps:7:0"
+          },
+          "x:Currency": {
+            "@isoCurrencyCodeAlpha": "USD"
+          },
+          "x:Seller": {
+            "x:Company": "mercari-us"
+          },
+          "x:LineItem": [
+            {
+              "@lineItemNumber": "1",
+              "@taxIncludedIndicator": "false",
+              "x:Customer": {
+                "x:CustomerCode": "832425845",
+                "x:Destination": {
+                  "x:StreetAddress1": "5925 Century Blvd",
+                  "x:City": "Minneapolis",
+                  "x:MainDivision": "MN",
+                  "x:PostalCode": "55429-1024",
+                  "x:Country": "UNITED STATES"
+                }
+              },
+              "x:Product": {
+                "@productClass": "CLOTHING",
+                "#text": "m40178960207"
+              },
+              "x:Quantity": "1.0",
+              "x:UnitPrice": "25.0",
+              "x:FlexibleFields": {
+                "x:FlexibleCodeField": {
+                  "@fieldId": "1",
+                  "#text": "standard_item"
+                },
+                "x:FlexibleNumericField": {
+                  "@fieldId": "1",
+                  "#text": "1.0"
+                }
+              }
+            },
+            {
+              "@lineItemNumber": "2",
+              "@taxIncludedIndicator": "false",
+              "x:Customer": {
+                "x:CustomerCode": "832425845",
+                "x:Destination": {
+                  "x:StreetAddress1": "5925 Century Blvd",
+                  "x:City": "Minneapolis",
+                  "x:MainDivision": "MN",
+                  "x:PostalCode": "55429-1024",
+                  "x:Country": "UNITED STATES"
+                }
+              },
+              "x:Product": {
+                "@productClass": "SHIPPING_FOB_DESTINATION",
+                "#text": "1226"
+              },
+              "x:Quantity": "1.0",
+              "x:UnitPrice": "9.99",
+              "x:FlexibleFields": {
+                "x:FlexibleCodeField": {
+                  "@fieldId": "1",
+                  "#text": "shipping"
+                },
+                "x:FlexibleNumericField": {
+                  "@fieldId": "1",
+                  "#text": "2.0"
+                }
+              }
+            }
+          ]
+        }
+      }
+    }
+  }
+}

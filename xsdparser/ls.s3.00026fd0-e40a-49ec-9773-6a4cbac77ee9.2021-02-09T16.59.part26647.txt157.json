@@ -1,0 +1,236 @@
+{
+  "http://schemas.xmlsoap.org/soap/envelope/:Envelope": {
+    "http://schemas.xmlsoap.org/soap/envelope/:Header": null,
+    "http://schemas.xmlsoap.org/soap/envelope/:Body": {
+      "x:VertexEnvelope": {
+        "x:Login": {
+          "x:TrustedId": "9178264414727630"
+        },
+        "x:InvoiceRequest": {
+          "@documentDate": "2021-02-09",
+          "@documentNumber": "12345",
+          "@transactionType": "SALE",
+          "@xmlns": {
+            "SOAP-ENV": "http://schemas.xmlsoap.org/soap/envelope/",
+            "ns2": "urn:vertexinc:o-series:tps:7:0"
+          },
+          "x:Seller": {
+            "x:Company": "1002923"
+          },
+          "x:LineItem": [
+            {
+              "@deliveryTerm": "FOB",
+              "@lineItemNumber": "0",
+              "x:Seller": {
+                "x:PhysicalOrigin": {
+                  "@taxAreaId": "500270070"
+                }
+              },
+              "x:Customer": {
+                "x:CustomerCode": {
+                  "@classCode": "AGRICULTURE",
+                  "#text": "70858"
+                },
+                "x:Destination": {
+                  "x:StreetAddress1": "691 BABCOCK HILL ROAD",
+                  "x:City": "WEST WINFIELD",
+                  "x:MainDivision": "New York",
+                  "x:PostalCode": "13491",
+                  "x:Country": "US"
+                }
+              },
+              "x:Product": {
+                "@productClass": "GENERALANTIBIOTICS-RX",
+                "#text": "17214"
+              },
+              "x:Quantity": "2.0",
+              "x:UnitPrice": "209.0",
+              "x:FlexibleFields": {
+                "x:FlexibleCodeField": {
+                  "@fieldId": "1",
+                  "#text": "FLEXCodeField1"
+                },
+                "x:FlexibleNumericField": {
+                  "@fieldId": "1",
+                  "#text": "111.0"
+                },
+                "x:FlexibleDateField": {
+                  "@fieldId": "1",
+                  "#text": "2021-02-09"
+                }
+              }
+            },
+            {
+              "@deliveryTerm": "FOB",
+              "@lineItemNumber": "1",
+              "x:Seller": {
+                "x:PhysicalOrigin": {
+                  "@taxAreaId": "500270070"
+                }
+              },
+              "x:Customer": {
+                "x:CustomerCode": {
+                  "@classCode": "AGRICULTURE",
+                  "#text": "70858"
+                },
+                "x:Destination": {
+                  "x:StreetAddress1": "691 BABCOCK HILL ROAD",
+                  "x:City": "WEST WINFIELD",
+                  "x:MainDivision": "New York",
+                  "x:PostalCode": "13491",
+                  "x:Country": "US"
+                }
+              },
+              "x:Product": {
+                "@productClass": "HORMONES-RX",
+                "#text": "17266"
+              },
+              "x:Quantity": "10.0",
+              "x:UnitPrice": "16.68",
+              "x:FlexibleFields": {
+                "x:FlexibleCodeField": {
+                  "@fieldId": "1",
+                  "#text": "FLEXCodeField1"
+                },
+                "x:FlexibleNumericField": {
+                  "@fieldId": "1",
+                  "#text": "111.0"
+                },
+                "x:FlexibleDateField": {
+                  "@fieldId": "1",
+                  "#text": "2021-02-09"
+                }
+              }
+            },
+            {
+              "@deliveryTerm": "FOB",
+              "@lineItemNumber": "2",
+              "x:Seller": {
+                "x:PhysicalOrigin": {
+                  "@taxAreaId": "500270070"
+                }
+              },
+              "x:Customer": {
+                "x:CustomerCode": {
+                  "@classCode": "AGRICULTURE",
+                  "#text": "70858"
+                },
+                "x:Destination": {
+                  "x:StreetAddress1": "691 BABCOCK HILL ROAD",
+                  "x:City": "WEST WINFIELD",
+                  "x:MainDivision": "New York",
+                  "x:PostalCode": "13491",
+                  "x:Country": "US"
+                }
+              },
+              "x:Product": {
+                "@productClass": "KETOSIS-RX",
+                "#text": "13224"
+              },
+              "x:Quantity": "12.0",
+              "x:UnitPrice": "5.9",
+              "x:FlexibleFields": {
+                "x:FlexibleCodeField": {
+                  "@fieldId": "1",
+                  "#text": "FLEXCodeField1"
+                },
+                "x:FlexibleNumericField": {
+                  "@fieldId": "1",
+                  "#text": "111.0"
+                },
+                "x:FlexibleDateField": {
+                  "@fieldId": "1",
+                  "#text": "2021-02-09"
+                }
+              }
+            },
+            {
+              "@deliveryTerm": "FOB",
+              "@lineItemNumber": "3",
+              "x:Seller": {
+                "x:PhysicalOrigin": {
+                  "@taxAreaId": "500270070"
+                }
+              },
+              "x:Customer": {
+                "x:CustomerCode": {
+                  "@classCode": "AGRICULTURE",
+                  "#text": "70858"
+                },
+                "x:Destination": {
+                  "x:StreetAddress1": "691 BABCOCK HILL ROAD",
+                  "x:City": "WEST WINFIELD",
+                  "x:MainDivision": "New York",
+                  "x:PostalCode": "13491",
+                  "x:Country": "US"
+                }
+              },
+              "x:Product": {
+                "@productClass": "TEATSUPPLIES",
+                "#text": "15597"
+              },
+              "x:Quantity": "1.0",
+              "x:UnitPrice": "10.2",
+              "x:FlexibleFields": {
+                "x:FlexibleCodeField": {
+                  "@fieldId": "1",
+                  "#text": "FLEXCodeField1"
+                },
+                "x:FlexibleNumericField": {
+                  "@fieldId": "1",
+                  "#text": "111.0"
+                },
+                "x:FlexibleDateField": {
+                  "@fieldId": "1",
+                  "#text": "2021-02-09"
+                }
+              }
+            },
+            {
+              "@deliveryTerm": "FOB",
+              "@lineItemNumber": "4",
+              "x:Seller": {
+                "x:PhysicalOrigin": {
+                  "@taxAreaId": "500270070"
+                }
+              },
+              "x:Customer": {
+                "x:CustomerCode": {
+                  "@classCode": "AGRICULTURE",
+                  "#text": "70858"
+                },
+                "x:Destination": {
+                  "x:StreetAddress1": "691 BABCOCK HILL ROAD",
+                  "x:City": "WEST WINFIELD",
+                  "x:MainDivision": "New York",
+                  "x:PostalCode": "13491",
+                  "x:Country": "US"
+                }
+              },
+              "x:Product": {
+                "@productClass": "MISCELLANEOUSSUPPORTMED-RX",
+                "#text": "12927"
+              },
+              "x:Quantity": "2.0",
+              "x:UnitPrice": "22.51",
+              "x:FlexibleFields": {
+                "x:FlexibleCodeField": {
+                  "@fieldId": "1",
+                  "#text": "FLEXCodeField1"
+                },
+                "x:FlexibleNumericField": {
+                  "@fieldId": "1",
+                  "#text": "111.0"
+                },
+                "x:FlexibleDateField": {
+                  "@fieldId": "1",
+                  "#text": "2021-02-09"
+                }
+              }
+            }
+          ]
+        }
+      }
+    }
+  }
+}

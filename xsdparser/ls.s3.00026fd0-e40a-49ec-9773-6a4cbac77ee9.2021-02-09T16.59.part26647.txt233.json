@@ -1,0 +1,43 @@
+{
+  "http://schemas.xmlsoap.org/soap/envelope/:Envelope": {
+    "http://schemas.xmlsoap.org/soap/envelope/:Body": {
+      "x:VertexEnvelope": {
+        "x:Login": {
+          "x:TrustedId": "9179128628506328"
+        },
+        "x:QuotationRequest": {
+          "@transactionType": "SALE",
+          "@documentDate": "2021-01-29",
+          "@documentNumber": "14750201",
+          "@xmlns": {
+            "s": "http://schemas.xmlsoap.org/soap/envelope/",
+            "xsi": "http://www.w3.org/2001/XMLSchema-instance",
+            "xsd": "http://www.w3.org/2001/XMLSchema",
+            "": "urn:vertexinc:o-series:tps:7:0"
+          },
+          "x:Seller": {
+            "x:Company": "VVS",
+            "x:PhysicalOrigin": {
+              "x:City": "Marysville",
+              "x:MainDivision": "KS",
+              "x:PostalCode": "66508",
+              "x:Country": "USA"
+            }
+          },
+          "x:Customer": {
+            "x:CustomerCode": {
+              "@classCode": "ILSD",
+              "#text": "1363523"
+            },
+            "x:Destination": {
+              "x:City": "WAVERLY",
+              "x:MainDivision": "IL",
+              "x:PostalCode": "626926102",
+              "x:Country": "US"
+            }
+          }
+        }
+      }
+    }
+  }
+}

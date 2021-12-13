@@ -1,0 +1,700 @@
+{
+  "http://schemas.xmlsoap.org/soap/envelope/:Envelope": {
+    "http://schemas.xmlsoap.org/soap/envelope/:Header": null,
+    "http://schemas.xmlsoap.org/soap/envelope/:Body": {
+      "x:VertexEnvelope": {
+        "x:Login": {
+          "x:TrustedId": "3416500935516460"
+        },
+        "x:QuotationRequest": {
+          "@transactionType": "SALE",
+          "@documentDate": "2021-02-09",
+          "@documentNumber": "601877281-0",
+          "@xmlns": {
+            "soapenv": "http://schemas.xmlsoap.org/soap/envelope/",
+            "": "urn:vertexinc:o-series:tps:7:0"
+          },
+          "x:Seller": {
+            "x:Company": "SSG-PROD",
+            "x:PhysicalOrigin": {
+              "x:StreetAddress1": "1520 E. Evergreen",
+              "x:StreetAddress2": null,
+              "x:City": "Springfield",
+              "x:MainDivision": "MO",
+              "x:PostalCode": "65803",
+              "x:Country": "USA"
+            },
+            "x:AdministrativeOrigin": {
+              "x:StreetAddress1": "1520 E. Evergreen",
+              "x:StreetAddress2": null,
+              "x:City": "Springfield",
+              "x:MainDivision": "MO",
+              "x:PostalCode": "65803",
+              "x:Country": "USA"
+            }
+          },
+          "x:Customer": {
+            "x:CustomerCode": {
+              "@classCode": "NULL",
+              "#text": "ABA3205-OE"
+            },
+            "x:Destination": {
+              "x:StreetAddress1": "ABBY JO STERN",
+              "x:StreetAddress2": "127 3RD AVE SE",
+              "x:City": "CEDAR RAPIDS",
+              "x:MainDivision": "IA",
+              "x:PostalCode": "52401-1403",
+              "x:Country": "USA"
+            }
+          },
+          "x:LineItem": [
+            {
+              "@lineItemNumber": "1",
+              "@locationCode": "01",
+              "x:Product": "INTROKMCSMALL",
+              "x:Quantity": "1.00",
+              "x:UnitPrice": "1174.5000",
+              "x:ExtendedPrice": "1174.5000",
+              "x:FlexibleFields": {
+                "x:FlexibleCodeField": [
+                  {
+                    "@fieldId": "3",
+                    "#text": "INTROKMCSMALL"
+                  },
+                  {
+                    "@fieldId": "5",
+                    "#text": "THE BEAUTY LOUNGE"
+                  },
+                  {
+                    "@fieldId": "6",
+                    "#text": "1"
+                  },
+                  {
+                    "@fieldId": "7",
+                    "#text": "O"
+                  }
+                ]
+              }
+            },
+            {
+              "@lineItemNumber": "2",
+              "@locationCode": "01",
+              "x:Product": "KMFA5",
+              "x:Quantity": "1.00",
+              "x:UnitPrice": "15.1000",
+              "x:ExtendedPrice": "15.1000",
+              "x:FlexibleFields": {
+                "x:FlexibleCodeField": [
+                  {
+                    "@fieldId": "3",
+                    "#text": "KMFA5"
+                  },
+                  {
+                    "@fieldId": "5",
+                    "#text": "THE BEAUTY LOUNGE"
+                  },
+                  {
+                    "@fieldId": "6",
+                    "#text": "1"
+                  },
+                  {
+                    "@fieldId": "7",
+                    "#text": "O"
+                  }
+                ]
+              }
+            },
+            {
+              "@lineItemNumber": "3",
+              "@locationCode": "01",
+              "x:Product": "KMHR5",
+              "x:Quantity": "1.00",
+              "x:UnitPrice": "15.1000",
+              "x:ExtendedPrice": "15.1000",
+              "x:FlexibleFields": {
+                "x:FlexibleCodeField": [
+                  {
+                    "@fieldId": "3",
+                    "#text": "KMHR5"
+                  },
+                  {
+                    "@fieldId": "5",
+                    "#text": "THE BEAUTY LOUNGE"
+                  },
+                  {
+                    "@fieldId": "6",
+                    "#text": "1"
+                  },
+                  {
+                    "@fieldId": "7",
+                    "#text": "O"
+                  }
+                ]
+              }
+            },
+            {
+              "@lineItemNumber": "4",
+              "@locationCode": "01",
+              "x:Product": "KMHRSP5",
+              "x:Quantity": "1.00",
+              "x:UnitPrice": "15.1000",
+              "x:ExtendedPrice": "15.1000",
+              "x:FlexibleFields": {
+                "x:FlexibleCodeField": [
+                  {
+                    "@fieldId": "3",
+                    "#text": "KMHRSP5"
+                  },
+                  {
+                    "@fieldId": "5",
+                    "#text": "THE BEAUTY LOUNGE"
+                  },
+                  {
+                    "@fieldId": "6",
+                    "#text": "1"
+                  },
+                  {
+                    "@fieldId": "7",
+                    "#text": "O"
+                  }
+                ]
+              }
+            },
+            {
+              "@lineItemNumber": "5",
+              "@locationCode": "01",
+              "x:Product": "KMHD5",
+              "x:Quantity": "1.00",
+              "x:UnitPrice": "13.8500",
+              "x:ExtendedPrice": "13.8500",
+              "x:FlexibleFields": {
+                "x:FlexibleCodeField": [
+                  {
+                    "@fieldId": "3",
+                    "#text": "KMHD5"
+                  },
+                  {
+                    "@fieldId": "5",
+                    "#text": "THE BEAUTY LOUNGE"
+                  },
+                  {
+                    "@fieldId": "6",
+                    "#text": "1"
+                  },
+                  {
+                    "@fieldId": "7",
+                    "#text": "O"
+                  }
+                ]
+              }
+            },
+            {
+              "@lineItemNumber": "6",
+              "@locationCode": "01",
+              "x:Product": "KMKW5",
+              "x:Quantity": "1.00",
+              "x:UnitPrice": "16.1000",
+              "x:ExtendedPrice": "16.1000",
+              "x:FlexibleFields": {
+                "x:FlexibleCodeField": [
+                  {
+                    "@fieldId": "3",
+                    "#text": "KMKW5"
+                  },
+                  {
+                    "@fieldId": "5",
+                    "#text": "THE BEAUTY LOUNGE"
+                  },
+                  {
+                    "@fieldId": "6",
+                    "#text": "1"
+                  },
+                  {
+                    "@fieldId": "7",
+                    "#text": "O"
+                  }
+                ]
+              }
+            },
+            {
+              "@lineItemNumber": "7",
+              "@locationCode": "01",
+              "x:Product": "KMCURL6",
+              "x:Quantity": "1.00",
+              "x:UnitPrice": "17.1000",
+              "x:ExtendedPrice": "17.1000",
+              "x:FlexibleFields": {
+                "x:FlexibleCodeField": [
+                  {
+                    "@fieldId": "3",
+                    "#text": "KMCURL6"
+                  },
+                  {
+                    "@fieldId": "5",
+                    "#text": "THE BEAUTY LOUNGE"
+                  },
+                  {
+                    "@fieldId": "6",
+                    "#text": "1"
+                  },
+                  {
+                    "@fieldId": "7",
+                    "#text": "O"
+                  }
+                ]
+              }
+            },
+            {
+              "@lineItemNumber": "8",
+              "@locationCode": "01",
+              "x:Product": "KMRR1",
+              "x:Quantity": "1.00",
+              "x:UnitPrice": "6.1000",
+              "x:ExtendedPrice": "6.1000",
+              "x:FlexibleFields": {
+                "x:FlexibleCodeField": [
+                  {
+                    "@fieldId": "3",
+                    "#text": "KMRR1"
+                  },
+                  {
+                    "@fieldId": "5",
+                    "#text": "THE BEAUTY LOUNGE"
+                  },
+                  {
+                    "@fieldId": "6",
+                    "#text": "1"
+                  },
+                  {
+                    "@fieldId": "7",
+                    "#text": "O"
+                  }
+                ]
+              }
+            },
+            {
+              "@lineItemNumber": "9",
+              "@locationCode": "01",
+              "x:Product": "KMSSP11",
+              "x:Quantity": "1.00",
+              "x:UnitPrice": "15.0000",
+              "x:ExtendedPrice": "15.0000",
+              "x:FlexibleFields": {
+                "x:FlexibleCodeField": [
+                  {
+                    "@fieldId": "3",
+                    "#text": "KMSSP11"
+                  },
+                  {
+                    "@fieldId": "5",
+                    "#text": "THE BEAUTY LOUNGE"
+                  },
+                  {
+                    "@fieldId": "6",
+                    "#text": "1"
+                  },
+                  {
+                    "@fieldId": "7",
+                    "#text": "O"
+                  }
+                ]
+              }
+            },
+            {
+              "@lineItemNumber": "10",
+              "@locationCode": "01",
+              "x:Product": "KMSSB3",
+              "x:Quantity": "1.00",
+              "x:UnitPrice": "14.6000",
+              "x:ExtendedPrice": "14.6000",
+              "x:FlexibleFields": {
+                "x:FlexibleCodeField": [
+                  {
+                    "@fieldId": "3",
+                    "#text": "KMSSB3"
+                  },
+                  {
+                    "@fieldId": "5",
+                    "#text": "THE BEAUTY LOUNGE"
+                  },
+                  {
+                    "@fieldId": "6",
+                    "#text": "1"
+                  },
+                  {
+                    "@fieldId": "7",
+                    "#text": "O"
+                  }
+                ]
+              }
+            },
+            {
+              "@lineItemNumber": "11",
+              "@locationCode": "01",
+              "x:Product": "KMTOUCH8",
+              "x:Quantity": "1.00",
+              "x:UnitPrice": "15.0000",
+              "x:ExtendedPrice": "15.0000",
+              "x:FlexibleFields": {
+                "x:FlexibleCodeField": [
+                  {
+                    "@fieldId": "3",
+                    "#text": "KMTOUCH8"
+                  },
+                  {
+                    "@fieldId": "5",
+                    "#text": "THE BEAUTY LOUNGE"
+                  },
+                  {
+                    "@fieldId": "6",
+                    "#text": "1"
+                  },
+                  {
+                    "@fieldId": "7",
+                    "#text": "O"
+                  }
+                ]
+              }
+            },
+            {
+              "@lineItemNumber": "12",
+              "@locationCode": "01",
+              "x:Product": "KMYADC8",
+              "x:Quantity": "1.00",
+              "x:UnitPrice": "15.0000",
+              "x:ExtendedPrice": "15.0000",
+              "x:FlexibleFields": {
+                "x:FlexibleCodeField": [
+                  {
+                    "@fieldId": "3",
+                    "#text": "KMYADC8"
+                  },
+                  {
+                    "@fieldId": "5",
+                    "#text": "THE BEAUTY LOUNGE"
+                  },
+                  {
+                    "@fieldId": "6",
+                    "#text": "1"
+                  },
+                  {
+                    "@fieldId": "7",
+                    "#text": "O"
+                  }
+                ]
+              }
+            },
+            {
+              "@lineItemNumber": "13",
+              "@locationCode": "01",
+              "x:Product": "KMAG5",
+              "x:Quantity": "1.00",
+              "x:UnitPrice": "15.1000",
+              "x:ExtendedPrice": "15.1000",
+              "x:FlexibleFields": {
+                "x:FlexibleCodeField": [
+                  {
+                    "@fieldId": "3",
+                    "#text": "KMAG5"
+                  },
+                  {
+                    "@fieldId": "5",
+                    "#text": "THE BEAUTY LOUNGE"
+                  },
+                  {
+                    "@fieldId": "6",
+                    "#text": "1"
+                  },
+                  {
+                    "@fieldId": "7",
+                    "#text": "O"
+                  }
+                ]
+              }
+            },
+            {
+              "@lineItemNumber": "14",
+              "@locationCode": "01",
+              "x:Product": "KMAGSP5",
+              "x:Quantity": "1.00",
+              "x:UnitPrice": "15.1000",
+              "x:ExtendedPrice": "15.1000",
+              "x:FlexibleFields": {
+                "x:FlexibleCodeField": [
+                  {
+                    "@fieldId": "3",
+                    "#text": "KMAGSP5"
+                  },
+                  {
+                    "@fieldId": "5",
+                    "#text": "THE BEAUTY LOUNGE"
+                  },
+                  {
+                    "@fieldId": "6",
+                    "#text": "1"
+                  },
+                  {
+                    "@fieldId": "7",
+                    "#text": "O"
+                  }
+                ]
+              }
+            },
+            {
+              "@lineItemNumber": "15",
+              "@locationCode": "01",
+              "x:Product": "KMBH8",
+              "x:Quantity": "1.00",
+              "x:UnitPrice": "15.0000",
+              "x:ExtendedPrice": "15.0000",
+              "x:FlexibleFields": {
+                "x:FlexibleCodeField": [
+                  {
+                    "@fieldId": "3",
+                    "#text": "KMBH8"
+                  },
+                  {
+                    "@fieldId": "5",
+                    "#text": "THE BEAUTY LOUNGE"
+                  },
+                  {
+                    "@fieldId": "6",
+                    "#text": "1"
+                  },
+                  {
+                    "@fieldId": "7",
+                    "#text": "O"
+                  }
+                ]
+              }
+            },
+            {
+              "@lineItemNumber": "16",
+              "@locationCode": "01",
+              "x:Product": "KMBB11",
+              "x:Quantity": "1.00",
+              "x:UnitPrice": "15.0000",
+              "x:ExtendedPrice": "15.0000",
+              "x:FlexibleFields": {
+                "x:FlexibleCodeField": [
+                  {
+                    "@fieldId": "3",
+                    "#text": "KMBB11"
+                  },
+                  {
+                    "@fieldId": "5",
+                    "#text": "THE BEAUTY LOUNGE"
+                  },
+                  {
+                    "@fieldId": "6",
+                    "#text": "1"
+                  },
+                  {
+                    "@fieldId": "7",
+                    "#text": "O"
+                  }
+                ]
+              }
+            },
+            {
+              "@lineItemNumber": "17",
+              "@locationCode": "01",
+              "x:Product": "KMDOO8",
+              "x:Quantity": "1.00",
+              "x:UnitPrice": "15.0000",
+              "x:ExtendedPrice": "15.0000",
+              "x:FlexibleFields": {
+                "x:FlexibleCodeField": [
+                  {
+                    "@fieldId": "3",
+                    "#text": "KMDOO8"
+                  },
+                  {
+                    "@fieldId": "5",
+                    "#text": "THE BEAUTY LOUNGE"
+                  },
+                  {
+                    "@fieldId": "6",
+                    "#text": "1"
+                  },
+                  {
+                    "@fieldId": "7",
+                    "#text": "O"
+                  }
+                ]
+              }
+            },
+            {
+              "@lineItemNumber": "18",
+              "@locationCode": "01",
+              "x:Product": "KMER3",
+              "x:Quantity": "1.00",
+              "x:UnitPrice": "15.1000",
+              "x:ExtendedPrice": "15.1000",
+              "x:FlexibleFields": {
+                "x:FlexibleCodeField": [
+                  {
+                    "@fieldId": "3",
+                    "#text": "KMER3"
+                  },
+                  {
+                    "@fieldId": "5",
+                    "#text": "THE BEAUTY LOUNGE"
+                  },
+                  {
+                    "@fieldId": "6",
+                    "#text": "1"
+                  },
+                  {
+                    "@fieldId": "7",
+                    "#text": "O"
+                  }
+                ]
+              }
+            },
+            {
+              "@lineItemNumber": "19",
+              "@locationCode": "01",
+              "x:Product": "KMES5",
+              "x:Quantity": "1.00",
+              "x:UnitPrice": "17.1000",
+              "x:ExtendedPrice": "17.1000",
+              "x:FlexibleFields": {
+                "x:FlexibleCodeField": [
+                  {
+                    "@fieldId": "3",
+                    "#text": "KMES5"
+                  },
+                  {
+                    "@fieldId": "5",
+                    "#text": "THE BEAUTY LOUNGE"
+                  },
+                  {
+                    "@fieldId": "6",
+                    "#text": "1"
+                  },
+                  {
+                    "@fieldId": "7",
+                    "#text": "O"
+                  }
+                ]
+              }
+            },
+            {
+              "@lineItemNumber": "20",
+              "@locationCode": "01",
+              "x:Product": "KMFREE1",
+              "x:Quantity": "1.00",
+              "x:UnitPrice": "6.1000",
+              "x:ExtendedPrice": "6.1000",
+              "x:FlexibleFields": {
+                "x:FlexibleCodeField": [
+                  {
+                    "@fieldId": "3",
+                    "#text": "KMFREE1"
+                  },
+                  {
+                    "@fieldId": "5",
+                    "#text": "THE BEAUTY LOUNGE"
+                  },
+                  {
+                    "@fieldId": "6",
+                    "#text": "1"
+                  },
+                  {
+                    "@fieldId": "7",
+                    "#text": "O"
+                  }
+                ]
+              }
+            },
+            {
+              "@lineItemNumber": "21",
+              "@locationCode": "01",
+              "x:Product": "KMLR6",
+              "x:Quantity": "1.00",
+              "x:UnitPrice": "17.1000",
+              "x:ExtendedPrice": "17.1000",
+              "x:FlexibleFields": {
+                "x:FlexibleCodeField": [
+                  {
+                    "@fieldId": "3",
+                    "#text": "KMLR6"
+                  },
+                  {
+                    "@fieldId": "5",
+                    "#text": "THE BEAUTY LOUNGE"
+                  },
+                  {
+                    "@fieldId": "6",
+                    "#text": "1"
+                  },
+                  {
+                    "@fieldId": "7",
+                    "#text": "O"
+                  }
+                ]
+              }
+            },
+            {
+              "@lineItemNumber": "22",
+              "@locationCode": "01",
+              "x:Product": "KMSMA6",
+              "x:Quantity": "1.00",
+              "x:UnitPrice": "17.1000",
+              "x:ExtendedPrice": "17.1000",
+              "x:FlexibleFields": {
+                "x:FlexibleCodeField": [
+                  {
+                    "@fieldId": "3",
+                    "#text": "KMSMA6"
+                  },
+                  {
+                    "@fieldId": "5",
+                    "#text": "THE BEAUTY LOUNGE"
+                  },
+                  {
+                    "@fieldId": "6",
+                    "#text": "1"
+                  },
+                  {
+                    "@fieldId": "7",
+                    "#text": "O"
+                  }
+                ]
+              }
+            },
+            {
+              "@lineItemNumber": "23",
+              "@locationCode": "01",
+              "x:Product": "KMSA5",
+              "x:Quantity": "1.00",
+              "x:UnitPrice": "13.9000",
+              "x:ExtendedPrice": "13.9000",
+              "x:FlexibleFields": {
+                "x:FlexibleCodeField": [
+                  {
+                    "@fieldId": "3",
+                    "#text": "KMSA5"
+                  },
+                  {
+                    "@fieldId": "5",
+                    "#text": "THE BEAUTY LOUNGE"
+                  },
+                  {
+                    "@fieldId": "6",
+                    "#text": "1"
+                  },
+                  {
+                    "@fieldId": "7",
+                    "#text": "O"
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      }
+    }
+  }
+}

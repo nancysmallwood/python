@@ -1,0 +1,195 @@
+{
+  "http://schemas.xmlsoap.org/soap/envelope/:Envelope": {
+    "http://schemas.xmlsoap.org/soap/envelope/:Header": null,
+    "http://schemas.xmlsoap.org/soap/envelope/:Body": {
+      "x:VertexEnvelope": {
+        "x:Login": {
+          "x:TrustedId": "3554784910394893"
+        },
+        "x:QuotationRequest": {
+          "@documentNumber": "10400488400",
+          "@documentDate": "2021-02-09",
+          "@transactionId": "932764",
+          "@transactionType": "SALE",
+          "@xmlns": {
+            "soapenv": "http://schemas.xmlsoap.org/soap/envelope/",
+            "": "urn:vertexinc:o-series:tps:7:0"
+          },
+          "x:Currency": {
+            "@isoCurrencyCodeAlpha": "USD"
+          },
+          "x:Customer": {
+            "x:CustomerCode": {
+              "@classCode": "TAX",
+              "#text": "56105628"
+            },
+            "x:Destination": {
+              "x:StreetAddress1": "218 S FIRESKY LN",
+              "x:StreetAddress2": null,
+              "x:City": "CHINO VALLEY",
+              "x:MainDivision": "AZ",
+              "x:PostalCode": "863235872",
+              "x:Country": "US"
+            }
+          },
+          "x:LineItem": [
+            {
+              "@lineItemNumber": "1",
+              "@locationCode": "C",
+              "x:Seller": {
+                "x:Company": "GA01",
+                "x:PhysicalOrigin": {
+                  "x:StreetAddress1": "4424 DIXIE HWY",
+                  "x:StreetAddress2": null,
+                  "x:City": "FAIRFIELD",
+                  "x:MainDivision": "OH",
+                  "x:PostalCode": "45014",
+                  "x:Country": "US"
+                }
+              },
+              "x:Product": {
+                "@productClass": "PLNTSNONFOOD",
+                "#text": "09547"
+              },
+              "x:Quantity": "3",
+              "x:UnitPrice": "29.990",
+              "x:ExtendedPrice": "89.97"
+            },
+            {
+              "@lineItemNumber": "2",
+              "@locationCode": "W",
+              "x:Seller": {
+                "x:Company": "GA01",
+                "x:PhysicalOrigin": {
+                  "x:StreetAddress1": "706 W. CUMBERLAND ST",
+                  "x:StreetAddress2": null,
+                  "x:City": "LEWISBURG",
+                  "x:MainDivision": "OH",
+                  "x:PostalCode": "45338",
+                  "x:Country": "US"
+                }
+              },
+              "x:Product": {
+                "@productClass": "VEGPLNTS",
+                "#text": "08697"
+              },
+              "x:Quantity": "1",
+              "x:UnitPrice": "29.990",
+              "x:ExtendedPrice": "29.99"
+            },
+            {
+              "@lineItemNumber": "3",
+              "@locationCode": "C",
+              "x:Seller": {
+                "x:Company": "GA01",
+                "x:PhysicalOrigin": {
+                  "x:StreetAddress1": "4424 DIXIE HWY",
+                  "x:StreetAddress2": null,
+                  "x:City": "FAIRFIELD",
+                  "x:MainDivision": "OH",
+                  "x:PostalCode": "45014",
+                  "x:Country": "US"
+                }
+              },
+              "x:Product": {
+                "@productClass": "VEGPLNTS",
+                "#text": "08715"
+              },
+              "x:Quantity": "1",
+              "x:UnitPrice": "11.990",
+              "x:ExtendedPrice": "11.99"
+            },
+            {
+              "@lineItemNumber": "4",
+              "@locationCode": "W",
+              "x:Seller": {
+                "x:Company": "GA01",
+                "x:PhysicalOrigin": {
+                  "x:StreetAddress1": "706 W. CUMBERLAND ST",
+                  "x:StreetAddress2": null,
+                  "x:City": "LEWISBURG",
+                  "x:MainDivision": "OH",
+                  "x:PostalCode": "45338",
+                  "x:Country": "US"
+                }
+              },
+              "x:Product": {
+                "@productClass": "PLNTSNONFOOD",
+                "#text": "08769"
+              },
+              "x:Quantity": "2",
+              "x:UnitPrice": "19.990",
+              "x:ExtendedPrice": "39.98"
+            },
+            {
+              "@lineItemNumber": "5",
+              "@locationCode": "C",
+              "x:Seller": {
+                "x:Company": "GA01",
+                "x:PhysicalOrigin": {
+                  "x:StreetAddress1": "4424 DIXIE HWY",
+                  "x:StreetAddress2": null,
+                  "x:City": "FAIRFIELD",
+                  "x:MainDivision": "OH",
+                  "x:PostalCode": "45014",
+                  "x:Country": "US"
+                }
+              },
+              "x:Product": {
+                "@productClass": "VEGFERT",
+                "#text": "73012"
+              },
+              "x:Quantity": "1",
+              "x:UnitPrice": "29.990",
+              "x:ExtendedPrice": "29.99"
+            },
+            {
+              "@lineItemNumber": "6",
+              "@locationCode": "T",
+              "x:Seller": {
+                "x:Company": "GA01",
+                "x:PhysicalOrigin": {
+                  "x:StreetAddress1": "110 WEST ELM ST",
+                  "x:StreetAddress2": null,
+                  "x:City": "TIPP CITY",
+                  "x:MainDivision": "OH",
+                  "x:PostalCode": "45371",
+                  "x:Country": "US"
+                }
+              },
+              "x:Product": {
+                "@productClass": "VEGPLNTS",
+                "#text": "76380"
+              },
+              "x:Quantity": "3",
+              "x:UnitPrice": "29.990",
+              "x:ExtendedPrice": "89.97"
+            },
+            {
+              "@lineItemNumber": "7",
+              "@locationCode": "T",
+              "x:Seller": {
+                "x:Company": "GA01",
+                "x:PhysicalOrigin": {
+                  "x:StreetAddress1": "110 WEST ELM ST",
+                  "x:StreetAddress2": null,
+                  "x:City": "TIPP CITY",
+                  "x:MainDivision": "OH",
+                  "x:PostalCode": "45371",
+                  "x:Country": "US"
+                }
+              },
+              "x:Product": {
+                "@productClass": "SHIPPING",
+                "#text": "FREIGHT"
+              },
+              "x:Quantity": "1",
+              "x:UnitPrice": "24.99",
+              "x:ExtendedPrice": "24.99"
+            }
+          ]
+        }
+      }
+    }
+  }
+}

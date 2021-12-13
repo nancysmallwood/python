@@ -1,0 +1,6 @@
+archive/1/0004e653-0c03-4090-98bb-57701c98a642_POSAPP01_lineitem.1733336096232400.csv.gz, 126
+archive/1/000798c2-066b-47d4-8e16-eaf220798887_POSAPP02_lineitem.418337477197300.csv.gz, 451
+archive/1/000a1dd7-dd57-49e5-a4d2-6ad77fa73370_POSAPP01_lineitem.113484552517400.csv.gz, 86
+archive/1/000b2bf7-5ae0-42b0-b8c4-ca03bc6bdcda_POSAPP01_lineitem.1345745374529900.csv.gz, 73
+archive/1/000bd509-acf6-4cd2-971c-34b0d149218f_POSAPP01_lineitem.721961045790400.csv.gz, 19
+Total lines: 755

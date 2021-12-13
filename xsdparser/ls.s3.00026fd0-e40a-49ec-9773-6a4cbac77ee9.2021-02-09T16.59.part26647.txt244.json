@@ -1,0 +1,206 @@
+{
+  "http://schemas.xmlsoap.org/soap/envelope/:Envelope": {
+    "http://schemas.xmlsoap.org/soap/envelope/:Header": null,
+    "http://schemas.xmlsoap.org/soap/envelope/:Body": {
+      "x:VertexEnvelope": {
+        "x:Login": {
+          "x:TrustedId": "1235769293676012"
+        },
+        "x:QuotationRequest": {
+          "@documentDate": "2021-02-09",
+          "@documentNumber": "DWC-QUOTE",
+          "@transactionType": "SALE",
+          "@xmlns": {
+            "SOAP-ENV": "http://schemas.xmlsoap.org/soap/envelope/",
+            "ns2": "urn:vertexinc:o-series:tps:7:0"
+          },
+          "x:Currency": {
+            "@isoCurrencyCodeAlpha": "USD"
+          },
+          "x:Seller": {
+            "x:Company": "1000",
+            "x:PhysicalOrigin": {
+              "x:StreetAddress1": "19601 N. 27th Ave",
+              "x:City": "Phoenix",
+              "x:MainDivision": "AZ",
+              "x:PostalCode": "85027",
+              "x:Country": "US"
+            },
+            "x:AdministrativeOrigin": {
+              "x:StreetAddress1": "19601 N. 27th Ave",
+              "x:City": "Phoenix",
+              "x:MainDivision": "AZ",
+              "x:PostalCode": "85027",
+              "x:Country": "US"
+            }
+          },
+          "x:LineItem": [
+            {
+              "@lineItemId": "db0d7c31f53e28ba97be6ab39d",
+              "@lineItemNumber": "1",
+              "@taxIncludedIndicator": "false",
+              "x:Customer": {
+                "x:CustomerCode": "e018b774-6d03-4cbe-b036-3c74675b9023",
+                "x:Destination": {
+                  "x:StreetAddress1": "19601 N. 27th Ave",
+                  "x:City": "Phoenix",
+                  "x:MainDivision": "AZ",
+                  "x:PostalCode": "85027",
+                  "x:Country": "US"
+                }
+              },
+              "x:Product": {
+                "@productClass": "NT",
+                "#text": "5148157"
+              },
+              "x:Quantity": {
+                "@unitOfMeasure": "EA",
+                "#text": "1.0"
+              },
+              "x:ExtendedPrice": "1.0",
+              "x:FlexibleFields": null
+            },
+            {
+              "@lineItemId": "9623b9578b5d73dbbc2590159d",
+              "@lineItemNumber": "2",
+              "@taxIncludedIndicator": "false",
+              "x:Customer": {
+                "x:CustomerCode": "e018b774-6d03-4cbe-b036-3c74675b9023",
+                "x:Destination": {
+                  "x:StreetAddress1": "19601 N. 27th Ave",
+                  "x:City": "Phoenix",
+                  "x:MainDivision": "AZ",
+                  "x:PostalCode": "85027",
+                  "x:Country": "US"
+                }
+              },
+              "x:Product": {
+                "@productClass": "FR020100",
+                "#text": "STANDARD_SHIPPING"
+              },
+              "x:Quantity": {
+                "@unitOfMeasure": "EA",
+                "#text": "1.0"
+              },
+              "x:ExtendedPrice": "0.0",
+              "x:FlexibleFields": {
+                "x:FlexibleCodeField": {
+                  "@fieldId": "8",
+                  "#text": "Shipping"
+                }
+              }
+            },
+            {
+              "@lineItemId": "a89caf2756058d313533853748",
+              "@lineItemNumber": "3",
+              "@taxIncludedIndicator": "false",
+              "x:Customer": {
+                "x:CustomerCode": "e018b774-6d03-4cbe-b036-3c74675b9023",
+                "x:Destination": {
+                  "@locationCode": "2370"
+                }
+              },
+              "x:Product": {
+                "@productClass": "PP051195",
+                "#text": "5237074"
+              },
+              "x:Quantity": {
+                "@unitOfMeasure": "EA",
+                "#text": "1.0"
+              },
+              "x:ExtendedPrice": "15.96",
+              "x:FlexibleFields": {
+                "x:FlexibleCodeField": {
+                  "@fieldId": "8",
+                  "#text": "CAT CHOW NATURALS INDOOR 13LB         25"
+                }
+              }
+            },
+            {
+              "@lineItemId": "c38e73bd1b842b6b57977bad78",
+              "@lineItemNumber": "4",
+              "@taxIncludedIndicator": "false",
+              "x:Customer": {
+                "x:CustomerCode": "e018b774-6d03-4cbe-b036-3c74675b9023",
+                "x:Destination": {
+                  "@locationCode": "2370"
+                }
+              },
+              "x:Product": {
+                "@productClass": "PP051195",
+                "#text": "5247221"
+              },
+              "x:Quantity": {
+                "@unitOfMeasure": "EA",
+                "#text": "2.0"
+              },
+              "x:ExtendedPrice": "15.01",
+              "x:FlexibleFields": {
+                "x:FlexibleCodeField": {
+                  "@fieldId": "8",
+                  "#text": "FRISKIES PM LIP LICKEN CHICKEN 20OZ   23"
+                }
+              }
+            },
+            {
+              "@lineItemId": "2b49495d43f5c3ff62dd65a544",
+              "@lineItemNumber": "5",
+              "@taxIncludedIndicator": "false",
+              "x:Customer": {
+                "x:CustomerCode": "e018b774-6d03-4cbe-b036-3c74675b9023",
+                "x:Destination": {
+                  "@locationCode": "2370"
+                }
+              },
+              "x:Product": {
+                "@productClass": "PP051195",
+                "#text": "1221069"
+              },
+              "x:Quantity": {
+                "@unitOfMeasure": "EA",
+                "#text": "12.0"
+              },
+              "x:ExtendedPrice": "7.78",
+              "x:FlexibleFields": {
+                "x:FlexibleCodeField": {
+                  "@fieldId": "8",
+                  "#text": "FF CLASSIC PATE CHICKEN 3OZ           23"
+                }
+              }
+            },
+            {
+              "@lineItemId": "7645618453a19cc3522037db78",
+              "@lineItemNumber": "6",
+              "@taxIncludedIndicator": "false",
+              "x:Customer": {
+                "x:CustomerCode": "e018b774-6d03-4cbe-b036-3c74675b9023",
+                "x:Destination": {
+                  "x:StreetAddress1": "11739 East Kellogg Dr.",
+                  "x:City": "Wichita",
+                  "x:MainDivision": "KS",
+                  "x:PostalCode": "67207",
+                  "x:Country": "US"
+                }
+              },
+              "x:Product": {
+                "@productClass": "FR020100",
+                "#text": "STANDARD_SHIPPING"
+              },
+              "x:Quantity": {
+                "@unitOfMeasure": "EA",
+                "#text": "1.0"
+              },
+              "x:ExtendedPrice": "0.0",
+              "x:FlexibleFields": {
+                "x:FlexibleCodeField": {
+                  "@fieldId": "8",
+                  "#text": "Shipping"
+                }
+              }
+            }
+          ]
+        }
+      }
+    }
+  }
+}

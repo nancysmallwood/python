@@ -1,0 +1,116 @@
+{
+  "http://schemas.xmlsoap.org/soap/envelope/:Envelope": {
+    "http://schemas.xmlsoap.org/soap/envelope/:Header": null,
+    "http://schemas.xmlsoap.org/soap/envelope/:Body": {
+      "urn:vertexinc:o-series:tps:6:0:VertexEnvelope": {
+        "urn:vertexinc:o-series:tps:6:0:Login": {
+          "urn:vertexinc:o-series:tps:6:0:UserName": "1393734686457928",
+          "urn:vertexinc:o-series:tps:6:0:Password": "1393734686457928"
+        },
+        "urn:vertexinc:o-series:tps:6:0:QuotationRequest": {
+          "@documentDate": "2020-11-16",
+          "@transactionType": "SALE",
+          "@xmlns": {
+            "soap-env": "http://schemas.xmlsoap.org/soap/envelope/",
+            "n0": "urn:vertexinc:o-series:tps:6:0",
+            "prx": "urn:sap.com:proxy:LBD:/1SAI/TAS936D399FAB6FA376F7AC:804"
+          },
+          "urn:vertexinc:o-series:tps:6:0:LineItem": [
+            {
+              "@lineItemNumber": "1",
+              "@taxDate": "2020-11-16",
+              "@lineItemId": "       15",
+              "urn:vertexinc:o-series:tps:6:0:Seller": {
+                "urn:vertexinc:o-series:tps:6:0:Company": "SAPBYD",
+                "urn:vertexinc:o-series:tps:6:0:PhysicalOrigin": {
+                  "urn:vertexinc:o-series:tps:6:0:StreetAddress1": "1 Vortex Drive",
+                  "urn:vertexinc:o-series:tps:6:0:City": "Barneveld",
+                  "urn:vertexinc:o-series:tps:6:0:MainDivision": "WI",
+                  "urn:vertexinc:o-series:tps:6:0:PostalCode": "53507",
+                  "urn:vertexinc:o-series:tps:6:0:Country": "US"
+                },
+                "urn:vertexinc:o-series:tps:6:0:AdministrativeOrigin": {
+                  "urn:vertexinc:o-series:tps:6:0:StreetAddress1": "1 Vortex Drive",
+                  "urn:vertexinc:o-series:tps:6:0:City": "Barneveld",
+                  "urn:vertexinc:o-series:tps:6:0:MainDivision": "WI",
+                  "urn:vertexinc:o-series:tps:6:0:PostalCode": "53507",
+                  "urn:vertexinc:o-series:tps:6:0:Country": "US"
+                }
+              },
+              "urn:vertexinc:o-series:tps:6:0:Customer": {
+                "@isTaxExempt": "false",
+                "urn:vertexinc:o-series:tps:6:0:CustomerCode": "181415",
+                "urn:vertexinc:o-series:tps:6:0:Destination": {
+                  "urn:vertexinc:o-series:tps:6:0:StreetAddress1": "4300 Kemp Blvd",
+                  "urn:vertexinc:o-series:tps:6:0:City": "Wichita Falls",
+                  "urn:vertexinc:o-series:tps:6:0:MainDivision": "TX",
+                  "urn:vertexinc:o-series:tps:6:0:PostalCode": "76308",
+                  "urn:vertexinc:o-series:tps:6:0:Country": "US"
+                },
+                "urn:vertexinc:o-series:tps:6:0:AdministrativeDestination": {
+                  "urn:vertexinc:o-series:tps:6:0:StreetAddress1": "2301 Hwy 1187",
+                  "urn:vertexinc:o-series:tps:6:0:City": "Mansfield",
+                  "urn:vertexinc:o-series:tps:6:0:MainDivision": "TX",
+                  "urn:vertexinc:o-series:tps:6:0:PostalCode": "76063",
+                  "urn:vertexinc:o-series:tps:6:0:Country": "US"
+                }
+              },
+              "urn:vertexinc:o-series:tps:6:0:Product": "SPR-300",
+              "urn:vertexinc:o-series:tps:6:0:Quantity": "5.00000000000000",
+              "urn:vertexinc:o-series:tps:6:0:ExtendedPrice": {
+                "@isoCurrencyCodeAlpha": "USD",
+                "#text": "1126.950000"
+              }
+            },
+            {
+              "@lineItemNumber": "2",
+              "@taxDate": "2020-11-16",
+              "@lineItemId": "       15",
+              "urn:vertexinc:o-series:tps:6:0:Seller": {
+                "urn:vertexinc:o-series:tps:6:0:Company": "SAPBYD",
+                "urn:vertexinc:o-series:tps:6:0:PhysicalOrigin": {
+                  "urn:vertexinc:o-series:tps:6:0:StreetAddress1": "1 Vortex Drive",
+                  "urn:vertexinc:o-series:tps:6:0:City": "Barneveld",
+                  "urn:vertexinc:o-series:tps:6:0:MainDivision": "WI",
+                  "urn:vertexinc:o-series:tps:6:0:PostalCode": "53507",
+                  "urn:vertexinc:o-series:tps:6:0:Country": "US"
+                },
+                "urn:vertexinc:o-series:tps:6:0:AdministrativeOrigin": {
+                  "urn:vertexinc:o-series:tps:6:0:StreetAddress1": "1 Vortex Drive",
+                  "urn:vertexinc:o-series:tps:6:0:City": "Barneveld",
+                  "urn:vertexinc:o-series:tps:6:0:MainDivision": "WI",
+                  "urn:vertexinc:o-series:tps:6:0:PostalCode": "53507",
+                  "urn:vertexinc:o-series:tps:6:0:Country": "US"
+                }
+              },
+              "urn:vertexinc:o-series:tps:6:0:Customer": {
+                "@isTaxExempt": "false",
+                "urn:vertexinc:o-series:tps:6:0:CustomerCode": "181415",
+                "urn:vertexinc:o-series:tps:6:0:Destination": {
+                  "urn:vertexinc:o-series:tps:6:0:StreetAddress1": "4300 Kemp Blvd",
+                  "urn:vertexinc:o-series:tps:6:0:City": "Wichita Falls",
+                  "urn:vertexinc:o-series:tps:6:0:MainDivision": "TX",
+                  "urn:vertexinc:o-series:tps:6:0:PostalCode": "76308",
+                  "urn:vertexinc:o-series:tps:6:0:Country": "US"
+                },
+                "urn:vertexinc:o-series:tps:6:0:AdministrativeDestination": {
+                  "urn:vertexinc:o-series:tps:6:0:StreetAddress1": "2301 Hwy 1187",
+                  "urn:vertexinc:o-series:tps:6:0:City": "Mansfield",
+                  "urn:vertexinc:o-series:tps:6:0:MainDivision": "TX",
+                  "urn:vertexinc:o-series:tps:6:0:PostalCode": "76063",
+                  "urn:vertexinc:o-series:tps:6:0:Country": "US"
+                }
+              },
+              "urn:vertexinc:o-series:tps:6:0:Product": "Freight",
+              "urn:vertexinc:o-series:tps:6:0:Quantity": "1",
+              "urn:vertexinc:o-series:tps:6:0:ExtendedPrice": {
+                "@isoCurrencyCodeAlpha": "USD",
+                "#text": "0.000000"
+              }
+            }
+          ]
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,66 @@
+{
+  "http://schemas.xmlsoap.org/soap/envelope/:Envelope": {
+    "http://schemas.xmlsoap.org/soap/envelope/:Header": null,
+    "http://schemas.xmlsoap.org/soap/envelope/:Body": {
+      "x:VertexEnvelope": {
+        "x:Login": {
+          "x:TrustedId": "1716856575846916"
+        },
+        "x:QuotationRequest": {
+          "@transactionType": "SALE",
+          "@xmlns": {
+            "SOAP-ENV": "http://schemas.xmlsoap.org/soap/envelope/",
+            "ns2": "urn:vertexinc:o-series:tps:7:0"
+          },
+          "x:Seller": {
+            "x:Company": "QUALIA",
+            "x:PhysicalOrigin": {
+              "x:StreetAddress1": "201 Mission Street",
+              "x:StreetAddress2": "Suite 1800",
+              "x:City": "San Francisco",
+              "x:MainDivision": "CA",
+              "x:PostalCode": "94105",
+              "x:Country": "UNITED STATES"
+            },
+            "x:AdministrativeOrigin": {
+              "x:StreetAddress1": "201 Mission Street",
+              "x:StreetAddress2": "Suite 1800",
+              "x:City": "San Francisco",
+              "x:MainDivision": "CA",
+              "x:PostalCode": "94105",
+              "x:Country": "UNITED STATES"
+            }
+          },
+          "x:Customer": {
+            "x:CustomerCode": "escrowservices",
+            "x:Destination": {
+              "x:StreetAddress1": "1450 Governors Ridge",
+              "x:City": "Franklin",
+              "x:MainDivision": "TN",
+              "x:PostalCode": "37064",
+              "x:Country": "UNITED STATES"
+            }
+          },
+          "x:LineItem": {
+            "@taxDate": "2021-02-09",
+            "x:Product": "sellerCashPurchase",
+            "x:Quantity": "1.0",
+            "x:ExtendedPrice": "169.96",
+            "x:FlexibleFields": {
+              "x:FlexibleCodeField": [
+                {
+                  "@fieldId": "1",
+                  "#text": "prod"
+                },
+                {
+                  "@fieldId": "2",
+                  "#text": "escrowservices"
+                }
+              ]
+            }
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,187 @@
+{
+  "http://schemas.xmlsoap.org/soap/envelope/:Envelope": {
+    "http://schemas.xmlsoap.org/soap/envelope/:Body": {
+      "x:VertexEnvelope": {
+        "x:Login": {
+          "x:TrustedId": "3998310596563499"
+        },
+        "x:InvoiceRequest": {
+          "@documentDate": "2021-02-09",
+          "@transactionType": "SALE",
+          "@xmlns": {
+            "soapenv": "http://schemas.xmlsoap.org/soap/envelope/",
+            "xsd": "http://www.w3.org/2001/XMLSchema",
+            "xsi": "http://www.w3.org/2001/XMLSchema-instance",
+            "": "urn:vertexinc:o-series:tps:7:0"
+          },
+          "x:Seller": {
+            "x:Company": "899",
+            "x:PhysicalOrigin": {
+              "x:City": "Groveport",
+              "x:MainDivision": "OH",
+              "x:PostalCode": "43215",
+              "x:Country": "USA"
+            },
+            "x:AdministrativeOrigin": {
+              "x:City": "Groveport",
+              "x:MainDivision": "OH",
+              "x:PostalCode": "43215",
+              "x:Country": "USA"
+            }
+          },
+          "x:Customer": null,
+          "x:LineItem": [
+            {
+              "@lineItemId": "PRODUCT??0111518",
+              "@lineItemNumber": "1",
+              "x:Customer": {
+                "x:Destination": {
+                  "x:StreetAddress1": "7123 Northchase Ln",
+                  "x:City": "Richmond",
+                  "x:MainDivision": "TX",
+                  "x:PostalCode": "77469-4119",
+                  "x:Country": "US"
+                }
+              },
+              "x:Product": {
+                "@productClass": "0518",
+                "#text": "Drifter TS Sandals"
+              },
+              "x:Quantity": "1.0",
+              "x:ExtendedPrice": "24.50",
+              "x:Discount": {
+                "x:DiscountAmount": "10.5"
+              }
+            },
+            {
+              "@lineItemId": "PRODUCT??1496918",
+              "@lineItemNumber": "2",
+              "x:Customer": {
+                "x:Destination": {
+                  "x:StreetAddress1": "7123 Northchase Ln",
+                  "x:City": "Richmond",
+                  "x:MainDivision": "TX",
+                  "x:PostalCode": "77469-4119",
+                  "x:Country": "US"
+                }
+              },
+              "x:Product": {
+                "@productClass": "0530",
+                "#text": "x Kung Fu Panda Instapump Fury Shoes"
+              },
+              "x:Quantity": "1.0",
+              "x:ExtendedPrice": "170.00",
+              "x:Discount": {
+                "x:DiscountAmount": "30.0"
+              }
+            },
+            {
+              "@lineItemId": "PRODUCT??1311034",
+              "@lineItemNumber": "3",
+              "x:Customer": {
+                "x:Destination": {
+                  "x:StreetAddress1": "7123 Northchase Ln",
+                  "x:City": "Richmond",
+                  "x:MainDivision": "TX",
+                  "x:PostalCode": "77469-4119",
+                  "x:Country": "US"
+                }
+              },
+              "x:Product": {
+                "@productClass": "0120",
+                "#text": "Los Angeles Vintage Short Sleeve T-Shir"
+              },
+              "x:Quantity": "1.0",
+              "x:ExtendedPrice": "21.21",
+              "x:Discount": {
+                "x:DiscountAmount": "3.7399999999999984"
+              }
+            },
+            {
+              "@lineItemId": "PRODUCT??0536490",
+              "@lineItemNumber": "4",
+              "x:Customer": {
+                "x:Destination": {
+                  "x:StreetAddress1": "7123 Northchase Ln",
+                  "x:City": "Richmond",
+                  "x:MainDivision": "TX",
+                  "x:PostalCode": "77469-4119",
+                  "x:Country": "US"
+                }
+              },
+              "x:Product": {
+                "@productClass": "0097",
+                "#text": "Arekild T-Shirt"
+              },
+              "x:Quantity": "1.0",
+              "x:ExtendedPrice": "16.19",
+              "x:Discount": {
+                "x:DiscountAmount": "10.799999999999997"
+              }
+            },
+            {
+              "@lineItemId": "PRODUCT??7933567",
+              "@lineItemNumber": "5",
+              "x:Customer": {
+                "x:Destination": {
+                  "x:StreetAddress1": "7123 Northchase Ln",
+                  "x:City": "Richmond",
+                  "x:MainDivision": "TX",
+                  "x:PostalCode": "77469-4119",
+                  "x:Country": "US"
+                }
+              },
+              "x:Product": {
+                "@productClass": "0133",
+                "#text": "Side Stripe Drop Skinny Jogger Pants"
+              },
+              "x:Quantity": "1.0",
+              "x:ExtendedPrice": "27.47",
+              "x:Discount": {
+                "x:DiscountAmount": "27.480000000000004"
+              }
+            },
+            {
+              "@lineItemId": "PRODUCT??1379106",
+              "@lineItemNumber": "6",
+              "x:Customer": {
+                "x:Destination": {
+                  "x:StreetAddress1": "7123 Northchase Ln",
+                  "x:City": "Richmond",
+                  "x:MainDivision": "TX",
+                  "x:PostalCode": "77469-4119",
+                  "x:Country": "US"
+                }
+              },
+              "x:Product": {
+                "@productClass": "0133",
+                "#text": "Utility Gray Zip-Off Cargo Pants"
+              },
+              "x:Quantity": "1.0",
+              "x:ExtendedPrice": "50.96",
+              "x:Discount": {
+                "x:DiscountAmount": "8.990000000000002"
+              }
+            },
+            {
+              "@lineItemId": "SHIPPING??STANDARD_SHIPPING",
+              "@lineItemNumber": "7",
+              "x:Customer": {
+                "x:Destination": {
+                  "x:StreetAddress1": "7123 Northchase Ln",
+                  "x:City": "Richmond",
+                  "x:MainDivision": "TX",
+                  "x:PostalCode": "77469-4119",
+                  "x:Country": "US"
+                }
+              },
+              "x:Product": "SHP",
+              "x:Quantity": "1.0",
+              "x:ExtendedPrice": "20.00"
+            }
+          ]
+        }
+      }
+    }
+  }
+}

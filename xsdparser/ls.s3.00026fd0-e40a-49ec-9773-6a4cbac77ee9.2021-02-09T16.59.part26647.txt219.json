@@ -1,0 +1,118 @@
+{
+  "http://schemas.xmlsoap.org/soap/envelope/:Envelope": {
+    "http://schemas.xmlsoap.org/soap/envelope/:Header": null,
+    "http://schemas.xmlsoap.org/soap/envelope/:Body": {
+      "urn:vertexinc:o-series:tps:8:0:VertexEnvelope": {
+        "urn:vertexinc:o-series:tps:8:0:Login": {
+          "urn:vertexinc:o-series:tps:8:0:TrustedId": "3125242433783534"
+        },
+        "urn:vertexinc:o-series:tps:8:0:QuotationRequest": {
+          "@documentNumber": "4606638",
+          "@locationCode": "20",
+          "@returnAssistedParametersIndicator": "true",
+          "@documentDate": "2021-02-09",
+          "@transactionType": "SALE",
+          "@xmlns": {
+            "soapenv": "http://schemas.xmlsoap.org/soap/envelope/",
+            "": "urn:vertexinc:o-series:tps:8:0"
+          },
+          "urn:vertexinc:o-series:tps:8:0:Currency": {
+            "@isoCurrencyCodeAlpha": "USD"
+          },
+          "urn:vertexinc:o-series:tps:8:0:Seller": {
+            "urn:vertexinc:o-series:tps:8:0:Company": "00010",
+            "urn:vertexinc:o-series:tps:8:0:PhysicalOrigin": {
+              "@taxAreaId": "140000000"
+            },
+            "urn:vertexinc:o-series:tps:8:0:AdministrativeOrigin": {
+              "@taxAreaId": "140000000"
+            }
+          },
+          "urn:vertexinc:o-series:tps:8:0:Customer": {
+            "urn:vertexinc:o-series:tps:8:0:CustomerCode": {
+              "@classCode": "441",
+              "#text": "903949"
+            },
+            "urn:vertexinc:o-series:tps:8:0:Destination": {
+              "@taxAreaId": "100310660"
+            },
+            "urn:vertexinc:o-series:tps:8:0:AdministrativeDestination": {
+              "@taxAreaId": "100310660"
+            }
+          },
+          "urn:vertexinc:o-series:tps:8:0:LineItem": {
+            "@lineItemNumber": "5",
+            "urn:vertexinc:o-series:tps:8:0:Customer": {
+              "urn:vertexinc:o-series:tps:8:0:Destination": {
+                "@taxAreaId": "100310660"
+              },
+              "urn:vertexinc:o-series:tps:8:0:AdministrativeDestination": {
+                "@taxAreaId": "100310660"
+              }
+            },
+            "urn:vertexinc:o-series:tps:8:0:TaxOverride": {
+              "@overrideType": "NONTAXABLE"
+            },
+            "urn:vertexinc:o-series:tps:8:0:Product": {
+              "@productClass": "CD",
+              "#text": "108147"
+            },
+            "urn:vertexinc:o-series:tps:8:0:Quantity": "60.000000",
+            "urn:vertexinc:o-series:tps:8:0:ExtendedPrice": "719.400000",
+            "urn:vertexinc:o-series:tps:8:0:FlexibleFields": {
+              "urn:vertexinc:o-series:tps:8:0:FlexibleCodeField": [
+                {
+                  "@fieldId": "1",
+                  "#text": "SO  4606638 00010"
+                },
+                {
+                  "@fieldId": "2",
+                  "#text": "PAUL WILBUR MINISTRIES"
+                },
+                {
+                  "@fieldId": "3",
+                  "#text": "903949"
+                },
+                {
+                  "@fieldId": "4",
+                  "#text": "SHIPPING-AND-HANDELING.COM"
+                },
+                {
+                  "@fieldId": "5",
+                  "#text": "E"
+                },
+                {
+                  "@fieldId": "21",
+                  "#text": "DCCJDEOLENT01"
+                },
+                {
+                  "@fieldId": "22",
+                  "#text": "JPD920"
+                },
+                {
+                  "@fieldId": "23",
+                  "#text": "LOUTHR"
+                },
+                {
+                  "@fieldId": "24",
+                  "#text": "P42232"
+                },
+                {
+                  "@fieldId": "25",
+                  "#text": "CCM42002"
+                }
+              ],
+              "urn:vertexinc:o-series:tps:8:0:FlexibleNumericField": {
+                "@fieldId": "1",
+                "#text": "5.000000"
+              }
+            }
+          }
+        },
+        "urn:vertexinc:o-series:tps:8:0:ApplicationData": {
+          "urn:vertexinc:o-series:tps:8:0:Sender": "E1 Envr: JPD920;   E1 Server: DCCJDEOLENT01;   E1 User: LOUTHR;   E1 Program/Version/BSFN: P42232/CCM42002/IQ56TAXR_CallVertexAREvents"
+        }
+      }
+    }
+  }
+}

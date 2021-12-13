@@ -1,0 +1,692 @@
+{
+  "http://schemas.xmlsoap.org/soap/envelope/:Envelope": {
+    "http://schemas.xmlsoap.org/soap/envelope/:Header": null,
+    "http://schemas.xmlsoap.org/soap/envelope/:Body": {
+      "x:VertexEnvelope": {
+        "x:Login": {
+          "x:TrustedId": "5461809031989282"
+        },
+        "x:QuotationRequest": {
+          "@transactionType": "SALE",
+          "@documentDate": "2021-02-09",
+          "@documentNumber": "",
+          "@xmlns": {
+            "soapenv": "http://schemas.xmlsoap.org/soap/envelope/",
+            "": "urn:vertexinc:o-series:tps:7:0"
+          },
+          "x:Seller": {
+            "x:Company": "WPS",
+            "x:PhysicalOrigin": {
+              "x:StreetAddress1": "1480 Zeager Rd.",
+              "x:StreetAddress2": null,
+              "x:City": "Elizabethtown",
+              "x:MainDivision": "PA",
+              "x:PostalCode": "17022",
+              "x:Country": "USA"
+            }
+          },
+          "x:Customer": {
+            "x:CustomerCode": {
+              "@classCode": "05",
+              "#text": "2171084"
+            },
+            "x:Destination": {
+              "x:StreetAddress1": "405 BROWNING CT",
+              "x:StreetAddress2": null,
+              "x:City": "PURCELLVILLE",
+              "x:MainDivision": "VA",
+              "x:PostalCode": "20132",
+              "x:Country": "USA"
+            }
+          },
+          "x:LineItem": [
+            {
+              "@lineItemNumber": "1",
+              "@locationCode": "PA",
+              "x:Product": null,
+              "x:Quantity": "10.00",
+              "x:UnitPrice": "1.9530",
+              "x:ExtendedPrice": "19.5300",
+              "x:FlexibleFields": {
+                "x:FlexibleCodeField": [
+                  {
+                    "@fieldId": "3",
+                    "#text": "2-BPR5ES"
+                  },
+                  {
+                    "@fieldId": "5",
+                    "#text": "MOTO MEMBER"
+                  },
+                  {
+                    "@fieldId": "6"
+                  }
+                ]
+              }
+            },
+            {
+              "@lineItemNumber": "2",
+              "@locationCode": "PA",
+              "x:Product": null,
+              "x:Quantity": "1.00",
+              "x:UnitPrice": "28.3410",
+              "x:ExtendedPrice": "28.3400",
+              "x:FlexibleFields": {
+                "x:FlexibleCodeField": [
+                  {
+                    "@fieldId": "3",
+                    "#text": "226-1322"
+                  },
+                  {
+                    "@fieldId": "5",
+                    "#text": "MOTO MEMBER"
+                  },
+                  {
+                    "@fieldId": "6"
+                  }
+                ]
+              }
+            },
+            {
+              "@lineItemNumber": "6",
+              "@locationCode": "PA",
+              "x:Product": null,
+              "x:Quantity": "1.00",
+              "x:UnitPrice": "308.2015",
+              "x:ExtendedPrice": "308.2000",
+              "x:FlexibleFields": {
+                "x:FlexibleCodeField": [
+                  {
+                    "@fieldId": "3",
+                    "#text": "620-79958"
+                  },
+                  {
+                    "@fieldId": "5",
+                    "#text": "MOTO MEMBER"
+                  },
+                  {
+                    "@fieldId": "6"
+                  }
+                ]
+              }
+            },
+            {
+              "@lineItemNumber": "7",
+              "@locationCode": "PA",
+              "x:Product": null,
+              "x:Quantity": "1.00",
+              "x:UnitPrice": "77.5710",
+              "x:ExtendedPrice": "77.5700",
+              "x:FlexibleFields": {
+                "x:FlexibleCodeField": [
+                  {
+                    "@fieldId": "3",
+                    "#text": "432P4"
+                  },
+                  {
+                    "@fieldId": "5",
+                    "#text": "MOTO MEMBER"
+                  },
+                  {
+                    "@fieldId": "6"
+                  }
+                ]
+              }
+            },
+            {
+              "@lineItemNumber": "8",
+              "@locationCode": "PA",
+              "x:Product": null,
+              "x:Quantity": "1.00",
+              "x:UnitPrice": "89.5050",
+              "x:ExtendedPrice": "89.5100",
+              "x:FlexibleFields": {
+                "x:FlexibleCodeField": [
+                  {
+                    "@fieldId": "3",
+                    "#text": "432P6"
+                  },
+                  {
+                    "@fieldId": "5",
+                    "#text": "MOTO MEMBER"
+                  },
+                  {
+                    "@fieldId": "6"
+                  }
+                ]
+              }
+            },
+            {
+              "@lineItemNumber": "9",
+              "@locationCode": "PA",
+              "x:Product": null,
+              "x:Quantity": "1.00",
+              "x:UnitPrice": "15.8312",
+              "x:ExtendedPrice": "15.8300",
+              "x:FlexibleFields": {
+                "x:FlexibleCodeField": [
+                  {
+                    "@fieldId": "3",
+                    "#text": "206-1080"
+                  },
+                  {
+                    "@fieldId": "5",
+                    "#text": "MOTO MEMBER"
+                  },
+                  {
+                    "@fieldId": "6"
+                  }
+                ]
+              }
+            },
+            {
+              "@lineItemNumber": "10",
+              "@locationCode": "PA",
+              "x:Product": null,
+              "x:Quantity": "1.00",
+              "x:UnitPrice": "15.8312",
+              "x:ExtendedPrice": "15.8300",
+              "x:FlexibleFields": {
+                "x:FlexibleCodeField": [
+                  {
+                    "@fieldId": "3",
+                    "#text": "206-1081"
+                  },
+                  {
+                    "@fieldId": "5",
+                    "#text": "MOTO MEMBER"
+                  },
+                  {
+                    "@fieldId": "6"
+                  }
+                ]
+              }
+            },
+            {
+              "@lineItemNumber": "11",
+              "@locationCode": "PA",
+              "x:Product": null,
+              "x:Quantity": "1.00",
+              "x:UnitPrice": "15.8312",
+              "x:ExtendedPrice": "15.8300",
+              "x:FlexibleFields": {
+                "x:FlexibleCodeField": [
+                  {
+                    "@fieldId": "3",
+                    "#text": "206-1082"
+                  },
+                  {
+                    "@fieldId": "5",
+                    "#text": "MOTO MEMBER"
+                  },
+                  {
+                    "@fieldId": "6"
+                  }
+                ]
+              }
+            },
+            {
+              "@lineItemNumber": "12",
+              "@locationCode": "PA",
+              "x:Product": null,
+              "x:Quantity": "1.00",
+              "x:UnitPrice": "15.8312",
+              "x:ExtendedPrice": "15.8300",
+              "x:FlexibleFields": {
+                "x:FlexibleCodeField": [
+                  {
+                    "@fieldId": "3",
+                    "#text": "206-1083"
+                  },
+                  {
+                    "@fieldId": "5",
+                    "#text": "MOTO MEMBER"
+                  },
+                  {
+                    "@fieldId": "6"
+                  }
+                ]
+              }
+            },
+            {
+              "@lineItemNumber": "13",
+              "@locationCode": "PA",
+              "x:Product": null,
+              "x:Quantity": "1.00",
+              "x:UnitPrice": "17.9900",
+              "x:ExtendedPrice": "17.9900",
+              "x:FlexibleFields": {
+                "x:FlexibleCodeField": [
+                  {
+                    "@fieldId": "3",
+                    "#text": "206-1114"
+                  },
+                  {
+                    "@fieldId": "5",
+                    "#text": "MOTO MEMBER"
+                  },
+                  {
+                    "@fieldId": "6"
+                  }
+                ]
+              }
+            },
+            {
+              "@lineItemNumber": "14",
+              "@locationCode": "PA",
+              "x:Product": null,
+              "x:Quantity": "1.00",
+              "x:UnitPrice": "15.3032",
+              "x:ExtendedPrice": "15.3000",
+              "x:FlexibleFields": {
+                "x:FlexibleCodeField": [
+                  {
+                    "@fieldId": "3",
+                    "#text": "206-1115"
+                  },
+                  {
+                    "@fieldId": "5",
+                    "#text": "MOTO MEMBER"
+                  },
+                  {
+                    "@fieldId": "6"
+                  }
+                ]
+              }
+            },
+            {
+              "@lineItemNumber": "15",
+              "@locationCode": "PA",
+              "x:Product": null,
+              "x:Quantity": "1.00",
+              "x:UnitPrice": "15.3032",
+              "x:ExtendedPrice": "15.3000",
+              "x:FlexibleFields": {
+                "x:FlexibleCodeField": [
+                  {
+                    "@fieldId": "3",
+                    "#text": "206-1116"
+                  },
+                  {
+                    "@fieldId": "5",
+                    "#text": "MOTO MEMBER"
+                  },
+                  {
+                    "@fieldId": "6"
+                  }
+                ]
+              }
+            },
+            {
+              "@lineItemNumber": "17",
+              "@locationCode": "PA",
+              "x:Product": null,
+              "x:Quantity": "1.00",
+              "x:UnitPrice": "15.3032",
+              "x:ExtendedPrice": "15.3000",
+              "x:FlexibleFields": {
+                "x:FlexibleCodeField": [
+                  {
+                    "@fieldId": "3",
+                    "#text": "206-1118"
+                  },
+                  {
+                    "@fieldId": "5",
+                    "#text": "MOTO MEMBER"
+                  },
+                  {
+                    "@fieldId": "6"
+                  }
+                ]
+              }
+            },
+            {
+              "@lineItemNumber": "18",
+              "@locationCode": "PA",
+              "x:Product": null,
+              "x:Quantity": "1.00",
+              "x:UnitPrice": "15.5900",
+              "x:ExtendedPrice": "15.5900",
+              "x:FlexibleFields": {
+                "x:FlexibleCodeField": [
+                  {
+                    "@fieldId": "3",
+                    "#text": "206-1089"
+                  },
+                  {
+                    "@fieldId": "5",
+                    "#text": "MOTO MEMBER"
+                  },
+                  {
+                    "@fieldId": "6"
+                  }
+                ]
+              }
+            },
+            {
+              "@lineItemNumber": "19",
+              "@locationCode": "PA",
+              "x:Product": null,
+              "x:Quantity": "1.00",
+              "x:UnitPrice": "13.7192",
+              "x:ExtendedPrice": "13.7200",
+              "x:FlexibleFields": {
+                "x:FlexibleCodeField": [
+                  {
+                    "@fieldId": "3",
+                    "#text": "206-1087"
+                  },
+                  {
+                    "@fieldId": "5",
+                    "#text": "MOTO MEMBER"
+                  },
+                  {
+                    "@fieldId": "6"
+                  }
+                ]
+              }
+            },
+            {
+              "@lineItemNumber": "20",
+              "@locationCode": "PA",
+              "x:Product": null,
+              "x:Quantity": "1.00",
+              "x:UnitPrice": "13.7192",
+              "x:ExtendedPrice": "13.7200",
+              "x:FlexibleFields": {
+                "x:FlexibleCodeField": [
+                  {
+                    "@fieldId": "3",
+                    "#text": "206-1088"
+                  },
+                  {
+                    "@fieldId": "5",
+                    "#text": "MOTO MEMBER"
+                  },
+                  {
+                    "@fieldId": "6"
+                  }
+                ]
+              }
+            },
+            {
+              "@lineItemNumber": "21",
+              "@locationCode": "PA",
+              "x:Product": null,
+              "x:Quantity": "1.00",
+              "x:UnitPrice": "13.7192",
+              "x:ExtendedPrice": "13.7200",
+              "x:FlexibleFields": {
+                "x:FlexibleCodeField": [
+                  {
+                    "@fieldId": "3",
+                    "#text": "206-1090"
+                  },
+                  {
+                    "@fieldId": "5",
+                    "#text": "MOTO MEMBER"
+                  },
+                  {
+                    "@fieldId": "6"
+                  }
+                ]
+              }
+            },
+            {
+              "@lineItemNumber": "22",
+              "@locationCode": "PA",
+              "x:Product": null,
+              "x:Quantity": "1.00",
+              "x:UnitPrice": "13.7192",
+              "x:ExtendedPrice": "13.7200",
+              "x:FlexibleFields": {
+                "x:FlexibleCodeField": [
+                  {
+                    "@fieldId": "3",
+                    "#text": "206-1092"
+                  },
+                  {
+                    "@fieldId": "5",
+                    "#text": "MOTO MEMBER"
+                  },
+                  {
+                    "@fieldId": "6"
+                  }
+                ]
+              }
+            },
+            {
+              "@lineItemNumber": "23",
+              "@locationCode": "PA",
+              "x:Product": null,
+              "x:Quantity": "1.00",
+              "x:UnitPrice": "13.7192",
+              "x:ExtendedPrice": "13.7200",
+              "x:FlexibleFields": {
+                "x:FlexibleCodeField": [
+                  {
+                    "@fieldId": "3",
+                    "#text": "206-1095"
+                  },
+                  {
+                    "@fieldId": "5",
+                    "#text": "MOTO MEMBER"
+                  },
+                  {
+                    "@fieldId": "6"
+                  }
+                ]
+              }
+            },
+            {
+              "@lineItemNumber": "24",
+              "@locationCode": "PA",
+              "x:Product": null,
+              "x:Quantity": "1.00",
+              "x:UnitPrice": "13.7192",
+              "x:ExtendedPrice": "13.7200",
+              "x:FlexibleFields": {
+                "x:FlexibleCodeField": [
+                  {
+                    "@fieldId": "3",
+                    "#text": "206-1096"
+                  },
+                  {
+                    "@fieldId": "5",
+                    "#text": "MOTO MEMBER"
+                  },
+                  {
+                    "@fieldId": "6"
+                  }
+                ]
+              }
+            },
+            {
+              "@lineItemNumber": "25",
+              "@locationCode": "PA",
+              "x:Product": null,
+              "x:Quantity": "1.00",
+              "x:UnitPrice": "13.7192",
+              "x:ExtendedPrice": "13.7200",
+              "x:FlexibleFields": {
+                "x:FlexibleCodeField": [
+                  {
+                    "@fieldId": "3",
+                    "#text": "206-1097"
+                  },
+                  {
+                    "@fieldId": "5",
+                    "#text": "MOTO MEMBER"
+                  },
+                  {
+                    "@fieldId": "6"
+                  }
+                ]
+              }
+            },
+            {
+              "@lineItemNumber": "26",
+              "@locationCode": "PA",
+              "x:Product": null,
+              "x:Quantity": "1.00",
+              "x:UnitPrice": "13.7192",
+              "x:ExtendedPrice": "13.7200",
+              "x:FlexibleFields": {
+                "x:FlexibleCodeField": [
+                  {
+                    "@fieldId": "3",
+                    "#text": "206-1093"
+                  },
+                  {
+                    "@fieldId": "5",
+                    "#text": "MOTO MEMBER"
+                  },
+                  {
+                    "@fieldId": "6"
+                  }
+                ]
+              }
+            },
+            {
+              "@lineItemNumber": "27",
+              "@locationCode": "PA",
+              "x:Product": null,
+              "x:Quantity": "1.00",
+              "x:UnitPrice": "13.7192",
+              "x:ExtendedPrice": "13.7200",
+              "x:FlexibleFields": {
+                "x:FlexibleCodeField": [
+                  {
+                    "@fieldId": "3",
+                    "#text": "206-1094"
+                  },
+                  {
+                    "@fieldId": "5",
+                    "#text": "MOTO MEMBER"
+                  },
+                  {
+                    "@fieldId": "6"
+                  }
+                ]
+              }
+            },
+            {
+              "@lineItemNumber": "28",
+              "@locationCode": "PA",
+              "x:Product": null,
+              "x:Quantity": "1.00",
+              "x:UnitPrice": "13.7192",
+              "x:ExtendedPrice": "13.7200",
+              "x:FlexibleFields": {
+                "x:FlexibleCodeField": [
+                  {
+                    "@fieldId": "3",
+                    "#text": "206-1098"
+                  },
+                  {
+                    "@fieldId": "5",
+                    "#text": "MOTO MEMBER"
+                  },
+                  {
+                    "@fieldId": "6"
+                  }
+                ]
+              }
+            },
+            {
+              "@lineItemNumber": "29",
+              "@locationCode": "PA",
+              "x:Product": null,
+              "x:Quantity": "1.00",
+              "x:UnitPrice": "13.7192",
+              "x:ExtendedPrice": "13.7200",
+              "x:FlexibleFields": {
+                "x:FlexibleCodeField": [
+                  {
+                    "@fieldId": "3",
+                    "#text": "206-1091"
+                  },
+                  {
+                    "@fieldId": "5",
+                    "#text": "MOTO MEMBER"
+                  },
+                  {
+                    "@fieldId": "6"
+                  }
+                ]
+              }
+            },
+            {
+              "@lineItemNumber": "30",
+              "@locationCode": "PA",
+              "x:Product": null,
+              "x:Quantity": "1.00",
+              "x:UnitPrice": "13.7192",
+              "x:ExtendedPrice": "13.7200",
+              "x:FlexibleFields": {
+                "x:FlexibleCodeField": [
+                  {
+                    "@fieldId": "3",
+                    "#text": "206-1110"
+                  },
+                  {
+                    "@fieldId": "5",
+                    "#text": "MOTO MEMBER"
+                  },
+                  {
+                    "@fieldId": "6"
+                  }
+                ]
+              }
+            },
+            {
+              "@lineItemNumber": "31",
+              "@locationCode": "PA",
+              "x:Product": null,
+              "x:Quantity": "1.00",
+              "x:UnitPrice": "13.7192",
+              "x:ExtendedPrice": "13.7200",
+              "x:FlexibleFields": {
+                "x:FlexibleCodeField": [
+                  {
+                    "@fieldId": "3",
+                    "#text": "206-1111"
+                  },
+                  {
+                    "@fieldId": "5",
+                    "#text": "MOTO MEMBER"
+                  },
+                  {
+                    "@fieldId": "6"
+                  }
+                ]
+              }
+            },
+            {
+              "@lineItemNumber": "32",
+              "@locationCode": "PA",
+              "x:Product": null,
+              "x:Quantity": "1.00",
+              "x:UnitPrice": "13.7192",
+              "x:ExtendedPrice": "13.7200",
+              "x:FlexibleFields": {
+                "x:FlexibleCodeField": [
+                  {
+                    "@fieldId": "3",
+                    "#text": "206-1112"
+                  },
+                  {
+                    "@fieldId": "5",
+                    "#text": "MOTO MEMBER"
+                  },
+                  {
+                    "@fieldId": "6"
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      }
+    }
+  }
+}

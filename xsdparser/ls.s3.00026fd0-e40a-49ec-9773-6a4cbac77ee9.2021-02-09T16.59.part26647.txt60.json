@@ -1,0 +1,216 @@
+{
+  "http://schemas.xmlsoap.org/soap/envelope/:Envelope": {
+    "http://schemas.xmlsoap.org/soap/envelope/:Header": null,
+    "http://schemas.xmlsoap.org/soap/envelope/:Body": {
+      "x:VertexEnvelope": {
+        "x:Login": {
+          "x:TrustedId": "0179501699931581"
+        },
+        "x:QuotationRequest": {
+          "@documentDate": "2021-02-09-05:00",
+          "@documentNumber": "US80100070",
+          "@transactionType": "SALE",
+          "@xmlns": {
+            "S": "http://schemas.xmlsoap.org/soap/envelope/",
+            "SOAP-ENV": "http://schemas.xmlsoap.org/soap/envelope/",
+            "": "urn:vertexinc:o-series:tps:7:0"
+          },
+          "x:Currency": {
+            "@isoCurrencyCodeAlpha": "USD"
+          },
+          "x:Seller": {
+            "x:Company": "52-1237423",
+            "x:PhysicalOrigin": {
+              "x:StreetAddress1": "Sunrise Ave",
+              "x:StreetAddress2": "601",
+              "x:City": "Ridgely",
+              "x:MainDivision": "Maryland",
+              "x:PostalCode": "21660",
+              "x:Country": "United States"
+            }
+          },
+          "x:Customer": {
+            "x:CustomerCode": "799272325",
+            "x:Destination": {
+              "x:StreetAddress1": "14 Carrs Bridge Ln",
+              "x:StreetAddress2": null,
+              "x:City": "Bumpass",
+              "x:MainDivision": "Virginia",
+              "x:PostalCode": "23024-4959",
+              "x:Country": "United States"
+            }
+          },
+          "x:LineItem": [
+            {
+              "@lineItemNumber": "1",
+              "x:Product": "76960",
+              "x:Quantity": "1",
+              "x:ExtendedPrice": "0.00"
+            },
+            {
+              "@lineItemNumber": "2",
+              "x:Product": "78065",
+              "x:Quantity": "1",
+              "x:ExtendedPrice": "21.45"
+            },
+            {
+              "@lineItemNumber": "3",
+              "x:Product": "77810",
+              "x:Quantity": "1",
+              "x:ExtendedPrice": "21.45"
+            },
+            {
+              "@lineItemNumber": "4",
+              "x:Product": "78030",
+              "x:Quantity": "1",
+              "x:ExtendedPrice": "21.45"
+            },
+            {
+              "@lineItemNumber": "5",
+              "x:Product": "77880",
+              "x:Quantity": "1",
+              "x:ExtendedPrice": "21.45"
+            },
+            {
+              "@lineItemNumber": "6",
+              "x:Product": "77840",
+              "x:Quantity": "1",
+              "x:ExtendedPrice": "21.45"
+            },
+            {
+              "@lineItemNumber": "7",
+              "x:Product": "77805",
+              "x:Quantity": "1",
+              "x:ExtendedPrice": "21.45"
+            },
+            {
+              "@lineItemNumber": "8",
+              "x:Product": "77800",
+              "x:Quantity": "1",
+              "x:ExtendedPrice": "21.45"
+            },
+            {
+              "@lineItemNumber": "9",
+              "x:Product": "77815",
+              "x:Quantity": "1",
+              "x:ExtendedPrice": "21.45"
+            },
+            {
+              "@lineItemNumber": "10",
+              "x:Product": "77830",
+              "x:Quantity": "1",
+              "x:ExtendedPrice": "21.45"
+            },
+            {
+              "@lineItemNumber": "11",
+              "x:Product": "77910",
+              "x:Quantity": "1",
+              "x:ExtendedPrice": "21.45"
+            },
+            {
+              "@lineItemNumber": "12",
+              "x:Product": "78100",
+              "x:Quantity": "1",
+              "x:ExtendedPrice": "21.45"
+            },
+            {
+              "@lineItemNumber": "13",
+              "x:Product": "77975",
+              "x:Quantity": "1",
+              "x:ExtendedPrice": "21.45"
+            },
+            {
+              "@lineItemNumber": "14",
+              "x:Product": "78015",
+              "x:Quantity": "1",
+              "x:ExtendedPrice": "21.45"
+            },
+            {
+              "@lineItemNumber": "15",
+              "x:Product": "77835",
+              "x:Quantity": "1",
+              "x:ExtendedPrice": "21.45"
+            },
+            {
+              "@lineItemNumber": "16",
+              "x:Product": "77795",
+              "x:Quantity": "1",
+              "x:ExtendedPrice": "21.45"
+            },
+            {
+              "@lineItemNumber": "17",
+              "x:Product": "77900",
+              "x:Quantity": "1",
+              "x:ExtendedPrice": "21.45"
+            },
+            {
+              "@lineItemNumber": "18",
+              "x:Product": "77825",
+              "x:Quantity": "1",
+              "x:ExtendedPrice": "21.45"
+            },
+            {
+              "@lineItemNumber": "19",
+              "x:Product": "74881",
+              "x:Quantity": "1",
+              "x:ExtendedPrice": "0"
+            },
+            {
+              "@lineItemNumber": "20",
+              "x:Product": "50105",
+              "x:Quantity": "1",
+              "x:ExtendedPrice": "27.25",
+              "x:Discount": {
+                "x:DiscountAmount": "2.70"
+              }
+            },
+            {
+              "@lineItemNumber": "21",
+              "x:Product": "50106",
+              "x:Quantity": "1",
+              "x:ExtendedPrice": "22.70",
+              "x:Discount": {
+                "x:DiscountAmount": "2.25"
+              }
+            },
+            {
+              "@lineItemNumber": "22",
+              "x:Product": "78075",
+              "x:Quantity": "1",
+              "x:ExtendedPrice": "21.45"
+            },
+            {
+              "@lineItemNumber": "23",
+              "x:Product": "77985",
+              "x:Quantity": "1",
+              "x:ExtendedPrice": "21.45"
+            },
+            {
+              "@lineItemNumber": "24",
+              "x:Product": "78020",
+              "x:Quantity": "1",
+              "x:ExtendedPrice": "21.45"
+            },
+            {
+              "@lineItemNumber": "25",
+              "x:Product": "78100",
+              "x:Quantity": "1",
+              "x:ExtendedPrice": "21.45"
+            },
+            {
+              "@lineItemNumber": "26",
+              "x:Product": "53550",
+              "x:Quantity": "1",
+              "x:ExtendedPrice": "23.45"
+            },
+            {
+              "@lineItemNumber": "27",
+              "x:Product": "63000",
+              "x:ExtendedPrice": "25.88"
+            }
+          ]
+        }
+      }
+    }
+  }
+}

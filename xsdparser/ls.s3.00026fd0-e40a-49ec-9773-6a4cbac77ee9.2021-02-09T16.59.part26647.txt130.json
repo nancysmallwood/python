@@ -1,0 +1,67 @@
+{
+  "http://schemas.xmlsoap.org/soap/envelope/:Envelope": {
+    "http://schemas.xmlsoap.org/soap/envelope/:Body": {
+      "x:VertexEnvelope": {
+        "Login": {
+          "TrustedId": "7629227251757734"
+        },
+        "InvoiceRequest": {
+          "@transactionType": "SALE",
+          "@documentNumber": "fundraising-purchase-6247734",
+          "@documentDate": "2021-02-09",
+          "@xmlns": {
+            "xsd": "http://www.w3.org/2001/XMLSchema",
+            "xsi": "http://www.w3.org/2001/XMLSchema-instance",
+            "urn": "urn:vertexinc:o-series:tps:7:0",
+            "soapenv": "http://schemas.xmlsoap.org/soap/envelope/"
+          },
+          "LineItem": [
+            {
+              "@lineItemNumber": "1",
+              "@taxDate": "2021-02-09",
+              "Customer": {
+                "Destination": {
+                  "StreetAddress1": "219 Streaked Mountain Rd",
+                  "StreetAddress2": null,
+                  "City": "South Paris",
+                  "MainDivision": "ME",
+                  "PostalCode": "04281-6125"
+                }
+              },
+              "Seller": {
+                "Company": "CustomInk"
+              },
+              "Product": {
+                "@productClass": "53103000",
+                "#text": "1100"
+              },
+              "Quantity": "1",
+              "ExtendedPrice": "22.0"
+            },
+            {
+              "@lineItemNumber": "2",
+              "@taxDate": "2021-02-09",
+              "Customer": {
+                "Destination": {
+                  "StreetAddress1": "219 Streaked Mountain Rd",
+                  "StreetAddress2": null,
+                  "City": "South Paris",
+                  "MainDivision": "ME",
+                  "PostalCode": "04281-6125"
+                }
+              },
+              "Seller": {
+                "Company": "CustomInk"
+              },
+              "Product": {
+                "@productClass": "shipping_handling",
+                "#text": "shipping_handling"
+              },
+              "ExtendedPrice": "5.95"
+            }
+          ]
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,99 @@
+{
+  "http://schemas.xmlsoap.org/soap/envelope/:Envelope": {
+    "http://schemas.xmlsoap.org/soap/envelope/:Header": null,
+    "http://schemas.xmlsoap.org/soap/envelope/:Body": {
+      "x:VertexEnvelope": {
+        "x:Login": {
+          "x:TrustedId": "1235769293676012"
+        },
+        "x:QuotationRequest": {
+          "@documentDate": "2021-02-09",
+          "@documentNumber": "DWC-QUOTE",
+          "@transactionType": "SALE",
+          "@xmlns": {
+            "SOAP-ENV": "http://schemas.xmlsoap.org/soap/envelope/",
+            "ns2": "urn:vertexinc:o-series:tps:7:0"
+          },
+          "x:Currency": {
+            "@isoCurrencyCodeAlpha": "CAD"
+          },
+          "x:Seller": {
+            "x:Company": "2000",
+            "x:PhysicalOrigin": {
+              "x:StreetAddress1": "1750 Innes Rd",
+              "x:City": "Gloucester",
+              "x:MainDivision": "ON",
+              "x:PostalCode": "K1B 3K5",
+              "x:Country": "CA"
+            },
+            "x:AdministrativeOrigin": {
+              "x:StreetAddress1": "1750 Innes Rd",
+              "x:City": "Gloucester",
+              "x:MainDivision": "ON",
+              "x:PostalCode": "K1B 3K5",
+              "x:Country": "CA"
+            }
+          },
+          "x:LineItem": [
+            {
+              "@lineItemId": "e40c53901abc0c9c9e8000667f",
+              "@lineItemNumber": "1",
+              "@taxIncludedIndicator": "false",
+              "x:Customer": {
+                "x:CustomerCode": null,
+                "x:Destination": {
+                  "@locationCode": "3193"
+                }
+              },
+              "x:Product": {
+                "@productClass": "PP051195",
+                "#text": "5134194"
+              },
+              "x:Quantity": {
+                "@unitOfMeasure": "EA",
+                "#text": "1.0"
+              },
+              "x:ExtendedPrice": "14.44",
+              "x:FlexibleFields": {
+                "x:FlexibleCodeField": {
+                  "@fieldId": "8",
+                  "#text": "ESSENTIALS- ADULT GUINEA PIG 5LB      23"
+                }
+              }
+            },
+            {
+              "@lineItemId": "572c697040a9548db26b807be0",
+              "@lineItemNumber": "2",
+              "@taxIncludedIndicator": "false",
+              "x:Customer": {
+                "x:CustomerCode": null,
+                "x:Destination": {
+                  "x:StreetAddress1": "320 Taunton Rd E Unit E1B",
+                  "x:City": "WHITBY",
+                  "x:MainDivision": "ON",
+                  "x:PostalCode": "L1R 0H4",
+                  "x:Country": "CA"
+                }
+              },
+              "x:Product": {
+                "@productClass": "FR020100",
+                "#text": "STANDARD_SHIPPING"
+              },
+              "x:Quantity": {
+                "@unitOfMeasure": "EA",
+                "#text": "1.0"
+              },
+              "x:ExtendedPrice": "0.0",
+              "x:FlexibleFields": {
+                "x:FlexibleCodeField": {
+                  "@fieldId": "8",
+                  "#text": "Shipping"
+                }
+              }
+            }
+          ]
+        }
+      }
+    }
+  }
+}

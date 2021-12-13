@@ -1,0 +1,130 @@
+{
+  "http://schemas.xmlsoap.org/soap/envelope/:Envelope": {
+    "http://schemas.xmlsoap.org/soap/envelope/:Body": {
+      "x:VertexEnvelope": {
+        "x:Login": {
+          "x:TrustedId": "7379831400607831"
+        },
+        "x:QuotationRequest": {
+          "@postingDate": "2021-02-09",
+          "@documentDate": "2021-02-09",
+          "@transactionType": "SALE",
+          "@xmlns": {
+            "SOAP-ENV": "http://schemas.xmlsoap.org/soap/envelope/",
+            "ns1": "urn:vertexinc:o-series:tps:7:0"
+          },
+          "x:LineItem": [
+            {
+              "@locationCode": "AAC Hold Corp.",
+              "@lineItemId": "6787624",
+              "x:Seller": {
+                "x:Company": "AAC Hold Corp.",
+                "x:PhysicalOrigin": {
+                  "x:StreetAddress1": "1550 W Mockingbird Ln",
+                  "x:StreetAddress2": null,
+                  "x:City": "Dallas",
+                  "x:MainDivision": "TX",
+                  "x:PostalCode": "75235-5007",
+                  "x:Country": "USA"
+                }
+              },
+              "x:Customer": {
+                "x:CustomerCode": {
+                  "@classCode": "Retail Customer",
+                  "#text": "General"
+                },
+                "x:Destination": {
+                  "x:StreetAddress1": "117 N EDGEWOOD ST",
+                  "x:StreetAddress2": "null",
+                  "x:City": "ARLINGTON",
+                  "x:MainDivision": "VA",
+                  "x:PostalCode": "22201-1102",
+                  "x:Country": "USA"
+                }
+              },
+              "x:Product": {
+                "@productClass": "Taxable Goods",
+                "#text": "A0120187A0000"
+              },
+              "x:Quantity": "1",
+              "x:UnitPrice": "19.95",
+              "x:ExtendedPrice": "19.95"
+            },
+            {
+              "@locationCode": "AAC Hold Corp.",
+              "@lineItemId": "6787619",
+              "x:Seller": {
+                "x:Company": "AAC Hold Corp.",
+                "x:PhysicalOrigin": {
+                  "x:StreetAddress1": "1550 W Mockingbird Ln",
+                  "x:StreetAddress2": null,
+                  "x:City": "Dallas",
+                  "x:MainDivision": "TX",
+                  "x:PostalCode": "75235-5007",
+                  "x:Country": "USA"
+                }
+              },
+              "x:Customer": {
+                "x:CustomerCode": {
+                  "@classCode": "Retail Customer",
+                  "#text": "General"
+                },
+                "x:Destination": {
+                  "x:StreetAddress1": "117 N EDGEWOOD ST",
+                  "x:StreetAddress2": "null",
+                  "x:City": "ARLINGTON",
+                  "x:MainDivision": "VA",
+                  "x:PostalCode": "22201-1102",
+                  "x:Country": "USA"
+                }
+              },
+              "x:Product": {
+                "@productClass": "Taxable Goods",
+                "#text": "A0102004A0000"
+              },
+              "x:Quantity": "1",
+              "x:UnitPrice": "14.99",
+              "x:ExtendedPrice": "14.99"
+            },
+            {
+              "@locationCode": "AAC Hold Corp.",
+              "@lineItemId": "shipping",
+              "x:Seller": {
+                "x:Company": "AAC Hold Corp.",
+                "x:PhysicalOrigin": {
+                  "x:StreetAddress1": "1550 W Mockingbird Ln",
+                  "x:StreetAddress2": null,
+                  "x:City": "Dallas",
+                  "x:MainDivision": "TX",
+                  "x:PostalCode": "75235-5007",
+                  "x:Country": "USA"
+                }
+              },
+              "x:Customer": {
+                "x:CustomerCode": {
+                  "@classCode": "Retail Customer",
+                  "#text": "General"
+                },
+                "x:Destination": {
+                  "x:StreetAddress1": "117 N EDGEWOOD ST",
+                  "x:StreetAddress2": "null",
+                  "x:City": "ARLINGTON",
+                  "x:MainDivision": "VA",
+                  "x:PostalCode": "22201-1102",
+                  "x:Country": "USA"
+                }
+              },
+              "x:Product": {
+                "@productClass": "Taxable Goods",
+                "#text": "balfourexpedited_balfourexpedited"
+              },
+              "x:Quantity": "1",
+              "x:UnitPrice": "12.99",
+              "x:ExtendedPrice": "12.99"
+            }
+          ]
+        }
+      }
+    }
+  }
+}

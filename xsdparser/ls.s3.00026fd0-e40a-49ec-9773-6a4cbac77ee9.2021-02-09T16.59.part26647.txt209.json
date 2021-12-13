@@ -1,0 +1,103 @@
+{
+  "http://schemas.xmlsoap.org/soap/envelope/:Envelope": {
+    "http://schemas.xmlsoap.org/soap/envelope/:Body": {
+      "x:VertexEnvelope": {
+        "x:Login": {
+          "x:UserName": "4567796946812538"
+        },
+        "x:QuotationRequest": {
+          "@transactionType": "SALE",
+          "@xmlns": {
+            "soap": "http://schemas.xmlsoap.org/soap/envelope/",
+            "": "urn:vertexinc:o-series:tps:7:0"
+          },
+          "x:Seller": {
+            "x:Company": "VIDA110",
+            "x:Division": "xxxxxx"
+          },
+          "x:Customer": {
+            "x:Destination": {
+              "x:City": "San Diego",
+              "x:MainDivision": "CA",
+              "x:PostalCode": "92120",
+              "x:Country": "US"
+            }
+          },
+          "x:LineItem": [
+            {
+              "@lineItemNumber": "0",
+              "@vendorSKU": "Made2Play\u00c2\u00ae Nesta Sneaker Sandal",
+              "x:Seller": {
+                "x:PhysicalOrigin": {
+                  "x:PostalCode": "45309",
+                  "x:Country": "US"
+                },
+                "x:AdministrativeOrigin": {
+                  "x:PostalCode": "10019-3986",
+                  "x:Country": "UNITED STATES"
+                }
+              },
+              "x:Customer": {
+                "x:Destination": {
+                  "x:City": "San Diego",
+                  "x:MainDivision": "CA",
+                  "x:PostalCode": "92120",
+                  "x:Country": "US"
+                }
+              },
+              "x:Product": {
+                "@productClass": "1045"
+              },
+              "x:Quantity": "1.0",
+              "x:ExtendedPrice": "34.95"
+            },
+            {
+              "@lineItemNumber": "1",
+              "@vendorSKU": "Made2Play\u00c2\u00ae Eliza Sneaker",
+              "x:Seller": {
+                "x:PhysicalOrigin": {
+                  "x:PostalCode": "45309",
+                  "x:Country": "US"
+                },
+                "x:AdministrativeOrigin": {
+                  "x:PostalCode": "10019-3986",
+                  "x:Country": "UNITED STATES"
+                }
+              },
+              "x:Customer": {
+                "x:Destination": {
+                  "x:City": "San Diego",
+                  "x:MainDivision": "CA",
+                  "x:PostalCode": "92120",
+                  "x:Country": "US"
+                }
+              },
+              "x:Product": {
+                "@productClass": "1045"
+              },
+              "x:Quantity": "1.0",
+              "x:ExtendedPrice": "39.95"
+            },
+            {
+              "@lineItemNumber": "2",
+              "@vendorSKU": "Shipping",
+              "x:Customer": {
+                "x:Destination": {
+                  "x:City": "San Diego",
+                  "x:MainDivision": "CA",
+                  "x:PostalCode": "92120",
+                  "x:Country": "US"
+                }
+              },
+              "x:Product": {
+                "@productClass": "9989"
+              },
+              "x:Quantity": "1.0",
+              "x:ExtendedPrice": "0.00"
+            }
+          ]
+        }
+      }
+    }
+  }
+}

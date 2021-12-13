@@ -1,0 +1,111 @@
+{
+  "http://schemas.xmlsoap.org/soap/envelope/:Envelope": {
+    "http://schemas.xmlsoap.org/soap/envelope/:Body": {
+      "x:VertexEnvelope": {
+        "x:Login": {
+          "x:TrustedId": "1063131332045856"
+        },
+        "x:QuotationRequest": {
+          "@locationCode": "1001",
+          "@returnAssistedParametersIndicator": "true",
+          "@deliveryTerm": "SUP",
+          "@documentDate": "2021-02-09",
+          "@transactionType": "SALE",
+          "@xmlns": {
+            "SOAP-ENV": "http://schemas.xmlsoap.org/soap/envelope/",
+            "ns1": "urn:vertexinc:o-series:tps:7:0"
+          },
+          "x:Currency": {
+            "@isoCurrencyCodeAlpha": "USD"
+          },
+          "x:Seller": {
+            "x:Company": "USA",
+            "x:PhysicalOrigin": {
+              "x:StreetAddress1": "3201 N. Airport Way",
+              "x:City": "Manteca",
+              "x:MainDivision": "CA",
+              "x:PostalCode": "95336",
+              "x:Country": "USA"
+            }
+          },
+          "x:Customer": {
+            "x:CustomerCode": {
+              "@classCode": "Retail Customer",
+              "#text": "General"
+            },
+            "x:Destination": {
+              "x:StreetAddress1": "2600 N CENTRAL AVE",
+              "x:StreetAddress2": "4th Floor MR",
+              "x:City": "Phoenix",
+              "x:MainDivision": "AZ",
+              "x:PostalCode": "85004",
+              "x:Country": "USA"
+            }
+          },
+          "x:LineItem": [
+            {
+              "@lineItemId": "sequence-1",
+              "x:Product": {
+                "@productClass": "ACCESSORY",
+                "#text": "888579361704"
+              },
+              "x:Quantity": "2",
+              "x:UnitPrice": "71.99",
+              "x:ExtendedPrice": "143.98"
+            },
+            {
+              "@lineItemId": "sequence-2",
+              "x:Product": {
+                "@productClass": "ACCESSORY",
+                "#text": "888579361735"
+              },
+              "x:Quantity": "2",
+              "x:UnitPrice": "71.99",
+              "x:ExtendedPrice": "143.98"
+            },
+            {
+              "@lineItemId": "sequence-3",
+              "x:Product": {
+                "@productClass": "GLOVES",
+                "#text": "888579293579"
+              },
+              "x:Quantity": "1",
+              "x:UnitPrice": "47.99",
+              "x:ExtendedPrice": "47.99"
+            },
+            {
+              "@lineItemId": "sequence-4",
+              "x:Product": {
+                "@productClass": "GLOVES",
+                "#text": "888579282221"
+              },
+              "x:Quantity": "2",
+              "x:UnitPrice": "47.99",
+              "x:ExtendedPrice": "95.98"
+            },
+            {
+              "@lineItemId": "sequence-5",
+              "x:Product": {
+                "@productClass": "GLOVES",
+                "#text": "888579293586"
+              },
+              "x:Quantity": "1",
+              "x:UnitPrice": "47.99",
+              "x:ExtendedPrice": "47.99"
+            },
+            {
+              "@lineItemId": "shipping",
+              "x:Product": {
+                "@productClass": "Shipping",
+                "#text": "tactical_UPSGround"
+              },
+              "x:Quantity": "1",
+              "x:UnitPrice": "0",
+              "x:ExtendedPrice": "0"
+            }
+          ]
+        }
+      }
+    }
+  }
+}

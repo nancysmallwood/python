@@ -1,0 +1,63 @@
+{
+  "http://schemas.xmlsoap.org/soap/envelope/:Envelope": {
+    "http://schemas.xmlsoap.org/soap/envelope/:Body": {
+      "x:VertexEnvelope": {
+        "x:Login": {
+          "x:TrustedId": "7649555430638576"
+        },
+        "x:QuotationRequest": {
+          "@documentNumber": "Micls",
+          "@returnAssistedParametersIndicator": "true",
+          "@documentDate": "2021-02-09-06:00",
+          "@transactionType": "SALE",
+          "@xmlns": {
+            "soap": "http://schemas.xmlsoap.org/soap/envelope/",
+            "": "urn:vertexinc:o-series:tps:7:0"
+          },
+          "x:Currency": {
+            "@isoCurrencyCodeAlpha": "USD"
+          },
+          "x:Seller": {
+            "x:Company": "1000"
+          },
+          "x:LineItem": [
+            {
+              "@lineItemNumber": "1",
+              "@lineItemId": "d0b1623bc7089f8e89203692c0",
+              "x:Customer": {
+                "x:Destination": {
+                  "@locationCode": "4739"
+                }
+              },
+              "x:Product": {
+                "@productClass": "4020"
+              },
+              "x:Quantity": {
+                "@unitOfMeasure": "EA",
+                "#text": "3.0"
+              },
+              "x:ExtendedPrice": "23.97"
+            },
+            {
+              "@lineItemNumber": "2",
+              "@lineItemId": "1e6d42a7b38c304a5a1aa7bb15",
+              "x:Customer": {
+                "x:Destination": {
+                  "@locationCode": "4739"
+                }
+              },
+              "x:Product": {
+                "@productClass": "199"
+              },
+              "x:Quantity": {
+                "@unitOfMeasure": "EA",
+                "#text": "1.0"
+              },
+              "x:ExtendedPrice": "0.0"
+            }
+          ]
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,779 @@
+{
+  "http://schemas.xmlsoap.org/soap/envelope/:Envelope": {
+    "http://schemas.xmlsoap.org/soap/envelope/:Header": null,
+    "http://schemas.xmlsoap.org/soap/envelope/:Body": {
+      "x:VertexEnvelope": {
+        "x:Login": {
+          "x:TrustedId": "0179501699931581"
+        },
+        "x:InvoiceRequest": {
+          "@billingType": "INVOICE",
+          "@documentDate": "2021-02-09-05:00",
+          "@documentNumber": "3511189",
+          "@documentType": "Distributed Order Or",
+          "@postingDate": "2021-02-09-05:00",
+          "@transactionId": "4233373#AR",
+          "@transactionType": "SALE",
+          "@xmlns": {
+            "SOAP-ENV": "http://schemas.xmlsoap.org/soap/envelope/",
+            "ns2": "urn:vertexinc:o-series:tps:7:0",
+            "ns3": "urn:vertexinc:o-series:tps:9:0"
+          },
+          "x:Currency": {
+            "@isoCurrencyCodeAlpha": "USD"
+          },
+          "x:OriginalCurrency": {
+            "@isoCurrencyCodeAlpha": "USD"
+          },
+          "x:Seller": {
+            "x:Company": "52-1237423",
+            "x:Division": "52-1237423",
+            "x:Department": "52-1237423"
+          },
+          "x:Customer": {
+            "x:CustomerCode": "894211"
+          },
+          "x:LineItem": [
+            {
+              "@generalLedgerAccount": "001-000-0000-0000-410101-000000-000-0000",
+              "@lineItemId": "199031097",
+              "@lineItemNumber": "3",
+              "@taxDate": "2021-02-09-05:00",
+              "@taxIncludedIndicator": "false",
+              "x:Seller": {
+                "x:Company": "52-1237423",
+                "x:Division": "52-1237423",
+                "x:Department": "52-1237423",
+                "x:PhysicalOrigin": {
+                  "x:StreetAddress1": "755 Lillard Dr.",
+                  "x:City": "Sparks",
+                  "x:MainDivision": "NV",
+                  "x:PostalCode": "89434",
+                  "x:Country": "US"
+                },
+                "x:AdministrativeOrigin": {
+                  "x:StreetAddress1": "100 International Drive",
+                  "x:City": "Baltimore",
+                  "x:MainDivision": "MD",
+                  "x:PostalCode": "21202",
+                  "x:Country": "US"
+                }
+              },
+              "x:Customer": {
+                "x:CustomerCode": "894211",
+                "x:Destination": {
+                  "x:StreetAddress1": "5613 Indigo Bay Way",
+                  "x:City": "Las Vegas",
+                  "x:MainDivision": "NV",
+                  "x:PostalCode": "89131",
+                  "x:Country": "US"
+                },
+                "x:AdministrativeDestination": {
+                  "x:StreetAddress1": "5613 Indigo Bay Way",
+                  "x:City": "Las Vegas",
+                  "x:MainDivision": "NV",
+                  "x:PostalCode": "89131",
+                  "x:Country": "US"
+                }
+              },
+              "x:Product": "77895",
+              "x:Quantity": "2.000000",
+              "x:UnitPrice": "19.720000",
+              "x:ExtendedPrice": "39.440000",
+              "x:ReturnsFields": {
+                "x:ReturnsCodeField": [
+                  {
+                    "@name": "XX_TID",
+                    "#text": "4021219"
+                  },
+                  {
+                    "@name": "XX_FIID",
+                    "#text": "87"
+                  },
+                  {
+                    "@name": "XX_DTID",
+                    "#text": "4"
+                  },
+                  {
+                    "@name": "XX_BUID",
+                    "#text": "300000005652005"
+                  }
+                ]
+              }
+            },
+            {
+              "@generalLedgerAccount": "001-000-0000-0000-410101-000000-000-0000",
+              "@lineItemId": "199031740",
+              "@lineItemNumber": "9",
+              "@taxDate": "2021-02-09-05:00",
+              "@taxIncludedIndicator": "false",
+              "x:Seller": {
+                "x:Company": "52-1237423",
+                "x:Division": "52-1237423",
+                "x:Department": "52-1237423",
+                "x:PhysicalOrigin": {
+                  "x:StreetAddress1": "755 Lillard Dr.",
+                  "x:City": "Sparks",
+                  "x:MainDivision": "NV",
+                  "x:PostalCode": "89434",
+                  "x:Country": "US"
+                },
+                "x:AdministrativeOrigin": {
+                  "x:StreetAddress1": "100 International Drive",
+                  "x:City": "Baltimore",
+                  "x:MainDivision": "MD",
+                  "x:PostalCode": "21202",
+                  "x:Country": "US"
+                }
+              },
+              "x:Customer": {
+                "x:CustomerCode": "894211",
+                "x:Destination": {
+                  "x:StreetAddress1": "5613 Indigo Bay Way",
+                  "x:City": "Las Vegas",
+                  "x:MainDivision": "NV",
+                  "x:PostalCode": "89131",
+                  "x:Country": "US"
+                },
+                "x:AdministrativeDestination": {
+                  "x:StreetAddress1": "5613 Indigo Bay Way",
+                  "x:City": "Las Vegas",
+                  "x:MainDivision": "NV",
+                  "x:PostalCode": "89131",
+                  "x:Country": "US"
+                }
+              },
+              "x:Product": "64955",
+              "x:Quantity": "2.000000",
+              "x:UnitPrice": "18.340000",
+              "x:ExtendedPrice": "36.680000",
+              "x:ReturnsFields": {
+                "x:ReturnsCodeField": [
+                  {
+                    "@name": "XX_TID",
+                    "#text": "4021219"
+                  },
+                  {
+                    "@name": "XX_FIID",
+                    "#text": "87"
+                  },
+                  {
+                    "@name": "XX_DTID",
+                    "#text": "4"
+                  },
+                  {
+                    "@name": "XX_BUID",
+                    "#text": "300000005652005"
+                  }
+                ]
+              }
+            },
+            {
+              "@generalLedgerAccount": "001-000-0000-0000-410101-000000-000-0000",
+              "@lineItemId": "199061900",
+              "@lineItemNumber": "11",
+              "@taxDate": "2021-02-09-05:00",
+              "@taxIncludedIndicator": "false",
+              "x:Seller": {
+                "x:Company": "52-1237423",
+                "x:Division": "52-1237423",
+                "x:Department": "52-1237423",
+                "x:PhysicalOrigin": {
+                  "x:StreetAddress1": "755 Lillard Dr.",
+                  "x:City": "Sparks",
+                  "x:MainDivision": "NV",
+                  "x:PostalCode": "89434",
+                  "x:Country": "US"
+                },
+                "x:AdministrativeOrigin": {
+                  "x:StreetAddress1": "100 International Drive",
+                  "x:City": "Baltimore",
+                  "x:MainDivision": "MD",
+                  "x:PostalCode": "21202",
+                  "x:Country": "US"
+                }
+              },
+              "x:Customer": {
+                "x:CustomerCode": "894211",
+                "x:Destination": {
+                  "x:StreetAddress1": "5613 Indigo Bay Way",
+                  "x:City": "Las Vegas",
+                  "x:MainDivision": "NV",
+                  "x:PostalCode": "89131",
+                  "x:Country": "US"
+                },
+                "x:AdministrativeDestination": {
+                  "x:StreetAddress1": "5613 Indigo Bay Way",
+                  "x:City": "Las Vegas",
+                  "x:MainDivision": "NV",
+                  "x:PostalCode": "89131",
+                  "x:Country": "US"
+                }
+              },
+              "x:Product": "63000",
+              "x:Quantity": "1.000000",
+              "x:UnitPrice": "0.000000",
+              "x:ExtendedPrice": "0.000000",
+              "x:ReturnsFields": {
+                "x:ReturnsCodeField": [
+                  {
+                    "@name": "XX_TID",
+                    "#text": "4021219"
+                  },
+                  {
+                    "@name": "XX_FIID",
+                    "#text": "87"
+                  },
+                  {
+                    "@name": "XX_DTID",
+                    "#text": "4"
+                  },
+                  {
+                    "@name": "XX_BUID",
+                    "#text": "300000005652005"
+                  }
+                ]
+              }
+            },
+            {
+              "@generalLedgerAccount": "001-000-0000-0000-410101-000000-000-0000",
+              "@lineItemId": "199031504",
+              "@lineItemNumber": "6",
+              "@taxDate": "2021-02-09-05:00",
+              "@taxIncludedIndicator": "false",
+              "x:Seller": {
+                "x:Company": "52-1237423",
+                "x:Division": "52-1237423",
+                "x:Department": "52-1237423",
+                "x:PhysicalOrigin": {
+                  "x:StreetAddress1": "755 Lillard Dr.",
+                  "x:City": "Sparks",
+                  "x:MainDivision": "NV",
+                  "x:PostalCode": "89434",
+                  "x:Country": "US"
+                },
+                "x:AdministrativeOrigin": {
+                  "x:StreetAddress1": "100 International Drive",
+                  "x:City": "Baltimore",
+                  "x:MainDivision": "MD",
+                  "x:PostalCode": "21202",
+                  "x:Country": "US"
+                }
+              },
+              "x:Customer": {
+                "x:CustomerCode": "894211",
+                "x:Destination": {
+                  "x:StreetAddress1": "5613 Indigo Bay Way",
+                  "x:City": "Las Vegas",
+                  "x:MainDivision": "NV",
+                  "x:PostalCode": "89131",
+                  "x:Country": "US"
+                },
+                "x:AdministrativeDestination": {
+                  "x:StreetAddress1": "5613 Indigo Bay Way",
+                  "x:City": "Las Vegas",
+                  "x:MainDivision": "NV",
+                  "x:PostalCode": "89131",
+                  "x:Country": "US"
+                }
+              },
+              "x:Product": "77930",
+              "x:Quantity": "2.000000",
+              "x:UnitPrice": "19.715000",
+              "x:ExtendedPrice": "39.430000",
+              "x:ReturnsFields": {
+                "x:ReturnsCodeField": [
+                  {
+                    "@name": "XX_TID",
+                    "#text": "4021219"
+                  },
+                  {
+                    "@name": "XX_FIID",
+                    "#text": "87"
+                  },
+                  {
+                    "@name": "XX_DTID",
+                    "#text": "4"
+                  },
+                  {
+                    "@name": "XX_BUID",
+                    "#text": "300000005652005"
+                  }
+                ]
+              }
+            },
+            {
+              "@generalLedgerAccount": "001-000-0000-0000-410101-000000-000-0000",
+              "@lineItemId": "199031772",
+              "@lineItemNumber": "10",
+              "@taxDate": "2021-02-09-05:00",
+              "@taxIncludedIndicator": "false",
+              "x:Seller": {
+                "x:Company": "52-1237423",
+                "x:Division": "52-1237423",
+                "x:Department": "52-1237423",
+                "x:PhysicalOrigin": {
+                  "x:StreetAddress1": "755 Lillard Dr.",
+                  "x:City": "Sparks",
+                  "x:MainDivision": "NV",
+                  "x:PostalCode": "89434",
+                  "x:Country": "US"
+                },
+                "x:AdministrativeOrigin": {
+                  "x:StreetAddress1": "100 International Drive",
+                  "x:City": "Baltimore",
+                  "x:MainDivision": "MD",
+                  "x:PostalCode": "21202",
+                  "x:Country": "US"
+                }
+              },
+              "x:Customer": {
+                "x:CustomerCode": "894211",
+                "x:Destination": {
+                  "x:StreetAddress1": "5613 Indigo Bay Way",
+                  "x:City": "Las Vegas",
+                  "x:MainDivision": "NV",
+                  "x:PostalCode": "89131",
+                  "x:Country": "US"
+                },
+                "x:AdministrativeDestination": {
+                  "x:StreetAddress1": "5613 Indigo Bay Way",
+                  "x:City": "Las Vegas",
+                  "x:MainDivision": "NV",
+                  "x:PostalCode": "89131",
+                  "x:Country": "US"
+                }
+              },
+              "x:Product": "65510",
+              "x:Quantity": "1.000000",
+              "x:UnitPrice": "18.340000",
+              "x:ExtendedPrice": "18.340000",
+              "x:ReturnsFields": {
+                "x:ReturnsCodeField": [
+                  {
+                    "@name": "XX_TID",
+                    "#text": "4021219"
+                  },
+                  {
+                    "@name": "XX_FIID",
+                    "#text": "87"
+                  },
+                  {
+                    "@name": "XX_DTID",
+                    "#text": "4"
+                  },
+                  {
+                    "@name": "XX_BUID",
+                    "#text": "300000005652005"
+                  }
+                ]
+              }
+            },
+            {
+              "@generalLedgerAccount": "001-000-0000-0000-410101-000000-000-0000",
+              "@lineItemId": "199031734",
+              "@lineItemNumber": "8",
+              "@taxDate": "2021-02-09-05:00",
+              "@taxIncludedIndicator": "false",
+              "x:Seller": {
+                "x:Company": "52-1237423",
+                "x:Division": "52-1237423",
+                "x:Department": "52-1237423",
+                "x:PhysicalOrigin": {
+                  "x:StreetAddress1": "755 Lillard Dr.",
+                  "x:City": "Sparks",
+                  "x:MainDivision": "NV",
+                  "x:PostalCode": "89434",
+                  "x:Country": "US"
+                },
+                "x:AdministrativeOrigin": {
+                  "x:StreetAddress1": "100 International Drive",
+                  "x:City": "Baltimore",
+                  "x:MainDivision": "MD",
+                  "x:PostalCode": "21202",
+                  "x:Country": "US"
+                }
+              },
+              "x:Customer": {
+                "x:CustomerCode": "894211",
+                "x:Destination": {
+                  "x:StreetAddress1": "5613 Indigo Bay Way",
+                  "x:City": "Las Vegas",
+                  "x:MainDivision": "NV",
+                  "x:PostalCode": "89131",
+                  "x:Country": "US"
+                },
+                "x:AdministrativeDestination": {
+                  "x:StreetAddress1": "5613 Indigo Bay Way",
+                  "x:City": "Las Vegas",
+                  "x:MainDivision": "NV",
+                  "x:PostalCode": "89131",
+                  "x:Country": "US"
+                }
+              },
+              "x:Product": "66602",
+              "x:Quantity": "3.000000",
+              "x:UnitPrice": "21.560000",
+              "x:ExtendedPrice": "64.680000",
+              "x:ReturnsFields": {
+                "x:ReturnsCodeField": [
+                  {
+                    "@name": "XX_TID",
+                    "#text": "4021219"
+                  },
+                  {
+                    "@name": "XX_FIID",
+                    "#text": "87"
+                  },
+                  {
+                    "@name": "XX_DTID",
+                    "#text": "4"
+                  },
+                  {
+                    "@name": "XX_BUID",
+                    "#text": "300000005652005"
+                  }
+                ]
+              }
+            },
+            {
+              "@generalLedgerAccount": "001-000-0000-0000-410101-000000-000-0000",
+              "@lineItemId": "199029864",
+              "@lineItemNumber": "1",
+              "@taxDate": "2021-02-09-05:00",
+              "@taxIncludedIndicator": "false",
+              "x:Seller": {
+                "x:Company": "52-1237423",
+                "x:Division": "52-1237423",
+                "x:Department": "52-1237423",
+                "x:PhysicalOrigin": {
+                  "x:StreetAddress1": "755 Lillard Dr.",
+                  "x:City": "Sparks",
+                  "x:MainDivision": "NV",
+                  "x:PostalCode": "89434",
+                  "x:Country": "US"
+                },
+                "x:AdministrativeOrigin": {
+                  "x:StreetAddress1": "100 International Drive",
+                  "x:City": "Baltimore",
+                  "x:MainDivision": "MD",
+                  "x:PostalCode": "21202",
+                  "x:Country": "US"
+                }
+              },
+              "x:Customer": {
+                "x:CustomerCode": "894211",
+                "x:Destination": {
+                  "x:StreetAddress1": "5613 Indigo Bay Way",
+                  "x:City": "Las Vegas",
+                  "x:MainDivision": "NV",
+                  "x:PostalCode": "89131",
+                  "x:Country": "US"
+                },
+                "x:AdministrativeDestination": {
+                  "x:StreetAddress1": "5613 Indigo Bay Way",
+                  "x:City": "Las Vegas",
+                  "x:MainDivision": "NV",
+                  "x:PostalCode": "89131",
+                  "x:Country": "US"
+                }
+              },
+              "x:Product": "77795",
+              "x:Quantity": "3.000000",
+              "x:UnitPrice": "19.720000",
+              "x:ExtendedPrice": "59.160000",
+              "x:ReturnsFields": {
+                "x:ReturnsCodeField": [
+                  {
+                    "@name": "XX_TID",
+                    "#text": "4021219"
+                  },
+                  {
+                    "@name": "XX_FIID",
+                    "#text": "87"
+                  },
+                  {
+                    "@name": "XX_DTID",
+                    "#text": "4"
+                  },
+                  {
+                    "@name": "XX_BUID",
+                    "#text": "300000005652005"
+                  }
+                ]
+              }
+            },
+            {
+              "@generalLedgerAccount": "001-000-0000-0000-410101-000000-000-0000",
+              "@lineItemId": "199030994",
+              "@lineItemNumber": "2",
+              "@taxDate": "2021-02-09-05:00",
+              "@taxIncludedIndicator": "false",
+              "x:Seller": {
+                "x:Company": "52-1237423",
+                "x:Division": "52-1237423",
+                "x:Department": "52-1237423",
+                "x:PhysicalOrigin": {
+                  "x:StreetAddress1": "755 Lillard Dr.",
+                  "x:City": "Sparks",
+                  "x:MainDivision": "NV",
+                  "x:PostalCode": "89434",
+                  "x:Country": "US"
+                },
+                "x:AdministrativeOrigin": {
+                  "x:StreetAddress1": "100 International Drive",
+                  "x:City": "Baltimore",
+                  "x:MainDivision": "MD",
+                  "x:PostalCode": "21202",
+                  "x:Country": "US"
+                }
+              },
+              "x:Customer": {
+                "x:CustomerCode": "894211",
+                "x:Destination": {
+                  "x:StreetAddress1": "5613 Indigo Bay Way",
+                  "x:City": "Las Vegas",
+                  "x:MainDivision": "NV",
+                  "x:PostalCode": "89131",
+                  "x:Country": "US"
+                },
+                "x:AdministrativeDestination": {
+                  "x:StreetAddress1": "5613 Indigo Bay Way",
+                  "x:City": "Las Vegas",
+                  "x:MainDivision": "NV",
+                  "x:PostalCode": "89131",
+                  "x:Country": "US"
+                }
+              },
+              "x:Product": "77805",
+              "x:Quantity": "3.000000",
+              "x:UnitPrice": "19.720000",
+              "x:ExtendedPrice": "59.160000",
+              "x:ReturnsFields": {
+                "x:ReturnsCodeField": [
+                  {
+                    "@name": "XX_TID",
+                    "#text": "4021219"
+                  },
+                  {
+                    "@name": "XX_FIID",
+                    "#text": "87"
+                  },
+                  {
+                    "@name": "XX_DTID",
+                    "#text": "4"
+                  },
+                  {
+                    "@name": "XX_BUID",
+                    "#text": "300000005652005"
+                  }
+                ]
+              }
+            },
+            {
+              "@generalLedgerAccount": "001-000-0000-0000-410101-000000-000-0000",
+              "@lineItemId": "199031489",
+              "@lineItemNumber": "5",
+              "@taxDate": "2021-02-09-05:00",
+              "@taxIncludedIndicator": "false",
+              "x:Seller": {
+                "x:Company": "52-1237423",
+                "x:Division": "52-1237423",
+                "x:Department": "52-1237423",
+                "x:PhysicalOrigin": {
+                  "x:StreetAddress1": "755 Lillard Dr.",
+                  "x:City": "Sparks",
+                  "x:MainDivision": "NV",
+                  "x:PostalCode": "89434",
+                  "x:Country": "US"
+                },
+                "x:AdministrativeOrigin": {
+                  "x:StreetAddress1": "100 International Drive",
+                  "x:City": "Baltimore",
+                  "x:MainDivision": "MD",
+                  "x:PostalCode": "21202",
+                  "x:Country": "US"
+                }
+              },
+              "x:Customer": {
+                "x:CustomerCode": "894211",
+                "x:Destination": {
+                  "x:StreetAddress1": "5613 Indigo Bay Way",
+                  "x:City": "Las Vegas",
+                  "x:MainDivision": "NV",
+                  "x:PostalCode": "89131",
+                  "x:Country": "US"
+                },
+                "x:AdministrativeDestination": {
+                  "x:StreetAddress1": "5613 Indigo Bay Way",
+                  "x:City": "Las Vegas",
+                  "x:MainDivision": "NV",
+                  "x:PostalCode": "89131",
+                  "x:Country": "US"
+                }
+              },
+              "x:Product": "77900",
+              "x:Quantity": "1.000000",
+              "x:UnitPrice": "19.720000",
+              "x:ExtendedPrice": "19.720000",
+              "x:ReturnsFields": {
+                "x:ReturnsCodeField": [
+                  {
+                    "@name": "XX_TID",
+                    "#text": "4021219"
+                  },
+                  {
+                    "@name": "XX_FIID",
+                    "#text": "87"
+                  },
+                  {
+                    "@name": "XX_DTID",
+                    "#text": "4"
+                  },
+                  {
+                    "@name": "XX_BUID",
+                    "#text": "300000005652005"
+                  }
+                ]
+              }
+            },
+            {
+              "@generalLedgerAccount": "001-000-0000-0000-410101-000000-000-0000",
+              "@lineItemId": "199031524",
+              "@lineItemNumber": "7",
+              "@taxDate": "2021-02-09-05:00",
+              "@taxIncludedIndicator": "false",
+              "x:Seller": {
+                "x:Company": "52-1237423",
+                "x:Division": "52-1237423",
+                "x:Department": "52-1237423",
+                "x:PhysicalOrigin": {
+                  "x:StreetAddress1": "755 Lillard Dr.",
+                  "x:City": "Sparks",
+                  "x:MainDivision": "NV",
+                  "x:PostalCode": "89434",
+                  "x:Country": "US"
+                },
+                "x:AdministrativeOrigin": {
+                  "x:StreetAddress1": "100 International Drive",
+                  "x:City": "Baltimore",
+                  "x:MainDivision": "MD",
+                  "x:PostalCode": "21202",
+                  "x:Country": "US"
+                }
+              },
+              "x:Customer": {
+                "x:CustomerCode": "894211",
+                "x:Destination": {
+                  "x:StreetAddress1": "5613 Indigo Bay Way",
+                  "x:City": "Las Vegas",
+                  "x:MainDivision": "NV",
+                  "x:PostalCode": "89131",
+                  "x:Country": "US"
+                },
+                "x:AdministrativeDestination": {
+                  "x:StreetAddress1": "5613 Indigo Bay Way",
+                  "x:City": "Las Vegas",
+                  "x:MainDivision": "NV",
+                  "x:PostalCode": "89131",
+                  "x:Country": "US"
+                }
+              },
+              "x:Product": "78100",
+              "x:Quantity": "3.000000",
+              "x:UnitPrice": "19.720000",
+              "x:ExtendedPrice": "59.160000",
+              "x:ReturnsFields": {
+                "x:ReturnsCodeField": [
+                  {
+                    "@name": "XX_TID",
+                    "#text": "4021219"
+                  },
+                  {
+                    "@name": "XX_FIID",
+                    "#text": "87"
+                  },
+                  {
+                    "@name": "XX_DTID",
+                    "#text": "4"
+                  },
+                  {
+                    "@name": "XX_BUID",
+                    "#text": "300000005652005"
+                  }
+                ]
+              }
+            },
+            {
+              "@generalLedgerAccount": "001-000-0000-0000-410101-000000-000-0000",
+              "@lineItemId": "199031139",
+              "@lineItemNumber": "4",
+              "@taxDate": "2021-02-09-05:00",
+              "@taxIncludedIndicator": "false",
+              "x:Seller": {
+                "x:Company": "52-1237423",
+                "x:Division": "52-1237423",
+                "x:Department": "52-1237423",
+                "x:PhysicalOrigin": {
+                  "x:StreetAddress1": "755 Lillard Dr.",
+                  "x:City": "Sparks",
+                  "x:MainDivision": "NV",
+                  "x:PostalCode": "89434",
+                  "x:Country": "US"
+                },
+                "x:AdministrativeOrigin": {
+                  "x:StreetAddress1": "100 International Drive",
+                  "x:City": "Baltimore",
+                  "x:MainDivision": "MD",
+                  "x:PostalCode": "21202",
+                  "x:Country": "US"
+                }
+              },
+              "x:Customer": {
+                "x:CustomerCode": "894211",
+                "x:Destination": {
+                  "x:StreetAddress1": "5613 Indigo Bay Way",
+                  "x:City": "Las Vegas",
+                  "x:MainDivision": "NV",
+                  "x:PostalCode": "89131",
+                  "x:Country": "US"
+                },
+                "x:AdministrativeDestination": {
+                  "x:StreetAddress1": "5613 Indigo Bay Way",
+                  "x:City": "Las Vegas",
+                  "x:MainDivision": "NV",
+                  "x:PostalCode": "89131",
+                  "x:Country": "US"
+                }
+              },
+              "x:Product": "77830",
+              "x:Quantity": "1.000000",
+              "x:UnitPrice": "19.720000",
+              "x:ExtendedPrice": "19.720000",
+              "x:ReturnsFields": {
+                "x:ReturnsCodeField": [
+                  {
+                    "@name": "XX_TID",
+                    "#text": "4021219"
+                  },
+                  {
+                    "@name": "XX_FIID",
+                    "#text": "87"
+                  },
+                  {
+                    "@name": "XX_DTID",
+                    "#text": "4"
+                  },
+                  {
+                    "@name": "XX_BUID",
+                    "#text": "300000005652005"
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      }
+    }
+  }
+}

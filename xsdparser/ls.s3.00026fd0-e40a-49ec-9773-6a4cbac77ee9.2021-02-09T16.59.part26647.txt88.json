@@ -1,0 +1,56 @@
+{
+  "http://schemas.xmlsoap.org/soap/envelope/:Envelope": {
+    "http://schemas.xmlsoap.org/soap/envelope/:Header": null,
+    "http://schemas.xmlsoap.org/soap/envelope/:Body": {
+      "x:VertexEnvelope": {
+        "x:Login": {
+          "x:TrustedId": "3214507142961597"
+        },
+        "x:QuotationRequest": {
+          "@documentDate": "2021-02-09",
+          "@transactionType": "SALE",
+          "@xmlns": {
+            "SOAP-ENV": "http://schemas.xmlsoap.org/soap/envelope/",
+            "ns2": "urn:vertexinc:o-series:tps:7:0"
+          },
+          "x:Currency": {
+            "@isoCurrencyCodeAlpha": "USD"
+          },
+          "x:Seller": {
+            "x:Company": "08316342",
+            "x:PhysicalOrigin": {
+              "x:StreetAddress1": "14210 SW 33rd street",
+              "x:City": "Miami",
+              "x:MainDivision": "Florida",
+              "x:PostalCode": "33175",
+              "x:Country": "US"
+            }
+          },
+          "x:Customer": {
+            "x:Destination": {
+              "x:StreetAddress1": "11 N Basilica Ave",
+              "x:City": "Hanahan",
+              "x:MainDivision": "SC",
+              "x:PostalCode": "29410",
+              "x:Country": "US"
+            }
+          },
+          "x:LineItem": [
+            {
+              "x:Product": {
+                "@productClass": "shipping"
+              },
+              "x:ExtendedPrice": "4.75"
+            },
+            {
+              "x:Product": {
+                "@productClass": "26"
+              },
+              "x:ExtendedPrice": "4.55"
+            }
+          ]
+        }
+      }
+    }
+  }
+}

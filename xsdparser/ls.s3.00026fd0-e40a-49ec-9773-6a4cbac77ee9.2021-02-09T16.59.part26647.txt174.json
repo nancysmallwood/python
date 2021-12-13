@@ -1,0 +1,117 @@
+{
+  "http://schemas.xmlsoap.org/soap/envelope/:Envelope": {
+    "http://schemas.xmlsoap.org/soap/envelope/:Body": {
+      "x:VertexEnvelope": {
+        "x:Login": {
+          "x:TrustedId": "2028034077290175"
+        },
+        "x:QuotationRequest": {
+          "@returnAssistedParametersIndicator": "true",
+          "@deliveryTerm": "SUP",
+          "@documentDate": "2021-02-09",
+          "@transactionType": "SALE",
+          "@xmlns": {
+            "SOAP-ENV": "http://schemas.xmlsoap.org/soap/envelope/",
+            "ns1": "urn:vertexinc:o-series:tps:7:0"
+          },
+          "x:Currency": {
+            "@isoCurrencyCodeAlpha": "USD"
+          },
+          "x:Seller": {
+            "x:Company": "01",
+            "x:PhysicalOrigin": {
+              "x:StreetAddress1": "14 Campus Boulevard",
+              "x:City": "Newtown Square",
+              "x:MainDivision": "PA",
+              "x:PostalCode": "19073",
+              "x:Country": "USA"
+            }
+          },
+          "x:Customer": {
+            "x:CustomerCode": {
+              "@classCode": "Retail Customer",
+              "#text": "General"
+            },
+            "x:Destination": {
+              "x:StreetAddress1": "PO Box 28245",
+              "x:City": "Scottsdale",
+              "x:MainDivision": "AZ",
+              "x:PostalCode": "85255",
+              "x:Country": "USA"
+            }
+          },
+          "x:LineItem": [
+            {
+              "@lineItemId": "sequence-2",
+              "x:Product": {
+                "@productClass": "CERTIFICAT",
+                "#text": "6700070"
+              },
+              "x:Quantity": "1",
+              "x:UnitPrice": "60",
+              "x:ExtendedPrice": "60",
+              "x:FlexibleFields": {
+                "x:FlexibleCodeField": [
+                  {
+                    "@fieldId": "3",
+                    "#text": "Renewal"
+                  },
+                  {
+                    "@fieldId": "5",
+                    "#text": "USD"
+                  },
+                  {
+                    "@fieldId": "8",
+                    "#text": "66.252.194.201"
+                  },
+                  {
+                    "@fieldId": "9",
+                    "#text": "USA"
+                  },
+                  {
+                    "@fieldId": "10",
+                    "#text": "AZ"
+                  },
+                  {
+                    "@fieldId": "11",
+                    "#text": "USA"
+                  },
+                  {
+                    "@fieldId": "12",
+                    "#text": "Arizona"
+                  },
+                  {
+                    "@fieldId": "13",
+                    "#text": "Scottsdale"
+                  },
+                  {
+                    "@fieldId": "14",
+                    "#text": "85255"
+                  },
+                  {
+                    "@fieldId": "15",
+                    "#text": "158985"
+                  },
+                  {
+                    "@fieldId": "3",
+                    "#text": "158985"
+                  }
+                ]
+              }
+            },
+            {
+              "@lineItemId": "shipping",
+              "x:Product": {
+                "@productClass": "SHIPPING",
+                "#text": "zeroshipping_zeroshipping"
+              },
+              "x:Quantity": "1",
+              "x:UnitPrice": "0",
+              "x:ExtendedPrice": "0"
+            }
+          ]
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,99 @@
+{
+  "http://schemas.xmlsoap.org/soap/envelope/:Envelope": {
+    "http://schemas.xmlsoap.org/soap/envelope/:Header": null,
+    "http://schemas.xmlsoap.org/soap/envelope/:Body": {
+      "x:VertexEnvelope": {
+        "x:Login": {
+          "x:TrustedId": "1235769293676012"
+        },
+        "x:QuotationRequest": {
+          "@documentDate": "2021-02-09",
+          "@documentNumber": "DWC-QUOTE",
+          "@transactionType": "SALE",
+          "@xmlns": {
+            "SOAP-ENV": "http://schemas.xmlsoap.org/soap/envelope/",
+            "ns2": "urn:vertexinc:o-series:tps:7:0"
+          },
+          "x:Currency": {
+            "@isoCurrencyCodeAlpha": "USD"
+          },
+          "x:Seller": {
+            "x:Company": "1000",
+            "x:PhysicalOrigin": {
+              "x:StreetAddress1": "19601 N. 27th Ave",
+              "x:City": "Phoenix",
+              "x:MainDivision": "AZ",
+              "x:PostalCode": "85027",
+              "x:Country": "US"
+            },
+            "x:AdministrativeOrigin": {
+              "x:StreetAddress1": "19601 N. 27th Ave",
+              "x:City": "Phoenix",
+              "x:MainDivision": "AZ",
+              "x:PostalCode": "85027",
+              "x:Country": "US"
+            }
+          },
+          "x:LineItem": [
+            {
+              "@lineItemId": "926abc13d49f32622d734cd83d",
+              "@lineItemNumber": "1",
+              "@taxIncludedIndicator": "false",
+              "x:Customer": {
+                "x:CustomerCode": "fefde3d8-2034-4361-9f10-908fdebd9444",
+                "x:Destination": {
+                  "@locationCode": "1199"
+                }
+              },
+              "x:Product": {
+                "@productClass": "P0000000",
+                "#text": "5087828"
+              },
+              "x:Quantity": {
+                "@unitOfMeasure": "EA",
+                "#text": "1.0"
+              },
+              "x:ExtendedPrice": "11.99",
+              "x:FlexibleFields": {
+                "x:FlexibleCodeField": {
+                  "@fieldId": "8",
+                  "#text": "SILENT SPINNER WHEEL, 6.5 INCH AST    86"
+                }
+              }
+            },
+            {
+              "@lineItemId": "3d8e8c614d48169845048bb3fb",
+              "@lineItemNumber": "2",
+              "@taxIncludedIndicator": "false",
+              "x:Customer": {
+                "x:CustomerCode": "fefde3d8-2034-4361-9f10-908fdebd9444",
+                "x:Destination": {
+                  "x:StreetAddress1": "7505 E 35th Ave Bldg 3 Ste 3",
+                  "x:City": "Denver",
+                  "x:MainDivision": "CO",
+                  "x:PostalCode": "80238",
+                  "x:Country": "US"
+                }
+              },
+              "x:Product": {
+                "@productClass": "FR020100",
+                "#text": "STANDARD_SHIPPING"
+              },
+              "x:Quantity": {
+                "@unitOfMeasure": "EA",
+                "#text": "1.0"
+              },
+              "x:ExtendedPrice": "0.0",
+              "x:FlexibleFields": {
+                "x:FlexibleCodeField": {
+                  "@fieldId": "8",
+                  "#text": "Shipping"
+                }
+              }
+            }
+          ]
+        }
+      }
+    }
+  }
+}

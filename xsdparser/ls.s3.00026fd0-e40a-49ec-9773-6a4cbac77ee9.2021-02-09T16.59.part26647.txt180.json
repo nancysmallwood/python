@@ -1,0 +1,111 @@
+{
+  "http://schemas.xmlsoap.org/soap/envelope/:Envelope": {
+    "http://schemas.xmlsoap.org/soap/envelope/:Header": null,
+    "http://schemas.xmlsoap.org/soap/envelope/:Body": {
+      "x:VertexEnvelope": {
+        "x:Login": {
+          "x:TrustedId": "9152594810598743"
+        },
+        "x:QuotationRequest": {
+          "@documentNumber": "167547385",
+          "@postingDate": "2021-02-09",
+          "@transactionType": "SALE",
+          "@xmlns": {
+            "SOAP-ENV": "http://schemas.xmlsoap.org/soap/envelope/",
+            "ns2": "urn:vertexinc:o-series:tps:7:0"
+          },
+          "x:Seller": {
+            "x:Company": "212",
+            "x:PhysicalOrigin": {
+              "x:StreetAddress1": "9 STATE ROUTE 31",
+              "x:City": "FLEMINGTON",
+              "x:MainDivision": "NJ",
+              "x:PostalCode": "08822",
+              "x:Country": "US"
+            }
+          },
+          "x:LineItem": [
+            {
+              "@lineItemNumber": "1",
+              "x:Customer": {
+                "x:Destination": {
+                  "x:StreetAddress1": "32 Mine St",
+                  "x:City": "Flemington",
+                  "x:MainDivision": "NJ",
+                  "x:PostalCode": "08822",
+                  "x:Country": "US"
+                }
+              },
+              "x:Product": "MOBFEE_001",
+              "x:Quantity": "1.0",
+              "x:UnitPrice": "3.49"
+            },
+            {
+              "@lineItemNumber": "2",
+              "x:Customer": {
+                "x:Destination": {
+                  "x:StreetAddress1": "32 Mine St",
+                  "x:City": "Flemington",
+                  "x:MainDivision": "NJ",
+                  "x:PostalCode": "08822",
+                  "x:Country": "US"
+                }
+              },
+              "x:Product": "MOBFEE_002",
+              "x:Quantity": "1.0",
+              "x:UnitPrice": "3.01"
+            },
+            {
+              "@lineItemNumber": "3",
+              "x:Customer": {
+                "x:Destination": {
+                  "x:StreetAddress1": "32 Mine St",
+                  "x:City": "Flemington",
+                  "x:MainDivision": "NJ",
+                  "x:PostalCode": "08822",
+                  "x:Country": "US"
+                }
+              },
+              "x:Product": "MOBFEE_003",
+              "x:Quantity": "1.0",
+              "x:UnitPrice": "0.0"
+            },
+            {
+              "@lineItemNumber": "4",
+              "x:Customer": {
+                "x:Destination": {
+                  "x:StreetAddress1": "32 Mine St",
+                  "x:City": "Flemington",
+                  "x:MainDivision": "NJ",
+                  "x:PostalCode": "08822",
+                  "x:Country": "US"
+                }
+              },
+              "x:Product": "MOB_DISCOUNT",
+              "x:Quantity": "1.0",
+              "x:UnitPrice": "0.0"
+            },
+            {
+              "@lineItemNumber": "5",
+              "x:Customer": {
+                "x:Destination": {
+                  "x:StreetAddress1": "32 Mine St",
+                  "x:City": "Flemington",
+                  "x:MainDivision": "NJ",
+                  "x:PostalCode": "08822",
+                  "x:Country": "US"
+                }
+              },
+              "x:Product": "20150",
+              "x:Quantity": {
+                "@unitOfMeasure": "EA",
+                "#text": "1.0"
+              },
+              "x:UnitPrice": "3.19"
+            }
+          ]
+        }
+      }
+    }
+  }
+}

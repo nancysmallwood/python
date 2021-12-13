@@ -1,0 +1,136 @@
+{
+  "http://schemas.xmlsoap.org/soap/envelope/:Envelope": {
+    "http://schemas.xmlsoap.org/soap/envelope/:Header": null,
+    "http://schemas.xmlsoap.org/soap/envelope/:Body": {
+      "urn:vertexinc:o-series:tps:6:0:VertexEnvelope": {
+        "Login": {
+          "TrustedId": "2887267389996541"
+        },
+        "InvoiceRequest": {
+          "@documentNumber": "PND10976150",
+          "@documentDate": "2021-02-07T21:07:11+00:00",
+          "@postingDate": "2021-02-09",
+          "@transactionType": "SALE",
+          "@xmlns": {
+            "SOAP-ENV": "http://schemas.xmlsoap.org/soap/envelope/",
+            "vtx": "urn:vertexinc:o-series:tps:6:0"
+          },
+          "Currency": {
+            "@isoCurrencyCodeAlpha": "USD",
+            "@isoCurrencyName": "USD"
+          },
+          "Seller": {
+            "Company": "USE",
+            "AdministrativeOrigin": {
+              "StreetAddress1": "250 W Pratt St",
+              "City": "Baltimore",
+              "MainDivision": "MD",
+              "PostalCode": "21201",
+              "Country": "US"
+            }
+          },
+          "Customer": {
+            "CustomerCode": "b23723a9-7d51-4240-aa57-a198909c1e49",
+            "Destination": {
+              "StreetAddress1": "135 Hooks Rd",
+              "StreetAddress2": null,
+              "City": "Cheraw",
+              "MainDivision": "SC",
+              "PostalCode": "29520",
+              "Country": "US"
+            }
+          },
+          "LineItem": [
+            {
+              "@lineItemId": "SHIPPING202102072114031193509744",
+              "@lineItemNumber": "0",
+              "Product": {
+                "@productClass": "SHIP"
+              },
+              "ExtendedPrice": "0.0",
+              "Seller": {
+                "PhysicalOrigin": {
+                  "StreetAddress1": "9250 N Royal Lane",
+                  "StreetAddress2": null,
+                  "City": "Irving",
+                  "MainDivision": "TX",
+                  "PostalCode": "75063",
+                  "Country": "US"
+                }
+              }
+            },
+            {
+              "@lineItemId": "202102072114031193509745",
+              "@lineItemNumber": "1",
+              "Product": {
+                "@productClass": "JLR",
+                "#text": "197830CZ-54"
+              },
+              "Quantity": {
+                "@unitOfMeasure": "EA",
+                "#text": "1.00"
+              },
+              "ExtendedPrice": "75.0",
+              "Customer": {
+                "Destination": {
+                  "StreetAddress1": "135 Hooks Rd",
+                  "StreetAddress2": null,
+                  "City": "Cheraw",
+                  "MainDivision": "SC",
+                  "PostalCode": "29520",
+                  "Country": "US"
+                }
+              },
+              "Seller": {
+                "PhysicalOrigin": {
+                  "StreetAddress1": "9250 N Royal Lane",
+                  "StreetAddress2": null,
+                  "City": "Irving",
+                  "MainDivision": "TX",
+                  "PostalCode": "75063",
+                  "Country": "US"
+                }
+              }
+            },
+            {
+              "@lineItemId": "202102072114031193509747",
+              "@lineItemNumber": "2",
+              "Product": {
+                "@productClass": "JLR",
+                "#text": "397436CZ-45"
+              },
+              "Quantity": {
+                "@unitOfMeasure": "EA",
+                "#text": "1.00"
+              },
+              "ExtendedPrice": "75.0",
+              "Customer": {
+                "Destination": {
+                  "StreetAddress1": "135 Hooks Rd",
+                  "StreetAddress2": null,
+                  "City": "Cheraw",
+                  "MainDivision": "SC",
+                  "PostalCode": "29520",
+                  "Country": "US"
+                }
+              },
+              "Seller": {
+                "PhysicalOrigin": {
+                  "StreetAddress1": "9250 N Royal Lane",
+                  "StreetAddress2": null,
+                  "City": "Irving",
+                  "MainDivision": "TX",
+                  "PostalCode": "75063",
+                  "Country": "US"
+                }
+              }
+            }
+          ]
+        },
+        "ApplicationData": {
+          "Sender": "OMS"
+        }
+      }
+    }
+  }
+}

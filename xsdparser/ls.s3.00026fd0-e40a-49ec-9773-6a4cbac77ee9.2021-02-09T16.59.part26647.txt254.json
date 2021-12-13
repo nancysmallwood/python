@@ -1,0 +1,99 @@
+{
+  "http://schemas.xmlsoap.org/soap/envelope/:Envelope": {
+    "http://schemas.xmlsoap.org/soap/envelope/:Header": null,
+    "http://schemas.xmlsoap.org/soap/envelope/:Body": {
+      "x:VertexEnvelope": {
+        "x:Login": {
+          "x:TrustedId": "1235769293676012"
+        },
+        "x:QuotationRequest": {
+          "@documentDate": "2021-02-09",
+          "@documentNumber": "DWC-QUOTE",
+          "@transactionType": "SALE",
+          "@xmlns": {
+            "SOAP-ENV": "http://schemas.xmlsoap.org/soap/envelope/",
+            "ns2": "urn:vertexinc:o-series:tps:7:0"
+          },
+          "x:Currency": {
+            "@isoCurrencyCodeAlpha": "CAD"
+          },
+          "x:Seller": {
+            "x:Company": "2000",
+            "x:PhysicalOrigin": {
+              "x:StreetAddress1": "1750 Innes Rd",
+              "x:City": "Gloucester",
+              "x:MainDivision": "ON",
+              "x:PostalCode": "K1B 3K5",
+              "x:Country": "CA"
+            },
+            "x:AdministrativeOrigin": {
+              "x:StreetAddress1": "1750 Innes Rd",
+              "x:City": "Gloucester",
+              "x:MainDivision": "ON",
+              "x:PostalCode": "K1B 3K5",
+              "x:Country": "CA"
+            }
+          },
+          "x:LineItem": [
+            {
+              "@lineItemId": "fdf88bb61570c565418c2bffa5",
+              "@lineItemNumber": "1",
+              "@taxIncludedIndicator": "false",
+              "x:Customer": {
+                "x:CustomerCode": "47ca641d-886c-423b-8757-38f50f5f6982",
+                "x:Destination": {
+                  "@locationCode": "2005"
+                }
+              },
+              "x:Product": {
+                "@productClass": "P0000000",
+                "#text": "5294208"
+              },
+              "x:Quantity": {
+                "@unitOfMeasure": "EA",
+                "#text": "1.0"
+              },
+              "x:ExtendedPrice": "22.99",
+              "x:FlexibleFields": {
+                "x:FlexibleCodeField": {
+                  "@fieldId": "8",
+                  "#text": "PAWZ BOOTS LARGE CAMO                 29"
+                }
+              }
+            },
+            {
+              "@lineItemId": "f8977eed1f94040bc6cf70bd3c",
+              "@lineItemNumber": "2",
+              "@taxIncludedIndicator": "false",
+              "x:Customer": {
+                "x:CustomerCode": "47ca641d-886c-423b-8757-38f50f5f6982",
+                "x:Destination": {
+                  "x:StreetAddress1": "600 Hespeler Road, Unit 68B",
+                  "x:City": "Cambridge",
+                  "x:MainDivision": "ON",
+                  "x:PostalCode": "N1R 8H2",
+                  "x:Country": "CA"
+                }
+              },
+              "x:Product": {
+                "@productClass": "FR020100",
+                "#text": "STANDARD_SHIPPING"
+              },
+              "x:Quantity": {
+                "@unitOfMeasure": "EA",
+                "#text": "1.0"
+              },
+              "x:ExtendedPrice": "0.0",
+              "x:FlexibleFields": {
+                "x:FlexibleCodeField": {
+                  "@fieldId": "8",
+                  "#text": "Shipping"
+                }
+              }
+            }
+          ]
+        }
+      }
+    }
+  }
+}

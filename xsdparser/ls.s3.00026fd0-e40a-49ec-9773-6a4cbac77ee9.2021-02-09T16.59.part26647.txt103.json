@@ -1,0 +1,138 @@
+{
+  "http://schemas.xmlsoap.org/soap/envelope/:Envelope": {
+    "http://schemas.xmlsoap.org/soap/envelope/:Header": null,
+    "http://schemas.xmlsoap.org/soap/envelope/:Body": {
+      "x:VertexEnvelope": {
+        "x:Login": {
+          "x:TrustedId": "0610834864281130"
+        },
+        "x:QuotationRequest": {
+          "@transactionType": "SALE",
+          "@documentDate": "2021-02-09",
+          "@documentNumber": "2826411-0",
+          "@xmlns": {
+            "soapenv": "http://schemas.xmlsoap.org/soap/envelope/",
+            "": "urn:vertexinc:o-series:tps:7:0"
+          },
+          "x:Seller": {
+            "x:Company": "ACE_PROD",
+            "x:PhysicalOrigin": {
+              "x:StreetAddress1": "1034 Pearl Street",
+              "x:StreetAddress2": null,
+              "x:City": "Brockton",
+              "x:MainDivision": "MA",
+              "x:PostalCode": "02301",
+              "x:Country": "USA"
+            }
+          },
+          "x:Customer": {
+            "x:CustomerCode": {
+              "@classCode": "NULL",
+              "#text": "0115240"
+            },
+            "x:Destination": {
+              "x:StreetAddress1": "258 N 114TH ST",
+              "x:StreetAddress2": "DR PAUL KRAUSE",
+              "x:City": "OMAHA",
+              "x:MainDivision": "NE",
+              "x:PostalCode": "68154",
+              "x:Country": "US"
+            }
+          },
+          "x:LineItem": [
+            {
+              "@lineItemNumber": "1",
+              "@locationCode": "01",
+              "x:Product": {
+                "@productClass": "REGEN-X",
+                "#text": "5099250"
+              },
+              "x:Quantity": "2.00",
+              "x:UnitPrice": "176.2900",
+              "x:ExtendedPrice": "352.5800",
+              "x:FlexibleFields": {
+                "x:FlexibleCodeField": [
+                  {
+                    "@fieldId": "3",
+                    "#text": "5099250"
+                  },
+                  {
+                    "@fieldId": "4",
+                    "#text": "NUOSS COLLAGEN 8X9X9MM"
+                  },
+                  {
+                    "@fieldId": "5",
+                    "#text": "PAUL KRAUSE DENTAL"
+                  },
+                  {
+                    "@fieldId": "6",
+                    "#text": "BT"
+                  }
+                ]
+              }
+            },
+            {
+              "@lineItemNumber": "2",
+              "@locationCode": "01",
+              "x:Product": {
+                "@productClass": "REGEN-X",
+                "#text": "5093000"
+              },
+              "x:Quantity": "2.00",
+              "x:UnitPrice": "134.4900",
+              "x:ExtendedPrice": "268.9800",
+              "x:FlexibleFields": {
+                "x:FlexibleCodeField": [
+                  {
+                    "@fieldId": "3",
+                    "#text": "5093000"
+                  },
+                  {
+                    "@fieldId": "4",
+                    "#text": "RCM6 COLLAGEN DENTAL MEMBRANE"
+                  },
+                  {
+                    "@fieldId": "5",
+                    "#text": "PAUL KRAUSE DENTAL"
+                  },
+                  {
+                    "@fieldId": "6",
+                    "#text": "BT"
+                  }
+                ]
+              }
+            },
+            {
+              "@lineItemNumber": "3",
+              "@locationCode": "01",
+              "x:Product": {
+                "@productClass": "FREIGHT"
+              },
+              "x:Quantity": "1.00",
+              "x:UnitPrice": "16.2200",
+              "x:ExtendedPrice": "16.2200",
+              "x:FlexibleFields": {
+                "x:FlexibleCodeField": [
+                  {
+                    "@fieldId": "3"
+                  },
+                  {
+                    "@fieldId": "4"
+                  },
+                  {
+                    "@fieldId": "5",
+                    "#text": "PAUL KRAUSE DENTAL"
+                  },
+                  {
+                    "@fieldId": "6",
+                    "#text": "BT"
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      }
+    }
+  }
+}

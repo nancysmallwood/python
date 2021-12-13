@@ -1,0 +1,77 @@
+{
+  "http://schemas.xmlsoap.org/soap/envelope/:Envelope": {
+    "http://schemas.xmlsoap.org/soap/envelope/:Body": {
+      "x:VertexEnvelope": {
+        "x:Login": {
+          "x:TrustedId": "2784174264340182"
+        },
+        "x:QuotationRequest": {
+          "@documentNumber": "f2b4565274809f7339bc685bad",
+          "@deliveryTerm": "SUP",
+          "@documentDate": "2021-02-09Z",
+          "@transactionId": "f2b4565274809f7339bc685bad",
+          "@transactionType": "SALE",
+          "@xmlns": {
+            "soap": "http://schemas.xmlsoap.org/soap/envelope/",
+            "": "urn:vertexinc:o-series:tps:7:0"
+          },
+          "x:Seller": {
+            "x:Company": "SCHEELS",
+            "x:PhysicalOrigin": {
+              "x:StreetAddress1": "4550 15th Ave S",
+              "x:City": "Fargo",
+              "x:MainDivision": "ND",
+              "x:PostalCode": "58103",
+              "x:Country": "United States"
+            },
+            "x:AdministrativeOrigin": {
+              "x:StreetAddress1": "4550 15th Ave S",
+              "x:City": "Fargo",
+              "x:MainDivision": "ND",
+              "x:PostalCode": "58103",
+              "x:Country": "United States"
+            }
+          },
+          "x:Customer": {
+            "x:CustomerCode": null,
+            "x:Destination": {
+              "x:StreetAddress1": "1605 NW Prarie Lakes Dr",
+              "x:City": "Ankeny",
+              "x:MainDivision": "IA",
+              "x:PostalCode": "50023",
+              "x:Country": "us"
+            }
+          },
+          "x:LineItem": [
+            {
+              "@lineItemNumber": "1",
+              "@projectNumber": "me",
+              "@lineItemId": "PRODUCT??63373113986",
+              "x:Product": {
+                "@productClass": "VTX04-00143",
+                "#text": "63373113986"
+              },
+              "x:Quantity": "1.0",
+              "x:FairMarketValue": "24.99",
+              "x:ExtendedPrice": "24.99",
+              "x:Discount": {
+                "x:Amount": "0.00"
+              }
+            },
+            {
+              "@lineItemNumber": "2",
+              "@projectNumber": "me",
+              "@lineItemId": "SHIPPING??STANDARD_SHIPPING",
+              "x:Product": {
+                "@productClass": "SHIPPING"
+              },
+              "x:Quantity": "1.0",
+              "x:FairMarketValue": "7.99",
+              "x:ExtendedPrice": "7.99"
+            }
+          ]
+        }
+      }
+    }
+  }
+}

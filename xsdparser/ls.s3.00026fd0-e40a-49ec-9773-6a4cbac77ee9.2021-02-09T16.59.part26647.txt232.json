@@ -1,0 +1,45 @@
+{
+  "http://schemas.xmlsoap.org/soap/envelope/:Envelope": {
+    "http://schemas.xmlsoap.org/soap/envelope/:Header": null,
+    "http://schemas.xmlsoap.org/soap/envelope/:Body": {
+      "x:VertexEnvelope": {
+        "x:Login": {
+          "x:TrustedId": "8154485741318828"
+        },
+        "x:QuotationRequest": {
+          "@documentNumber": "80081435",
+          "@postingDate": "2021-02-09",
+          "@documentDate": "2021-02-09",
+          "@transactionId": "001-80081435-001-LM-13",
+          "@transactionType": "SALE",
+          "@xmlns": {
+            "soapenv": "http://schemas.xmlsoap.org/soap/envelope/",
+            "urn": "urn:vertexinc:o-series:tps:7:0"
+          },
+          "x:Seller": {
+            "x:Company": "100",
+            "x:AdministrativeOrigin": {
+              "@taxAreaId": "350170050"
+            }
+          },
+          "x:Customer": {
+            "x:CustomerCode": "11671012",
+            "x:Destination": {
+              "@taxAreaId": "261090000"
+            }
+          },
+          "x:LineItem": {
+            "@lineItemNumber": "1",
+            "x:Product": {
+              "@productClass": "HEALTHS002",
+              "#text": "SWU1020"
+            },
+            "x:Quantity": "1",
+            "x:UnitPrice": "7.49",
+            "x:ExtendedPrice": "7.49"
+          }
+        }
+      }
+    }
+  }
+}

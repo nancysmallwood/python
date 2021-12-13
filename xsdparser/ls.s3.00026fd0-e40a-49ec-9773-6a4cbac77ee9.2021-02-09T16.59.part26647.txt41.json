@@ -1,0 +1,49 @@
+{
+  "http://schemas.xmlsoap.org/soap/envelope/:Envelope": {
+    "http://schemas.xmlsoap.org/soap/envelope/:Body": {
+      "x:VertexEnvelope": {
+        "x:Login": {
+          "x:TrustedId": "8048136477967570"
+        },
+        "x:QuotationRequest": {
+          "@transactionType": "SALE",
+          "@documentDate": "2021-02-09",
+          "@xmlns": {
+            "s": "http://schemas.xmlsoap.org/soap/envelope/",
+            "xsi": "http://www.w3.org/2001/XMLSchema-instance",
+            "xsd": "http://www.w3.org/2001/XMLSchema",
+            "": "urn:vertexinc:o-series:tps:7:0"
+          },
+          "x:Seller": {
+            "x:Company": "SACI"
+          },
+          "x:Customer": {
+            "x:CustomerCode": null,
+            "x:Destination": {
+              "x:StreetAddress1": "39 Fortune drive",
+              "x:StreetAddress2": null,
+              "x:City": "Plymouth",
+              "x:MainDivision": "MA",
+              "x:PostalCode": "02360",
+              "x:Country": "US"
+            }
+          },
+          "x:LineItem": {
+            "@lineItemId": "100051931043",
+            "@lineItemNumber": "0",
+            "x:Product": {
+              "@productClass": "APPAREL",
+              "#text": "CK-CK365--PWTXSM"
+            },
+            "x:Quantity": "1",
+            "x:Freight": "0.0",
+            "x:ExtendedPrice": "52.46",
+            "x:Discount": {
+              "x:DiscountAmount": "0.00"
+            }
+          }
+        }
+      }
+    }
+  }
+}

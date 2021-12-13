@@ -1,0 +1,197 @@
+{
+  "http://schemas.xmlsoap.org/soap/envelope/:Envelope": {
+    "http://schemas.xmlsoap.org/soap/envelope/:Body": {
+      "x:VertexEnvelope": {
+        "x:Login": {
+          "x:TrustedId": "7649555430638576"
+        },
+        "x:InvoiceRequest": {
+          "@documentDate": "2021-02-09 17:42",
+          "@documentNumber": "208912946762515879087",
+          "@transactionType": "SALE",
+          "@xmlns": {
+            "ns2": "http://schemas.xmlsoap.org/soap/envelope/",
+            "": "urn:vertexinc:o-series:tps:7:0"
+          },
+          "x:Currency": null,
+          "x:Seller": {
+            "x:Company": "1000",
+            "x:Division": "michaels-us",
+            "x:AdministrativeOrigin": {
+              "x:City": "Irving",
+              "x:MainDivision": "Texas",
+              "x:PostalCode": "75063",
+              "x:Country": "US"
+            }
+          },
+          "x:LineItem": [
+            {
+              "@lineItemId": "49",
+              "@taxDate": "2021-02-09 17:42",
+              "@taxIncludedIndicator": "false",
+              "x:Seller": {
+                "x:PhysicalOrigin": {
+                  "x:City": "CHARLOTTESVILLE",
+                  "x:MainDivision": "VA",
+                  "x:PostalCode": "22903-4834",
+                  "x:Country": "US"
+                }
+              },
+              "x:Customer": {
+                "x:Destination": {
+                  "x:StreetAddress1": "BARRACKS ROAD SHOPPING CENTER",
+                  "x:StreetAddress2": "1035 EMMET ST N",
+                  "x:City": "CHARLOTTESVILLE",
+                  "x:MainDivision": "VA",
+                  "x:PostalCode": "22903-4834",
+                  "x:Country": "US",
+                  "x:locationCode": "8807"
+                },
+                "x:ExemptionCertificate": null
+              },
+              "x:Product": {
+                "@productClass": "8304",
+                "#text": "10624521"
+              },
+              "x:Quantity": {
+                "@unitOfMeasure": "EA",
+                "#text": "1.0"
+              },
+              "x:UnitPrice": "14.99",
+              "x:ExtendedPrice": "11.99",
+              "x:FlexibleFields": {
+                "x:FlexibleDateField": {
+                  "@fieldId": "1",
+                  "#text": "2021-02-09 16:55"
+                }
+              }
+            },
+            {
+              "@lineItemId": "50",
+              "@taxDate": "2021-02-09 17:42",
+              "@taxIncludedIndicator": "false",
+              "x:Seller": {
+                "x:PhysicalOrigin": {
+                  "x:City": "CHARLOTTESVILLE",
+                  "x:MainDivision": "VA",
+                  "x:PostalCode": "22903-4834",
+                  "x:Country": "US"
+                }
+              },
+              "x:Customer": {
+                "x:Destination": {
+                  "x:StreetAddress1": "BARRACKS ROAD SHOPPING CENTER",
+                  "x:StreetAddress2": "1035 EMMET ST N",
+                  "x:City": "CHARLOTTESVILLE",
+                  "x:MainDivision": "VA",
+                  "x:PostalCode": "22903-4834",
+                  "x:Country": "US",
+                  "x:locationCode": "8807"
+                },
+                "x:ExemptionCertificate": null
+              },
+              "x:Product": {
+                "@productClass": "8304",
+                "#text": "10624582"
+              },
+              "x:Quantity": {
+                "@unitOfMeasure": "EA",
+                "#text": "1.0"
+              },
+              "x:UnitPrice": "14.99",
+              "x:ExtendedPrice": "11.99",
+              "x:FlexibleFields": {
+                "x:FlexibleDateField": {
+                  "@fieldId": "1",
+                  "#text": "2021-02-09 16:55"
+                }
+              }
+            },
+            {
+              "@lineItemId": "51",
+              "@taxDate": "2021-02-09 17:42",
+              "@taxIncludedIndicator": "false",
+              "x:Seller": {
+                "x:PhysicalOrigin": {
+                  "x:City": "CHARLOTTESVILLE",
+                  "x:MainDivision": "VA",
+                  "x:PostalCode": "22903-4834",
+                  "x:Country": "US"
+                }
+              },
+              "x:Customer": {
+                "x:Destination": {
+                  "x:StreetAddress1": "BARRACKS ROAD SHOPPING CENTER",
+                  "x:StreetAddress2": "1035 EMMET ST N",
+                  "x:City": "CHARLOTTESVILLE",
+                  "x:MainDivision": "VA",
+                  "x:PostalCode": "22903-4834",
+                  "x:Country": "US",
+                  "x:locationCode": "8807"
+                },
+                "x:ExemptionCertificate": null
+              },
+              "x:Product": {
+                "@productClass": "8304",
+                "#text": "10624469"
+              },
+              "x:Quantity": {
+                "@unitOfMeasure": "EA",
+                "#text": "1.0"
+              },
+              "x:UnitPrice": "14.99",
+              "x:ExtendedPrice": "11.99",
+              "x:FlexibleFields": {
+                "x:FlexibleDateField": {
+                  "@fieldId": "1",
+                  "#text": "2021-02-09 16:55"
+                }
+              }
+            },
+            {
+              "@lineItemId": "52",
+              "@taxDate": "2021-02-09 17:42",
+              "@taxIncludedIndicator": "false",
+              "x:Seller": {
+                "x:PhysicalOrigin": {
+                  "x:City": "CHARLOTTESVILLE",
+                  "x:MainDivision": "VA",
+                  "x:PostalCode": "22903-4834",
+                  "x:Country": "US"
+                }
+              },
+              "x:Customer": {
+                "x:Destination": {
+                  "x:StreetAddress1": "BARRACKS ROAD SHOPPING CENTER",
+                  "x:StreetAddress2": "1035 EMMET ST N",
+                  "x:City": "CHARLOTTESVILLE",
+                  "x:MainDivision": "VA",
+                  "x:PostalCode": "22903-4834",
+                  "x:Country": "US",
+                  "x:locationCode": "8807"
+                },
+                "x:ExemptionCertificate": null
+              },
+              "x:Product": {
+                "@productClass": "8304",
+                "#text": "10624509"
+              },
+              "x:Quantity": {
+                "@unitOfMeasure": "EA",
+                "#text": "1.0"
+              },
+              "x:UnitPrice": "14.99",
+              "x:ExtendedPrice": "11.99",
+              "x:FlexibleFields": {
+                "x:FlexibleDateField": {
+                  "@fieldId": "1",
+                  "#text": "2021-02-09 16:55"
+                }
+              }
+            }
+          ]
+        }
+      }
+    }
+  }
+}

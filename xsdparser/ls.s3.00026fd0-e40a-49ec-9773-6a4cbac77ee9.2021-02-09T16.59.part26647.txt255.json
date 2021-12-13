@@ -1,0 +1,176 @@
+{
+  "http://schemas.xmlsoap.org/soap/envelope/:Envelope": {
+    "http://schemas.xmlsoap.org/soap/envelope/:Header": null,
+    "http://schemas.xmlsoap.org/soap/envelope/:Body": {
+      "x:VertexEnvelope": {
+        "x:Login": {
+          "x:TrustedId": "8105174526942882"
+        },
+        "x:QuotationRequest": {
+          "@documentDate": "2021-02-09",
+          "@documentNumber": "W01005739594872",
+          "@transactionType": "SALE",
+          "@xmlns": {
+            "SOAP-ENV": "http://schemas.xmlsoap.org/soap/envelope/",
+            "ns2": "urn:vertexinc:o-series:tps:7:0"
+          },
+          "x:LineItem": [
+            {
+              "@lineItemId": "217483909_ITM",
+              "@lineItemNumber": "217483909",
+              "x:Seller": {
+                "x:Company": "10",
+                "x:PhysicalOrigin": {
+                  "@taxAreaId": "330590000"
+                }
+              },
+              "x:Customer": {
+                "@isTaxExempt": "false",
+                "x:Destination": {
+                  "x:StreetAddress1": "229 Lace Dr",
+                  "x:City": "Dothan",
+                  "x:MainDivision": "AL",
+                  "x:PostalCode": "36301",
+                  "x:Country": "USA"
+                }
+              },
+              "x:Product": {
+                "@productClass": "03",
+                "#text": "175390"
+              },
+              "x:Quantity": "1.0",
+              "x:ExtendedPrice": "29.99",
+              "x:FlexibleFields": {
+                "x:FlexibleCodeField": [
+                  {
+                    "@fieldId": "1",
+                    "#text": "Original"
+                  },
+                  {
+                    "@fieldId": "2",
+                    "#text": "WEB"
+                  },
+                  {
+                    "@fieldId": "8",
+                    "#text": "175390"
+                  },
+                  {
+                    "@fieldId": "9",
+                    "#text": "1009"
+                  },
+                  {
+                    "@fieldId": "11",
+                    "#text": "GPT"
+                  },
+                  {
+                    "@fieldId": "15",
+                    "#text": "AL"
+                  },
+                  {
+                    "@fieldId": "20",
+                    "#text": "Black Canary"
+                  },
+                  {
+                    "@fieldId": "21"
+                  },
+                  {
+                    "@fieldId": "22",
+                    "#text": "Dothan"
+                  },
+                  {
+                    "@fieldId": "23",
+                    "#text": "AL"
+                  },
+                  {
+                    "@fieldId": "3",
+                    "#text": "03"
+                  }
+                ],
+                "x:FlexibleNumericField": {
+                  "@fieldId": "3",
+                  "#text": "1.0"
+                }
+              }
+            },
+            {
+              "@lineItemId": "217483909_FRT",
+              "@lineItemNumber": "217483909",
+              "x:Seller": {
+                "x:Company": "10",
+                "x:PhysicalOrigin": {
+                  "@taxAreaId": "330590000"
+                }
+              },
+              "x:Customer": {
+                "@isTaxExempt": "false",
+                "x:Destination": {
+                  "x:StreetAddress1": "229 Lace Dr",
+                  "x:City": "Dothan",
+                  "x:MainDivision": "AL",
+                  "x:PostalCode": "36301",
+                  "x:Country": "USA"
+                }
+              },
+              "x:Product": {
+                "@productClass": "03",
+                "#text": "FRT"
+              },
+              "x:ExtendedPrice": "12.99",
+              "x:FlexibleFields": {
+                "x:FlexibleCodeField": [
+                  {
+                    "@fieldId": "1",
+                    "#text": "Original"
+                  },
+                  {
+                    "@fieldId": "2",
+                    "#text": "WEB"
+                  },
+                  {
+                    "@fieldId": "8",
+                    "#text": "175390"
+                  },
+                  {
+                    "@fieldId": "9",
+                    "#text": "1009"
+                  },
+                  {
+                    "@fieldId": "11",
+                    "#text": "GPT"
+                  },
+                  {
+                    "@fieldId": "15",
+                    "#text": "AL"
+                  },
+                  {
+                    "@fieldId": "20",
+                    "#text": "Black Canary"
+                  },
+                  {
+                    "@fieldId": "21"
+                  },
+                  {
+                    "@fieldId": "22",
+                    "#text": "Dothan"
+                  },
+                  {
+                    "@fieldId": "23",
+                    "#text": "AL"
+                  },
+                  {
+                    "@fieldId": "3",
+                    "#text": "03"
+                  }
+                ],
+                "x:FlexibleNumericField": {
+                  "@fieldId": "3",
+                  "#text": "1.0"
+                }
+              }
+            }
+          ]
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,67 @@
+{
+  "http://schemas.xmlsoap.org/soap/envelope/:Envelope": {
+    "http://schemas.xmlsoap.org/soap/envelope/:Body": {
+      "x:VertexEnvelope": {
+        "x:Login": {
+          "x:TrustedId": "0651515381574400"
+        },
+        "x:QuotationRequest": {
+          "@returnAssistedParametersIndicator": "true",
+          "@deliveryTerm": "SUP",
+          "@documentDate": "2021-02-09",
+          "@transactionType": "SALE",
+          "@xmlns": {
+            "SOAP-ENV": "http://schemas.xmlsoap.org/soap/envelope/",
+            "ns1": "urn:vertexinc:o-series:tps:7:0"
+          },
+          "x:Currency": {
+            "@isoCurrencyCodeAlpha": "USD"
+          },
+          "x:Seller": {
+            "x:Company": "BRS",
+            "x:PhysicalOrigin": {
+              "x:StreetAddress1": "6325 Sandburg Rd",
+              "x:City": "Minneapolis",
+              "x:MainDivision": "MN",
+              "x:PostalCode": "55427",
+              "x:Country": "USA"
+            }
+          },
+          "x:Customer": {
+            "x:CustomerCode": {
+              "@classCode": "Retail Customer",
+              "#text": "General"
+            },
+            "x:Destination": {
+              "x:MainDivision": "IN",
+              "x:PostalCode": "46037",
+              "x:Country": "USA"
+            }
+          },
+          "x:LineItem": [
+            {
+              "@lineItemId": "sequence-1",
+              "x:Product": {
+                "@productClass": "Taxable Goods",
+                "#text": "212237"
+              },
+              "x:Quantity": "1",
+              "x:UnitPrice": "15.95",
+              "x:ExtendedPrice": "15.95"
+            },
+            {
+              "@lineItemId": "sequence-2",
+              "x:Product": {
+                "@productClass": "Taxable Goods",
+                "#text": "208040"
+              },
+              "x:Quantity": "1",
+              "x:UnitPrice": "13.99",
+              "x:ExtendedPrice": "13.99"
+            }
+          ]
+        }
+      }
+    }
+  }
+}

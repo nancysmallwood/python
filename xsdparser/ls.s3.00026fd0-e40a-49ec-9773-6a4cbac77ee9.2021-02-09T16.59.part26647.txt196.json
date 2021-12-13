@@ -1,0 +1,52 @@
+{
+  "http://schemas.xmlsoap.org/soap/envelope/:Envelope": {
+    "http://schemas.xmlsoap.org/soap/envelope/:Body": {
+      "x:VertexEnvelope": {
+        "x:Login": {
+          "x:TrustedId": "1738948628459356"
+        },
+        "x:QuotationRequest": {
+          "@documentDate": "2021-02-09",
+          "@transactionId": "6b6dbbcc-7adf-4ee8-8c00-5b959b766784",
+          "@transactionType": "SALE",
+          "@xmlns": {
+            "xsi": "http://www.w3.org/2001/XMLSchema-instance",
+            "xsd": "http://www.w3.org/2001/XMLSchema",
+            "": "urn:vertexinc:o-series:tps:7:0"
+          },
+          "x:LineItem": {
+            "@lineItemNumber": "1",
+            "x:Seller": {
+              "x:Company": "1200",
+              "x:Division": "1200"
+            },
+            "x:Customer": {
+              "x:CustomerCode": null,
+              "x:Destination": {
+                "x:StreetAddress1": "9025 SPY GLASS HILL CT",
+                "x:City": "O FALLON",
+                "x:MainDivision": "MO",
+                "x:PostalCode": "63368"
+              }
+            },
+            "x:Product": "1",
+            "x:Quantity": "1",
+            "x:ExtendedPrice": "199.99",
+            "x:FlexibleFields": {
+              "x:FlexibleCodeField": [
+                {
+                  "@fieldId": "1",
+                  "#text": "0"
+                },
+                {
+                  "@fieldId": "2",
+                  "#text": "ECS"
+                }
+              ]
+            }
+          }
+        }
+      }
+    }
+  }
+}

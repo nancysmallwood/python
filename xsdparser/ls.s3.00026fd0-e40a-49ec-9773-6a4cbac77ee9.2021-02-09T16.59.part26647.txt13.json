@@ -1,0 +1,137 @@
+{
+  "http://schemas.xmlsoap.org/soap/envelope/:Envelope": {
+    "http://schemas.xmlsoap.org/soap/envelope/:Body": {
+      "x:VertexEnvelope": {
+        "x:Login": {
+          "x:TrustedId": "2784174264340182"
+        },
+        "x:QuotationRequest": {
+          "@documentNumber": "2d3d89212c37cdc2d4f8681742",
+          "@deliveryTerm": "SUP",
+          "@documentDate": "2021-02-09Z",
+          "@transactionId": "2d3d89212c37cdc2d4f8681742",
+          "@transactionType": "SALE",
+          "@xmlns": {
+            "soap": "http://schemas.xmlsoap.org/soap/envelope/",
+            "": "urn:vertexinc:o-series:tps:7:0"
+          },
+          "x:Seller": {
+            "x:Company": "SCHEELS",
+            "x:PhysicalOrigin": {
+              "x:StreetAddress1": "4550 15th Ave S",
+              "x:City": "Fargo",
+              "x:MainDivision": "ND",
+              "x:PostalCode": "58103",
+              "x:Country": "United States"
+            },
+            "x:AdministrativeOrigin": {
+              "x:StreetAddress1": "4550 15th Ave S",
+              "x:City": "Fargo",
+              "x:MainDivision": "ND",
+              "x:PostalCode": "58103",
+              "x:Country": "United States"
+            }
+          },
+          "x:Customer": {
+            "x:CustomerCode": "00848308",
+            "x:Destination": {
+              "x:StreetAddress1": "1515 Roosevelt St.",
+              "x:City": "Sabetha",
+              "x:MainDivision": "KS",
+              "x:PostalCode": "66534",
+              "x:Country": null
+            }
+          },
+          "x:LineItem": [
+            {
+              "@lineItemNumber": "1",
+              "@projectNumber": "me",
+              "@lineItemId": "PRODUCT??02863251828",
+              "x:Product": {
+                "@productClass": "standard",
+                "#text": "02863251828"
+              },
+              "x:Quantity": "1.0",
+              "x:FairMarketValue": "169.99",
+              "x:ExtendedPrice": "169.99",
+              "x:Discount": {
+                "x:Amount": "0.00"
+              }
+            },
+            {
+              "@lineItemNumber": "2",
+              "@projectNumber": "me",
+              "@lineItemId": "PRODUCT??71992110511",
+              "x:Product": {
+                "@productClass": "VTX05-01979",
+                "#text": "71992110511"
+              },
+              "x:Quantity": "1.0",
+              "x:FairMarketValue": "24.99",
+              "x:ExtendedPrice": "24.99",
+              "x:Discount": {
+                "x:Amount": "0.00"
+              }
+            },
+            {
+              "@lineItemNumber": "3",
+              "@projectNumber": "me",
+              "@lineItemId": "PRODUCT??71992110675",
+              "x:Product": {
+                "@productClass": "VTX04-00143",
+                "#text": "71992110675"
+              },
+              "x:Quantity": "1.0",
+              "x:FairMarketValue": "39.99",
+              "x:ExtendedPrice": "39.99",
+              "x:Discount": {
+                "x:Amount": "0.00"
+              }
+            },
+            {
+              "@lineItemNumber": "4",
+              "@projectNumber": "me",
+              "@lineItemId": "PRODUCT??71992120250",
+              "x:Product": {
+                "@productClass": "standard",
+                "#text": "71992120250"
+              },
+              "x:Quantity": "1.0",
+              "x:FairMarketValue": "17.99",
+              "x:ExtendedPrice": "17.99",
+              "x:Discount": {
+                "x:Amount": "0.00"
+              }
+            },
+            {
+              "@lineItemNumber": "5",
+              "@projectNumber": "me",
+              "@lineItemId": "PRODUCT??08930115100",
+              "x:Product": {
+                "@productClass": "standard",
+                "#text": "08930115100"
+              },
+              "x:Quantity": "1.0",
+              "x:FairMarketValue": "59.99",
+              "x:ExtendedPrice": "59.99",
+              "x:Discount": {
+                "x:Amount": "0.00"
+              }
+            },
+            {
+              "@lineItemNumber": "6",
+              "@projectNumber": "me",
+              "@lineItemId": "SHIPPING??STANDARD_SHIPPING",
+              "x:Product": {
+                "@productClass": "SHIPPING"
+              },
+              "x:Quantity": "1.0",
+              "x:FairMarketValue": "0.0",
+              "x:ExtendedPrice": "0.00"
+            }
+          ]
+        }
+      }
+    }
+  }
+}

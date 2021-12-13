@@ -1,0 +1,20 @@
+{
+  "http://schemas.xmlsoap.org/soap/envelope/:Envelope": {
+    "http://schemas.xmlsoap.org/soap/envelope/:Body": {
+      "x:VertexEnvelope": {
+        "x:Login": {
+          "x:TrustedId": "1700858343734340"
+        },
+        "x:TaxAreaRequest": {
+          "x:TaxAreaLookup": {
+            "x:PostalAddress": {
+              "x:City": "AURORA",
+              "x:MainDivision": "Missouri",
+              "x:PostalCode": "65605"
+            }
+          }
+        }
+      }
+    }
+  }
+}

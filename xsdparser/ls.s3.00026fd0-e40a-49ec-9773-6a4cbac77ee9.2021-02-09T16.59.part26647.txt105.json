@@ -1,0 +1,329 @@
+{
+  "http://schemas.xmlsoap.org/soap/envelope/:Envelope": {
+    "http://schemas.xmlsoap.org/soap/envelope/:Header": null,
+    "http://schemas.xmlsoap.org/soap/envelope/:Body": {
+      "x:VertexEnvelope": {
+        "x:Login": {
+          "x:TrustedId": "7877766435384007"
+        },
+        "x:QuotationRequest": {
+          "@documentDate": "2021-02-09",
+          "@transactionType": "SALE",
+          "@xmlns": {
+            "SOAP-ENV": "http://schemas.xmlsoap.org/soap/envelope/",
+            "ns2": "urn:vertexinc:o-series:tps:7:0"
+          },
+          "x:Currency": {
+            "@isoCurrencyCodeAlpha": "USD"
+          },
+          "x:Seller": {
+            "x:Company": "02"
+          },
+          "x:Customer": {
+            "@isTaxExempt": "false",
+            "x:CustomerCode": {
+              "@isBusinessIndicator": "false",
+              "#text": "60911"
+            },
+            "x:Destination": {
+              "@taxAreaId": "0",
+              "x:StreetAddress1": "35468 TEE TIME CIR",
+              "x:City": "SEBRING",
+              "x:MainDivision": "FL",
+              "x:PostalCode": "33872-2150",
+              "x:Country": "US"
+            }
+          },
+          "x:LineItem": [
+            {
+              "@isMulticomponent": "false",
+              "@lineItemId": "3226562-1.00",
+              "@lineItemNumber": "0",
+              "@taxIncludedIndicator": "false",
+              "x:Product": {
+                "@productClass": "GOLF CLUBS",
+                "#text": "IRONS"
+              },
+              "x:ExtendedPrice": "810.0",
+              "x:FlexibleFields": {
+                "x:FlexibleCodeField": {
+                  "@fieldId": "6",
+                  "#text": "3226562"
+                }
+              }
+            },
+            {
+              "@isMulticomponent": "false",
+              "@lineItemId": "3226562-2.00",
+              "@lineItemNumber": "0",
+              "@taxIncludedIndicator": "false",
+              "x:Product": {
+                "@productClass": "GOLF CLUBS",
+                "#text": "METAL WOODS"
+              },
+              "x:ExtendedPrice": "324.0",
+              "x:FlexibleFields": {
+                "x:FlexibleCodeField": [
+                  {
+                    "@fieldId": "3",
+                    "#text": "HEADCOVER/WRENCH"
+                  },
+                  {
+                    "@fieldId": "6",
+                    "#text": "3226562"
+                  }
+                ]
+              }
+            },
+            {
+              "@isMulticomponent": "false",
+              "@lineItemId": "3226562-3.00",
+              "@lineItemNumber": "0",
+              "@taxIncludedIndicator": "false",
+              "x:Product": {
+                "@productClass": "GOLF CLUBS",
+                "#text": "METAL WOODS"
+              },
+              "x:ExtendedPrice": "196.5",
+              "x:FlexibleFields": {
+                "x:FlexibleCodeField": [
+                  {
+                    "@fieldId": "3",
+                    "#text": "HEADCOVER/WRENCH"
+                  },
+                  {
+                    "@fieldId": "6",
+                    "#text": "3226562"
+                  }
+                ]
+              }
+            },
+            {
+              "@isMulticomponent": "false",
+              "@lineItemId": "3226562-4.00",
+              "@lineItemNumber": "0",
+              "@taxIncludedIndicator": "false",
+              "x:Product": {
+                "@productClass": "GOLF CLUBS",
+                "#text": "METAL WOODS"
+              },
+              "x:ExtendedPrice": "196.5",
+              "x:FlexibleFields": {
+                "x:FlexibleCodeField": [
+                  {
+                    "@fieldId": "3",
+                    "#text": "HEADCOVER/WRENCH"
+                  },
+                  {
+                    "@fieldId": "6",
+                    "#text": "3226562"
+                  }
+                ]
+              }
+            },
+            {
+              "@isMulticomponent": "false",
+              "@lineItemId": "3226562-5.00",
+              "@lineItemNumber": "0",
+              "@taxIncludedIndicator": "false",
+              "x:Product": {
+                "@productClass": "GOLF CLUBS",
+                "#text": "IRONS"
+              },
+              "x:ExtendedPrice": "577.5",
+              "x:FlexibleFields": {
+                "x:FlexibleCodeField": {
+                  "@fieldId": "6",
+                  "#text": "3226562"
+                }
+              }
+            },
+            {
+              "@isMulticomponent": "false",
+              "@lineItemId": "3226562-6.00",
+              "@lineItemNumber": "0",
+              "@taxIncludedIndicator": "false",
+              "x:Product": {
+                "@productClass": "GOLF CLUBS",
+                "#text": "IRONS"
+              },
+              "x:ExtendedPrice": "576.0",
+              "x:FlexibleFields": {
+                "x:FlexibleCodeField": {
+                  "@fieldId": "6",
+                  "#text": "3226562"
+                }
+              }
+            },
+            {
+              "@isMulticomponent": "false",
+              "@lineItemId": "3226562-7.00",
+              "@lineItemNumber": "0",
+              "@taxIncludedIndicator": "false",
+              "x:Product": {
+                "@productClass": "GOLF CLUBS",
+                "#text": "IRONS"
+              },
+              "x:ExtendedPrice": "798.0",
+              "x:FlexibleFields": {
+                "x:FlexibleCodeField": {
+                  "@fieldId": "6",
+                  "#text": "3226562"
+                }
+              }
+            },
+            {
+              "@isMulticomponent": "false",
+              "@lineItemId": "3226562-8.00",
+              "@lineItemNumber": "0",
+              "@taxIncludedIndicator": "false",
+              "x:Product": {
+                "@productClass": "GOLF CLUBS",
+                "#text": "METAL WOODS"
+              },
+              "x:ExtendedPrice": "324.0",
+              "x:FlexibleFields": {
+                "x:FlexibleCodeField": [
+                  {
+                    "@fieldId": "3",
+                    "#text": "HEADCOVER/WRENCH"
+                  },
+                  {
+                    "@fieldId": "6",
+                    "#text": "3226562"
+                  }
+                ]
+              }
+            },
+            {
+              "@isMulticomponent": "false",
+              "@lineItemId": "3226562-9.00",
+              "@lineItemNumber": "0",
+              "@taxIncludedIndicator": "false",
+              "x:Product": {
+                "@productClass": "GOLF CLUBS",
+                "#text": "IRONS"
+              },
+              "x:ExtendedPrice": "495.0",
+              "x:FlexibleFields": {
+                "x:FlexibleCodeField": {
+                  "@fieldId": "6",
+                  "#text": "3226562"
+                }
+              }
+            },
+            {
+              "@isMulticomponent": "false",
+              "@lineItemId": "3226562-10.00",
+              "@lineItemNumber": "0",
+              "@taxIncludedIndicator": "false",
+              "x:Product": {
+                "@productClass": "GOLF CLUBS",
+                "#text": "METAL WOODS"
+              },
+              "x:ExtendedPrice": "205.5",
+              "x:FlexibleFields": {
+                "x:FlexibleCodeField": [
+                  {
+                    "@fieldId": "3",
+                    "#text": "W/HEAD COVER"
+                  },
+                  {
+                    "@fieldId": "6",
+                    "#text": "3226562"
+                  }
+                ]
+              }
+            },
+            {
+              "@isMulticomponent": "false",
+              "@lineItemId": "3226562-11.00",
+              "@lineItemNumber": "0",
+              "@taxIncludedIndicator": "false",
+              "x:Product": {
+                "@productClass": "GOLF CLUBS",
+                "#text": "COMPONENT MW SHAFTS"
+              },
+              "x:ExtendedPrice": "47.0",
+              "x:FlexibleFields": {
+                "x:FlexibleCodeField": [
+                  {
+                    "@fieldId": "3",
+                    "#text": "MTL WOOD SHAFTS"
+                  },
+                  {
+                    "@fieldId": "6",
+                    "#text": "3226562"
+                  }
+                ]
+              }
+            },
+            {
+              "@isMulticomponent": "false",
+              "@lineItemId": "3226562-12.00",
+              "@lineItemNumber": "0",
+              "@taxIncludedIndicator": "false",
+              "x:Product": {
+                "@productClass": "GOLF CLUBS",
+                "#text": "HYBRIDS"
+              },
+              "x:ExtendedPrice": "175.5",
+              "x:FlexibleFields": {
+                "x:FlexibleCodeField": [
+                  {
+                    "@fieldId": "3",
+                    "#text": "W/HEAD COVER"
+                  },
+                  {
+                    "@fieldId": "6",
+                    "#text": "3226562"
+                  }
+                ]
+              }
+            },
+            {
+              "@isMulticomponent": "false",
+              "@lineItemId": "3226562-13.00",
+              "@lineItemNumber": "0",
+              "@taxIncludedIndicator": "false",
+              "x:Product": {
+                "@productClass": "GOLF CLUBS",
+                "#text": "HYBRIDS"
+              },
+              "x:ExtendedPrice": "175.5",
+              "x:FlexibleFields": {
+                "x:FlexibleCodeField": [
+                  {
+                    "@fieldId": "3",
+                    "#text": "W/HEAD COVER"
+                  },
+                  {
+                    "@fieldId": "6",
+                    "#text": "3226562"
+                  }
+                ]
+              }
+            },
+            {
+              "@isMulticomponent": "false",
+              "@lineItemId": "3226562-14.00",
+              "@lineItemNumber": "0",
+              "@taxIncludedIndicator": "false",
+              "x:Product": {
+                "@productClass": "GOLF CLUBS",
+                "#text": "IRONS"
+              },
+              "x:ExtendedPrice": "577.5",
+              "x:FlexibleFields": {
+                "x:FlexibleCodeField": {
+                  "@fieldId": "6",
+                  "#text": "3226562"
+                }
+              }
+            }
+          ]
+        }
+      }
+    }
+  }
+}

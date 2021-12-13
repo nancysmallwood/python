@@ -1,0 +1,482 @@
+{
+  "http://schemas.xmlsoap.org/soap/envelope/:Envelope": {
+    "http://schemas.xmlsoap.org/soap/envelope/:Header": null,
+    "http://schemas.xmlsoap.org/soap/envelope/:Body": {
+      "x:VertexEnvelope": {
+        "x:Login": {
+          "x:TrustedId": "8105174526942882"
+        },
+        "x:QuotationRequest": {
+          "@documentDate": "2021-02-06",
+          "@documentNumber": "W01005738471504",
+          "@transactionType": "SALE",
+          "@xmlns": {
+            "SOAP-ENV": "http://schemas.xmlsoap.org/soap/envelope/",
+            "ns2": "urn:vertexinc:o-series:tps:7:0"
+          },
+          "x:LineItem": [
+            {
+              "@lineItemId": "248124588_ITM",
+              "@lineItemNumber": "248124588",
+              "x:Seller": {
+                "x:Company": "10",
+                "x:PhysicalOrigin": {
+                  "@taxAreaId": "330590000"
+                }
+              },
+              "x:Customer": {
+                "@isTaxExempt": "false",
+                "x:Destination": {
+                  "x:StreetAddress1": "1630 Sundance Place",
+                  "x:City": "Longmont",
+                  "x:MainDivision": "CO",
+                  "x:PostalCode": "80504",
+                  "x:Country": "USA"
+                }
+              },
+              "x:Product": {
+                "@productClass": "03",
+                "#text": "157788L"
+              },
+              "x:Quantity": "1.0",
+              "x:ExtendedPrice": "44.99",
+              "x:FlexibleFields": {
+                "x:FlexibleCodeField": [
+                  {
+                    "@fieldId": "1",
+                    "#text": "Original"
+                  },
+                  {
+                    "@fieldId": "2",
+                    "#text": "WEB"
+                  },
+                  {
+                    "@fieldId": "8",
+                    "#text": "157788L"
+                  },
+                  {
+                    "@fieldId": "9",
+                    "#text": "1001"
+                  },
+                  {
+                    "@fieldId": "11",
+                    "#text": "GPT"
+                  },
+                  {
+                    "@fieldId": "15",
+                    "#text": "CO"
+                  },
+                  {
+                    "@fieldId": "20",
+                    "#text": "Debra Shockley"
+                  },
+                  {
+                    "@fieldId": "21"
+                  },
+                  {
+                    "@fieldId": "22",
+                    "#text": "Longmont"
+                  },
+                  {
+                    "@fieldId": "23",
+                    "#text": "CO"
+                  },
+                  {
+                    "@fieldId": "3",
+                    "#text": "03"
+                  }
+                ],
+                "x:FlexibleNumericField": {
+                  "@fieldId": "3",
+                  "#text": "1.0"
+                }
+              }
+            },
+            {
+              "@lineItemId": "248124588_FRT",
+              "@lineItemNumber": "248124588",
+              "x:Seller": {
+                "x:Company": "10",
+                "x:PhysicalOrigin": {
+                  "@taxAreaId": "330590000"
+                }
+              },
+              "x:Customer": {
+                "@isTaxExempt": "false",
+                "x:Destination": {
+                  "x:StreetAddress1": "1630 Sundance Place",
+                  "x:City": "Longmont",
+                  "x:MainDivision": "CO",
+                  "x:PostalCode": "80504",
+                  "x:Country": "USA"
+                }
+              },
+              "x:Product": {
+                "@productClass": "03",
+                "#text": "FRT"
+              },
+              "x:ExtendedPrice": "8.52",
+              "x:FlexibleFields": {
+                "x:FlexibleCodeField": [
+                  {
+                    "@fieldId": "1",
+                    "#text": "Original"
+                  },
+                  {
+                    "@fieldId": "2",
+                    "#text": "WEB"
+                  },
+                  {
+                    "@fieldId": "8",
+                    "#text": "157788L"
+                  },
+                  {
+                    "@fieldId": "9",
+                    "#text": "1001"
+                  },
+                  {
+                    "@fieldId": "11",
+                    "#text": "GPT"
+                  },
+                  {
+                    "@fieldId": "15",
+                    "#text": "CO"
+                  },
+                  {
+                    "@fieldId": "20",
+                    "#text": "Debra Shockley"
+                  },
+                  {
+                    "@fieldId": "21"
+                  },
+                  {
+                    "@fieldId": "22",
+                    "#text": "Longmont"
+                  },
+                  {
+                    "@fieldId": "23",
+                    "#text": "CO"
+                  },
+                  {
+                    "@fieldId": "3",
+                    "#text": "03"
+                  }
+                ],
+                "x:FlexibleNumericField": {
+                  "@fieldId": "3",
+                  "#text": "1.0"
+                }
+              }
+            },
+            {
+              "@lineItemId": "221423160_ITM",
+              "@lineItemNumber": "221423160",
+              "x:Seller": {
+                "x:Company": "10",
+                "x:PhysicalOrigin": {
+                  "@taxAreaId": "330590000"
+                }
+              },
+              "x:Customer": {
+                "@isTaxExempt": "false",
+                "x:Destination": {
+                  "x:StreetAddress1": "1630 Sundance Place",
+                  "x:City": "Longmont",
+                  "x:MainDivision": "CO",
+                  "x:PostalCode": "80504",
+                  "x:Country": "USA"
+                }
+              },
+              "x:Product": {
+                "@productClass": "03",
+                "#text": "174939"
+              },
+              "x:Quantity": "1.0",
+              "x:ExtendedPrice": "64.99",
+              "x:FlexibleFields": {
+                "x:FlexibleCodeField": [
+                  {
+                    "@fieldId": "1",
+                    "#text": "Original"
+                  },
+                  {
+                    "@fieldId": "2",
+                    "#text": "WEB"
+                  },
+                  {
+                    "@fieldId": "8",
+                    "#text": "174939"
+                  },
+                  {
+                    "@fieldId": "9",
+                    "#text": "1009"
+                  },
+                  {
+                    "@fieldId": "11",
+                    "#text": "GPT"
+                  },
+                  {
+                    "@fieldId": "15",
+                    "#text": "CO"
+                  },
+                  {
+                    "@fieldId": "20",
+                    "#text": "Debra Shockley"
+                  },
+                  {
+                    "@fieldId": "21"
+                  },
+                  {
+                    "@fieldId": "22",
+                    "#text": "Longmont"
+                  },
+                  {
+                    "@fieldId": "23",
+                    "#text": "CO"
+                  },
+                  {
+                    "@fieldId": "3",
+                    "#text": "03"
+                  }
+                ],
+                "x:FlexibleNumericField": {
+                  "@fieldId": "3",
+                  "#text": "2.0"
+                }
+              }
+            },
+            {
+              "@lineItemId": "221423160_FRT",
+              "@lineItemNumber": "221423160",
+              "x:Seller": {
+                "x:Company": "10",
+                "x:PhysicalOrigin": {
+                  "@taxAreaId": "330590000"
+                }
+              },
+              "x:Customer": {
+                "@isTaxExempt": "false",
+                "x:Destination": {
+                  "x:StreetAddress1": "1630 Sundance Place",
+                  "x:City": "Longmont",
+                  "x:MainDivision": "CO",
+                  "x:PostalCode": "80504",
+                  "x:Country": "USA"
+                }
+              },
+              "x:Product": {
+                "@productClass": "03",
+                "#text": "FRT"
+              },
+              "x:ExtendedPrice": "19.98",
+              "x:FlexibleFields": {
+                "x:FlexibleCodeField": [
+                  {
+                    "@fieldId": "1",
+                    "#text": "Original"
+                  },
+                  {
+                    "@fieldId": "2",
+                    "#text": "WEB"
+                  },
+                  {
+                    "@fieldId": "8",
+                    "#text": "174939"
+                  },
+                  {
+                    "@fieldId": "9",
+                    "#text": "1009"
+                  },
+                  {
+                    "@fieldId": "11",
+                    "#text": "GPT"
+                  },
+                  {
+                    "@fieldId": "15",
+                    "#text": "CO"
+                  },
+                  {
+                    "@fieldId": "20",
+                    "#text": "Debra Shockley"
+                  },
+                  {
+                    "@fieldId": "21"
+                  },
+                  {
+                    "@fieldId": "22",
+                    "#text": "Longmont"
+                  },
+                  {
+                    "@fieldId": "23",
+                    "#text": "CO"
+                  },
+                  {
+                    "@fieldId": "3",
+                    "#text": "03"
+                  }
+                ],
+                "x:FlexibleNumericField": {
+                  "@fieldId": "3",
+                  "#text": "2.0"
+                }
+              }
+            },
+            {
+              "@lineItemId": "220963340_ITM",
+              "@lineItemNumber": "220963340",
+              "x:Seller": {
+                "x:Company": "10",
+                "x:PhysicalOrigin": {
+                  "@taxAreaId": "330590000"
+                }
+              },
+              "x:Customer": {
+                "@isTaxExempt": "false",
+                "x:Destination": {
+                  "x:StreetAddress1": "1630 Sundance Place",
+                  "x:City": "Longmont",
+                  "x:MainDivision": "CO",
+                  "x:PostalCode": "80504",
+                  "x:Country": "USA"
+                }
+              },
+              "x:Product": {
+                "@productClass": "03",
+                "#text": "1829"
+              },
+              "x:Quantity": "1.0",
+              "x:ExtendedPrice": "49.99",
+              "x:FlexibleFields": {
+                "x:FlexibleCodeField": [
+                  {
+                    "@fieldId": "1",
+                    "#text": "Original"
+                  },
+                  {
+                    "@fieldId": "2",
+                    "#text": "WEB"
+                  },
+                  {
+                    "@fieldId": "8",
+                    "#text": "1829"
+                  },
+                  {
+                    "@fieldId": "9",
+                    "#text": "1001"
+                  },
+                  {
+                    "@fieldId": "11",
+                    "#text": "GPT"
+                  },
+                  {
+                    "@fieldId": "15",
+                    "#text": "CO"
+                  },
+                  {
+                    "@fieldId": "20",
+                    "#text": "Debra Shockley"
+                  },
+                  {
+                    "@fieldId": "21"
+                  },
+                  {
+                    "@fieldId": "22",
+                    "#text": "Longmont"
+                  },
+                  {
+                    "@fieldId": "23",
+                    "#text": "CO"
+                  },
+                  {
+                    "@fieldId": "3",
+                    "#text": "03"
+                  }
+                ],
+                "x:FlexibleNumericField": {
+                  "@fieldId": "3",
+                  "#text": "3.0"
+                }
+              }
+            },
+            {
+              "@lineItemId": "220963340_FRT",
+              "@lineItemNumber": "220963340",
+              "x:Seller": {
+                "x:Company": "10",
+                "x:PhysicalOrigin": {
+                  "@taxAreaId": "330590000"
+                }
+              },
+              "x:Customer": {
+                "@isTaxExempt": "false",
+                "x:Destination": {
+                  "x:StreetAddress1": "1630 Sundance Place",
+                  "x:City": "Longmont",
+                  "x:MainDivision": "CO",
+                  "x:PostalCode": "80504",
+                  "x:Country": "USA"
+                }
+              },
+              "x:Product": {
+                "@productClass": "03",
+                "#text": "FRT"
+              },
+              "x:ExtendedPrice": "9.47",
+              "x:FlexibleFields": {
+                "x:FlexibleCodeField": [
+                  {
+                    "@fieldId": "1",
+                    "#text": "Original"
+                  },
+                  {
+                    "@fieldId": "2",
+                    "#text": "WEB"
+                  },
+                  {
+                    "@fieldId": "8",
+                    "#text": "1829"
+                  },
+                  {
+                    "@fieldId": "9",
+                    "#text": "1001"
+                  },
+                  {
+                    "@fieldId": "11",
+                    "#text": "GPT"
+                  },
+                  {
+                    "@fieldId": "15",
+                    "#text": "CO"
+                  },
+                  {
+                    "@fieldId": "20",
+                    "#text": "Debra Shockley"
+                  },
+                  {
+                    "@fieldId": "21"
+                  },
+                  {
+                    "@fieldId": "22",
+                    "#text": "Longmont"
+                  },
+                  {
+                    "@fieldId": "23",
+                    "#text": "CO"
+                  },
+                  {
+                    "@fieldId": "3",
+                    "#text": "03"
+                  }
+                ],
+                "x:FlexibleNumericField": {
+                  "@fieldId": "3",
+                  "#text": "3.0"
+                }
+              }
+            }
+          ]
+        }
+      }
+    }
+  }
+}

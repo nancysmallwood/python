@@ -1,0 +1,69 @@
+{
+  "http://schemas.xmlsoap.org/soap/envelope/:Envelope": {
+    "http://schemas.xmlsoap.org/soap/envelope/:Body": {
+      "x:VertexEnvelope": {
+        "x:Login": {
+          "x:TrustedId": "6934933511077584"
+        },
+        "x:QuotationRequest": {
+          "@returnAssistedParametersIndicator": "true",
+          "@deliveryTerm": "SUP",
+          "@documentDate": "2021-02-09",
+          "@transactionType": "SALE",
+          "@xmlns": {
+            "SOAP-ENV": "http://schemas.xmlsoap.org/soap/envelope/",
+            "ns1": "urn:vertexinc:o-series:tps:7:0"
+          },
+          "x:Currency": {
+            "@isoCurrencyCodeAlpha": "USD"
+          },
+          "x:Seller": {
+            "x:Company": "BP01",
+            "x:PhysicalOrigin": {
+              "x:StreetAddress1": "10855 S River Front Pkwy Ste 300",
+              "x:City": "South Jordan",
+              "x:MainDivision": "UT",
+              "x:PostalCode": "84095",
+              "x:Country": "USA"
+            }
+          },
+          "x:Customer": {
+            "x:CustomerCode": {
+              "@classCode": "Retail Customer",
+              "#text": "General"
+            },
+            "x:Destination": {
+              "x:StreetAddress1": "1650 Worley Cove Rd",
+              "x:City": "Canton",
+              "x:MainDivision": "NC",
+              "x:PostalCode": "28716",
+              "x:Country": "USA"
+            }
+          },
+          "x:LineItem": [
+            {
+              "@lineItemId": "sequence-1",
+              "x:Product": {
+                "@productClass": "Taxable Goods",
+                "#text": "air2-mint-everything"
+              },
+              "x:Quantity": "1",
+              "x:UnitPrice": "279.9899992302",
+              "x:ExtendedPrice": "279.99"
+            },
+            {
+              "@lineItemId": "shipping",
+              "x:Product": {
+                "@productClass": "Shipping",
+                "#text": "amstrates_amstrates1"
+              },
+              "x:Quantity": "1",
+              "x:UnitPrice": "12",
+              "x:ExtendedPrice": "12"
+            }
+          ]
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,59 @@
+{
+  "http://schemas.xmlsoap.org/soap/envelope/:Envelope": {
+    "http://schemas.xmlsoap.org/soap/envelope/:Header": null,
+    "http://schemas.xmlsoap.org/soap/envelope/:Body": {
+      "x:VertexEnvelope": {
+        "x:Login": {
+          "x:TrustedId": "4331280839553103"
+        },
+        "x:QuotationRequest": {
+          "@transactionType": "SALE",
+          "@xmlns": {
+            "SOAP-ENV": "http://schemas.xmlsoap.org/soap/envelope/",
+            "ns2": "urn:vertexinc:o-series:tps:7:0"
+          },
+          "x:Seller": {
+            "x:Company": "Caastle-Prod",
+            "x:AdministrativeOrigin": {
+              "x:StreetAddress1": "5 Penn Plaza",
+              "x:StreetAddress2": "4th Floor",
+              "x:City": "New York",
+              "x:MainDivision": "NY",
+              "x:PostalCode": "10001",
+              "x:Country": "US"
+            }
+          },
+          "x:Customer": {
+            "x:Destination": {
+              "x:StreetAddress1": "4015 Viola Ln",
+              "x:City": "Franklin",
+              "x:MainDivision": "TN",
+              "x:PostalCode": "37069",
+              "x:Country": "United States"
+            }
+          },
+          "x:LineItem": {
+            "x:Product": {
+              "@productClass": "Clothing",
+              "#text": "Generic Clothing"
+            },
+            "x:Quantity": "1.0",
+            "x:UnitPrice": "19.0",
+            "x:FlexibleFields": {
+              "x:FlexibleCodeField": [
+                {
+                  "@fieldId": "1",
+                  "#text": "2000"
+                },
+                {
+                  "@fieldId": "5",
+                  "#text": "TTB"
+                }
+              ]
+            }
+          }
+        }
+      }
+    }
+  }
+}

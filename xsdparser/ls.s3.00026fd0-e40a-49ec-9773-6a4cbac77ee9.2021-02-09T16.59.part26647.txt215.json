@@ -1,0 +1,86 @@
+{
+  "http://schemas.xmlsoap.org/soap/envelope/:Envelope": {
+    "http://schemas.xmlsoap.org/soap/envelope/:Body": {
+      "x:VertexEnvelope": {
+        "x:Login": {
+          "x:UserName": "6819430458011196",
+          "x:Password": "6819430458011196"
+        },
+        "x:QuotationRequest": {
+          "@documentNumber": "EC301668479",
+          "@returnAssistedParametersIndicator": "true",
+          "@documentDate": "2021-02-09Z",
+          "@transactionType": "SALE",
+          "@xmlns": {
+            "ns2": "http://schemas.xmlsoap.org/soap/envelope/",
+            "ns3": "urn:vertexinc:o-series:tps:7:0"
+          },
+          "x:Seller": {
+            "x:Company": "2",
+            "x:PhysicalOrigin": {
+              "@http://www.w3.org/2001/XMLSchema-instance:type": "ns3:TaxingJurisdictionLocationType",
+              "@taxAreaId": "475500155",
+              "@externalJurisdictionCode": "APO",
+              "@xmlns": {
+                "xsi": "http://www.w3.org/2001/XMLSchema-instance"
+              },
+              "x:City": "Chesapeake",
+              "x:MainDivision": "VA1",
+              "x:SubDivision": "Chesapeake City",
+              "x:PostalCode": "23320",
+              "x:Country": "Chesapeake City"
+            }
+          },
+          "x:LineItem": {
+            "@lineItemNumber": "1",
+            "@taxDate": "2021-02-09Z",
+            "@isMulticomponent": "false",
+            "@vendorSKU": "283675",
+            "@lineItemId": "sg356281985|ci1202798904|FC",
+            "x:Seller": {
+              "x:Company": "2",
+              "x:PhysicalOrigin": {
+                "@http://www.w3.org/2001/XMLSchema-instance:type": "ns3:TaxingJurisdictionLocationType",
+                "@taxAreaId": "475500155",
+                "@xmlns": {
+                  "xsi": "http://www.w3.org/2001/XMLSchema-instance"
+                },
+                "x:City": "Chesapeake",
+                "x:MainDivision": "VA",
+                "x:PostalCode": "23320",
+                "x:Country": "US"
+              }
+            },
+            "x:Customer": {
+              "x:CustomerCode": {
+                "@isBusinessIndicator": "true"
+              },
+              "x:Destination": {
+                "@http://www.w3.org/2001/XMLSchema-instance:type": "ns3:TaxingJurisdictionLocationType",
+                "@taxAreaId": "341830870",
+                "@externalJurisdictionCode": "APO",
+                "@xmlns": {
+                  "xsi": "http://www.w3.org/2001/XMLSchema-instance"
+                },
+                "x:City": "Raleigh",
+                "x:MainDivision": "NC",
+                "x:PostalCode": "27609-7869",
+                "x:Country": "US"
+              }
+            },
+            "x:Product": {
+              "@productClass": "900000",
+              "#text": "283675"
+            },
+            "x:Quantity": {
+              "@unitOfMeasure": "EA",
+              "#text": "24"
+            },
+            "x:UnitPrice": "1",
+            "x:ExtendedPrice": "24.00"
+          }
+        }
+      }
+    }
+  }
+}

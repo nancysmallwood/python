@@ -1,0 +1,28 @@
+{
+  "http://schemas.xmlsoap.org/soap/envelope/:Envelope": {
+    "http://schemas.xmlsoap.org/soap/envelope/:Header": null,
+    "http://schemas.xmlsoap.org/soap/envelope/:Body": {
+      "x:VertexEnvelope": {
+        "x:Login": {
+          "x:TrustedId": "5440678682795897"
+        },
+        "x:TaxAreaRequest": {
+          "x:TaxAreaLookup": {
+            "@asOfDate": "2021-02-09",
+            "@xmlns": {
+              "SOAP-ENV": "http://schemas.xmlsoap.org/soap/envelope/",
+              "ns2": "urn:vertexinc:o-series:tps:7:0"
+            },
+            "x:PostalAddress": {
+              "x:StreetAddress1": "80 Bank St Box 548",
+              "x:City": "Stevenson",
+              "x:MainDivision": "AL",
+              "x:PostalCode": "35772-3782",
+              "x:Country": "USA"
+            }
+          }
+        }
+      }
+    }
+  }
+}

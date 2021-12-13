@@ -1,0 +1,197 @@
+{
+  "http://schemas.xmlsoap.org/soap/envelope/:Envelope": {
+    "http://schemas.xmlsoap.org/soap/envelope/:Body": {
+      "x:VertexEnvelope": {
+        "x:Login": {
+          "x:TrustedId": "7649555430638576"
+        },
+        "x:QuotationRequest": {
+          "@documentNumber": "Micls",
+          "@returnAssistedParametersIndicator": "true",
+          "@documentDate": "2021-02-09-06:00",
+          "@transactionType": "SALE",
+          "@xmlns": {
+            "soap": "http://schemas.xmlsoap.org/soap/envelope/",
+            "": "urn:vertexinc:o-series:tps:7:0"
+          },
+          "x:Currency": {
+            "@isoCurrencyCodeAlpha": "USD"
+          },
+          "x:Seller": {
+            "x:Company": "1000"
+          },
+          "x:LineItem": [
+            {
+              "@lineItemNumber": "1",
+              "@lineItemId": "41d19ec5d2caa657264d1c5eaa",
+              "x:Customer": {
+                "x:Destination": {
+                  "x:StreetAddress1": "8565 Columbine Rd",
+                  "x:City": "Eden Prairie",
+                  "x:MainDivision": "MN",
+                  "x:PostalCode": "55344-7662",
+                  "x:Country": "US"
+                }
+              },
+              "x:Product": {
+                "@productClass": "100"
+              },
+              "x:Quantity": {
+                "@unitOfMeasure": "EA",
+                "#text": "4.0"
+              },
+              "x:ExtendedPrice": "1.56"
+            },
+            {
+              "@lineItemNumber": "2",
+              "@lineItemId": "2549099d93ad8848a11ea3f523",
+              "x:Customer": {
+                "x:Destination": {
+                  "x:StreetAddress1": "8565 Columbine Rd",
+                  "x:City": "Eden Prairie",
+                  "x:MainDivision": "MN",
+                  "x:PostalCode": "55344-7662",
+                  "x:Country": "US"
+                }
+              },
+              "x:Product": {
+                "@productClass": "100"
+              },
+              "x:Quantity": {
+                "@unitOfMeasure": "EA",
+                "#text": "4.0"
+              },
+              "x:ExtendedPrice": "1.56"
+            },
+            {
+              "@lineItemNumber": "3",
+              "@lineItemId": "0889e0059f8e3d757c4ef81bfa",
+              "x:Customer": {
+                "x:Destination": {
+                  "x:StreetAddress1": "8565 Columbine Rd",
+                  "x:City": "Eden Prairie",
+                  "x:MainDivision": "MN",
+                  "x:PostalCode": "55344-7662",
+                  "x:Country": "US"
+                }
+              },
+              "x:Product": {
+                "@productClass": "100"
+              },
+              "x:Quantity": {
+                "@unitOfMeasure": "EA",
+                "#text": "1.0"
+              },
+              "x:ExtendedPrice": "3.99"
+            },
+            {
+              "@lineItemNumber": "4",
+              "@lineItemId": "4a32ed50e474b1fcdd4032943f",
+              "x:Customer": {
+                "x:Destination": {
+                  "x:StreetAddress1": "8565 Columbine Rd",
+                  "x:City": "Eden Prairie",
+                  "x:MainDivision": "MN",
+                  "x:PostalCode": "55344-7662",
+                  "x:Country": "US"
+                }
+              },
+              "x:Product": {
+                "@productClass": "100"
+              },
+              "x:Quantity": {
+                "@unitOfMeasure": "EA",
+                "#text": "4.0"
+              },
+              "x:ExtendedPrice": "6.36"
+            },
+            {
+              "@lineItemNumber": "5",
+              "@lineItemId": "b8e55606275c2238f89b37ffa1",
+              "x:Customer": {
+                "x:Destination": {
+                  "x:StreetAddress1": "8565 Columbine Rd",
+                  "x:City": "Eden Prairie",
+                  "x:MainDivision": "MN",
+                  "x:PostalCode": "55344-7662",
+                  "x:Country": "US"
+                }
+              },
+              "x:Product": {
+                "@productClass": "100"
+              },
+              "x:Quantity": {
+                "@unitOfMeasure": "EA",
+                "#text": "1.0"
+              },
+              "x:ExtendedPrice": "0.39"
+            },
+            {
+              "@lineItemNumber": "6",
+              "@lineItemId": "a3e349731289ca8735df877223",
+              "x:Customer": {
+                "x:Destination": {
+                  "x:StreetAddress1": "8565 Columbine Rd",
+                  "x:City": "Eden Prairie",
+                  "x:MainDivision": "MN",
+                  "x:PostalCode": "55344-7662",
+                  "x:Country": "US"
+                }
+              },
+              "x:Product": {
+                "@productClass": "100"
+              },
+              "x:Quantity": {
+                "@unitOfMeasure": "EA",
+                "#text": "6.0"
+              },
+              "x:ExtendedPrice": "2.34"
+            },
+            {
+              "@lineItemNumber": "7",
+              "@lineItemId": "f5c26b9af6f8fe42ba709cc68a",
+              "x:Customer": {
+                "x:Destination": {
+                  "x:StreetAddress1": "8565 Columbine Rd",
+                  "x:City": "Eden Prairie",
+                  "x:MainDivision": "MN",
+                  "x:PostalCode": "55344-7662",
+                  "x:Country": "US"
+                }
+              },
+              "x:Product": {
+                "@productClass": "100"
+              },
+              "x:Quantity": {
+                "@unitOfMeasure": "EA",
+                "#text": "1.0"
+              },
+              "x:ExtendedPrice": "0.39"
+            },
+            {
+              "@lineItemNumber": "8",
+              "@lineItemId": "24c0c7220b51e7217850ebe33d",
+              "x:Customer": {
+                "x:Destination": {
+                  "x:StreetAddress1": "8565 Columbine Rd",
+                  "x:City": "Eden Prairie",
+                  "x:MainDivision": "MN",
+                  "x:PostalCode": "55344-7662",
+                  "x:Country": "US"
+                }
+              },
+              "x:Product": {
+                "@productClass": "199"
+              },
+              "x:Quantity": {
+                "@unitOfMeasure": "EA",
+                "#text": "1.0"
+              },
+              "x:ExtendedPrice": "22.95"
+            }
+          ]
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,152 @@
+{
+  "http://schemas.xmlsoap.org/soap/envelope/:Envelope": {
+    "http://schemas.xmlsoap.org/soap/envelope/:Header": null,
+    "http://schemas.xmlsoap.org/soap/envelope/:Body": {
+      "x:VertexEnvelope": {
+        "x:Login": {
+          "x:TrustedId": "3503821879439213"
+        },
+        "x:QuotationRequest": {
+          "@documentDate": "2021-02-09",
+          "@documentNumber": "SO303679652",
+          "@transactionType": "SALE",
+          "@xmlns": {
+            "SOAP-ENV": "http://schemas.xmlsoap.org/soap/envelope/",
+            "ns2": "urn:vertexinc:o-series:tps:7:0"
+          },
+          "x:Seller": {
+            "x:Company": "MKC"
+          },
+          "x:LineItem": [
+            {
+              "@deliveryTerm": "FOB",
+              "@lineItemId": "L-INV1130782757",
+              "@lineItemNumber": "1",
+              "x:Seller": {
+                "x:PhysicalOrigin": {
+                  "@taxAreaId": "501390850",
+                  "x:StreetAddress1": "2155 S Oakwood Rd",
+                  "x:City": "Oshkosh",
+                  "x:MainDivision": "WI",
+                  "x:PostalCode": "54904",
+                  "x:Country": "United States"
+                },
+                "x:AdministrativeOrigin": {
+                  "@taxAreaId": "501390850",
+                  "x:StreetAddress1": "2155 S Oakwood Rd",
+                  "x:City": "Oshkosh",
+                  "x:MainDivision": "WI",
+                  "x:PostalCode": "54904",
+                  "x:Country": "United States"
+                }
+              },
+              "x:Customer": {
+                "x:CustomerCode": {
+                  "@classCode": "CUSTCODE",
+                  "#text": "1008021155"
+                },
+                "x:Destination": {
+                  "x:StreetAddress1": "52 CERONE AVE , 1",
+                  "x:City": "YONKERS",
+                  "x:MainDivision": "NY",
+                  "x:PostalCode": "10704",
+                  "x:Country": "US"
+                }
+              },
+              "x:Product": {
+                "@productClass": "Cleaning & Laundry"
+              },
+              "x:Quantity": "1.0",
+              "x:UnitPrice": "10.99",
+              "x:ExtendedPrice": "10.99"
+            },
+            {
+              "@deliveryTerm": "FOB",
+              "@lineItemId": "L-INV1130782758",
+              "@lineItemNumber": "2",
+              "x:Seller": {
+                "x:PhysicalOrigin": {
+                  "@taxAreaId": "501390850",
+                  "x:StreetAddress1": "2155 S Oakwood Rd",
+                  "x:City": "Oshkosh",
+                  "x:MainDivision": "WI",
+                  "x:PostalCode": "54904",
+                  "x:Country": "United States"
+                },
+                "x:AdministrativeOrigin": {
+                  "@taxAreaId": "501390850",
+                  "x:StreetAddress1": "2155 S Oakwood Rd",
+                  "x:City": "Oshkosh",
+                  "x:MainDivision": "WI",
+                  "x:PostalCode": "54904",
+                  "x:Country": "United States"
+                }
+              },
+              "x:Customer": {
+                "x:CustomerCode": {
+                  "@classCode": "CUSTCODE",
+                  "#text": "1008021155"
+                },
+                "x:Destination": {
+                  "x:StreetAddress1": "52 CERONE AVE , 1",
+                  "x:City": "YONKERS",
+                  "x:MainDivision": "NY",
+                  "x:PostalCode": "10704",
+                  "x:Country": "US"
+                }
+              },
+              "x:Product": {
+                "@productClass": "Cleaning & Laundry"
+              },
+              "x:Quantity": "1.0",
+              "x:UnitPrice": "11.99",
+              "x:ExtendedPrice": "11.99"
+            },
+            {
+              "@deliveryTerm": "FOB",
+              "@lineItemId": "L-INV1130782759",
+              "@lineItemNumber": "3",
+              "x:Seller": {
+                "x:PhysicalOrigin": {
+                  "@taxAreaId": "501390850",
+                  "x:StreetAddress1": "2155 S Oakwood Rd",
+                  "x:City": "Oshkosh",
+                  "x:MainDivision": "WI",
+                  "x:PostalCode": "54904",
+                  "x:Country": "United States"
+                },
+                "x:AdministrativeOrigin": {
+                  "@taxAreaId": "501390850",
+                  "x:StreetAddress1": "2155 S Oakwood Rd",
+                  "x:City": "Oshkosh",
+                  "x:MainDivision": "WI",
+                  "x:PostalCode": "54904",
+                  "x:Country": "United States"
+                }
+              },
+              "x:Customer": {
+                "x:CustomerCode": {
+                  "@classCode": "CUSTCODE",
+                  "#text": "1008021155"
+                },
+                "x:Destination": {
+                  "x:StreetAddress1": "52 CERONE AVE , 1",
+                  "x:City": "YONKERS",
+                  "x:MainDivision": "NY",
+                  "x:PostalCode": "10704",
+                  "x:Country": "US"
+                }
+              },
+              "x:Product": {
+                "@productClass": "Cleaning & Laundry"
+              },
+              "x:Quantity": "1.0",
+              "x:UnitPrice": "34.99",
+              "x:ExtendedPrice": "34.99"
+            }
+          ]
+        }
+      }
+    }
+  }
+}

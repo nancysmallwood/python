@@ -1,0 +1,93 @@
+{
+  "http://schemas.xmlsoap.org/soap/envelope/:Envelope": {
+    "http://schemas.xmlsoap.org/soap/envelope/:Body": {
+      "x:VertexEnvelope": {
+        "x:Login": {
+          "x:TrustedId": "6934933511077584"
+        },
+        "x:QuotationRequest": {
+          "@returnAssistedParametersIndicator": "true",
+          "@deliveryTerm": "SUP",
+          "@documentDate": "2021-02-09",
+          "@transactionType": "SALE",
+          "@xmlns": {
+            "SOAP-ENV": "http://schemas.xmlsoap.org/soap/envelope/",
+            "ns1": "urn:vertexinc:o-series:tps:7:0"
+          },
+          "x:Currency": {
+            "@isoCurrencyCodeAlpha": "USD"
+          },
+          "x:Seller": {
+            "x:Company": "BP01",
+            "x:PhysicalOrigin": {
+              "x:StreetAddress1": "10855 S River Front Pkwy Ste 300",
+              "x:City": "South Jordan",
+              "x:MainDivision": "UT",
+              "x:PostalCode": "84095",
+              "x:Country": "USA"
+            }
+          },
+          "x:Customer": {
+            "x:CustomerCode": {
+              "@classCode": "Retail Customer",
+              "#text": "General"
+            },
+            "x:Destination": {
+              "x:StreetAddress1": "132 Nostrand Ave",
+              "x:City": "Brooklyn",
+              "x:MainDivision": "NY",
+              "x:PostalCode": "11205-2823",
+              "x:Country": "USA"
+            }
+          },
+          "x:LineItem": [
+            {
+              "@lineItemId": "sequence-1",
+              "x:Customer": {
+                "x:CustomerCode": {
+                  "@classCode": "Retail Customer",
+                  "#text": "General"
+                },
+                "x:Destination": {
+                  "x:StreetAddress1": "132 Nostrand Ave",
+                  "x:StreetAddress2": "Apt 1",
+                  "x:City": "Brooklyn",
+                  "x:MainDivision": "NY",
+                  "x:PostalCode": "11205-3191",
+                  "x:Country": "USA"
+                }
+              },
+              "x:Product": {
+                "@productClass": "Taxable Digital/Virtual Items",
+                "#text": "7001569"
+              },
+              "x:Quantity": "1",
+              "x:UnitPrice": "9.99",
+              "x:ExtendedPrice": "9.99"
+            },
+            {
+              "@lineItemId": "sequence-2",
+              "x:Product": {
+                "@productClass": "Taxable Goods",
+                "#text": "champagne-maker-everything-bundle"
+              },
+              "x:Quantity": "1",
+              "x:UnitPrice": "399.9899986461",
+              "x:ExtendedPrice": "359.99"
+            },
+            {
+              "@lineItemId": "shipping",
+              "x:Product": {
+                "@productClass": "Shipping",
+                "#text": "freeshipping_freeshipping"
+              },
+              "x:Quantity": "1",
+              "x:UnitPrice": "0",
+              "x:ExtendedPrice": "0"
+            }
+          ]
+        }
+      }
+    }
+  }
+}

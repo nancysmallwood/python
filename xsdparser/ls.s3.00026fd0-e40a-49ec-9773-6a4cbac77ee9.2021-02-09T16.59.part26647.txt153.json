@@ -1,0 +1,47 @@
+{
+  "http://schemas.xmlsoap.org/soap/envelope/:Envelope": {
+    "http://schemas.xmlsoap.org/soap/envelope/:Body": {
+      "x:VertexEnvelope": {
+        "x:Login": {
+          "x:TrustedId": "3619592151355407"
+        },
+        "x:FindTaxAreasRequest": {
+          "x:TaxAreaLookup": [
+            {
+              "@asOfDate": "2020-11-04",
+              "@lookupId": "0",
+              "@xmlns": {
+                "s": "http://schemas.xmlsoap.org/soap/envelope/",
+                "xsi": "http://www.w3.org/2001/XMLSchema-instance",
+                "xsd": "http://www.w3.org/2001/XMLSchema",
+                "": "urn:vertexinc:o-series:tps:7:0"
+              },
+              "x:PostalAddress": {
+                "x:StreetAddress1": "1100 IT. Drive, CEIT Rm 3126",
+                "x:StreetAddress2": null,
+                "x:City": "Statesboro",
+                "x:MainDivision": "GA",
+                "x:SubDivision": null,
+                "x:PostalCode": "30458",
+                "x:Country": "us"
+              }
+            },
+            {
+              "@asOfDate": "2020-11-04",
+              "@lookupId": "1",
+              "x:PostalAddress": {
+                "x:StreetAddress1": "1100 IT. Drive, CEIT Rm 3126",
+                "x:StreetAddress2": null,
+                "x:City": "Statesboro",
+                "x:MainDivision": "GA",
+                "x:SubDivision": null,
+                "x:PostalCode": "30458",
+                "x:Country": "us"
+              }
+            }
+          ]
+        }
+      }
+    }
+  }
+}

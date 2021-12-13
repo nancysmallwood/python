@@ -1,0 +1,247 @@
+{
+  "http://schemas.xmlsoap.org/soap/envelope/:Envelope": {
+    "http://schemas.xmlsoap.org/soap/envelope/:Body": {
+      "x:VertexEnvelope": {
+        "x:Login": {
+          "x:TrustedId": "2158938152106838"
+        },
+        "x:QuotationRequest": {
+          "@documentDate": "2021-02-09",
+          "@documentNumber": "61238511",
+          "@transactionType": "SALE",
+          "@xmlns": {
+            "soapenv": "http://schemas.xmlsoap.org/soap/envelope/",
+            "xsi": "http://www.w3.org/2001/XMLSchema-instance",
+            "": "urn:vertexinc:o-series:tps:7:0"
+          },
+          "x:FlexibleFields": {
+            "x:FlexibleDateField": {
+              "@fieldId1": "2021-02-09"
+            }
+          },
+          "x:Seller": {
+            "x:Company": "LCC1945",
+            "x:PhysicalOrigin": {
+              "x:StreetAddress1": "1309 Mount Eustis Rd",
+              "x:City": "Littleton",
+              "x:MainDivision": "NH",
+              "x:PostalCode": "03561"
+            }
+          },
+          "x:Customer": {
+            "x:CustomerCode": {
+              "@classCode": "Customer Class",
+              "#text": "52461696"
+            },
+            "x:Destination": {
+              "x:StreetAddress1": "1017 N CARROLL BLVD",
+              "x:City": "DENTON",
+              "x:MainDivision": "TX",
+              "x:PostalCode": "762012948"
+            }
+          },
+          "x:LineItem": [
+            {
+              "@lineItemNumber": "1",
+              "@LocationCode": "Littleton01",
+              "x:Product": {
+                "@productClass": "3",
+                "#text": "04/078"
+              },
+              "x:Quantity": "2",
+              "x:ExtendedPrice": ".60",
+              "x:FlexibleFields": {
+                "x:FlexibleCodeField": [
+                  {
+                    "@fieldId": "3",
+                    "#text": "7651.60"
+                  },
+                  {
+                    "@fieldId": "4",
+                    "#text": "1"
+                  }
+                ]
+              }
+            },
+            {
+              "@lineItemNumber": "2",
+              "@LocationCode": "Littleton01",
+              "x:Product": {
+                "@productClass": "3",
+                "#text": "04/078"
+              },
+              "x:Quantity": "2",
+              "x:ExtendedPrice": ".60",
+              "x:FlexibleFields": {
+                "x:FlexibleCodeField": [
+                  {
+                    "@fieldId": "3",
+                    "#text": "7652.60"
+                  },
+                  {
+                    "@fieldId": "4",
+                    "#text": "2"
+                  }
+                ]
+              }
+            },
+            {
+              "@lineItemNumber": "3",
+              "@LocationCode": "Littleton01",
+              "x:Product": {
+                "@productClass": "3",
+                "#text": "04/078"
+              },
+              "x:Quantity": "2",
+              "x:ExtendedPrice": ".50",
+              "x:FlexibleFields": {
+                "x:FlexibleCodeField": [
+                  {
+                    "@fieldId": "3",
+                    "#text": "7867.60"
+                  },
+                  {
+                    "@fieldId": "4",
+                    "#text": "3"
+                  }
+                ]
+              }
+            },
+            {
+              "@lineItemNumber": "4",
+              "@LocationCode": "Littleton01",
+              "x:Product": {
+                "@productClass": "3",
+                "#text": "04/078"
+              },
+              "x:Quantity": "2",
+              "x:ExtendedPrice": ".50",
+              "x:FlexibleFields": {
+                "x:FlexibleCodeField": [
+                  {
+                    "@fieldId": "3",
+                    "#text": "7868.60"
+                  },
+                  {
+                    "@fieldId": "4",
+                    "#text": "4"
+                  }
+                ]
+              }
+            },
+            {
+              "@lineItemNumber": "5",
+              "@LocationCode": "Littleton01",
+              "x:Product": {
+                "@productClass": "3",
+                "#text": "04/078"
+              },
+              "x:Quantity": "2",
+              "x:ExtendedPrice": ".50",
+              "x:FlexibleFields": {
+                "x:FlexibleCodeField": [
+                  {
+                    "@fieldId": "3",
+                    "#text": "8010.60"
+                  },
+                  {
+                    "@fieldId": "4",
+                    "#text": "5"
+                  }
+                ]
+              }
+            },
+            {
+              "@lineItemNumber": "6",
+              "@LocationCode": "Littleton01",
+              "x:Product": {
+                "@productClass": "3",
+                "#text": "04/078"
+              },
+              "x:Quantity": "2",
+              "x:ExtendedPrice": ".50",
+              "x:FlexibleFields": {
+                "x:FlexibleCodeField": [
+                  {
+                    "@fieldId": "3",
+                    "#text": "8011.60"
+                  },
+                  {
+                    "@fieldId": "4",
+                    "#text": "6"
+                  }
+                ]
+              }
+            },
+            {
+              "@lineItemNumber": "7",
+              "@LocationCode": "Littleton01",
+              "x:Product": {
+                "@productClass": "3",
+                "#text": "04/078"
+              },
+              "x:Quantity": "6",
+              "x:ExtendedPrice": "1.50",
+              "x:FlexibleFields": {
+                "x:FlexibleCodeField": [
+                  {
+                    "@fieldId": "3",
+                    "#text": "8254.60"
+                  },
+                  {
+                    "@fieldId": "4",
+                    "#text": "7"
+                  }
+                ]
+              }
+            },
+            {
+              "@lineItemNumber": "8",
+              "@LocationCode": "Littleton01",
+              "x:Product": {
+                "@productClass": "3",
+                "#text": "04/078"
+              },
+              "x:Quantity": "1",
+              "x:ExtendedPrice": "24.95",
+              "x:FlexibleFields": {
+                "x:FlexibleCodeField": [
+                  {
+                    "@fieldId": "3",
+                    "#text": "ST5909"
+                  },
+                  {
+                    "@fieldId": "4",
+                    "#text": "8"
+                  }
+                ]
+              }
+            },
+            {
+              "@lineItemNumber": "9",
+              "@LocationCode": "Littleton01",
+              "x:Product": {
+                "@productClass": "97",
+                "#text": "97/001"
+              },
+              "x:Quantity": "1",
+              "x:ExtendedPrice": "6.95",
+              "x:FlexibleFields": {
+                "x:FlexibleCodeField": [
+                  {
+                    "@fieldId": "3",
+                    "#text": "PH106"
+                  },
+                  {
+                    "@fieldId": "4",
+                    "#text": "9"
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      }
+    }
+  }
+}

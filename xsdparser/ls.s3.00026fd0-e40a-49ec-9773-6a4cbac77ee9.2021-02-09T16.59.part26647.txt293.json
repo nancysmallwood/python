@@ -1,0 +1,68 @@
+{
+  "http://schemas.xmlsoap.org/soap/envelope/:Envelope": {
+    "http://schemas.xmlsoap.org/soap/envelope/:Body": {
+      "x:VertexEnvelope": {
+        "x:Login": {
+          "x:UserName": "5066218446343131",
+          "x:Password": "5066218446343131"
+        },
+        "x:QuotationRequest": {
+          "@transactionType": "SALE",
+          "@returnGeneratedLineItemsIndicator": "true",
+          "@returnAssistedParametersIndicator": "true",
+          "@documentDate": "2021-02-09",
+          "@xmlns": {
+            "soap": "http://schemas.xmlsoap.org/soap/envelope/",
+            "": "urn:vertexinc:o-series:tps:7:0"
+          },
+          "x:Currency": {
+            "@isoCurrencyCodeAlpha": "USD"
+          },
+          "x:Seller": {
+            "x:Company": "US01"
+          },
+          "x:LineItem": {
+            "@lineItemNumber": "000002",
+            "@transactionType": "SALE",
+            "@lineItemId": "000001",
+            "@taxDate": "2021-02-09",
+            "x:Seller": {
+              "x:Company": "US01",
+              "x:PhysicalOrigin": {
+                "@taxAreaId": "140971600"
+              },
+              "x:AdministrativeOrigin": {
+                "@taxAreaId": "140971600"
+              }
+            },
+            "x:Customer": {
+              "x:CustomerCode": "0010011773",
+              "x:Destination": {
+                "@taxAreaId": "170912506"
+              },
+              "x:AdministrativeDestination": {
+                "@taxAreaId": "170912506"
+              }
+            },
+            "x:Product": "NA_PART",
+            "x:Quantity": {
+              "@unitOfMeasure": "EA",
+              "#text": "1"
+            },
+            "x:Volume": "0002",
+            "x:ExtendedPrice": "193.65",
+            "x:FlexibleFields": {
+              "x:FlexibleCodeField": {
+                "@fieldId": "14",
+                "#text": "vhshpmb9ai02"
+              }
+            }
+          }
+        },
+        "x:ApplicationData": {
+          "x:Sender": "-"
+        }
+      }
+    }
+  }
+}

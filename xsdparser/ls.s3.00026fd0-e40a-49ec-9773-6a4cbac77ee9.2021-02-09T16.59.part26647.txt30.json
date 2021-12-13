@@ -1,0 +1,449 @@
+{
+  "http://schemas.xmlsoap.org/soap/envelope/:Envelope": {
+    "http://schemas.xmlsoap.org/soap/envelope/:Body": {
+      "x:VertexEnvelope": {
+        "x:Login": {
+          "x:TrustedId": "7649555430638576"
+        },
+        "x:QuotationRequest": {
+          "@documentNumber": "Micls",
+          "@returnAssistedParametersIndicator": "true",
+          "@documentDate": "2021-02-09-06:00",
+          "@transactionType": "SALE",
+          "@xmlns": {
+            "soap": "http://schemas.xmlsoap.org/soap/envelope/",
+            "": "urn:vertexinc:o-series:tps:7:0"
+          },
+          "x:Currency": {
+            "@isoCurrencyCodeAlpha": "USD"
+          },
+          "x:Seller": {
+            "x:Company": "1000"
+          },
+          "x:LineItem": [
+            {
+              "@lineItemNumber": "1",
+              "@lineItemId": "311d5b180925e74b85e0b57e70",
+              "x:Customer": {
+                "x:Destination": {
+                  "x:StreetAddress1": "2700 N 18th Pl",
+                  "x:City": "Phoenix",
+                  "x:MainDivision": "AZ",
+                  "x:PostalCode": "85006-2389",
+                  "x:Country": "US"
+                }
+              },
+              "x:Product": {
+                "@productClass": "8346"
+              },
+              "x:Quantity": {
+                "@unitOfMeasure": "EA",
+                "#text": "20.0"
+              },
+              "x:ExtendedPrice": "59.8"
+            },
+            {
+              "@lineItemNumber": "2",
+              "@lineItemId": "5369c0a265fe2baa5ebcae1607",
+              "x:Customer": {
+                "x:Destination": {
+                  "x:StreetAddress1": "2700 N 18th Pl",
+                  "x:City": "Phoenix",
+                  "x:MainDivision": "AZ",
+                  "x:PostalCode": "85006-2389",
+                  "x:Country": "US"
+                }
+              },
+              "x:Product": {
+                "@productClass": "8346"
+              },
+              "x:Quantity": {
+                "@unitOfMeasure": "EA",
+                "#text": "20.0"
+              },
+              "x:ExtendedPrice": "59.8"
+            },
+            {
+              "@lineItemNumber": "3",
+              "@lineItemId": "35cec0924cc9360874cd5090c9",
+              "x:Customer": {
+                "x:Destination": {
+                  "x:StreetAddress1": "2700 N 18th Pl",
+                  "x:City": "Phoenix",
+                  "x:MainDivision": "AZ",
+                  "x:PostalCode": "85006-2389",
+                  "x:Country": "US"
+                }
+              },
+              "x:Product": {
+                "@productClass": "8346"
+              },
+              "x:Quantity": {
+                "@unitOfMeasure": "EA",
+                "#text": "20.0"
+              },
+              "x:ExtendedPrice": "59.8"
+            },
+            {
+              "@lineItemNumber": "4",
+              "@lineItemId": "076b1d50dcd8153835a815fed0",
+              "x:Customer": {
+                "x:Destination": {
+                  "x:StreetAddress1": "2700 N 18th Pl",
+                  "x:City": "Phoenix",
+                  "x:MainDivision": "AZ",
+                  "x:PostalCode": "85006-2389",
+                  "x:Country": "US"
+                }
+              },
+              "x:Product": {
+                "@productClass": "8346"
+              },
+              "x:Quantity": {
+                "@unitOfMeasure": "EA",
+                "#text": "20.0"
+              },
+              "x:ExtendedPrice": "59.8"
+            },
+            {
+              "@lineItemNumber": "5",
+              "@lineItemId": "7e44dddab276edf2bba015a6de",
+              "x:Customer": {
+                "x:Destination": {
+                  "x:StreetAddress1": "2700 N 18th Pl",
+                  "x:City": "Phoenix",
+                  "x:MainDivision": "AZ",
+                  "x:PostalCode": "85006-2389",
+                  "x:Country": "US"
+                }
+              },
+              "x:Product": {
+                "@productClass": "8346"
+              },
+              "x:Quantity": {
+                "@unitOfMeasure": "EA",
+                "#text": "20.0"
+              },
+              "x:ExtendedPrice": "59.8"
+            },
+            {
+              "@lineItemNumber": "6",
+              "@lineItemId": "272dfc753a519af6e44e038d32",
+              "x:Customer": {
+                "x:Destination": {
+                  "x:StreetAddress1": "2700 N 18th Pl",
+                  "x:City": "Phoenix",
+                  "x:MainDivision": "AZ",
+                  "x:PostalCode": "85006-2389",
+                  "x:Country": "US"
+                }
+              },
+              "x:Product": {
+                "@productClass": "8346"
+              },
+              "x:Quantity": {
+                "@unitOfMeasure": "EA",
+                "#text": "20.0"
+              },
+              "x:ExtendedPrice": "59.8"
+            },
+            {
+              "@lineItemNumber": "7",
+              "@lineItemId": "b12a5eb99cf064a6019200febf",
+              "x:Customer": {
+                "x:Destination": {
+                  "x:StreetAddress1": "2700 N 18th Pl",
+                  "x:City": "Phoenix",
+                  "x:MainDivision": "AZ",
+                  "x:PostalCode": "85006-2389",
+                  "x:Country": "US"
+                }
+              },
+              "x:Product": {
+                "@productClass": "8346"
+              },
+              "x:Quantity": {
+                "@unitOfMeasure": "EA",
+                "#text": "20.0"
+              },
+              "x:ExtendedPrice": "59.8"
+            },
+            {
+              "@lineItemNumber": "8",
+              "@lineItemId": "f360533f7ee3812e27785fda9a",
+              "x:Customer": {
+                "x:Destination": {
+                  "x:StreetAddress1": "2700 N 18th Pl",
+                  "x:City": "Phoenix",
+                  "x:MainDivision": "AZ",
+                  "x:PostalCode": "85006-2389",
+                  "x:Country": "US"
+                }
+              },
+              "x:Product": {
+                "@productClass": "8346"
+              },
+              "x:Quantity": {
+                "@unitOfMeasure": "EA",
+                "#text": "20.0"
+              },
+              "x:ExtendedPrice": "59.8"
+            },
+            {
+              "@lineItemNumber": "9",
+              "@lineItemId": "cc7e6ee838bea0f289bf1c8a52",
+              "x:Customer": {
+                "x:Destination": {
+                  "x:StreetAddress1": "2700 N 18th Pl",
+                  "x:City": "Phoenix",
+                  "x:MainDivision": "AZ",
+                  "x:PostalCode": "85006-2389",
+                  "x:Country": "US"
+                }
+              },
+              "x:Product": {
+                "@productClass": "8346"
+              },
+              "x:Quantity": {
+                "@unitOfMeasure": "EA",
+                "#text": "20.0"
+              },
+              "x:ExtendedPrice": "59.8"
+            },
+            {
+              "@lineItemNumber": "10",
+              "@lineItemId": "2b578263675ca0ea638f8e5399",
+              "x:Customer": {
+                "x:Destination": {
+                  "x:StreetAddress1": "2700 N 18th Pl",
+                  "x:City": "Phoenix",
+                  "x:MainDivision": "AZ",
+                  "x:PostalCode": "85006-2389",
+                  "x:Country": "US"
+                }
+              },
+              "x:Product": {
+                "@productClass": "100"
+              },
+              "x:Quantity": {
+                "@unitOfMeasure": "EA",
+                "#text": "2.0"
+              },
+              "x:ExtendedPrice": "17.76"
+            },
+            {
+              "@lineItemNumber": "11",
+              "@lineItemId": "293d96bdd134f747d2cd68bdee",
+              "x:Customer": {
+                "x:Destination": {
+                  "x:StreetAddress1": "2700 N 18th Pl",
+                  "x:City": "Phoenix",
+                  "x:MainDivision": "AZ",
+                  "x:PostalCode": "85006-2389",
+                  "x:Country": "US"
+                }
+              },
+              "x:Product": {
+                "@productClass": "100"
+              },
+              "x:Quantity": {
+                "@unitOfMeasure": "EA",
+                "#text": "2.0"
+              },
+              "x:ExtendedPrice": "15.66"
+            },
+            {
+              "@lineItemNumber": "12",
+              "@lineItemId": "fad81ffc9f97250b79aec3456b",
+              "x:Customer": {
+                "x:Destination": {
+                  "x:StreetAddress1": "2700 N 18th Pl",
+                  "x:City": "Phoenix",
+                  "x:MainDivision": "AZ",
+                  "x:PostalCode": "85006-2389",
+                  "x:Country": "US"
+                }
+              },
+              "x:Product": {
+                "@productClass": "100"
+              },
+              "x:Quantity": {
+                "@unitOfMeasure": "EA",
+                "#text": "3.0"
+              },
+              "x:ExtendedPrice": "16.44"
+            },
+            {
+              "@lineItemNumber": "13",
+              "@lineItemId": "871fe4fe8290fa4aa4e5e82571",
+              "x:Customer": {
+                "x:Destination": {
+                  "x:StreetAddress1": "2700 N 18th Pl",
+                  "x:City": "Phoenix",
+                  "x:MainDivision": "AZ",
+                  "x:PostalCode": "85006-2389",
+                  "x:Country": "US"
+                }
+              },
+              "x:Product": {
+                "@productClass": "100"
+              },
+              "x:Quantity": {
+                "@unitOfMeasure": "EA",
+                "#text": "8.0"
+              },
+              "x:ExtendedPrice": "7.92"
+            },
+            {
+              "@lineItemNumber": "14",
+              "@lineItemId": "4144c5ae7d9187beea9dee2f2d",
+              "x:Customer": {
+                "x:Destination": {
+                  "x:StreetAddress1": "2700 N 18th Pl",
+                  "x:City": "Phoenix",
+                  "x:MainDivision": "AZ",
+                  "x:PostalCode": "85006-2389",
+                  "x:Country": "US"
+                }
+              },
+              "x:Product": {
+                "@productClass": "100"
+              },
+              "x:Quantity": {
+                "@unitOfMeasure": "EA",
+                "#text": "8.0"
+              },
+              "x:ExtendedPrice": "7.92"
+            },
+            {
+              "@lineItemNumber": "15",
+              "@lineItemId": "1b5a31b09e5d96497e4b2fb4a6",
+              "x:Customer": {
+                "x:Destination": {
+                  "x:StreetAddress1": "2700 N 18th Pl",
+                  "x:City": "Phoenix",
+                  "x:MainDivision": "AZ",
+                  "x:PostalCode": "85006-2389",
+                  "x:Country": "US"
+                }
+              },
+              "x:Product": {
+                "@productClass": "100"
+              },
+              "x:Quantity": {
+                "@unitOfMeasure": "EA",
+                "#text": "8.0"
+              },
+              "x:ExtendedPrice": "7.92"
+            },
+            {
+              "@lineItemNumber": "16",
+              "@lineItemId": "0c582dbd3bcef82142774cec4b",
+              "x:Customer": {
+                "x:Destination": {
+                  "x:StreetAddress1": "2700 N 18th Pl",
+                  "x:City": "Phoenix",
+                  "x:MainDivision": "AZ",
+                  "x:PostalCode": "85006-2389",
+                  "x:Country": "US"
+                }
+              },
+              "x:Product": {
+                "@productClass": "100"
+              },
+              "x:Quantity": {
+                "@unitOfMeasure": "EA",
+                "#text": "8.0"
+              },
+              "x:ExtendedPrice": "7.92"
+            },
+            {
+              "@lineItemNumber": "17",
+              "@lineItemId": "175dc637a02adb5284c0fbfa1e",
+              "x:Customer": {
+                "x:Destination": {
+                  "x:StreetAddress1": "2700 N 18th Pl",
+                  "x:City": "Phoenix",
+                  "x:MainDivision": "AZ",
+                  "x:PostalCode": "85006-2389",
+                  "x:Country": "US"
+                }
+              },
+              "x:Product": {
+                "@productClass": "100"
+              },
+              "x:Quantity": {
+                "@unitOfMeasure": "EA",
+                "#text": "2.0"
+              },
+              "x:ExtendedPrice": "33.12"
+            },
+            {
+              "@lineItemNumber": "18",
+              "@lineItemId": "8ae8447d13971592611b72c493",
+              "x:Customer": {
+                "x:Destination": {
+                  "x:StreetAddress1": "2700 N 18th Pl",
+                  "x:City": "Phoenix",
+                  "x:MainDivision": "AZ",
+                  "x:PostalCode": "85006-2389",
+                  "x:Country": "US"
+                }
+              },
+              "x:Product": {
+                "@productClass": "100"
+              },
+              "x:Quantity": {
+                "@unitOfMeasure": "EA",
+                "#text": "8.0"
+              },
+              "x:ExtendedPrice": "7.92"
+            },
+            {
+              "@lineItemNumber": "19",
+              "@lineItemId": "90d9b0f812e9d6fd109385c04c",
+              "x:Customer": {
+                "x:Destination": {
+                  "x:StreetAddress1": "2700 N 18th Pl",
+                  "x:City": "Phoenix",
+                  "x:MainDivision": "AZ",
+                  "x:PostalCode": "85006-2389",
+                  "x:Country": "US"
+                }
+              },
+              "x:Product": {
+                "@productClass": "100"
+              },
+              "x:Quantity": {
+                "@unitOfMeasure": "EA",
+                "#text": "8.0"
+              },
+              "x:ExtendedPrice": "7.92"
+            },
+            {
+              "@lineItemNumber": "20",
+              "@lineItemId": "7e55ea5485397f15a32f37d4f7",
+              "x:Customer": {
+                "x:Destination": {
+                  "x:StreetAddress1": "2700 N 18th Pl",
+                  "x:City": "Phoenix",
+                  "x:MainDivision": "AZ",
+                  "x:PostalCode": "85006-2389",
+                  "x:Country": "US"
+                }
+              },
+              "x:Product": {
+                "@productClass": "199"
+              },
+              "x:Quantity": {
+                "@unitOfMeasure": "EA",
+                "#text": "1.0"
+              },
+              "x:ExtendedPrice": "0.0"
+            }
+          ]
+        }
+      }
+    }
+  }
+}

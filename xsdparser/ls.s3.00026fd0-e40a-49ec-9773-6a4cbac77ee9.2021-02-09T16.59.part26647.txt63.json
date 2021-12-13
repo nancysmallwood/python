@@ -1,0 +1,192 @@
+{
+  "http://schemas.xmlsoap.org/soap/envelope/:Envelope": {
+    "http://schemas.xmlsoap.org/soap/envelope/:Body": {
+      "x:VertexEnvelope": {
+        "x:Login": {
+          "x:TrustedId": "2028034077290175"
+        },
+        "x:InvoiceRequest": {
+          "@documentNumber": "13000113930",
+          "@returnAssistedParametersIndicator": "true",
+          "@deliveryTerm": "SUP",
+          "@documentDate": "2021-02-09",
+          "@transactionType": "SALE",
+          "@xmlns": {
+            "SOAP-ENV": "http://schemas.xmlsoap.org/soap/envelope/",
+            "ns1": "urn:vertexinc:o-series:tps:7:0"
+          },
+          "x:Currency": {
+            "@isoCurrencyCodeAlpha": "INR"
+          },
+          "x:Seller": {
+            "x:Company": "01",
+            "x:PhysicalOrigin": {
+              "x:StreetAddress1": "14 Campus Boulevard",
+              "x:City": "Newtown Square",
+              "x:MainDivision": "PA",
+              "x:PostalCode": "19073",
+              "x:Country": "USA"
+            }
+          },
+          "x:Customer": {
+            "x:CustomerCode": {
+              "@classCode": "Retail Customer",
+              "#text": "General"
+            },
+            "x:Destination": {
+              "x:StreetAddress1": "212 VASISHTA",
+              "x:StreetAddress2": "DASANAKOPPAL GATE",
+              "x:City": "MYSORE",
+              "x:MainDivision": "KA",
+              "x:PostalCode": "570026",
+              "x:Country": "IND"
+            }
+          },
+          "x:LineItem": [
+            {
+              "@lineItemId": "5966570",
+              "x:Product": {
+                "@productClass": "MEMBERSHIP",
+                "#text": "101010"
+              },
+              "x:Quantity": "1",
+              "x:UnitPrice": "9963",
+              "x:ExtendedPrice": "9963",
+              "x:FlexibleFields": {
+                "x:FlexibleCodeField": [
+                  {
+                    "@fieldId": "1",
+                    "#text": "IND"
+                  },
+                  {
+                    "@fieldId": "2",
+                    "#text": "KA"
+                  },
+                  {
+                    "@fieldId": "5",
+                    "#text": "INR"
+                  },
+                  {
+                    "@fieldId": "7",
+                    "#text": "ecommerce"
+                  },
+                  {
+                    "@fieldId": "8",
+                    "#text": "71.225.211.57"
+                  },
+                  {
+                    "@fieldId": "9",
+                    "#text": "USA"
+                  },
+                  {
+                    "@fieldId": "10",
+                    "#text": "PA"
+                  },
+                  {
+                    "@fieldId": "11",
+                    "#text": "IND"
+                  },
+                  {
+                    "@fieldId": "12",
+                    "#text": "Karnataka"
+                  },
+                  {
+                    "@fieldId": "13",
+                    "#text": "MYSORE"
+                  },
+                  {
+                    "@fieldId": "14",
+                    "#text": "570026"
+                  },
+                  {
+                    "@fieldId": "15",
+                    "#text": "2194465"
+                  },
+                  {
+                    "@fieldId": "3",
+                    "#text": "2194465"
+                  }
+                ]
+              }
+            },
+            {
+              "@lineItemId": "5966573",
+              "x:Product": {
+                "@productClass": "MEMBERSHIP",
+                "#text": "101662"
+              },
+              "x:Quantity": "1",
+              "x:UnitPrice": "772",
+              "x:ExtendedPrice": "772",
+              "x:FlexibleFields": {
+                "x:FlexibleCodeField": [
+                  {
+                    "@fieldId": "1",
+                    "#text": "IND"
+                  },
+                  {
+                    "@fieldId": "2",
+                    "#text": "KA"
+                  },
+                  {
+                    "@fieldId": "5",
+                    "#text": "INR"
+                  },
+                  {
+                    "@fieldId": "7",
+                    "#text": "ecommerce"
+                  },
+                  {
+                    "@fieldId": "8",
+                    "#text": "71.225.211.57"
+                  },
+                  {
+                    "@fieldId": "9",
+                    "#text": "USA"
+                  },
+                  {
+                    "@fieldId": "10",
+                    "#text": "PA"
+                  },
+                  {
+                    "@fieldId": "11",
+                    "#text": "IND"
+                  },
+                  {
+                    "@fieldId": "12",
+                    "#text": "Karnataka"
+                  },
+                  {
+                    "@fieldId": "13",
+                    "#text": "MYSORE"
+                  },
+                  {
+                    "@fieldId": "14",
+                    "#text": "570026"
+                  },
+                  {
+                    "@fieldId": "15",
+                    "#text": "2194465"
+                  },
+                  {
+                    "@fieldId": "3",
+                    "#text": "2194465"
+                  }
+                ]
+              }
+            },
+            {
+              "x:Product": {
+                "@productClass": "SHIPPING",
+                "#text": "zeroshipping_zeroshipping"
+              },
+              "x:Quantity": "1",
+              "x:UnitPrice": "0",
+              "x:ExtendedPrice": "0"
+            }
+          ]
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,70 @@
+{
+  "http://schemas.xmlsoap.org/soap/envelope/:Envelope": {
+    "http://schemas.xmlsoap.org/soap/envelope/:Body": {
+      "x:VertexEnvelope": {
+        "x:Login": {
+          "x:TrustedId": "0953537599110412"
+        },
+        "x:QuotationRequest": {
+          "@returnAssistedParametersIndicator": "true",
+          "@deliveryTerm": "SUP",
+          "@documentDate": "2021-02-09",
+          "@transactionType": "SALE",
+          "@xmlns": {
+            "SOAP-ENV": "http://schemas.xmlsoap.org/soap/envelope/",
+            "ns1": "urn:vertexinc:o-series:tps:7:0"
+          },
+          "x:Currency": {
+            "@isoCurrencyCodeAlpha": "USD"
+          },
+          "x:Seller": {
+            "x:Company": "ZBTPROD",
+            "x:PhysicalOrigin": {
+              "x:StreetAddress1": "9530 Towne Centre Drive",
+              "x:StreetAddress2": "Suite 200",
+              "x:City": "San Diego",
+              "x:MainDivision": "CA",
+              "x:PostalCode": "92121",
+              "x:Country": "USA"
+            }
+          },
+          "x:Customer": {
+            "x:CustomerCode": {
+              "@classCode": "Retail Customer",
+              "#text": "General"
+            },
+            "x:Destination": {
+              "x:StreetAddress1": "830 Columbia st",
+              "x:City": "Burlington",
+              "x:MainDivision": "IA",
+              "x:PostalCode": "52601",
+              "x:Country": "USA"
+            }
+          },
+          "x:LineItem": [
+            {
+              "@lineItemId": "sequence-1",
+              "x:Product": {
+                "@productClass": "Gift Certificates/Cards",
+                "#text": "NGCSAPPBE_50"
+              },
+              "x:Quantity": "1",
+              "x:UnitPrice": "50",
+              "x:ExtendedPrice": "50"
+            },
+            {
+              "@lineItemId": "shipping",
+              "x:Product": {
+                "@productClass": "Shipping",
+                "#text": "amstrates_amstrates1"
+              },
+              "x:Quantity": "1",
+              "x:UnitPrice": "9",
+              "x:ExtendedPrice": "9"
+            }
+          ]
+        }
+      }
+    }
+  }
+}

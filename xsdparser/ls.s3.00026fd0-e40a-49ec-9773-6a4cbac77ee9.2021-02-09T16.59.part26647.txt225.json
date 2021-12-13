@@ -1,0 +1,71 @@
+{
+  "http://schemas.xmlsoap.org/soap/envelope/:Envelope": {
+    "http://schemas.xmlsoap.org/soap/envelope/:Body": {
+      "x:VertexEnvelope": {
+        "x:Login": {
+          "x:TrustedId": "7649555430638576"
+        },
+        "x:QuotationRequest": {
+          "@documentNumber": "Micls",
+          "@returnAssistedParametersIndicator": "true",
+          "@documentDate": "2021-02-09-06:00",
+          "@transactionType": "SALE",
+          "@xmlns": {
+            "soap": "http://schemas.xmlsoap.org/soap/envelope/",
+            "": "urn:vertexinc:o-series:tps:7:0"
+          },
+          "x:Currency": {
+            "@isoCurrencyCodeAlpha": "CAD"
+          },
+          "x:Seller": {
+            "x:Company": "4000"
+          },
+          "x:LineItem": [
+            {
+              "@lineItemNumber": "1",
+              "@lineItemId": "1a96ff1d9d0fb3ab4cf81ab177",
+              "x:Customer": {
+                "x:Destination": {
+                  "x:StreetAddress1": "3050 Vega Blvd, Unit 3",
+                  "x:City": "Mississauga",
+                  "x:MainDivision": "ON",
+                  "x:PostalCode": "L5L 5X8",
+                  "x:Country": "CA"
+                }
+              },
+              "x:Product": {
+                "@productClass": "100"
+              },
+              "x:Quantity": {
+                "@unitOfMeasure": "EA",
+                "#text": "1.0"
+              },
+              "x:ExtendedPrice": "10.49"
+            },
+            {
+              "@lineItemNumber": "2",
+              "@lineItemId": "6d6052a172d57379a1c0ef36c0",
+              "x:Customer": {
+                "x:Destination": {
+                  "x:StreetAddress1": "3050 Vega Blvd, Unit 3",
+                  "x:City": "Mississauga",
+                  "x:MainDivision": "ON",
+                  "x:PostalCode": "L5L 5X8",
+                  "x:Country": "CA"
+                }
+              },
+              "x:Product": {
+                "@productClass": "199"
+              },
+              "x:Quantity": {
+                "@unitOfMeasure": "EA",
+                "#text": "1.0"
+              },
+              "x:ExtendedPrice": "18.95"
+            }
+          ]
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,81 @@
+{
+  "http://schemas.xmlsoap.org/soap/envelope/:Envelope": {
+    "http://schemas.xmlsoap.org/soap/envelope/:Header": null,
+    "http://schemas.xmlsoap.org/soap/envelope/:Body": {
+      "x:VertexEnvelope": {
+        "x:Login": {
+          "x:TrustedId": "3571150848847367"
+        },
+        "x:QuotationRequest": {
+          "@transactionType": "SALE",
+          "@xmlns": {
+            "SOAP-ENV": "http://schemas.xmlsoap.org/soap/envelope/",
+            "ns2": "urn:vertexinc:o-series:tps:7:0"
+          },
+          "x:Currency": {
+            "@isoCurrencyCodeAlpha": "USD",
+            "@isoCurrencyCodeNum": "840"
+          },
+          "x:Seller": {
+            "x:Company": "msqcProd"
+          },
+          "x:Customer": {
+            "x:Destination": {
+              "x:StreetAddress1": "1120 POWELL CEMETERY RD",
+              "x:City": "GLASGOW",
+              "x:MainDivision": "KY",
+              "x:PostalCode": "42141"
+            }
+          },
+          "x:LineItem": [
+            {
+              "@vendorSKU": "GIFT158",
+              "x:Quantity": {
+                "@unitOfMeasure": "EA",
+                "#text": "1.0"
+              },
+              "x:UnitPrice": "4.75",
+              "x:ExtendedPrice": "4.75"
+            },
+            {
+              "@vendorSKU": "GIFT158",
+              "x:Quantity": {
+                "@unitOfMeasure": "EA",
+                "#text": "1.0"
+              },
+              "x:UnitPrice": "4.75",
+              "x:ExtendedPrice": "4.75"
+            },
+            {
+              "@vendorSKU": "GIFT160",
+              "x:Quantity": {
+                "@unitOfMeasure": "EA",
+                "#text": "1.0"
+              },
+              "x:UnitPrice": "4.75",
+              "x:ExtendedPrice": "4.75"
+            },
+            {
+              "@vendorSKU": "GIFT160",
+              "x:Quantity": {
+                "@unitOfMeasure": "EA",
+                "#text": "1.0"
+              },
+              "x:UnitPrice": "4.75",
+              "x:ExtendedPrice": "4.75"
+            },
+            {
+              "@vendorSKU": "GIFT485",
+              "x:Quantity": {
+                "@unitOfMeasure": "EA",
+                "#text": "1.0"
+              },
+              "x:UnitPrice": "12.5",
+              "x:ExtendedPrice": "12.5"
+            }
+          ]
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,53 @@
+{
+  "http://schemas.xmlsoap.org/soap/envelope/:Envelope": {
+    "http://schemas.xmlsoap.org/soap/envelope/:Body": {
+      "x:VertexEnvelope": {
+        "x:Login": {
+          "x:TrustedId": "1738948628459356"
+        },
+        "x:QuotationRequest": {
+          "@documentDate": "2021-02-09",
+          "@transactionId": "cce28236-3b27-4652-9a50-d3a47d30b5c5",
+          "@transactionType": "SALE",
+          "@xmlns": {
+            "xsi": "http://www.w3.org/2001/XMLSchema-instance",
+            "xsd": "http://www.w3.org/2001/XMLSchema",
+            "": "urn:vertexinc:o-series:tps:7:0"
+          },
+          "x:LineItem": {
+            "@lineItemNumber": "1",
+            "x:Seller": {
+              "x:Company": "1200",
+              "x:Division": "1200"
+            },
+            "x:Customer": {
+              "x:CustomerCode": null,
+              "x:Destination": {
+                "x:StreetAddress1": "543 Primavera Street",
+                "x:StreetAddress2": null,
+                "x:City": "Clifton",
+                "x:MainDivision": "CO",
+                "x:PostalCode": "81520"
+              }
+            },
+            "x:Product": "1",
+            "x:Quantity": "1",
+            "x:ExtendedPrice": "99.99",
+            "x:FlexibleFields": {
+              "x:FlexibleCodeField": [
+                {
+                  "@fieldId": "1",
+                  "#text": "0"
+                },
+                {
+                  "@fieldId": "2",
+                  "#text": "ECS"
+                }
+              ]
+            }
+          }
+        }
+      }
+    }
+  }
+}
