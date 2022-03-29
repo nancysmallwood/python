@@ -89,3 +89,10 @@ def get_s3_total_file_count(s3_bucket):
     return count_obj
 
 
+# Method to get the total number of file in an S3 folder
+def get_s3_folder_file_count(s3_bucket,folder):
+    # use loop and count increment
+    count_obj = 0
+    for i in s3_bucket.objects.filter(Prefix=folder):
+        count_obj = count_obj + 1
+    return count_obj

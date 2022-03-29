@@ -16,7 +16,6 @@ if __name__ == '__main__':
     s3_folder_name = "archive/1/"
     chunk_size = 100
 
-
     # Using Custom Session (preferred)
     session = boto3.session.Session(profile_name=profile_name)
 

@@ -6,8 +6,9 @@
     <option name="recentlyUsedProfiles">
       <list>
         <option value="profile:CST-Cloud-Production" />
-        <option value="profile:default" />
+        <option value="profile:CST-Prod" />
         <option value="profile:ET-Sandbox" />
+        <option value="profile:default" />
       </list>
     </option>
     <option name="recentlyUsedRegions">
