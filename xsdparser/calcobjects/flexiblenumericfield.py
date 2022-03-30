@@ -1,7 +1,7 @@
 # FlexibleNumericField	0 - 10	Decimal
 # fieldId	required	Integer (1 - 10)
 
-from calcobjects.util import get_attr_key, get_dic_item
+from util.dictionary_util import get_attr_key, get_dic_item
 
 
 class FlexibleNumericField:

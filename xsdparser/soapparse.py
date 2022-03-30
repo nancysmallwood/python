@@ -4,7 +4,8 @@ import site
 from calcobjects.applicationdata import ApplicationData
 from calcobjects.login import Login
 from calcobjects.quotation import Quotation
-from calcobjects.util import xml_to_dict
+from util.dictionary_util import xml_to_dict
+from util.file_util import get_filenames
 
 test_soap = '<soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/"><soap:Body><VertexEnvelope ' \
             'xmlns="urn:vertexinc:o-series:tps:7:0"><Login><TrustedId>7649555430638576</TrustedId></Login>' \
@@ -88,34 +89,66 @@ def process_tax_area_lookup(dic):
     print("Tax Area Lookup")
 
 
-def get_request_type(dic):
+def get_login(dic):
     if get_dict_item(dic, get_key(dic, 'login')) is not None:
-        login = get_login(get_dict_item(dic, get_key(dic, 'login')))
-        print(login)
-    if get_dict_item(dic, get_key(dic, 'quotationrequest')) is not None:
-        quote = get_quotation(get_dict_item(dic, get_key(dic, 'quotationrequest')))
-        print(quote)
-    if get_dict_item(dic, get_key(dic, 'applicationdata')) is not None:
-        application_data = get_application_data(get_dict_item(dic, get_key(dic, 'applicationdata')))
-        print(application_data)
-    elif get_dict_item(dic, get_key(dic, 'invoicerequest')) is not None:
-        process_invoice(dic)
-    elif get_dict_item(dic, get_key(dic, 'taxarearequest')) is not None:
-        process_tax_area_lookup(dic)
+        return get_login(get_dict_item(dic, get_key(dic, 'login')))
     else:
         return None
-    return 0
+
+
+def get_quote(dic):
+    if get_dict_item(dic, get_key(dic, 'quotationrequest')) is not None:
+        return get_quotation(get_dict_item(dic, get_key(dic, 'quotationrequest')))
+    else:
+        return None
+
+
+def get_application_data(dic):
+    if get_dict_item(dic, get_key(dic, 'applicationdata')) is not None:
+        return get_application_data(get_dict_item(dic, get_key(dic, 'applicationdata')))
+    else:
+        return None
+
+
+# def get_request_type(dic):
+#     if get_dict_item(dic, get_key(dic, 'login')) is not None:
+#         login = get_login(get_dict_item(dic, get_key(dic, 'login')))
+#         # print(login)
+#         return login
+#     if get_dict_item(dic, get_key(dic, 'quotationrequest')) is not None:
+#         quote = get_quotation(get_dict_item(dic, get_key(dic, 'quotationrequest')))
+#         # print(quote)
+#         return quote
+#     if get_dict_item(dic, get_key(dic, 'applicationdata')) is not None:
+#         application_data = get_application_data(get_dict_item(dic, get_key(dic, 'applicationdata')))
+#         # print(application_data)
+#         return application_data
+#     elif get_dict_item(dic, get_key(dic, 'invoicerequest')) is not None:
+#         process_invoice(dic)
+#         return None
+#     elif get_dict_item(dic, get_key(dic, 'taxarearequest')) is not None:
+#         process_tax_area_lookup(dic)
+#         return None
+#     else:
+#         return None
+
+
+# def run(osp_location):
+#     files = get_filenames(osp_location)
+#     #for each_file in files:
 
 
 # MAIN -----------------------------------------------------------------
 if __name__ == '__main__':
-    # site.addsitedir('.')
     new_path = os.path.join(os.path.dirname(__file__), 'calcobjects')
-    print(new_path)
+    site.addsitedir(new_path)
+    new_path = os.path.join(os.path.dirname(__file__), 'util')
     site.addsitedir(new_path)
 
     dictionary = xml_to_dict(test_soap)
     if get_payload(dictionary) is not None:
         payload_dictionary = get_payload(dictionary)
-        get_request_type(payload_dictionary)
+        login = get_login(payload_dictionary)
+        quote = get_quote(payload_dictionary)
+        application_data = get_application_data(payload_dictionary)
         print('ok')

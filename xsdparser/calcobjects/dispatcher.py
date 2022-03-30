@@ -2,7 +2,7 @@
 # classCode	optional	String (1 - 40)
 # TaxRegistration	0 - unlimited
 from calcobjects.taxregistration import TaxRegistration
-from calcobjects.util import get_attr_key, get_dic_item, get_dic_key
+from util.dictionary_util import get_attr_key, get_dic_item, get_dic_key
 
 
 class Dispatcher:

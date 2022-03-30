@@ -11,7 +11,7 @@
 from calcobjects.location import Location
 from calcobjects.dispatcher import Dispatcher
 from calcobjects.taxregistration import TaxRegistration
-from calcobjects.util import get_attr_key, get_dic_item, get_dic_key
+from util.dictionary_util import get_attr_key, get_dic_item, get_dic_key
 
 
 class Seller:

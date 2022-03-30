@@ -1,5 +1,3 @@
-import json
-
 from calcobjects.currency import Currency
 
 
@@ -13,7 +11,7 @@ from calcobjects.lineitems import LineItems
 from calcobjects.seller import Seller
 from calcobjects.situsoverride import SitusOverride
 from calcobjects.taxoverride import TaxOverride
-from calcobjects.util import get_attr_key, get_dic_key, get_dic_item
+from util.dictionary_util import get_attr_key, get_dic_key, get_dic_item
 
 
 class Quotation:

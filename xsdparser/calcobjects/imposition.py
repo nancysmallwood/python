@@ -1,7 +1,7 @@
 # JurisdictionLevel	1	JurisdictionLevelCode string
 # ImpositionType	0 - 1
 from calcobjects.impositiontype import ImpositionType
-from calcobjects.util import get_attr_key, get_dic_item, get_dic_key
+from util.dictionary_util import get_attr_key, get_dic_item, get_dic_key
 
 
 class Imposition:

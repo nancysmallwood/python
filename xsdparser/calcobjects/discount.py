@@ -1,7 +1,7 @@
 # UserDefinedDiscountCode	optional
 # ProratePercentage	0 - 1	Decimal
 from calcobjects.userdefineddiscountcode import UserDefinedDiscountCode
-from calcobjects.util import get_attr_key, get_dic_item, get_dic_key
+from util.dictionary_util import get_attr_key, get_dic_item, get_dic_key
 
 
 class Discount:

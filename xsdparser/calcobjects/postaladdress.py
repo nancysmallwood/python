@@ -5,7 +5,7 @@
 # SubDivision   0 - 1	String (1 - 60)
 # PostalCode  0 - 1	String (1 - 20)
 # Country	0 - 1	String (1 - 60)
-from calcobjects.util import get_attr_key, get_dic_item, xml_to_dict
+from util.dictionary_util import get_attr_key, get_dic_item
 
 
 class PostalAddress:

@@ -4,7 +4,7 @@
 from calcobjects.flexiblecodefields import FlexibleCodeFields
 from calcobjects.flexibledatefields import FlexibleDateFields
 from calcobjects.flexiblenumericfields import FlexibleNumericFields
-from calcobjects.util import get_attr_key, get_dic_item, get_dic_key
+from util.dictionary_util import get_dic_item, get_dic_key
 
 
 class FlexibleFields:

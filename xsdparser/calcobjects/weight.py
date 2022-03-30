@@ -1,7 +1,7 @@
 # Weight	0 - 1	Decimal
 # unitOfMeasure	optional	String (1 - 3)
 
-from calcobjects.util import get_attr_key, get_dic_item, xml_to_dict
+from util.dictionary_util import get_attr_key, get_dic_item
 
 
 class Weight:

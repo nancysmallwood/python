@@ -6,7 +6,7 @@
 from calcobjects.applicationproperties import ApplicationProperties
 from calcobjects.logentries import LogEntries
 from calcobjects.messagelogging import MessageLogging
-from calcobjects.util import get_attr_key, get_dic_item, get_dic_key
+from util.dictionary_util import get_attr_key, get_dic_item, get_dic_key
 
 
 class ApplicationData:

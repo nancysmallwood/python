@@ -2,7 +2,7 @@
 # NonTaxableOverride	0 - 1
 from calcobjects.exemptoverride import ExemptOverride
 from calcobjects.nontaxableoverride import NonTaxableOverride
-from calcobjects.util import get_attr_key, get_dic_item, get_dic_key
+from util.dictionary_util import get_dic_item, get_dic_key
 
 
 class DeductionOverride:

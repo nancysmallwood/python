@@ -9,7 +9,7 @@
 from calcobjects.impositiontype import ImpositionType
 from calcobjects.location import Location
 from calcobjects.nexusoverride import NexusOverride
-from calcobjects.util import get_attr_key, get_dic_item, get_dic_key
+from util.dictionary_util import get_attr_key, get_dic_item, get_dic_key
 
 
 class TaxRegistration:

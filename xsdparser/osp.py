@@ -1,9 +1,6 @@
-#
-#
-#
 import json
 
-from soapparse import xml_to_dict, get_payload, get_request_type
+from soapparse import xml_to_dict, get_payload, get_quote, get_login, get_application_data
 
 osp_path = '.\\media\\'
 osp_file = 'real_sample.json'
@@ -54,6 +51,11 @@ class Osp:
         self.tags = []
         self.fields_doc_type = ''
         self.amazon_trace_id = ''
+        self.login = None
+        self.quote = None
+        self.invoice = None
+        self.tax_area_lookup = None
+        self.application_data = None
 
         self.set_timestamp(json_str['@timestamp'])
         self.set_ecs(json_str['ecs'])
@@ -221,7 +223,8 @@ class Osp:
                     "\ncloud_account_id is %s, \ncloud_region is %s, \ncloud_instance_id is %s, " \
                     "\ncloud_machine_type is %s, \ncloud_provider is %s, \ncloud_image_id is %s, " \
                     "\ncloud_availability_zone is %s, \nip is %s, \nhost_dns is %s, \ntags is %s," \
-                    "\nfields_doc_type is %s, \namazon_trace_id is %s, \npayload is %s" \
+                    "\nfields_doc_type is %s, \namazon_trace_id is %s, \npayload is %s, " \
+                    "\nlogin is %s, \nquote is %s, \napplication_data is %s" \
                     "" % (self.timestamp,
                           self.ecs_version,
                           self.uuid,
@@ -263,7 +266,10 @@ class Osp:
                           self.tags,
                           self.fields_doc_type,
                           self.amazon_trace_id,
-                          self.payload)
+                          self.payload,
+                          self.login,
+                          self.quote,
+                          self.application_data)
         return print_str
 
 
@@ -285,6 +291,9 @@ if __name__ == '__main__':
     dictionary = xml_to_dict(test1.payload)
     if get_payload(dictionary) is not None:
         payload_dictionary = get_payload(dictionary)
-        get_request_type(payload_dictionary)
+        test1.login = get_login(payload_dictionary)
+        test1.quote = get_quote(payload_dictionary)
+        test1.application_data = get_application_data(payload_dictionary)
+
     # test2 = Osp(json.loads('{"@timestamp":"2021-02-09T21:59:01.951Z","ecs": {"version": "1.6.0"}}'))
     # print(test2.ecs_version)

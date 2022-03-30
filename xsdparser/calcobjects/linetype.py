@@ -4,7 +4,7 @@
 # status	optional	String (0 - 40)
 # accumulationLocation	optional	String (0 - 40)
 
-from calcobjects.util import get_attr_key, get_dic_item, xml_to_dict
+from util.dictionary_util import get_attr_key, get_dic_item
 
 
 class LineType:

@@ -1,7 +1,7 @@
 # CommodityCode	0 - 1	String (0 - 40)
 # commodityCodeType	required	String (1 - 60)
 
-from calcobjects.util import get_attr_key, get_dic_item, xml_to_dict
+from util.dictionary_util import get_attr_key, get_dic_item
 
 
 class CommodityCode:

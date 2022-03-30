@@ -1,6 +1,6 @@
 # exemptionCertificateNumber  optional  String (1 - 30)
 
-from calcobjects.util import get_dic_item, get_attr_key
+from util.dictionary_util import get_dic_item, get_attr_key
 
 
 class ExemptionCertificate:

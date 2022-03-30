@@ -46,7 +46,7 @@ from calcobjects.quantity import Quantity
 from calcobjects.returnsfields import ReturnsFields
 from calcobjects.seller import Seller
 from calcobjects.supplementaryunit import SupplementaryUnit
-from calcobjects.util import get_attr_key, get_dic_item, get_dic_key
+from util.dictionary_util import get_attr_key, get_dic_item, get_dic_key
 from calcobjects.volume import Volume
 from calcobjects.weight import Weight
 

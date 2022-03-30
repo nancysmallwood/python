@@ -1,7 +1,7 @@
 # SupplementaryUnit	0 - 1	Decimal
 # unitType	optional	String (0 - 20)
 
-from calcobjects.util import get_attr_key, get_dic_item, xml_to_dict
+from util.dictionary_util import get_attr_key, get_dic_item
 
 
 class SupplementaryUnit:

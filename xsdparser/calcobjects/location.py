@@ -8,7 +8,7 @@
 # Currency
 from calcobjects.currency import Currency
 from calcobjects.postaladdress import PostalAddress
-from calcobjects.util import get_attr_key, get_dic_item, get_dic_key
+from util.dictionary_util import get_attr_key, get_dic_item, get_dic_key
 
 
 class Location:
@@ -42,8 +42,8 @@ class Location:
             self.postal_address['postalcode'] = get_dic_item(dic, get_attr_key(dic, 'postalcode'))
         if get_dic_item(dic, get_attr_key(dic, 'country')) is not None:
             self.postal_address['country'] = get_dic_item(dic, get_attr_key(dic, 'country'))
-        # self.postal_address = PostalAddress(self.postal_address)
-        self.postal_address = validate_postal_address(PostalAddress(self.postal_address))
+        self.postal_address = PostalAddress(self.postal_address)
+        # self.postal_address = validate_postal_address(PostalAddress(self.postal_address))
 
     def __str__(self):
         print_str = "\n\t\ttaxarea_id = %s, latitude = %s, longitude = %s, " \

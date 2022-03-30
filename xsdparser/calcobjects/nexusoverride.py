@@ -4,7 +4,7 @@
 # subDivision	optional	Boolean
 # city	optional	Boolean
 # district	optional	Boolean
-from calcobjects.util import get_attr_key, get_dic_item
+from util.dictionary_util import get_attr_key, get_dic_item
 
 
 class NexusOverride:

@@ -1,7 +1,7 @@
 # userDefined	optional	Boolean
 # impositionTypeId	optional	Positive Integer
 # withholdingType	optional	String
-from calcobjects.util import get_attr_key, get_dic_item
+from util.dictionary_util import get_attr_key, get_dic_item
 
 
 class ImpositionType:

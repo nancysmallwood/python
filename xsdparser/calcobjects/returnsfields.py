@@ -6,7 +6,7 @@ from calcobjects.returnscodefields import ReturnsCodeFields
 from calcobjects.returnsdatefields import ReturnsDateFields
 from calcobjects.returnsindicatorfields import ReturnsIndicatorFields
 from calcobjects.returnsnumericfields import ReturnsNumericFields
-from calcobjects.util import get_dic_item, get_dic_key
+from util.dictionary_util import get_dic_item, get_dic_key
 
 
 class ReturnsFields:

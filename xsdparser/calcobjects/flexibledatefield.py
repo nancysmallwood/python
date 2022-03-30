@@ -1,7 +1,7 @@
 # FlexibleDateField	0 - 5	Date (yyyy-mm-dd)
 # fieldId	required	Integer (1 - 5)
 
-from calcobjects.util import get_attr_key, get_dic_item
+from util.dictionary_util import get_attr_key, get_dic_item
 
 
 class FlexibleDateField:

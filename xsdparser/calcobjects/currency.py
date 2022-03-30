@@ -3,7 +3,7 @@
 # isoCurrencyCodeNum   optional   Positive Integer (1 - 999)
 import json
 
-from calcobjects.util import get_dic_item, get_attr_key
+from util.dictionary_util import get_dic_item, get_attr_key
 
 
 class Currency:

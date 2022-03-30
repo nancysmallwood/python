@@ -1,7 +1,7 @@
 # nonTaxableOverride	0 - 1  text 0 - 1	number amount
 # overrideNonTaxableReasonCode	optional	String (1 - 4)
 
-from calcobjects.util import get_attr_key, get_dic_item
+from util.dictionary_util import get_attr_key, get_dic_item
 
 
 class NonTaxableOverride:
