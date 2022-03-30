@@ -6,9 +6,7 @@ import os
 
 import xmltodict
 
-dir_path = os.path.dirname(os.path.realpath(__file__))
-xml_Path = dir_path + "\\media\\"
-test_file = "test1.xml"
+osp_path = "C:\\temp\\osplogs\\"
 
 
 def parse_xsdfile(filename):
@@ -29,18 +27,18 @@ def parse_xml(xml_data):
     return dict_data
 
 
-def get_filenames():
+def get_filenames(osp_location):
     files = []
-    for (dirpath, dirnames, filenames) in os.walk(xml_Path):
+    for (dirpath, dirnames, filenames) in os.walk(osp_path):
         files.extend(filenames)
         break
     return files
 
 
-def get_payload(files):
+def get_payload(osp_location, files):
     for each_file in files:
         counter = 0
-        file = open(xml_Path + each_file, 'r')
+        file = open(osp_path + each_file, 'r')
         # Read all lines in the file
         json_list = file.readlines()
         # for every row in the file
@@ -54,8 +52,8 @@ def get_payload(files):
             # turn the xml in to json
             new_payload = parse_xml(deformatted_payload)
             # save to a new file
-            print(each_file + str(counter) + ".json")
-            f = open(each_file + str(counter) + ".json", "a")
+            print(osp_location + each_file + str(counter) + ".json")
+            f = open(osp_location + each_file + str(counter) + ".json", "a")
             f.write(json.dumps(new_payload, indent=2))
             f.close()
 
@@ -65,11 +63,13 @@ def print_filenames(files):
         print(file)
 
 
+def run(osp_location):
+    files = get_filenames(osp_location)
+    print_filenames(files)
+    get_payload(osp_location, files)
+
+
 # Press the green button in the gutter to run the script.
 if __name__ == '__main__':
-    files = get_filenames()
-    get_payload(files)
-    # print_filenames(files)
-    # parse_xsd(xml_Path + test_file)
+    run(osp_path)
 
-# See PyCharm help at https://www.jetbrains.com/help/pycharm/

@@ -1,8 +1,9 @@
 import os
 import site
+
+from calcobjects.applicationdata import ApplicationData
 from calcobjects.login import Login
 from calcobjects.quotation import Quotation
-from calcobjects.taxregistration import test_tax_registration
 from calcobjects.util import xml_to_dict
 
 test_soap = '<soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/"><soap:Body><VertexEnvelope ' \
@@ -20,9 +21,9 @@ test_soap = '<soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope
 
 # Get the Dictionary item by key name
 # Returns 0 if key does not exist
-def get_dict_item(dict, key_name):
+def get_dict_item(dic, key_name):
     try:
-        item = dict[key_name]
+        item = dic[key_name]
         return item
     except KeyError:
         print(f'Item {key_name} is invalid.')
@@ -30,15 +31,15 @@ def get_dict_item(dict, key_name):
 
 
 # Get the name of the dictionary key item
-def get_key(dict, key_pattern):
+def get_key(dic, key_pattern):
     try:
         # Get key name used for soap envelope
-        if len(list(dict)) == 0:
+        if len(list(dic)) == 0:
             return None
         # elif len(list(dict)) == 1:
         #     return dict[0]
         else:
-            for key in list(dict):
+            for key in list(dic):
                 if key_pattern in key.lower():
                     return key
             return None
@@ -48,10 +49,10 @@ def get_key(dict, key_pattern):
 
 
 # Test the payload to make sure it adheres to a common structure
-def get_payload(dict):
-    envelope_key = get_key(dict, 'envelope')
-    if get_dict_item(dict, envelope_key) is not None:
-        e = get_dict_item(dict, envelope_key)
+def get_payload(dic):
+    envelope_key = get_key(dic, 'envelope')
+    if get_dict_item(dic, envelope_key) is not None:
+        e = get_dict_item(dic, envelope_key)
         body_key = get_key(e, 'body')
         if get_dict_item(e, body_key) is not None:
             b = get_dict_item(e, body_key)
@@ -64,36 +65,43 @@ def get_payload(dict):
     #     quotation = payload_dictionary['QuotationRequest']
 
 
-def get_quotation(dict):
-    quote = Quotation(dict)
+def get_quotation(dic):
+    quote = Quotation(dic)
     return quote
 
 
-def get_login(dict):
-    login = Login(dict)
+def get_login(dic):
+    login = Login(dic)
     return login
 
 
-def process_invoice(dict):
+def get_application_data(dic):
+    application_data = ApplicationData(dic)
+    return application_data
+
+
+def process_invoice(dic):
     print("Invoice")
 
 
-def process_tax_area_lookup(dict):
+def process_tax_area_lookup(dic):
     print("Tax Area Lookup")
 
 
-def get_request_type(dict):
-    if get_dict_item(dict, get_key(dict, 'login')) is not None:
-        login = get_login(get_dict_item(dict, get_key(dict, 'login')))
+def get_request_type(dic):
+    if get_dict_item(dic, get_key(dic, 'login')) is not None:
+        login = get_login(get_dict_item(dic, get_key(dic, 'login')))
         print(login)
-    if get_dict_item(dict, get_key(dict, 'quotationrequest')) is not None:
-        quote = get_quotation(get_dict_item(dict, get_key(dict, 'quotationrequest')))
-        # test_tax_registration()
+    if get_dict_item(dic, get_key(dic, 'quotationrequest')) is not None:
+        quote = get_quotation(get_dict_item(dic, get_key(dic, 'quotationrequest')))
         print(quote)
-    elif get_dict_item(dict, get_key(dict, 'invoicerequest')) is not None:
-        process_invoice(dict)
-    elif get_dict_item(dict, get_key(dict, 'taxarearequest')) is not None:
-        process_tax_area_lookup(dict)
+    if get_dict_item(dic, get_key(dic, 'applicationdata')) is not None:
+        application_data = get_application_data(get_dict_item(dic, get_key(dic, 'applicationdata')))
+        print(application_data)
+    elif get_dict_item(dic, get_key(dic, 'invoicerequest')) is not None:
+        process_invoice(dic)
+    elif get_dict_item(dic, get_key(dic, 'taxarearequest')) is not None:
+        process_tax_area_lookup(dic)
     else:
         return None
     return 0

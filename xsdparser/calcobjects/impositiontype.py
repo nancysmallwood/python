@@ -7,6 +7,7 @@ from calcobjects.util import get_attr_key, get_dic_item
 class ImpositionType:
     # The init method or constructor
     def __init__(self, dic):
+        self.imposition_type = get_dic_item(dic, get_attr_key(dic, 'text'))
         self.user_defined = get_dic_item(dic, get_attr_key(dic, 'userdefined'))
         self.imposition_type_id = get_dic_item(dic, get_attr_key(dic, 'impositiontypeid'))
         self.withholding_type = get_dic_item(dic, get_attr_key(dic, 'withholdingtype'))
