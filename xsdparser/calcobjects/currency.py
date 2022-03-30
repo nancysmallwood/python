@@ -1,15 +1,9 @@
-# isoCurrencyName
-#   optional
-#   String 	The ISO 4217 name for the currency unit. Not used for this version of O Series.
-# isoCurrencyCodeAlpha
-#   optional
-#   String (3)	The three-character ISO 4217 alphabetic code for the currency unit.
-# isoCurrencyCodeNum
-#   optional
-#   Positive Integer (1 - 999)	The three-digit ISO 4217 numeric code for the currency unit.
+# isoCurrencyName  optional  String
+# isoCurrencyCodeAlpha   optional  String (3)
+# isoCurrencyCodeNum   optional   Positive Integer (1 - 999)
 import json
 
-from calcobjects.util import get_attr_key, get_dic_item
+from calcobjects.util import get_dic_item, get_attr_key
 
 
 class Currency:

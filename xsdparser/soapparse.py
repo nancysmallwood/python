@@ -1,10 +1,9 @@
-# from xml.etree import ElementTree
-import json
-
-import xmltodict
-
+import os
+import site
 from calcobjects.login import Login
 from calcobjects.quotation import Quotation
+from calcobjects.taxregistration import test_tax_registration
+from calcobjects.util import xml_to_dict
 
 test_soap = '<soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/"><soap:Body><VertexEnvelope ' \
             'xmlns="urn:vertexinc:o-series:tps:7:0"><Login><TrustedId>7649555430638576</TrustedId></Login>' \
@@ -17,10 +16,6 @@ test_soap = '<soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope
             'lineItemId="105f34536d04a49a3e1432b3b8"><Customer><Destination locationCode="3938"/>' \
             '</Customer><Product productClass="199"/><Quantity unitOfMeasure="EA">1.0</Quantity><ExtendedPrice>0.0' \
             '</ExtendedPrice></LineItem></QuotationRequest></VertexEnvelope></soap:Body></soap:Envelope>'
-
-
-def xml_to_dict(payload):
-    return xmltodict.parse(payload)
 
 
 # Get the Dictionary item by key name
@@ -93,6 +88,7 @@ def get_request_type(dict):
         print(login)
     if get_dict_item(dict, get_key(dict, 'quotationrequest')) is not None:
         quote = get_quotation(get_dict_item(dict, get_key(dict, 'quotationrequest')))
+        # test_tax_registration()
         print(quote)
     elif get_dict_item(dict, get_key(dict, 'invoicerequest')) is not None:
         process_invoice(dict)
@@ -105,9 +101,13 @@ def get_request_type(dict):
 
 # MAIN -----------------------------------------------------------------
 if __name__ == '__main__':
+    # site.addsitedir('.')
+    new_path = os.path.join(os.path.dirname(__file__), 'calcobjects')
+    print(new_path)
+    site.addsitedir(new_path)
+
     dictionary = xml_to_dict(test_soap)
     if get_payload(dictionary) is not None:
         payload_dictionary = get_payload(dictionary)
         get_request_type(payload_dictionary)
         print('ok')
-

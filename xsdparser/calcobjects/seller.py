@@ -1,0 +1,79 @@
+# nexusIndicator	optional	Boolean
+# nexusReasonCode	optional	String (1 - 4)
+# Company	0 - 1	String (0 - 40)
+# Division	0 - 1	String (0 - 40)
+# Department	0 - 1	String (0 - 40)
+# UtilityProvider	0 - 1	String
+# Dispatcher (Dispatcher)
+# PhysicalOrigin (Location)
+# AdministrativeOrigin (Location)
+# TaxRegistration (TaxRegistration)
+from calcobjects.location import Location
+from calcobjects.dispatcher import Dispatcher
+from calcobjects.taxregistration import TaxRegistration
+from calcobjects.util import get_attr_key, get_dic_item, get_dic_key
+
+
+class Seller:
+    # The init method or constructor
+    def __init__(self, dic):
+        # Objects
+        if get_dic_key(dic, 'dispatcher') is not None:
+            self.dispatcher = Dispatcher(get_dic_item(dic, get_dic_key(dic, 'dispatcher')))
+        else:
+            self.dispatcher = None
+        if get_dic_key(dic, 'physicalorigin') is not None:
+            self.physical_origin = Location(get_dic_item(dic, get_dic_key(dic, 'physicalorigin')))
+        else:
+            self.physical_origin = None
+        if get_dic_key(dic, 'administrativeorigin') is not None:
+            self.administrative_origin = Location(get_dic_item(dic, get_dic_key(dic, 'administrativeorigin')))
+        else:
+            self.administrative_origin = None
+        if get_dic_key(dic, 'administrativeorigin') is not None:
+            self.tax_registration = TaxRegistration(get_dic_item(dic, get_dic_key(dic, 'taxregistration')))
+        else:
+            self.tax_registration = None
+        # Fields
+        self.nexus_indicator = get_dic_item(dic, get_attr_key(dic, 'nexusindicator'))
+        self.nexus_reason_code = get_dic_item(dic, get_attr_key(dic, 'nexusreasoncode'))
+        self.company = get_dic_item(dic, get_attr_key(dic, 'company'))
+        self.division = get_dic_item(dic, get_attr_key(dic, 'division'))
+        self.department = get_dic_item(dic, get_attr_key(dic, 'department'))
+        self.utility_provider = get_dic_item(dic, get_attr_key(dic, 'utilityprovider'))
+
+
+    def __str__(self):
+        print_str = "\n\tnexus_indicator = %s, \n\tnexus_reason_code = %s, \n\tcompany = %s, " \
+                    "\n\tdivision = %s, \n\tdepartment = %s, \n\tutility_provider = %s, " \
+                    "\n\tdispatcher = %s, \n\tphysical_origin = %s, \n\tadministrative_origin = %s, " \
+                    "\n\ttax_registration = % s " \
+                    % (self.nexus_indicator, self.nexus_reason_code, self.company,
+                       self.division, self.department, self.utility_provider,
+                       self.dispatcher, self.physical_origin, self.administrative_origin,
+                       self.tax_registration)
+        return print_str
+
+
+# # UNIT TEST -----------------------------------------------------------------
+# def test_nexus_override():
+#     nexus_override_dictionary = {'locationrole': 'DESTINATION',
+#                                   'country': True}
+#     nexus_override = NexusOverride(nexus_override_dictionary)
+#     try:
+#         assert nexus_override.location_role == 'DESTINATION', \
+#             'nexus_override assertion failed. ' 'Expected "DESTINATION"'
+#         assert nexus_override.country == True, 'country assertion failed. ' 'Expected True'
+#         assert nexus_override.sub_division is None, 'subdivision assertion failed. ' \
+#                                                                        'Expected None'
+#     except AssertionError as msg:
+#         print(msg)
+#
+#
+# # MAIN -----------------------------------------------------------------
+# # Executes unit test
+# if __name__ == '__main__':
+#     try:
+#         test_nexus_override()
+#     finally:
+#         print("Test of ImpositionType PASSED")

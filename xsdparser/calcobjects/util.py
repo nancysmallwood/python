@@ -1,3 +1,9 @@
+import xmltodict
+
+
+def xml_to_dict(payload):
+    return xmltodict.parse(payload)
+
 
 # Get the Dictionary item by key name
 # Returns 0 if key does not exist
