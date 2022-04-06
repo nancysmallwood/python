@@ -5,19 +5,27 @@
 # SubDivision   0 - 1	String (1 - 60)
 # PostalCode  0 - 1	String (1 - 20)
 # Country	0 - 1	String (1 - 60)
-from util.dictionary_util import get_attr_key, get_dic_item
+from util.dictionary_util import get_attr_key, get_dic_item, coalesce_str
 
 
 class PostalAddress:
     # The init method or constructor
     def __init__(self, dic):
-        self.street_address_1 = get_dic_item(dic, get_attr_key(dic, 'streetaddress1'))
-        self.street_address_2 = get_dic_item(dic, get_attr_key(dic, 'streetaddress2'))
-        self.city = get_dic_item(dic, get_attr_key(dic, 'city'))
-        self.main_division = get_dic_item(dic, get_attr_key(dic, 'maindivision'))
-        self.sub_division = get_dic_item(dic, get_attr_key(dic, 'subdivision'))
-        self.postal_code = get_dic_item(dic, get_attr_key(dic, 'postalcode'))
-        self.country = get_dic_item(dic, get_attr_key(dic, 'country'))
+        self.street_address_1 = None
+        self.street_address_2 = None
+        self.city = None
+        self.main_division = None
+        self.sub_division = None
+        self.postal_code = None
+        self.country = None
+        if dic is not None:
+            self.street_address_1 = get_dic_item(dic, get_attr_key(dic, 'streetaddress1'))
+            self.street_address_2 = get_dic_item(dic, get_attr_key(dic, 'streetaddress2'))
+            self.city = get_dic_item(dic, get_attr_key(dic, 'city'))
+            self.main_division = get_dic_item(dic, get_attr_key(dic, 'maindivision'))
+            self.sub_division = get_dic_item(dic, get_attr_key(dic, 'subdivision'))
+            self.postal_code = get_dic_item(dic, get_attr_key(dic, 'postalcode'))
+            self.country = get_dic_item(dic, get_attr_key(dic, 'country'))
 
     def __str__(self):
         print_str = "street_address_1 = %s, street_address_2 = %s, city = %s, " \
@@ -26,6 +34,21 @@ class PostalAddress:
                        self.main_division, self.sub_division, self.postal_code, self.country)
         return print_str
 
+    def to_json(self):
+        return '{"StreetAddress1": %s, ' \
+               '"StreetAddress2": %s, ' \
+               '"City": %s, ' \
+               '"MainDivision": %s, ' \
+               '"SubDivision": %s, ' \
+               '"PostalCode": %s, ' \
+               '"Country": %s}' % \
+               (coalesce_str(self.street_address_1),
+                coalesce_str(self.street_address_2),
+                coalesce_str(self.city),
+                coalesce_str(self.main_division),
+                coalesce_str(self.sub_division),
+                coalesce_str(self.postal_code),
+                coalesce_str(self.country))
 
 # <StreetAddress1>3137 Dixie Highway</StreetAddress1>
 # <City>Erlanger</City>

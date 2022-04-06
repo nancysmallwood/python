@@ -1,24 +1,31 @@
 # JurisdictionLevel	1	JurisdictionLevelCode string
 # ImpositionType	0 - 1
 from calcobjects.impositiontype import ImpositionType
-from util.dictionary_util import get_attr_key, get_dic_item, get_dic_key
+from util.dictionary_util import get_attr_key, get_dic_item, get_dic_key, coalesce_str
 
 
 class Imposition:
     # The init method or constructor
     def __init__(self, dic):
-        # Objects
-        if get_dic_key(dic, 'impositiontype') is not None:
-            self.imposition_type = ImpositionType(get_dic_item(dic, get_dic_key(dic, 'impositiontype')))
-        else:
-            self.imposition_type = None
-        # Fields
-        self.jurisdiction_level = get_dic_item(dic, get_attr_key(dic, 'jurisdictionlevel'))
+        self.imposition_type = ImpositionType(dic)
+        self.jurisdiction_level = None
+        if dic is not None:
+            # Objects
+            if get_dic_key(dic, 'impositiontype') is not None:
+                self.imposition_type = ImpositionType(get_dic_item(dic, get_dic_key(dic, 'impositiontype')))
+            # Fields
+            self.jurisdiction_level = get_dic_item(dic, get_attr_key(dic, 'jurisdictionlevel'))
 
     def __str__(self):
         print_str = "jurisdiction_level = %s, imposition_type = %s" \
                     % (self.jurisdiction_level, self.imposition_type)
         return print_str
+
+    def to_json(self):
+        return '{"JurisdictionLevel": %s, ' \
+               '"ImpositionType": %s}' % \
+               (coalesce_str(self.jurisdiction_level),
+                self.imposition_type.to_json())
 
 
 # UNIT TEST -----------------------------------------------------------------

@@ -3,20 +3,32 @@
 # isoCurrencyCodeNum   optional   Positive Integer (1 - 999)
 import json
 
-from util.dictionary_util import get_dic_item, get_attr_key
+from util.dictionary_util import get_dic_item, get_attr_key, coalesce_str, coalesce_num
 
 
 class Currency:
     # The init method or constructor
     def __init__(self, dic):
-        self.iso_currency_name = get_dic_item(dic, get_attr_key(dic, 'isocurrencyname'))
-        self.iso_currency_code_alpha = get_dic_item(dic, get_attr_key(dic, 'isocurrencycodealpha'))
-        self.iso_currency_code_num = get_dic_item(dic, get_attr_key(dic, 'isocurrencycodenum'))
+        self.iso_currency_name = None
+        self.iso_currency_code_alpha = None
+        self.iso_currency_code_num = None
+        if dic is not None:
+            self.iso_currency_name = get_dic_item(dic, get_attr_key(dic, 'isocurrencyname'))
+            self.iso_currency_code_alpha = get_dic_item(dic, get_attr_key(dic, 'isocurrencycodealpha'))
+            self.iso_currency_code_num = get_dic_item(dic, get_attr_key(dic, 'isocurrencycodenum'))
 
     def __str__(self):
         print_str = "iso_currency_name = %s, iso_currency_code_alpha = %s, iso_currency_code_num = %s" \
                     % (self.iso_currency_name, self.iso_currency_code_alpha, self.iso_currency_code_num)
         return print_str
+
+    def to_json(self):
+        return '{"isoCurrencyName": %s, ' \
+               '"isoCurrencyCodeAlpha": %s, ' \
+               '"isoCurrencyCodeNum": %s}' % \
+               (coalesce_str(self.iso_currency_name),
+                coalesce_str(self.iso_currency_code_alpha),
+                coalesce_num(self.iso_currency_code_num))
 
 
 # UNIT TEST -----------------------------------------------------------------

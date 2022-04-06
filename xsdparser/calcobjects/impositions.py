@@ -4,20 +4,31 @@ from calcobjects.imposition import Imposition
 class Impositions:
     # The init method or constructor
     def __init__(self, items):
-        self.impositions = []
-        if isinstance(items, list):
-            for item in items:
-                self.impositions.append(Imposition(item))
-        elif isinstance(items, dict):
-            print("dict")
-        else:
-            print("unknown")
+        self.impositions = [Imposition(None)]
+        if items is not None:
+            if isinstance(items, list):
+                for item in items:
+                    self.impositions.append(Imposition(item))
+            elif isinstance(items, dict):
+                self.impositions.append(Imposition(items))
 
     def __str__(self):
         pretty_str = ''
         for item in self.impositions:
             pretty_str += '\n %s ' % item
         return pretty_str
+
+    def to_json(self):
+        json_str = '['
+        number_impositions = len(self.impositions)
+        counter = 0
+        for item in self.impositions:
+            counter += 1
+            json_str += item.to_json()
+            if counter != number_impositions:
+                json_str += ','
+        json_str += ']'
+        return json_str
 
 
 # UNIT TEST -----------------------------------------------------------------

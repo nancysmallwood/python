@@ -8,51 +8,68 @@
 # Currency
 from calcobjects.currency import Currency
 from calcobjects.postaladdress import PostalAddress
-from util.dictionary_util import get_attr_key, get_dic_item, get_dic_key
+from currencyconversion import CurrencyConversion
+from util.dictionary_util import get_attr_key, get_dic_item, get_dic_key, coalesce_num, coalesce_str
 
 
 class Location:
     # The init method or constructor
     def __init__(self, dic):
-        # Objects
-        if get_dic_key(dic, 'currencyconversion') is not None:
-            self.currency_conversion = Currency(get_dic_item(dic, get_dic_key(dic, 'currencyconversion')))
-        else:
-            self.currency_conversion = None
-        # Fields
-        self.taxarea_id = get_dic_item(dic, get_attr_key(dic, 'taxareaid'))
-        self.latitude = get_dic_item(dic, get_attr_key(dic, 'latitude'))
-        self.longitude = get_dic_item(dic, get_attr_key(dic, 'longitude'))
-        self.location_customs_status = get_dic_item(dic, get_attr_key(dic, 'locationcustomsstatus'))
-        self.location_code = get_dic_item(dic, get_attr_key(dic, 'locationcode'))
-        self.external_jurisdiction_code = get_dic_item(dic, get_attr_key(dic, 'externaljurisdictioncode'))
-        # Postal Address done a little differently
-        self.postal_address = {}
-        if get_dic_item(dic, get_attr_key(dic, 'streetaddress1')) is not None:
-            self.postal_address['streetaddress1'] = get_dic_item(dic, get_attr_key(dic, 'streetaddress1'))
-        if get_dic_item(dic, get_attr_key(dic, 'streetaddress2')) is not None:
-            self.postal_address['streetaddress2'] = get_dic_item(dic, get_attr_key(dic, 'streetaddress2'))
-        if get_dic_item(dic, get_attr_key(dic, 'city')) is not None:
-            self.postal_address['city'] = get_dic_item(dic, get_attr_key(dic, 'city'))
-        if get_dic_item(dic, get_attr_key(dic, 'maindivision')) is not None:
-            self.postal_address['maindivision'] = get_dic_item(dic, get_attr_key(dic, 'maindivision'))
-        if get_dic_item(dic, get_attr_key(dic, 'subdivision')) is not None:
-            self.postal_address['subdivision'] = get_dic_item(dic, get_attr_key(dic, 'subdivision'))
-        if get_dic_item(dic, get_attr_key(dic, 'postalcode')) is not None:
-            self.postal_address['postalcode'] = get_dic_item(dic, get_attr_key(dic, 'postalcode'))
-        if get_dic_item(dic, get_attr_key(dic, 'country')) is not None:
-            self.postal_address['country'] = get_dic_item(dic, get_attr_key(dic, 'country'))
-        self.postal_address = PostalAddress(self.postal_address)
-        # self.postal_address = validate_postal_address(PostalAddress(self.postal_address))
+        self.currency_conversion = CurrencyConversion(dic)
+        self.tax_area_id = None
+        self.latitude = None
+        self.longitude = None
+        self.location_customs_status = None
+        self.location_code = None
+        self.external_jurisdiction_code = None
+        self.postal_address = PostalAddress(dic)
+        if dic is not None:
+            # Objects
+            if get_dic_key(dic, 'currencyconversion') is not None:
+                self.currency_conversion = \
+                    CurrencyConversion(get_dic_item(dic, get_dic_key(dic, 'currencyconversion')))
+            # Fields
+            self.tax_area_id = get_dic_item(dic, get_attr_key(dic, 'taxareaid'))
+            self.latitude = get_dic_item(dic, get_attr_key(dic, 'latitude'))
+            self.longitude = get_dic_item(dic, get_attr_key(dic, 'longitude'))
+            self.location_customs_status = get_dic_item(dic, get_attr_key(dic, 'locationcustomsstatus'))
+            self.location_code = get_dic_item(dic, get_attr_key(dic, 'locationcode'))
+            self.external_jurisdiction_code = get_dic_item(dic, get_attr_key(dic, 'externaljurisdictioncode'))
+            # Postal Address done a little differently
+            self.postal_address.street_address_1 = get_dic_item(dic, get_attr_key(dic, 'streetaddress1'))
+            self.postal_address.street_address_2 = get_dic_item(dic, get_attr_key(dic, 'streetaddress2'))
+            self.postal_address.city = get_dic_item(dic, get_attr_key(dic, 'city'))
+            self.postal_address.main_division = get_dic_item(dic, get_attr_key(dic, 'maindivision'))
+            self.postal_address.sub_division = get_dic_item(dic, get_attr_key(dic, 'subdivision'))
+            self.postal_address.postal_code = get_dic_item(dic, get_attr_key(dic, 'postalcode'))
+            self.postal_address.country = get_dic_item(dic, get_attr_key(dic, 'country'))
 
     def __str__(self):
         print_str = "\n\t\ttaxarea_id = %s, latitude = %s, longitude = %s, " \
                     "location_customs_status = %s, location_code = %s, external_jurisdiction_code = %s, " \
                     "\n\t\tpostal_address = %s, \n\t\tcurrency_conversion = %s" \
-                    % (self.taxarea_id, self.latitude, self.longitude,
+                    % (self.tax_area_id, self.latitude, self.longitude,
                        self.location_customs_status, self.location_code, self.external_jurisdiction_code,
                        self.postal_address, self.currency_conversion)
         return print_str
+
+    def to_json(self):
+        return '{"taxAreaId": %s, ' \
+               '"latitude": %s, ' \
+               '"longitude": %s, ' \
+               '"locationCode": %s, ' \
+               '"locationCustomsStatus": %s, ' \
+               '"externalJurisdictionCode": %s, ' \
+               '"PostalAddress": %s, ' \
+               '"CurrencyConversion": %s}' % \
+               (coalesce_num(self.tax_area_id),
+                coalesce_str(self.latitude),
+                coalesce_str(self.longitude),
+                coalesce_str(self.location_code),
+                coalesce_str(self.location_customs_status),
+                coalesce_str(self.external_jurisdiction_code),
+                self.postal_address.to_json(),
+                self.currency_conversion.to_json())
 
 
 def validate_postal_address(postal_address):
@@ -80,7 +97,7 @@ def test_location():
                                                   'isocurrencycodenum': 178}}
     location = Location(location_dictionary)
     try:
-        assert location.taxarea_id == '330590000', \
+        assert location.tax_area_id == '330590000', \
             'taxarea_id assertion failed. ' 'Expected "330590000"'
         assert location.postal_address.country == 'USA', \
             'postal_address.country assertion failed. ' 'Expected "USA"'

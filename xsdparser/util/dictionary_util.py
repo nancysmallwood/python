@@ -2,6 +2,8 @@ from pprint import pprint
 
 import xmltodict
 
+null = None
+
 
 def xml_to_dict(payload):
     return xmltodict.parse(payload)
@@ -13,10 +15,11 @@ def get_dic_item(dic, key_name):
     try:
         if dic is None or key_name is None:
             return None
-        item = dic[key_name]
-        return item
+        else:
+            item = dic[key_name]
+            return item
     except KeyError:
-        return None
+        return null
 
 
 # # Get the name of the dictionary attribute key
@@ -72,7 +75,6 @@ def parse_xml(xml_data):
     return dict_data
 
 
-
 def parse_xsdfile(filename):
     namespaces = {'urn:vertexinc:o-series:tps:7:0': 'x'}
     pprint(filename)
@@ -82,3 +84,30 @@ def parse_xsdfile(filename):
         xml_data = xmltodict.parse(data, process_namespaces=True, namespaces=namespaces)
         # pprint(xml_data)
         # print(json.dumps(xml_data, indent=2))
+
+
+def coalesce_str(item):
+    if item is None:
+        return 'null'
+    else:
+        return '"' + item + '"'
+
+
+def coalesce_num(item):
+    if item is None:
+        return 'null'
+    elif type(item) != int and type(item) != float:
+        return 'null'
+    else:
+        return item
+
+
+def coalesce_bool(item):
+    if item is None:
+        return 'null'
+    elif item is True or item == 'true':
+        return 'true'
+    elif item is False or item == 'false':
+        return 'false'
+    else:
+        return 'null'

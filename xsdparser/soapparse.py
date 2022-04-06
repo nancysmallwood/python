@@ -1,11 +1,12 @@
+import json
 import os
 import site
 
 from calcobjects.applicationdata import ApplicationData
 from calcobjects.login import Login
-from calcobjects.quotation import Quotation
+from calcobjects.payload import Payload
+from calcobjects.ospmessage import OSPMessage
 from util.dictionary_util import xml_to_dict
-from util.file_util import get_filenames
 
 test_soap = '<soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/"><soap:Body><VertexEnvelope ' \
             'xmlns="urn:vertexinc:o-series:tps:7:0"><Login><TrustedId>7649555430638576</TrustedId></Login>' \
@@ -27,7 +28,8 @@ def get_dict_item(dic, key_name):
         item = dic[key_name]
         return item
     except KeyError:
-        print(f'Item {key_name} is invalid.')
+        print(f'Key Error.  get_dict_item()')
+        return None
     return None
 
 
@@ -37,8 +39,6 @@ def get_key(dic, key_pattern):
         # Get key name used for soap envelope
         if len(list(dic)) == 0:
             return None
-        # elif len(list(dict)) == 1:
-        #     return dict[0]
         else:
             for key in list(dic):
                 if key_pattern in key.lower():
@@ -49,7 +49,7 @@ def get_key(dic, key_pattern):
         return None
 
 
-# Test the payload to make sure it adheres to a common structure
+# String off the envelope elements and return the core XML
 def get_payload(dic):
     envelope_key = get_key(dic, 'envelope')
     if get_dict_item(dic, envelope_key) is not None:
@@ -63,22 +63,40 @@ def get_payload(dic):
                 return v
     print('Invalid SOAP envelope')
     return None
-    #     quotation = payload_dictionary['QuotationRequest']
-
-
-def get_quotation(dic):
-    quote = Quotation(dic)
-    return quote
 
 
 def get_login(dic):
-    login = Login(dic)
+    login = Login(get_login_dictionary(dic))
     return login
 
 
 def get_application_data(dic):
-    application_data = ApplicationData(dic)
+    application_data = ApplicationData(get_application_data_dictionary(dic))
     return application_data
+
+
+def get_json_payload(dic):
+    json_payload = Payload(get_login(dic),
+                           get_application_data(dic),
+                           get_calc_message(dic))
+    return json_payload.to_json()
+
+
+def get_json_payload2(dic):
+    if dic is None:
+        return None
+    else:
+        test = Payload(get_login(dic),
+                       get_application_data(dic),
+                       get_calc_message_type(dic),
+                       get_calc_message(dic))
+        # Serialization
+        json_data = json.dumps(test, default=lambda o: o.__dict__, indent=4)
+        # print(json_data)
+        # Deserialization
+        # decoded_team = Payload(**json.loads(json_data))
+        # print(decoded_team)
+        return json_data
 
 
 def process_invoice(dic):
@@ -89,23 +107,46 @@ def process_tax_area_lookup(dic):
     print("Tax Area Lookup")
 
 
-def get_login(dic):
+def get_login_dictionary(dic):
     if get_dict_item(dic, get_key(dic, 'login')) is not None:
-        return get_login(get_dict_item(dic, get_key(dic, 'login')))
+        return get_dict_item(dic, get_key(dic, 'login'))
     else:
         return None
 
 
-def get_quote(dic):
+def get_calc_message(dic):
+    return OSPMessage(get_calc_message_dictionary(dic))
+
+
+def get_calc_message_type(dic):
     if get_dict_item(dic, get_key(dic, 'quotationrequest')) is not None:
-        return get_quotation(get_dict_item(dic, get_key(dic, 'quotationrequest')))
+        return 'quotationrequest'
+    elif get_dict_item(dic, get_key(dic, 'quotationresponse')) is not None:
+        return 'quotationresponse'
+    elif get_dict_item(dic, get_key(dic, 'invoicerequest')) is not None:
+        return 'invoicerequest'
+    elif get_dict_item(dic, get_key(dic, 'invoiceresponse')) is not None:
+        return 'invoiceresponse'
+    else:
+        return ''
+
+
+def get_calc_message_dictionary(dic):
+    if get_dict_item(dic, get_key(dic, 'quotationrequest')) is not None:
+        return get_dict_item(dic, get_key(dic, 'quotationrequest'))
+    elif get_dict_item(dic, get_key(dic, 'quotationresponse')) is not None:
+        return get_dict_item(dic, get_key(dic, 'quotationresponse'))
+    elif get_dict_item(dic, get_key(dic, 'invoicerequest')) is not None:
+        return get_dict_item(dic, get_key(dic, 'invoicerequest'))
+    elif get_dict_item(dic, get_key(dic, 'invoiceresponse')) is not None:
+        return get_dict_item(dic, get_key(dic, 'invoiceresponse'))
     else:
         return None
 
 
-def get_application_data(dic):
+def get_application_data_dictionary(dic):
     if get_dict_item(dic, get_key(dic, 'applicationdata')) is not None:
-        return get_application_data(get_dict_item(dic, get_key(dic, 'applicationdata')))
+        return get_dict_item(dic, get_key(dic, 'applicationdata'))
     else:
         return None
 

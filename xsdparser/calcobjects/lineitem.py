@@ -39,14 +39,21 @@
 # CompanyCodeCurrencyTaxAmount	0 - 1	Decimal
 from calcobjects.commoditycode import CommodityCode
 from calcobjects.customer import Customer
+from calcobjects.discount import Discount
 from calcobjects.flexiblefields import FlexibleFields
+from calcobjects.impositions import Impositions
+from calcobjects.jurisdictionoverrides import JurisdictionOverrides
 from calcobjects.linetype import LineType
 from calcobjects.product import Product
 from calcobjects.quantity import Quantity
 from calcobjects.returnsfields import ReturnsFields
 from calcobjects.seller import Seller
+from calcobjects.situsoverride import SitusOverride
+from calcobjects.statisticalvalue import StatisticalValue
 from calcobjects.supplementaryunit import SupplementaryUnit
-from util.dictionary_util import get_attr_key, get_dic_item, get_dic_key
+from calcobjects.taxes import Taxes
+from calcobjects.taxoverride import TaxOverride
+from util.dictionary_util import get_attr_key, get_dic_item, get_dic_key, coalesce_str, coalesce_bool, coalesce_num
 from calcobjects.volume import Volume
 from calcobjects.weight import Weight
 
@@ -54,93 +61,147 @@ from calcobjects.weight import Weight
 class LineItem:
     # The init method or constructor
     def __init__(self, dic):
-        # Objects
-        if get_dic_key(dic, 'seller') is not None:
-            self.seller = Seller(get_dic_item(dic, get_dic_key(dic, 'seller')))
-        else:
-            self.seller = None
-        if get_dic_key(dic, 'customer') is not None:
-            self.customer = Customer(get_dic_item(dic, get_dic_key(dic, 'customer')))
-        else:
-            self.customer = None
-        if get_dic_key(dic, 'product') is not None:
-            self.product = Product(get_dic_item(dic, get_dic_key(dic, 'product')))
-        else:
-            self.product = None
-        if get_dic_key(dic, 'quantity') is not None:
-            self.quantity = Quantity(get_dic_item(dic, get_dic_key(dic, 'quantity')))
-        else:
-            self.quantity = None
-        if get_dic_key(dic, 'linetype') is not None:
-            self.line_type = LineType(get_dic_item(dic, get_dic_key(dic, 'linetype')))
-        else:
-            self.line_type = None
-        if get_dic_key(dic, 'commoditycode') is not None:
-            self.commodity_code = CommodityCode(get_dic_item(dic, get_dic_key(dic, 'commoditycode')))
-        else:
-            self.commodity_code = None
-        if get_dic_key(dic, 'weight') is not None:
-            self.weight = Weight(get_dic_item(dic, get_dic_key(dic, 'weight')))
-        else:
-            self.weight = None
-        if get_dic_key(dic, 'volume') is not None:
-            self.volume = Volume(get_dic_item(dic, get_dic_key(dic, 'volume')))
-        else:
-            self.volume = None
-        if get_dic_key(dic, 'supplementaryunit') is not None:
-            self.supplementary_unit = SupplementaryUnit(get_dic_item(dic, get_dic_key(dic, 'supplementaryunit')))
-        else:
-            self.supplementary_unit = None
-        if get_dic_key(dic, 'flexiblefields') is not None:
-            self.flexible_fields = FlexibleFields(get_dic_item(dic, get_dic_key(dic, 'flexiblefields')))
-        else:
-            self.flexible_fields = None
-        if get_dic_key(dic, 'returnsfields') is not None:
-            self.returns_fields = ReturnsFields(get_dic_item(dic, get_dic_key(dic, 'returnsfields')))
-        else:
-            self.returns_fields = None
-        # Fields
-        self.line_item_number = get_dic_item(dic, get_attr_key(dic, 'lineitemnumber'))
-        self.line_item_id = get_dic_item(dic, get_attr_key(dic, 'lineitemid'))
-        self.tax_date = get_dic_item(dic, get_attr_key(dic, 'taxdate'))
-        self.is_multicomponent = get_dic_item(dic, get_attr_key(dic, 'ismulticomponent'))
-        self.location_code = get_dic_item(dic, get_attr_key(dic, 'locationcode'))
+        self.taxes = Taxes(dic)
+        self.seller = Seller(dic)
+        self.customer = Customer(dic)
+        self.product = Product(dic)
+        self.quantity = Quantity(dic)
+        self.line_type = LineType(dic)
+        self.commodity_code = CommodityCode(dic)
+        self.weight = Weight(dic)
+        self.volume = Volume(dic)
+        self.supplementary_unit = SupplementaryUnit(dic)
+        self.flexible_fields = FlexibleFields(dic)
+        self.returns_fields = ReturnsFields(dic)
+        self.tax_override = TaxOverride(dic)
+        self.imposition_to_process = Impositions(dic)
+        self.jurisdiction_override = JurisdictionOverrides(dic)
+        self.situs_override = SitusOverride(dic)
+        self.statistical_value = StatisticalValue(dic)
+        self.discount = Discount(dic)
+        self.line_item_number = None
+        self.line_item_id = None
+        self.tax_date = None
+        self.is_multicomponent = False
+        self.location_code = None
+        self.delivery_term = None
+        self.posting_date = None
+        self.cost_center = None
+        self.department_code = None
+        self.general_ledger_account = None
+        self.material_code = None
+        self.project_number = None
+        self.usage = None
+        self.usage_class = None
+        self.vendor_sku = None
+        self.country_of_origin_iso_code = None
+        self.mode_of_transport = None
+        self.nature_of_transaction = None
+        self.intrastat_commodity_code = None
+        self.net_mass_kilograms = None
+        self.tax_included_indicator = False
+        self.transaction_type = None
+        self.simplification_code = None
+        self.title_transfer = None
+        self.chain_transaction_phase = None
+        self.export_procedure = None
+        self.material_origin = None
+        self.freight = None
+        self.fair_market_value = None
+        self.cost = None
+        self.unit_price = None
+        self.landed_cost = None
+        self.amount_billed_to_date = None
+        self.company_code_currency_taxable_amount = None
+        self.company_code_currency_tax_amount = None
+        self.extended_price = None
 
-        self.delivery_term = get_dic_item(dic, get_attr_key(dic, 'deliveryterm'))
-        self.posting_date = get_dic_item(dic, get_attr_key(dic, 'postingdate'))
-        self.cost_center = get_dic_item(dic, get_attr_key(dic, 'costcenter'))
-        self.department_code = get_dic_item(dic, get_attr_key(dic, 'departmentcode'))
-        self.general_ledger_account = get_dic_item(dic, get_attr_key(dic, 'generalledgeraccount'))
+        if dic is not None:
+            # Objects
+            if get_dic_key(dic, 'taxes') is not None:
+                self.taxes = Taxes(get_dic_item(dic, get_dic_key(dic, 'taxes')))
+            if get_dic_key(dic, 'seller') is not None:
+                self.seller = Seller(get_dic_item(dic, get_dic_key(dic, 'seller')))
+            if get_dic_key(dic, 'customer') is not None:
+                self.customer = Customer(get_dic_item(dic, get_dic_key(dic, 'customer')))
+            if get_dic_key(dic, 'product') is not None:
+                self.product = Product(get_dic_item(dic, get_dic_key(dic, 'product')))
+            if get_dic_key(dic, 'quantity') is not None:
+                self.quantity = Quantity(get_dic_item(dic, get_dic_key(dic, 'quantity')))
+            if get_dic_key(dic, 'linetype') is not None:
+                self.line_type = LineType(get_dic_item(dic, get_dic_key(dic, 'linetype')))
+            if get_dic_key(dic, 'commoditycode') is not None:
+                self.commodity_code = CommodityCode(get_dic_item(dic, get_dic_key(dic, 'commoditycode')))
+            if get_dic_key(dic, 'weight') is not None:
+                self.weight = Weight(get_dic_item(dic, get_dic_key(dic, 'weight')))
+            if get_dic_key(dic, 'volume') is not None:
+                self.volume = Volume(get_dic_item(dic, get_dic_key(dic, 'volume')))
+            if get_dic_key(dic, 'supplementaryunit') is not None:
+                self.supplementary_unit = SupplementaryUnit(get_dic_item(dic, get_dic_key(dic, 'supplementaryunit')))
+            if get_dic_key(dic, 'flexiblefields') is not None:
+                self.flexible_fields = FlexibleFields(get_dic_item(dic, get_dic_key(dic, 'flexiblefields')))
+            if get_dic_key(dic, 'returnsfields') is not None:
+                self.returns_fields = ReturnsFields(get_dic_item(dic, get_dic_key(dic, 'returnsfields')))
+            if get_dic_key(dic, 'taxoverride') is not None:
+                self.tax_override = TaxOverride(get_dic_item(dic, get_dic_key(dic, 'taxoverride')))
+            if get_dic_key(dic, 'impositiontoprocess') is not None:
+                self.imposition_to_process = Impositions(get_dic_item(dic, get_dic_key(dic, 'impositiontoprocess')))
+            if get_dic_key(dic, 'jurisdictionoverride') is not None:
+                self.jurisdiction_override = JurisdictionOverrides(get_dic_item(dic, get_dic_key(dic, 'jurisdictionoverride')))
+            if get_dic_key(dic, 'situsoverride') is not None:
+                self.situs_override = SitusOverride(get_dic_item(dic, get_dic_key(dic, 'situsoverride')))
+            if get_dic_key(dic, 'statisticalvalue') is not None:
+                self.statistical_value = StatisticalValue(get_dic_item(dic, get_dic_key(dic, 'statisticalvalue')))
+            if get_dic_key(dic, 'discount') is not None:
+                self.discount = Discount(get_dic_item(dic, get_dic_key(dic, 'discount')))
 
-        self.material_code = get_dic_item(dic, get_attr_key(dic, 'materialcode'))
-        self.project_number = get_dic_item(dic, get_attr_key(dic, 'projectnumber'))
-        self.usage = get_dic_item(dic, get_attr_key(dic, 'usage'))
-        self.usage_class = get_dic_item(dic, get_attr_key(dic, 'usageclass'))
-        self.vendor_sku = get_dic_item(dic, get_attr_key(dic, 'vendorsku'))
+            # Fields
+            self.line_item_number = get_dic_item(dic, get_attr_key(dic, 'lineitemnumber'))
+            self.line_item_id = get_dic_item(dic, get_attr_key(dic, 'lineitemid'))
+            self.tax_date = get_dic_item(dic, get_attr_key(dic, 'taxdate'))
+            if get_dic_item(dic, get_attr_key(dic, 'ismulticomponent')) is not None:
+                self.is_multicomponent = get_dic_item(dic, get_attr_key(dic, 'ismulticomponent'))
+            self.location_code = get_dic_item(dic, get_attr_key(dic, 'locationcode'))
 
-        self.country_of_origin_iso_code = get_dic_item(dic, get_attr_key(dic, 'countryoforiginisocode'))
-        self.mode_of_transport = get_dic_item(dic, get_attr_key(dic, 'modeoftransport'))
-        self.nature_of_transaction = get_dic_item(dic, get_attr_key(dic, 'natureoftransaction'))
-        self.intrastat_commodity_code = get_dic_item(dic, get_attr_key(dic, 'intrastatcommoditycode'))
-        self.net_mass_kilograms = get_dic_item(dic, get_attr_key(dic, 'netmasskilograms'))
+            self.delivery_term = get_dic_item(dic, get_attr_key(dic, 'deliveryterm'))
+            self.posting_date = get_dic_item(dic, get_attr_key(dic, 'postingdate'))
+            self.cost_center = get_dic_item(dic, get_attr_key(dic, 'costcenter'))
+            self.department_code = get_dic_item(dic, get_attr_key(dic, 'departmentcode'))
+            self.general_ledger_account = get_dic_item(dic, get_attr_key(dic, 'generalledgeraccount'))
 
-        self.tax_included_indicator = get_dic_item(dic, get_attr_key(dic, 'taxincludedindicator'))
-        self.transaction_type = get_dic_item(dic, get_attr_key(dic, 'transactiontype'))
-        self.simplification_code = get_dic_item(dic, get_attr_key(dic, 'simplificationcode'))
-        self.title_transfer = get_dic_item(dic, get_attr_key(dic, 'titletransfer'))
-        self.chain_transaction_phase = get_dic_item(dic, get_attr_key(dic, 'chaintransactionphase'))
+            self.material_code = get_dic_item(dic, get_attr_key(dic, 'materialcode'))
+            self.project_number = get_dic_item(dic, get_attr_key(dic, 'projectnumber'))
+            self.usage = get_dic_item(dic, get_attr_key(dic, 'usage'))
+            self.usage_class = get_dic_item(dic, get_attr_key(dic, 'usageclass'))
+            self.vendor_sku = get_dic_item(dic, get_attr_key(dic, 'vendorsku'))
 
-        self.export_procedure = get_dic_item(dic, get_attr_key(dic, 'exportprocedure'))
-        self.material_origin = get_dic_item(dic, get_attr_key(dic, 'materialorigin'))
-        self.freight = get_dic_item(dic, get_attr_key(dic, 'freight'))
-        self.fair_market_value = get_dic_item(dic, get_attr_key(dic, 'fairmarketvalue'))
-        self.cost = get_dic_item(dic, get_attr_key(dic, 'cost'))
+            self.country_of_origin_iso_code = get_dic_item(dic, get_attr_key(dic, 'countryoforiginisocode'))
+            self.mode_of_transport = get_dic_item(dic, get_attr_key(dic, 'modeoftransport'))
+            self.nature_of_transaction = get_dic_item(dic, get_attr_key(dic, 'natureoftransaction'))
+            self.intrastat_commodity_code = get_dic_item(dic, get_attr_key(dic, 'intrastatcommoditycode'))
+            self.net_mass_kilograms = get_dic_item(dic, get_attr_key(dic, 'netmasskilograms'))
 
-        self.unit_price = get_dic_item(dic, get_attr_key(dic, 'unitprice'))
-        self.landed_cost = get_dic_item(dic, get_attr_key(dic, 'landedcost'))
-        self.amount_billed_to_date = get_dic_item(dic, get_attr_key(dic, 'amountbilledtodate'))
-        self.company_code_currency_taxable_amount = get_dic_item(dic, get_attr_key(dic, 'companycodecurrencytaxableamount'))
-        self.company_code_currency_tax_amount = get_dic_item(dic, get_attr_key(dic, 'companycodecurrencytaxamount'))
+            if get_dic_item(dic, get_attr_key(dic, 'taxincludedindicator')) is not None:
+                self.tax_included_indicator = get_dic_item(dic, get_attr_key(dic, 'taxincludedindicator'))
+            self.transaction_type = get_dic_item(dic, get_attr_key(dic, 'transactiontype'))
+            self.simplification_code = get_dic_item(dic, get_attr_key(dic, 'simplificationcode'))
+            self.title_transfer = get_dic_item(dic, get_attr_key(dic, 'titletransfer'))
+            self.chain_transaction_phase = get_dic_item(dic, get_attr_key(dic, 'chaintransactionphase'))
+
+            self.export_procedure = get_dic_item(dic, get_attr_key(dic, 'exportprocedure'))
+            self.material_origin = get_dic_item(dic, get_attr_key(dic, 'materialorigin'))
+            self.freight = get_dic_item(dic, get_attr_key(dic, 'freight'))
+            self.fair_market_value = get_dic_item(dic, get_attr_key(dic, 'fairmarketvalue'))
+            self.cost = get_dic_item(dic, get_attr_key(dic, 'cost'))
+
+            self.unit_price = get_dic_item(dic, get_attr_key(dic, 'unitprice'))
+            self.landed_cost = get_dic_item(dic, get_attr_key(dic, 'landedcost'))
+            self.amount_billed_to_date = get_dic_item(dic, get_attr_key(dic, 'amountbilledtodate'))
+            self.company_code_currency_taxable_amount = \
+                get_dic_item(dic, get_attr_key(dic, 'companycodecurrencytaxableamount'))
+            self.company_code_currency_tax_amount = \
+                get_dic_item(dic, get_attr_key(dic, 'companycodecurrencytaxamount'))
+            self.extended_price = get_dic_item(dic, get_attr_key(dic, 'extendedprice'))
 
     def __str__(self):
         print_str = "\nline_item_number = %s, \nline_item_id = %s, \ntax_date = %s, \nis_multicomponent = %s," \
@@ -175,4 +236,77 @@ class LineItem:
                        self.supplementary_unit, self.flexible_fields, self.returns_fields)
         return print_str
 
-
+    def to_json(self):
+        return '{"lineItemNumber": %s, ' \
+               '"taxDate": %s, ' \
+               '"isMulticomponent": %s, ' \
+               '"locationCode": %s, ' \
+               '"deliveryTerm": %s, ' \
+               '"postingDate": %s, ' \
+               '"costCenter": %s, ' \
+               '"departmentCode": %s, ' \
+               '"generalLedgerAccount": %s, ' \
+               '"materialCode": %s, ' \
+               '"projectNumber": %s, ' \
+               '"usage": %s, "usageClass": %s, "vendorSKU": %s, "countryOfOriginISOCode": %s,' \
+               '"modeOfTransport": %s, "natureOfTransaction": %s, "intrastatCommodityCode": %s, "netMassKilograms": %s, "lineItemId": %s, ' \
+               '"taxIncludedIndicator": %s, "transactionType": %s, "simplificationCode": %s, "titleTransfer": %s, "chainTransactionPhase": %s, ' \
+               '"exportProcedure": %s, "materialOrigin": %s, ' \
+               '"Seller": %s, "Customer": %s, "TaxOverride": %s, ' \
+               '"ImpositionToProcess": %s, "JurisdictionOverride": %s, "SitusOverride": %s, "Product": %s, "LineType": %s, ' \
+               '"CommodityCode": %s, "Quantity": %s, "Weight": %s, "Volume": %s, "SupplementaryUnit": %s, "StatisticalValue": %s, ' \
+               '"Freight": %s, "FairMarketValue": %s, "Cost": %s, "UnitPrice": %s, "ExtendedPrice": %s, "LandedCost": %s, ' \
+               '"Discount": %s, "AmountBilledToDate": %s, "CompanyCodeCurrencyTaxableAmount": %s, "CompanyCodeCurrencyTaxAmount": %s, "FlexibleFields": %s, "ReturnsFields": %s}' % \
+               (coalesce_num(self.line_item_number),
+                coalesce_str(self.tax_date),
+                coalesce_bool(self.is_multicomponent),
+                coalesce_str(self.location_code),
+                coalesce_str(self.delivery_term),
+                coalesce_str(self.posting_date),
+                coalesce_str(self.cost_center),
+                coalesce_str(self.department_code),
+                coalesce_str(self.general_ledger_account),
+                coalesce_bool(self.material_code),
+                coalesce_str(self.project_number),
+                coalesce_str(self.usage),
+                coalesce_str(self.usage_class),
+                coalesce_str(self.vendor_sku),
+                coalesce_str(self.country_of_origin_iso_code),
+                coalesce_num(self.mode_of_transport),
+                coalesce_num(self.nature_of_transaction),
+                coalesce_str(self.intrastat_commodity_code),
+                coalesce_num(self.net_mass_kilograms),
+                coalesce_str(self.line_item_id),
+                coalesce_bool(self.tax_included_indicator),
+                coalesce_str(self.transaction_type),
+                coalesce_str(self.simplification_code),
+                coalesce_str(self.title_transfer),
+                coalesce_str(self.chain_transaction_phase),
+                coalesce_str(self.export_procedure),
+                coalesce_str(self.material_origin),
+                self.seller.to_json(),
+                self.customer.to_json(),
+                self.tax_override.to_json(),
+                self.imposition_to_process.to_json(),
+                self.jurisdiction_override.to_json(),
+                self.situs_override.to_json(),
+                self.product.to_json(),
+                self.line_type.to_json(),
+                self.commodity_code.to_json(),
+                self.quantity.to_json(),
+                self.weight.to_json(),
+                self.volume.to_json(),
+                self.supplementary_unit.to_json(),
+                self.statistical_value.to_json(),
+                coalesce_num(self.freight),
+                coalesce_num(self.fair_market_value),
+                coalesce_num(self.cost),
+                coalesce_num(self.unit_price),
+                coalesce_num(self.extended_price),
+                coalesce_num(self.landed_cost),
+                self.discount.to_json(),
+                coalesce_num(self.amount_billed_to_date),
+                coalesce_num(self.company_code_currency_taxable_amount),
+                coalesce_num(self.company_code_currency_tax_amount),
+                self.flexible_fields.to_json(),
+                self.returns_fields.to_json())

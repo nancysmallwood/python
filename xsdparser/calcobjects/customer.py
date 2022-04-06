@@ -7,39 +7,46 @@
 # AdministrativeDestination (Location)
 # ExemptionCertificate (ExemptionCertificate)
 # TaxRegistration (TaxRegistration)
+from calcobjects.customercode import CustomerCode
 from calcobjects.exemptioncertificate import ExemptionCertificate
 from calcobjects.location import Location
 from calcobjects.taxregistration import TaxRegistration
-from util.dictionary_util import get_attr_key, get_dic_item, get_dic_key
+from util.dictionary_util import get_attr_key, get_dic_item, get_dic_key, coalesce_str, coalesce_bool
 
 
 class Customer:
     # The init method or constructor
     def __init__(self, dic):
-        # Objects
-        if get_dic_key(dic, 'destination') is not None:
-            self.destination = Location(get_dic_item(dic, get_dic_key(dic, 'destination')))
-        else:
-            self.destination = None
-        if get_dic_key(dic, 'administrativedestination') is not None:
-            self.administrative_destination = Location(get_dic_item(dic, get_dic_key(dic, 'administrativedestination')))
-        else:
-            self.administrative_destination = None
-        if get_dic_key(dic, 'exemptioncertificate') is not None:
-            self.exemption_certificate = ExemptionCertificate(get_dic_item(dic, get_dic_key(dic, 'exemptioncertificate')))
-        else:
-            self.exemption_certificate = None
-        if get_dic_key(dic, 'taxregistration') is not None:
-            self.tax_registration = TaxRegistration(get_dic_item(dic, get_dic_key(dic, 'taxregistration')))
-        else:
-            self.tax_registration = None
-        # Fields
-        self.is_tax_exempt = get_dic_item(dic, get_attr_key(dic, 'istaxexempt'))
-        self.exemption_reason_code = get_dic_item(dic, get_attr_key(dic, 'exemptionreasoncode'))
-        self.customer_code = get_dic_item(dic, get_attr_key(dic, 'customercode'))
-        self.class_code = get_dic_item(dic, get_attr_key(dic, 'classcode'))
-        self.is_business_indicator = get_dic_item(dic, get_attr_key(dic, 'isbusinessindicator'))
-
+        self.destination = Location(dic)
+        self.administrative_destination = Location(dic)
+        self.exemption_certificate = ExemptionCertificate(dic)
+        self.tax_registration = TaxRegistration(dic)
+        self.customer_code = CustomerCode(dic)
+        self.is_tax_exempt = False
+        self.exemption_reason_code = None
+        self.class_code = None
+        self.is_business_indicator = False
+        if dic is not None:
+            # Objects
+            if get_dic_key(dic, 'destination') is not None:
+                self.destination = Location(get_dic_item(dic, get_dic_key(dic, 'destination')))
+            if get_dic_key(dic, 'administrativedestination') is not None:
+                self.administrative_destination = Location(
+                    get_dic_item(dic, get_dic_key(dic, 'administrativedestination')))
+            if get_dic_key(dic, 'exemptioncertificate') is not None:
+                self.exemption_certificate = ExemptionCertificate(
+                    get_dic_item(dic, get_dic_key(dic, 'exemptioncertificate')))
+            if get_dic_key(dic, 'taxregistration') is not None:
+                self.tax_registration = TaxRegistration(get_dic_item(dic, get_dic_key(dic, 'taxregistration')))
+            if get_dic_key(dic, 'customercode') is not None:
+                self.customer_code = CustomerCode(get_dic_item(dic, get_dic_key(dic, 'customercode')))
+            # Fields
+            if get_dic_item(dic, get_attr_key(dic, 'istaxexempt')) is not None:
+                self.is_tax_exempt = get_dic_item(dic, get_attr_key(dic, 'istaxexempt'))
+            self.exemption_reason_code = get_dic_item(dic, get_attr_key(dic, 'exemptionreasoncode'))
+            self.class_code = get_dic_item(dic, get_attr_key(dic, 'classcode'))
+            if get_dic_item(dic, get_attr_key(dic, 'isbusinessindicator')) is not None:
+                self.is_business_indicator = get_dic_item(dic, get_attr_key(dic, 'isbusinessindicator'))
 
     def __str__(self):
         print_str = "\n\tis_tax_exempt = %s, \n\texemption_reason_code = %s, \n\tcustomer_code = %s, " \
@@ -51,6 +58,26 @@ class Customer:
                        self.administrative_destination, self.exemption_certificate,
                        self.tax_registration)
         return print_str
+
+    def to_json(self):
+        return '{"isTaxExempt": %s, ' \
+               '"exemptionReasonCode": %s, ' \
+               '"CustomerCode": %s, ' \
+               '"classCode": %s, ' \
+               '"isBusinessIndicator": %s, ' \
+               '"Destination": %s, ' \
+               '"AdministrativeDestination": %s, ' \
+               '"ExemptionCertificate": %s, ' \
+               '"TaxRegistration": %s}' % \
+               (coalesce_bool(self.is_tax_exempt),
+                coalesce_str(self.exemption_reason_code),
+                self.customer_code.to_json(),
+                coalesce_str(self.class_code),
+                coalesce_bool(self.is_business_indicator),
+                self.destination.to_json(),
+                self.administrative_destination.to_json(),
+                self.exemption_certificate.to_json(),
+                self.tax_registration.to_json())
 
 
 # # UNIT TEST -----------------------------------------------------------------
