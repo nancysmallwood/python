@@ -11,7 +11,7 @@
 from calcobjects.location import Location
 from calcobjects.dispatcher import Dispatcher
 from calcobjects.taxregistration import TaxRegistration
-from util.dictionary_util import get_attr_key, get_dic_item, get_dic_key, coalesce_bool, coalesce_str
+from util.dictionary_util import get_attr_key, get_dic_item, get_dic_key, coalesce_bool, coalesce_str, get_dic_bool_item
 
 
 class Seller:
@@ -39,8 +39,8 @@ class Seller:
             if get_dic_key(dic, 'administrativeorigin') is not None:
                 self.tax_registration = TaxRegistration(get_dic_item(dic, get_dic_key(dic, 'taxregistration')))
             # Fields
-            if get_dic_item(dic, get_attr_key(dic, 'nexusindicator')) is not None:
-                self.nexus_indicator = get_dic_item(dic, get_attr_key(dic, 'nexusindicator'))
+            if get_dic_bool_item(dic, get_attr_key(dic, 'nexusindicator')) is not None:
+                self.nexus_indicator = get_dic_bool_item(dic, get_attr_key(dic, 'nexusindicator'))
             self.nexus_reason_code = get_dic_item(dic, get_attr_key(dic, 'nexusreasoncode'))
             self.company = get_dic_item(dic, get_attr_key(dic, 'company'))
             self.division = get_dic_item(dic, get_attr_key(dic, 'division'))

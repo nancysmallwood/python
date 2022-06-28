@@ -2,7 +2,7 @@
 # classCode	optional	String (1 - 40)
 # isBusinessIndicator	optional	Boolean
 
-from util.dictionary_util import get_attr_key, get_dic_item, coalesce_str, coalesce_bool
+from util.dictionary_util import get_attr_key, get_dic_item, coalesce_str, coalesce_bool, get_dic_bool_item
 
 
 class CustomerCode:
@@ -14,8 +14,8 @@ class CustomerCode:
         if dic is not None:
             self.customer_code = get_dic_item(dic, get_attr_key(dic, 'text'))
             self.class_code = get_dic_item(dic, get_attr_key(dic, 'classcode'))
-            if get_dic_item(dic, get_attr_key(dic, 'isbusinessindicator')) is not None:
-                self.is_business_indicator = get_dic_item(dic, get_attr_key(dic, 'isbusinessindicator'))
+            if get_dic_bool_item(dic, get_attr_key(dic, 'isbusinessindicator')) is not None:
+                self.is_business_indicator = get_dic_bool_item(dic, get_attr_key(dic, 'isbusinessindicator'))
 
     def __str__(self):
         print_str = "CustomerCode = %s, class_code = %s, is_business_indicator = %s" \

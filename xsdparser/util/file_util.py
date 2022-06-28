@@ -8,10 +8,13 @@ def print_filenames(files):
 
 
 def get_filenames(osp_location):
-    files = []
-    for (dirpath, dirnames, filenames) in os.walk(osp_location):
-        files.extend(filenames)
-        break
+    # files = []
+    # for (dirpath, dirnames, filenames) in os.walk(osp_location):
+    #     files.extend(filenames)
+    #     break
+    # return files
+    for dir, dirs, files in os.walk(osp_location):
+        files = [os.path.join(f) for f in files if f.endswith('.txt')]
     return files
 
 
@@ -28,10 +31,10 @@ def get_json(input_str):
 
 
 # Returns list of lines from a file
-def get_lines(full_file_name):
+def get_rows(full_file_name):
     with open(full_file_name) as file:
-        lines = [line.rstrip() for line in file]
-        return lines
+        rows = [row.rstrip() for row in file]
+        return rows
 
 
 def print_filenames(files):

@@ -7,19 +7,11 @@ from util.dictionary_util import get_attr_key, get_dic_item, get_dic_key, coales
 class Discount:
     # The init method or constructor
     def __init__(self, dic):
-        # self.user_defined_discount_code = UserDefinedDiscountCode(dic)
         self.user_defined_discount_code = None
         self.discount_percent = None
         self.discount_amount = None
         self.prorate_percentage = None
         if dic is not None:
-            # Objects
-            # if get_dic_key(dic, 'userdefineddiscountcode') is not None:
-            #     self.user_defined_discount_code = \
-            #         UserDefinedDiscountCode(get_dic_item(dic, get_dic_key(dic, 'userdefineddiscountcode')))
-            # else:
-            #     self.user_defined_discount_code = None
-            # Fields
             self.prorate_percentage = get_dic_item(dic, get_attr_key(dic, 'proratepercentage'))
             self.user_defined_discount_code = get_dic_item(dic, get_attr_key(dic, 'userdefineddiscountcode'))
             self.discount_percent = get_dic_item(dic, get_attr_key(dic, 'discountpercent'))

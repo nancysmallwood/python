@@ -6,9 +6,8 @@
 # externalJurisdictionCode  optional	String (0 - 20)
 # PostalAddress
 # Currency
-from calcobjects.currency import Currency
 from calcobjects.postaladdress import PostalAddress
-from currencyconversion import CurrencyConversion
+from calcobjects.currencyconversion import CurrencyConversion
 from util.dictionary_util import get_attr_key, get_dic_item, get_dic_key, coalesce_num, coalesce_str
 
 

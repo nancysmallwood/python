@@ -1,6 +1,6 @@
 import json
 
-from soapparse import xml_to_dict, get_payload, get_quote, get_login, get_application_data
+from parse.soapparse import xml_to_dict, get_payload, get_quote, get_login, get_application_data
 
 osp_path = '.\\media\\'
 osp_file = 'real_sample.json'

@@ -16,7 +16,6 @@ class LogEntry:
         self.instance_id = None
         self.thread_id = None
         self.class_name = None
-        # self.message = None
         self.exception = None
         if dic is not None:
             # Fields
@@ -24,11 +23,6 @@ class LogEntry:
             self.instance_id = get_dic_item(dic, get_attr_key(dic, 'instanceid'))
             self.thread_id = get_dic_item(dic, get_attr_key(dic, 'threadid'))
             self.class_name = get_dic_item(dic, get_attr_key(dic, 'classname'))
-            # temp_message = get_dic_item(dic, get_attr_key(dic, 'message'))
-            # if isinstance(temp_message, dict):
-            #     self.message = None
-            # else:
-            #     self.message = get_dic_item(dic, get_attr_key(dic, 'message'))
             self.exception = get_dic_item(dic, get_attr_key(dic, 'exception'))
 
     def __str__(self):

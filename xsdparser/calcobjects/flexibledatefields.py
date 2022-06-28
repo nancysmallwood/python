@@ -4,7 +4,7 @@ from calcobjects.flexibledatefield import FlexibleDateField
 class FlexibleDateFields:
     # The init method or constructor
     def __init__(self, items):
-        self.flexible_date_fields = [FlexibleDateField(items)]
+        self.flexible_date_fields = [FlexibleDateField(None)]
         if items is not None:
             if isinstance(items, list):
                 for item in items:

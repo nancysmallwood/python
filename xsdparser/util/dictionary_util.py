@@ -22,16 +22,25 @@ def get_dic_item(dic, key_name):
         return null
 
 
-# # Get the name of the dictionary attribute key
-# def get_attr_key(dic, key_pattern):
-#     try:
-#         for key in list(dic):
-#             if key_pattern in key.lower():
-#                 return key
-#         return None
-#     except KeyError:
-#         print(f'Invalid SOAP request/response.')
-#         return None
+# Get the Dictionary item by key name
+# Returns 0 if key does not exist
+def get_dic_bool_item(dic, key_name):
+    try:
+        if dic is None or key_name is None:
+            return None
+        else:
+            item = dic[key_name]
+            if isinstance(item, bool):
+                return item
+            elif isinstance(item, str):
+                if item.lower() == 'false':
+                    return False
+                elif item.lower() == 'true':
+                    return True
+            else:
+                return None
+    except KeyError:
+        return None
 
 # Get the name of the dictionary attribute key
 def get_attr_key(dic, key_pattern):
@@ -82,9 +91,6 @@ def parse_xsdfile(filename):
     with open(filename, 'r') as file:
         data = file.read()
         xml_data = xmltodict.parse(data, process_namespaces=True, namespaces=namespaces)
-        # pprint(xml_data)
-        # print(json.dumps(xml_data, indent=2))
-
 
 def coalesce_str(item):
     if item is None:
@@ -111,3 +117,20 @@ def coalesce_bool(item):
         return 'false'
     else:
         return 'null'
+
+
+def clean_nones(value):
+    """
+    Recursively remove all None values from dictionaries and lists, and returns
+    the result as a new dictionary or list.
+    """
+    if isinstance(value, list):
+        return [clean_nones(x) for x in value if x is not None]
+    elif isinstance(value, dict):
+        return {
+            key: clean_nones(val)
+            for key, val in value.items()
+            if val is not None
+        }
+    else:
+        return value

@@ -4,7 +4,7 @@
 # subDivision	optional	Boolean
 # city	optional	Boolean
 # district	optional	Boolean
-from util.dictionary_util import get_attr_key, get_dic_item, coalesce_str, coalesce_bool
+from util.dictionary_util import get_attr_key, get_dic_item, coalesce_str, coalesce_bool, get_dic_bool_item
 
 
 class NexusOverride:
@@ -16,19 +16,18 @@ class NexusOverride:
         self.sub_division = False
         self.city = False
         self.district = False
-
         if dic is not None:
             self.location_role = get_dic_item(dic, get_attr_key(dic, 'locationrole'))
-            if get_dic_item(dic, get_attr_key(dic, 'country')) is not None:
-                self.country = get_dic_item(dic, get_attr_key(dic, 'country'))
-            if get_dic_item(dic, get_attr_key(dic, 'maindivision')) is not None:
-                self.main_division = get_dic_item(dic, get_attr_key(dic, 'maindivision'))
-            if get_dic_item(dic, get_attr_key(dic, 'subdivision')) is not None:
-                self.sub_division = get_dic_item(dic, get_attr_key(dic, 'subdivision'))
-            if get_dic_item(dic, get_attr_key(dic, 'city')) is not None:
-                self.city = get_dic_item(dic, get_attr_key(dic, 'city'))
-            if get_dic_item(dic, get_attr_key(dic, 'district')) is not None:
-                self.district = get_dic_item(dic, get_attr_key(dic, 'district'))
+            if get_dic_bool_item(dic, get_attr_key(dic, 'country')) is not None:
+                self.country = get_dic_bool_item(dic, get_attr_key(dic, 'country'))
+            if get_dic_bool_item(dic, get_attr_key(dic, 'maindivision')) is not None:
+                self.main_division = get_dic_bool_item(dic, get_attr_key(dic, 'maindivision'))
+            if get_dic_bool_item(dic, get_attr_key(dic, 'subdivision')) is not None:
+                self.sub_division = get_dic_bool_item(dic, get_attr_key(dic, 'subdivision'))
+            if get_dic_bool_item(dic, get_attr_key(dic, 'city')) is not None:
+                self.city = get_dic_bool_item(dic, get_attr_key(dic, 'city'))
+            if get_dic_bool_item(dic, get_attr_key(dic, 'district')) is not None:
+                self.district = get_dic_bool_item(dic, get_attr_key(dic, 'district'))
 
     def __str__(self):
         print_str = "location_role = %s, country = %s, main_division = %s" \

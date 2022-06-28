@@ -2,7 +2,7 @@
 # returnLogEntries	optional	Boolean
 # OverrideLoggingThreshold	0 - unlimited
 from calcobjects.overrideloggingthresholds import OverrideLoggingThresholds
-from util.dictionary_util import get_attr_key, get_dic_item, get_dic_key, null, coalesce_str
+from util.dictionary_util import get_attr_key, get_dic_item, get_dic_key, null, coalesce_str, get_dic_bool_item
 
 
 class MessageLogging:
@@ -18,8 +18,8 @@ class MessageLogging:
                     OverrideLoggingThresholds(get_dic_item(dic, get_dic_key(dic, 'overrideloggingthreshold')))
             # Fields
             self.message_logging = get_dic_item(dic, get_attr_key(dic, 'text'))
-            if get_dic_item(dic, get_attr_key(dic, 'returnlogentries')) is not None:
-                self.return_log_entries = get_dic_item(dic, get_attr_key(dic, 'returnlogentries'))
+            if get_dic_bool_item(dic, get_attr_key(dic, 'returnlogentries')) is not None:
+                self.return_log_entries = get_dic_bool_item(dic, get_attr_key(dic, 'returnlogentries'))
 
     def __str__(self):
         print_str = "override_logging_threshold=%s, message_logging= %s, return_log_entries= %s" % \

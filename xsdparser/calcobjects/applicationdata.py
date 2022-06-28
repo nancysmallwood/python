@@ -4,10 +4,9 @@
 # LogEntry	0 - unlimited
 # ResponseTimeMS	0 - 1	Decimal
 from calcobjects.applicationproperties import ApplicationProperties
-from calcobjects.applicationproperty import ApplicationProperty
 from calcobjects.logentries import LogEntries
 from calcobjects.messagelogging import MessageLogging
-from util.dictionary_util import get_attr_key, get_dic_item, get_dic_key, null, coalesce_str, coalesce_num
+from util.dictionary_util import get_attr_key, get_dic_item, get_dic_key, coalesce_str, coalesce_num
 
 
 class ApplicationData:
@@ -16,7 +15,6 @@ class ApplicationData:
         self.sender = None
         self.response_time_ms = None
         self.application_properties = ApplicationProperties(dic)
-        #self.application_properties = ApplicationProperty[]
         self.log_entries = LogEntries(dic)
         self.message_logging = MessageLogging(dic)
         if dic is not None:

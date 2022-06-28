@@ -53,7 +53,8 @@ from calcobjects.statisticalvalue import StatisticalValue
 from calcobjects.supplementaryunit import SupplementaryUnit
 from calcobjects.taxes import Taxes
 from calcobjects.taxoverride import TaxOverride
-from util.dictionary_util import get_attr_key, get_dic_item, get_dic_key, coalesce_str, coalesce_bool, coalesce_num
+from util.dictionary_util import get_attr_key, get_dic_item, get_dic_key, coalesce_str, coalesce_bool, coalesce_num, \
+    get_dic_bool_item
 from calcobjects.volume import Volume
 from calcobjects.weight import Weight
 
@@ -115,6 +116,7 @@ class LineItem:
         self.company_code_currency_taxable_amount = None
         self.company_code_currency_tax_amount = None
         self.extended_price = None
+        self.total_tax = None
 
         if dic is not None:
             # Objects
@@ -159,8 +161,8 @@ class LineItem:
             self.line_item_number = get_dic_item(dic, get_attr_key(dic, 'lineitemnumber'))
             self.line_item_id = get_dic_item(dic, get_attr_key(dic, 'lineitemid'))
             self.tax_date = get_dic_item(dic, get_attr_key(dic, 'taxdate'))
-            if get_dic_item(dic, get_attr_key(dic, 'ismulticomponent')) is not None:
-                self.is_multicomponent = get_dic_item(dic, get_attr_key(dic, 'ismulticomponent'))
+            if get_dic_bool_item(dic, get_attr_key(dic, 'ismulticomponent')) is not None:
+                self.is_multicomponent = get_dic_bool_item(dic, get_attr_key(dic, 'ismulticomponent'))
             self.location_code = get_dic_item(dic, get_attr_key(dic, 'locationcode'))
 
             self.delivery_term = get_dic_item(dic, get_attr_key(dic, 'deliveryterm'))
@@ -181,8 +183,8 @@ class LineItem:
             self.intrastat_commodity_code = get_dic_item(dic, get_attr_key(dic, 'intrastatcommoditycode'))
             self.net_mass_kilograms = get_dic_item(dic, get_attr_key(dic, 'netmasskilograms'))
 
-            if get_dic_item(dic, get_attr_key(dic, 'taxincludedindicator')) is not None:
-                self.tax_included_indicator = get_dic_item(dic, get_attr_key(dic, 'taxincludedindicator'))
+            if get_dic_bool_item(dic, get_attr_key(dic, 'taxincludedindicator')) is not None:
+                self.tax_included_indicator = get_dic_bool_item(dic, get_attr_key(dic, 'taxincludedindicator'))
             self.transaction_type = get_dic_item(dic, get_attr_key(dic, 'transactiontype'))
             self.simplification_code = get_dic_item(dic, get_attr_key(dic, 'simplificationcode'))
             self.title_transfer = get_dic_item(dic, get_attr_key(dic, 'titletransfer'))
@@ -202,6 +204,7 @@ class LineItem:
             self.company_code_currency_tax_amount = \
                 get_dic_item(dic, get_attr_key(dic, 'companycodecurrencytaxamount'))
             self.extended_price = get_dic_item(dic, get_attr_key(dic, 'extendedprice'))
+            self.total_tax = get_dic_item(dic, get_attr_key(dic, 'totaltax'))
 
     def __str__(self):
         print_str = "\nline_item_number = %s, \nline_item_id = %s, \ntax_date = %s, \nis_multicomponent = %s," \

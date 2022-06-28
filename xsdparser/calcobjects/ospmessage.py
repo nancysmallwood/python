@@ -11,7 +11,7 @@ from calcobjects.lineitems import LineItems
 from calcobjects.seller import Seller
 from calcobjects.situsoverride import SitusOverride
 from calcobjects.taxoverride import TaxOverride
-from util.dictionary_util import get_attr_key, get_dic_key, get_dic_item, coalesce_str, coalesce_bool
+from util.dictionary_util import get_attr_key, get_dic_key, get_dic_item, coalesce_str, coalesce_bool, get_dic_bool_item
 
 
 class OSPMessage:
@@ -48,19 +48,19 @@ class OSPMessage:
         self.order_type = get_dic_item(dic, get_attr_key(dic, 'ordertype'))
         self.posting_date = get_dic_item(dic, get_attr_key(dic, 'postingdate'))
         self.location_code = get_dic_item(dic, get_attr_key(dic, 'locationcode'))
-        if get_dic_item(dic, get_attr_key(dic, 'returnassistedparametersindicator')) is not None:
+        if get_dic_bool_item(dic, get_attr_key(dic, 'returnassistedparametersindicator')) is not None:
             self.return_assisted_parameters_indicator = \
-                get_dic_item(dic, get_attr_key(dic, 'returnassistedparametersindicator'))
-        if get_dic_item(dic, get_attr_key(dic, 'returngeneratedlineitemsindicator')) is not None:
+                get_dic_bool_item(dic, get_attr_key(dic, 'returnassistedparametersindicator'))
+        if get_dic_bool_item(dic, get_attr_key(dic, 'returngeneratedlineitemsindicator')) is not None:
             self.return_generated_line_items_indicator = \
-                get_dic_item(dic, get_attr_key(dic, 'returngeneratedlineitemsindicator'))
+                get_dic_bool_item(dic, get_attr_key(dic, 'returngeneratedlineitemsindicator'))
         self.delivery_term = get_dic_item(dic, get_attr_key(dic, 'deliveryterm'))
         self.document_date = get_dic_item(dic, get_attr_key(dic, 'documentdate'))
         self.transaction_id = get_dic_item(dic, get_attr_key(dic, 'transactionid'))
         self.transaction_type = get_dic_item(dic, get_attr_key(dic, 'transactiontype'))
         self.simplification_code = get_dic_item(dic, get_attr_key(dic, 'simplificationcode'))
-        if get_dic_item(dic, get_attr_key(dic, 'roundatlinelevel')) is not None:
-            self.round_at_line_level = get_dic_item(dic, get_attr_key(dic, 'roundatlinelevel'))
+        if get_dic_bool_item(dic, get_attr_key(dic, 'roundatlinelevel')) is not None:
+            self.round_at_line_level = get_dic_bool_item(dic, get_attr_key(dic, 'roundatlinelevel'))
         self.payment_date = get_dic_item(dic, get_attr_key(dic, 'paymentdate'))
         self.document_sequence_id = get_dic_item(dic, get_attr_key(dic, 'documentsequenceid'))
         self.tax_point_date = get_dic_item(dic, get_attr_key(dic, 'taxpointdate'))

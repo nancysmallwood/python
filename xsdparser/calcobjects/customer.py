@@ -11,21 +11,21 @@ from calcobjects.customercode import CustomerCode
 from calcobjects.exemptioncertificate import ExemptionCertificate
 from calcobjects.location import Location
 from calcobjects.taxregistration import TaxRegistration
-from util.dictionary_util import get_attr_key, get_dic_item, get_dic_key, coalesce_str, coalesce_bool
+from util.dictionary_util import get_attr_key, get_dic_item, get_dic_key, coalesce_str, coalesce_bool, get_dic_bool_item
 
 
 class Customer:
     # The init method or constructor
     def __init__(self, dic):
-        self.destination = Location(dic)
-        self.administrative_destination = Location(dic)
-        self.exemption_certificate = ExemptionCertificate(dic)
-        self.tax_registration = TaxRegistration(dic)
-        self.customer_code = CustomerCode(dic)
-        self.is_tax_exempt = False
+        self.destination = Location(None)
+        self.administrative_destination = Location(None)
+        self.exemption_certificate = ExemptionCertificate(None)
+        self.tax_registration = TaxRegistration(None)
+        self.customer_code = CustomerCode(None)
+        self.is_tax_exempt = None
         self.exemption_reason_code = None
         self.class_code = None
-        self.is_business_indicator = False
+        self.is_business_indicator = None
         if dic is not None:
             # Objects
             if get_dic_key(dic, 'destination') is not None:
@@ -41,12 +41,12 @@ class Customer:
             if get_dic_key(dic, 'customercode') is not None:
                 self.customer_code = CustomerCode(get_dic_item(dic, get_dic_key(dic, 'customercode')))
             # Fields
-            if get_dic_item(dic, get_attr_key(dic, 'istaxexempt')) is not None:
-                self.is_tax_exempt = get_dic_item(dic, get_attr_key(dic, 'istaxexempt'))
+            if get_dic_bool_item(dic, get_attr_key(dic, 'istaxexempt')) is not None:
+                self.is_tax_exempt = get_dic_bool_item(dic, get_attr_key(dic, 'istaxexempt'))
             self.exemption_reason_code = get_dic_item(dic, get_attr_key(dic, 'exemptionreasoncode'))
             self.class_code = get_dic_item(dic, get_attr_key(dic, 'classcode'))
-            if get_dic_item(dic, get_attr_key(dic, 'isbusinessindicator')) is not None:
-                self.is_business_indicator = get_dic_item(dic, get_attr_key(dic, 'isbusinessindicator'))
+            if get_dic_bool_item(dic, get_attr_key(dic, 'isbusinessindicator')) is not None:
+                self.is_business_indicator = get_dic_bool_item(dic, get_attr_key(dic, 'isbusinessindicator'))
 
     def __str__(self):
         print_str = "\n\tis_tax_exempt = %s, \n\texemption_reason_code = %s, \n\tcustomer_code = %s, " \

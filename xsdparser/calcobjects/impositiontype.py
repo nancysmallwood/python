@@ -1,7 +1,8 @@
 # userDefined	optional	Boolean
 # impositionTypeId	optional	Positive Integer
 # withholdingType	optional	String
-from util.dictionary_util import get_attr_key, get_dic_item, coalesce_str, coalesce_bool, coalesce_num
+from util.dictionary_util import get_attr_key, get_dic_item, coalesce_str, coalesce_bool, coalesce_num, \
+    get_dic_bool_item
 
 
 class ImpositionType:
@@ -13,8 +14,8 @@ class ImpositionType:
         self.withholding_type = None
         if dic is not None:
             self.imposition_type = get_dic_item(dic, get_attr_key(dic, 'text'))
-            if get_dic_item(dic, get_attr_key(dic, 'userdefined')) is not None:
-                self.user_defined = get_dic_item(dic, get_attr_key(dic, 'userdefined'))
+            if get_dic_bool_item(dic, get_attr_key(dic, 'userdefined')) is not None:
+                self.user_defined = get_dic_bool_item(dic, get_attr_key(dic, 'userdefined'))
             self.imposition_type_id = get_dic_item(dic, get_attr_key(dic, 'impositiontypeid'))
             self.withholding_type = get_dic_item(dic, get_attr_key(dic, 'withholdingtype'))
 

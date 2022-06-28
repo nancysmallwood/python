@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="0964317d-5a15-4e07-8e13-e29b254c4044" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/../uuid/main.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/calcobjects/exempt.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/calcobjects/nontaxable.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/calcobjects/taxable.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/calcobjects/taximposition.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/calcobjects/taxrule.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/parse/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/run.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/schema/schema.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/login.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/test_schema.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../aws_s3/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../aws_s3/.idea/aws.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../aws_s3/.idea/aws.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../aws_s3/.idea/aws_s3.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../aws_s3/.idea/aws_s3.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../aws_s3/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../aws_s3/.idea/inspectionProfiles/profiles_settings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../aws_s3/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../aws_s3/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../aws_s3/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../aws_s3/s3filecount.py" beforeDir="false" afterPath="$PROJECT_DIR$/../aws_s3/s3filecount.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.name" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/aws.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/aws.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/xsdparser.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/xsdparser.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/calcjson.py" beforeDir="false" afterPath="$PROJECT_DIR$/wtj.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/calcobjects/applicationdata.py" beforeDir="false" afterPath="$PROJECT_DIR$/calcobjects/applicationdata.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/calcobjects/customer.py" beforeDir="false" afterPath="$PROJECT_DIR$/calcobjects/customer.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/calcobjects/customercode.py" beforeDir="false" afterPath="$PROJECT_DIR$/calcobjects/customercode.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/calcobjects/discount.py" beforeDir="false" afterPath="$PROJECT_DIR$/calcobjects/discount.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/calcobjects/flexibledatefields.py" beforeDir="false" afterPath="$PROJECT_DIR$/calcobjects/flexibledatefields.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/calcobjects/impositiontype.py" beforeDir="false" afterPath="$PROJECT_DIR$/calcobjects/impositiontype.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/calcobjects/lineitem.py" beforeDir="false" afterPath="$PROJECT_DIR$/calcobjects/lineitem.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/calcobjects/location.py" beforeDir="false" afterPath="$PROJECT_DIR$/calcobjects/location.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/calcobjects/logentry.py" beforeDir="false" afterPath="$PROJECT_DIR$/calcobjects/logentry.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/calcobjects/messagelogging.py" beforeDir="false" afterPath="$PROJECT_DIR$/calcobjects/messagelogging.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/calcobjects/nexusoverride.py" beforeDir="false" afterPath="$PROJECT_DIR$/calcobjects/nexusoverride.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/calcobjects/ospmessage.py" beforeDir="false" afterPath="$PROJECT_DIR$/calcobjects/ospmessage.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/calcobjects/payload.py" beforeDir="false" afterPath="$PROJECT_DIR$/calcobjects/payload.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/calcobjects/seller.py" beforeDir="false" afterPath="$PROJECT_DIR$/calcobjects/seller.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/calcobjects/tax.py" beforeDir="false" afterPath="$PROJECT_DIR$/calcobjects/tax.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/calcobjects/taxregistration.py" beforeDir="false" afterPath="$PROJECT_DIR$/calcobjects/taxregistration.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/currencyconversion.py" beforeDir="false" afterPath="$PROJECT_DIR$/calcobjects/currencyconversion.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/osp.py" beforeDir="false" afterPath="$PROJECT_DIR$/osp.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/osplogs.py" beforeDir="false" afterPath="$PROJECT_DIR$/osplogs.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/schema/request_schema.py" beforeDir="false" afterPath="$PROJECT_DIR$/schema/old_request_schema.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/soapparse.py" beforeDir="false" afterPath="$PROJECT_DIR$/parse/soapparse.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/util/dictionary_util.py" beforeDir="false" afterPath="$PROJECT_DIR$/util/dictionary_util.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/util/file_util.py" beforeDir="false" afterPath="$PROJECT_DIR$/util/file_util.py" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectId" id="286gCA9WIck3rlk7Krbuqu696JE" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\githubrepos\python\xsdparser\calcobjects" />
+      <recent name="C:\githubrepos\python\xsdparser\parse" />
+      <recent name="C:\githubrepos\python\xsdparser\test" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Python.run">
+    <configuration name="run" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="xsdparser" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/run.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Python tests in test_schema.py" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
+      <module name="xsdparser" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="HADOOP_HOME" value="C:\Program Files\hadoop-3.2.2" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/test" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="software.aws.toolkits.jetbrains.core.execution.PythonAwsConnectionExtension">
+        <option name="credential" />
+        <option name="region" />
+        <option name="useCurrentConnection" value="false" />
+      </EXTENSION>
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;$PROJECT_DIR$/test/test_schema.py&quot;" />
+      <option name="_new_targetType" value="&quot;PATH&quot;" />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Python.run" />
+        <item itemvalue="Python tests.Python tests in test_schema.py" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="0964317d-5a15-4e07-8e13-e29b254c4044" name="Changes" comment="" />
+      <created>1650542318961</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1650542318961</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/run.py</url>
+          <line>33</line>
+          <option name="timeStamp" value="12" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/calcobjects/ospmessage.py</url>
+          <line>36</line>
+          <option name="timeStamp" value="13" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/calcobjects/customer.py</url>
+          <line>27</line>
+          <option name="timeStamp" value="14" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+</project>

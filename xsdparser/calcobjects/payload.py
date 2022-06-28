@@ -1,5 +1,3 @@
-
-
 class Payload:
     # The init method or constructor
     def __init__(self, login, application_data, message_type, message):
@@ -7,7 +5,6 @@ class Payload:
         self.application_data = application_data
         self.message_type = message_type
         self.message = message
-
 
     def to_json(self):
         return '{"Login": %s, ' \

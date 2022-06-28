@@ -1,0 +1,88 @@
+{
+    "_id": "0a7fdb1b-a838-4077-9d3e-9bab2063ab47",
+    "agent": {
+        "id": "0c3139f3-c232-4ae7-9862-d50db23568d8",
+        "version": "7.10.2",
+        "hostname": "papplog01",
+        "ephemeral_id": "e10e6939-3957-4ef2-a52b-79efcebf199c",
+        "name": "papplog01",
+        "type": "filebeat"
+    },
+    "amazontraceid": "Self=1-6126e1d2-416f544d2f240b7a5793a13c;Root=1-6126e1d2-056ba7c41da0e48d6db1e627",
+    "cloud": {
+        "account": {
+            "id": "409148389496"
+        },
+        "region": "us-east-1",
+        "instance": {
+            "id": "i-0de826dd1ebacc23e"
+        },
+        "machine": {
+            "type": "r5.4xlarge"
+        },
+        "provider": "aws",
+        "image": {
+            "id": "ami-04d49a6638b93c486"
+        },
+        "availability_zone": "us-east-1a"
+    },
+    "companyCode": "US",
+    "created": {
+        "$date": "2021-10-04T20:00:20.384Z"
+    },
+    "createdBy": "internal",
+    "ecs": {
+        "version": "1.6.0"
+    },
+    "fields": {
+        "doc_type": "request"
+    },
+    "host": {
+        "architecture": "x86_64",
+        "os": {
+            "family": "windows",
+            "version": "6.3",
+            "kernel": "6.3.9600.20090 (winblue_ltsb.210709-1700)",
+            "build": "9600.20094",
+            "platform": "windows",
+            "name": "Windows Server 2012 R2 Standard"
+        },
+        "id": "a5084d16-be00-4778-9caf-e36fff27e459",
+        "hostname": "papplog01",
+        "ip": ["fe80::ec58:91ed:d503:78f7", "10.2.10.202", "fe80::5efe:a02:aca"],
+        "mac": ["0a:5a:8c:4b:5d:0f", "00:00:00:00:00:00:00:e0"],
+        "name": "papplog01"
+    },
+    "hostdns": "restosp.vertexsmb.com",
+    "input": {
+        "type": "log"
+    },
+    "ip": "57.77.33.230",
+    "log": {
+        "file": {
+            "path": "\\\\POSESB02.vertexsmb.cloud\\d$\\VTMS\\Logs\\VTMS.Utility.OSeriesProxy.Request-POSESB02.log"
+        },
+        "offset": {
+            "$numberLong": "14404331105"
+        }
+    },
+    "messageType": "QUO",
+    "modified": {
+        "$date": "2021-10-04T20:00:20.384Z"
+    },
+    "modifiedBy": "internal",
+    "osplogtype": "request",
+    "payLoad": {
+        "contents": "<SOAP-ENV:Envelope xmlns:SOAP-ENV=\"http://schemas.xmlsoap.org/soap/envelope/\"><SOAP-ENV:Header/><SOAP-ENV:Body><ns2:VertexEnvelope xmlns:ns2=\"urn:vertexinc:o-series:tps:7:0\"><ns2:Login><ns2:TrustedId>6733589274679616</ns2:TrustedId></ns2:Login><ns2:QuotationRequest documentDate=\"2021-08-25\" transactionType=\"SALE\"><ns2:Seller><ns2:Company>US</ns2:Company></ns2:Seller><ns2:LineItem><ns2:Seller><ns2:PhysicalOrigin><ns2:MainDivision>CA</ns2:MainDivision><ns2:PostalCode>90046</ns2:PostalCode><ns2:Country>US</ns2:Country></ns2:PhysicalOrigin></ns2:Seller><ns2:Customer><ns2:Destination><ns2:MainDivision>ND</ns2:MainDivision><ns2:PostalCode>58201</ns2:PostalCode><ns2:Country>US</ns2:Country></ns2:Destination></ns2:Customer><ns2:Product productClass=\"PRODCODE\">NEW_SUB</ns2:Product><ns2:Quantity>1.0</ns2:Quantity><ns2:UnitPrice>215.4</ns2:UnitPrice></ns2:LineItem></ns2:QuotationRequest></ns2:VertexEnvelope></SOAP-ENV:Body></SOAP-ENV:Envelope>",
+        "dataSetRefId": "01129d7b-2320-4331-8741-b0f4584fedba",
+        "dataSetName": "SaleRequestType",
+        "requestEnumId": "fe2a29b2-e6e2-43c6-9d9d-d1ba8bc30193",
+        "requestType": "QUOTATION"
+    },
+    "requesttime": "2021-08-26T00:35:30.581Z",
+    "tags": ["beats_input_raw_event"],
+    "trustedid": "6733589274679616",
+    "uuid": "844bdc53-0605-11ec-b913-0eacebdd395a",
+    "version": "1",
+    "ztimestamp": "2021-08-26T00:35:31.130Z"
+}

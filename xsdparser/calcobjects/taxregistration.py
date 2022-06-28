@@ -9,7 +9,8 @@
 from calcobjects.impositiontype import ImpositionType
 from calcobjects.location import Location
 from calcobjects.nexusoverride import NexusOverride
-from util.dictionary_util import get_attr_key, get_dic_item, get_dic_key, coalesce_str, coalesce_bool, coalesce_num
+from util.dictionary_util import get_attr_key, get_dic_item, get_dic_key, coalesce_str, coalesce_bool, coalesce_num, \
+    get_dic_bool_item
 
 
 class TaxRegistration:
@@ -29,9 +30,9 @@ class TaxRegistration:
             self.imposition_type = ImpositionType(get_dic_item(dic, get_dic_key(dic, 'impositiontype')))
             self.iso_country_code = get_dic_item(dic, get_attr_key(dic, 'isocountrycode'))
             self.main_division = get_dic_item(dic, get_attr_key(dic, 'maindivision'))
-            if get_dic_item(dic, get_attr_key(dic, 'hasphysicalpresenceindicator')) is not None:
+            if get_dic_bool_item(dic, get_attr_key(dic, 'hasphysicalpresenceindicator')) is not None:
                 self.has_physical_presence_indicator = \
-                    get_dic_item(dic, get_attr_key(dic, 'hasphysicalpresenceindicator'))
+                    get_dic_bool_item(dic, get_attr_key(dic, 'hasphysicalpresenceindicator'))
             self.jurisdiction_id = get_dic_item(dic, get_attr_key(dic, 'jurisdictionid'))
             self.tax_registration_number = get_dic_item(dic, get_attr_key(dic, 'taxregistrationnumber'))
 

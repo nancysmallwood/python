@@ -1,12 +1,10 @@
 import json
-import os
-import site
 
 from calcobjects.applicationdata import ApplicationData
 from calcobjects.login import Login
 from calcobjects.payload import Payload
 from calcobjects.ospmessage import OSPMessage
-from util.dictionary_util import xml_to_dict
+from util.dictionary_util import clean_nones
 
 test_soap = '<soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/"><soap:Body><VertexEnvelope ' \
             'xmlns="urn:vertexinc:o-series:tps:7:0"><Login><TrustedId>7649555430638576</TrustedId></Login>' \
@@ -75,36 +73,24 @@ def get_application_data(dic):
     return application_data
 
 
+# def get_json_payload(dic):
+#     json_payload = Payload(get_login(dic),
+#                            get_application_data(dic),
+#                            get_calc_message(dic))
+#     return json_payload.to_json()
+
+
 def get_json_payload(dic):
-    json_payload = Payload(get_login(dic),
-                           get_application_data(dic),
-                           get_calc_message(dic))
-    return json_payload.to_json()
-
-
-def get_json_payload2(dic):
     if dic is None:
         return None
     else:
-        test = Payload(get_login(dic),
-                       get_application_data(dic),
-                       get_calc_message_type(dic),
-                       get_calc_message(dic))
+        payload = Payload(get_login(dic),
+                          get_application_data(dic),
+                          get_calc_message_type(dic),
+                          get_calc_message(dic))
         # Serialization
-        json_data = json.dumps(test, default=lambda o: o.__dict__, indent=4)
-        # print(json_data)
-        # Deserialization
-        # decoded_team = Payload(**json.loads(json_data))
-        # print(decoded_team)
-        return json_data
-
-
-def process_invoice(dic):
-    print("Invoice")
-
-
-def process_tax_area_lookup(dic):
-    print("Tax Area Lookup")
+        payload_json = json.dumps(payload, default=lambda o: o.__dict__, indent=4)
+        return payload_json
 
 
 def get_login_dictionary(dic):
@@ -127,6 +113,50 @@ def get_calc_message_type(dic):
         return 'invoicerequest'
     elif get_dict_item(dic, get_key(dic, 'invoiceresponse')) is not None:
         return 'invoiceresponse'
+    elif get_dict_item(dic, get_key(dic, 'accrualrequest')) is not None:
+        return 'accrualrequest'
+    elif get_dict_item(dic, get_key(dic, 'accrualresponse')) is not None:
+        return 'accrualresponse'
+    elif get_dict_item(dic, get_key(dic, 'taxarearequest')) is not None:
+        return 'taxarearequest'
+    elif get_dict_item(dic, get_key(dic, 'taxarearesponse')) is not None:
+        return 'taxarearesponse'
+    elif get_dict_item(dic, get_key(dic, 'transactionexistsrequest')) is not None:
+        return 'transactionexistsrequest'
+    elif get_dict_item(dic, get_key(dic, 'transactionexistsresponse')) is not None:
+        return 'transactionexistsresponse'
+    elif get_dict_item(dic, get_key(dic, 'arbillingsyncrequest')) is not None:
+        return 'arbillingsyncrequest'
+    elif get_dict_item(dic, get_key(dic, 'arbillingsyncresponse')) is not None:
+        return 'arbillingsyncresponse'
+    elif get_dict_item(dic, get_key(dic, 'purchaseorderrequest')) is not None:
+        return 'purchaseorderrequest'
+    elif get_dict_item(dic, get_key(dic, 'purchaseorderresponse')) is not None:
+        return 'purchaseorderresponse'
+    elif get_dict_item(dic, get_key(dic, 'reversalrequest')) is not None:
+        return 'reversalrequest'
+    elif get_dict_item(dic, get_key(dic, 'reversalresponse')) is not None:
+        return 'reversalresponse'
+    elif get_dict_item(dic, get_key(dic, 'distributetaxrequest')) is not None:
+        return 'distributetaxrequest'
+    elif get_dict_item(dic, get_key(dic, 'distributetaxresponse')) is not None:
+        return 'distributetaxresponse'
+    elif get_dict_item(dic, get_key(dic, 'invoiceverificationrequest')) is not None:
+        return 'invoiceverificationrequest'
+    elif get_dict_item(dic, get_key(dic, 'invoiceverificationresponse')) is not None:
+        return 'invoiceverificationresponse'
+    elif get_dict_item(dic, get_key(dic, 'rollbackrequest')) is not None:
+        return 'rollbackrequest'
+    elif get_dict_item(dic, get_key(dic, 'rollbackresponse')) is not None:
+        return 'rollbackresponse'
+    elif get_dict_item(dic, get_key(dic, 'distributetaxprocurementrequest')) is not None:
+        return 'distributetaxprocurementrequest'
+    elif get_dict_item(dic, get_key(dic, 'distributetaxprocurementresponse')) is not None:
+        return 'distributetaxprocurementresponse'
+    elif get_dict_item(dic, get_key(dic, 'deleterequest')) is not None:
+        return 'deleterequest'
+    elif get_dict_item(dic, get_key(dic, 'deleteresponse')) is not None:
+        return 'deleteresponse'
     else:
         return ''
 
@@ -149,7 +179,6 @@ def get_application_data_dictionary(dic):
         return get_dict_item(dic, get_key(dic, 'applicationdata'))
     else:
         return None
-
 
 # def get_request_type(dic):
 #     if get_dict_item(dic, get_key(dic, 'login')) is not None:
@@ -179,17 +208,17 @@ def get_application_data_dictionary(dic):
 #     #for each_file in files:
 
 
-# MAIN -----------------------------------------------------------------
-if __name__ == '__main__':
-    new_path = os.path.join(os.path.dirname(__file__), 'calcobjects')
-    site.addsitedir(new_path)
-    new_path = os.path.join(os.path.dirname(__file__), 'util')
-    site.addsitedir(new_path)
-
-    dictionary = xml_to_dict(test_soap)
-    if get_payload(dictionary) is not None:
-        payload_dictionary = get_payload(dictionary)
-        login = get_login(payload_dictionary)
-        quote = get_quote(payload_dictionary)
-        application_data = get_application_data(payload_dictionary)
-        print('ok')
+# # MAIN -----------------------------------------------------------------
+# if __name__ == '__main__':
+#     new_path = os.path.join(os.path.dirname(__file__), 'calcobjects')
+#     site.addsitedir(new_path)
+#     new_path = os.path.join(os.path.dirname(__file__), 'util')
+#     site.addsitedir(new_path)
+#
+#     dictionary = xml_to_dict(test_soap)
+#     if get_payload(dictionary) is not None:
+#         payload_dictionary = get_payload(dictionary)
+#         login = get_login(payload_dictionary)
+#         quote = get_quote(payload_dictionary)
+#         application_data = get_application_data(payload_dictionary)
+#         print('ok')
