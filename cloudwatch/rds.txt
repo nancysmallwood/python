@@ -1,0 +1,7 @@
+Resource Identifier,BinLogDiskUsage (Bytes),BurstBalance (Percent),CPUUtilization (Percent),DatabaseConnections (Count),DiskQueueDepth (Count),FailedSQLServerAgentJobsCount (Count/Second),FreeableMemory (Bytes),FreeStorageSpace (Bytes),NetworkReceiveThroughput (Bytes/Second),NetworkTransmitThroughput (Bytes/Second),ReadIOPS (Count/Second),ReadLatency (Seconds),ReadThroughput (Bytes/Second),ReplicaLag (Seconds),SwapUsage (Bytes),WriteIOPS (Count/Second),WriteLatency (Seconds),WriteThroughput (Bytes/Second)
+auth-db-stage,0.0,100.0,3.92,3.45,0.0,0.0,7782949102.93,1947490324024.89,174514.3,42579.54,0.05,0.0,13526.25,0.0,0.0,4.2,0.0,42945.3
+billingqboc-db-stage,0.0,0.0,3.31,5.94,0.0,0.0,1370490393.6,2070310051293.87,3936.64,5784.84,0.03,0.0,3449.69,0.0,0.0,0.89,0.0,13127.44
+portal-db-stage,0.0,100.0,7.54,215.71,0.0,0.0,1396534687.29,1963767634329.6,92529.11,196800.18,0.06,0.0,15121.62,0.0,0.0,14.0,0.0,356032.85
+stg-doc-repo-database,0.0,99.13,4.64,10.0,0.01,0.0,287819960.89,18324254785.42,767.69,6542.29,0.27,0.0,143.96,0.0,524288.0,2.62,0.0,233450.75
+stg-scheduler-common-service-database,0.0,99.09,4.35,1.03,0.01,0.0,298879928.89,18318701203.91,1005.18,6827.86,0.27,0.0,144.52,0.0,524288.0,2.82,0.0,235794.57
+temp-stage-portal-restore,0.0,0.0,3.41,0.0,0.0,0.0,1403508309.33,1923189156522.67,1561.01,5439.86,0.04,0.0,3753.92,0.0,0.0,0.81,0.0,10674.99

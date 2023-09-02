@@ -6,6 +6,8 @@
     <option name="recentlyUsedProfiles">
       <list>
         <option value="profile:ET-Datalake-Nonprod" />
+        <option value="profile:CST-Cloud-Production" />
+        <option value="profile:ET-Sandbox" />
         <option value="profile:default" />
       </list>
     </option>
