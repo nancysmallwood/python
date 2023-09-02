@@ -62,28 +62,28 @@ from calcobjects.weight import Weight
 class LineItem:
     # The init method or constructor
     def __init__(self, dic):
-        self.taxes = Taxes(dic)
-        self.seller = Seller(dic)
-        self.customer = Customer(dic)
-        self.product = Product(dic)
-        self.quantity = Quantity(dic)
-        self.line_type = LineType(dic)
-        self.commodity_code = CommodityCode(dic)
-        self.weight = Weight(dic)
-        self.volume = Volume(dic)
-        self.supplementary_unit = SupplementaryUnit(dic)
-        self.flexible_fields = FlexibleFields(dic)
-        self.returns_fields = ReturnsFields(dic)
-        self.tax_override = TaxOverride(dic)
-        self.imposition_to_process = Impositions(dic)
-        self.jurisdiction_override = JurisdictionOverrides(dic)
-        self.situs_override = SitusOverride(dic)
-        self.statistical_value = StatisticalValue(dic)
-        self.discount = Discount(dic)
+        self.taxes = Taxes(None)
+        self.seller = Seller(None)
+        self.customer = Customer(None)
+        self.product = Product(None)
+        self.quantity = Quantity(None)
+        self.line_type = LineType(None)
+        self.commodity_code = CommodityCode(None)
+        self.weight = Weight(None)
+        self.volume = Volume(None)
+        self.supplementary_unit = SupplementaryUnit(None)
+        self.flexible_fields = FlexibleFields(None)
+        self.returns_fields = ReturnsFields(None)
+        self.tax_override = TaxOverride(None)
+        self.imposition_to_process = Impositions(None)
+        self.jurisdiction_override = JurisdictionOverrides(None)
+        self.situs_override = SitusOverride(None)
+        self.statistical_value = StatisticalValue(None)
+        self.discount = Discount(None)
         self.line_item_number = None
         self.line_item_id = None
         self.tax_date = None
-        self.is_multicomponent = False
+        self.is_multicomponent = None
         self.location_code = None
         self.delivery_term = None
         self.posting_date = None
@@ -100,7 +100,7 @@ class LineItem:
         self.nature_of_transaction = None
         self.intrastat_commodity_code = None
         self.net_mass_kilograms = None
-        self.tax_included_indicator = False
+        self.tax_included_indicator = None
         self.transaction_type = None
         self.simplification_code = None
         self.title_transfer = None

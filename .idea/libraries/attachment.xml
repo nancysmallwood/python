@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="attachment">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/cloudwatch/attachment.zip!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

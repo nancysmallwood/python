@@ -73,13 +73,6 @@ def get_application_data(dic):
     return application_data
 
 
-# def get_json_payload(dic):
-#     json_payload = Payload(get_login(dic),
-#                            get_application_data(dic),
-#                            get_calc_message(dic))
-#     return json_payload.to_json()
-
-
 def get_json_payload(dic):
     if dic is None:
         return None
@@ -166,10 +159,66 @@ def get_calc_message_dictionary(dic):
         return get_dict_item(dic, get_key(dic, 'quotationrequest'))
     elif get_dict_item(dic, get_key(dic, 'quotationresponse')) is not None:
         return get_dict_item(dic, get_key(dic, 'quotationresponse'))
+
     elif get_dict_item(dic, get_key(dic, 'invoicerequest')) is not None:
         return get_dict_item(dic, get_key(dic, 'invoicerequest'))
     elif get_dict_item(dic, get_key(dic, 'invoiceresponse')) is not None:
         return get_dict_item(dic, get_key(dic, 'invoiceresponse'))
+
+    elif get_dict_item(dic, get_key(dic, 'accrualrequest')) is not None:
+        return get_dict_item(dic, get_key(dic, 'accrualrequest'))
+    elif get_dict_item(dic, get_key(dic, 'accrualresponse')) is not None:
+        return get_dict_item(dic, get_key(dic, 'accrualresponse'))
+
+    elif get_dict_item(dic, get_key(dic, 'taxarearequest')) is not None:
+        return get_dict_item(dic, get_key(dic, 'taxarearequest'))
+    elif get_dict_item(dic, get_key(dic, 'taxarearesponse')) is not None:
+        return get_dict_item(dic, get_key(dic, 'taxarearesponse'))
+
+    elif get_dict_item(dic, get_key(dic, 'transactionexistsrequest')) is not None:
+        return get_dict_item(dic, get_key(dic, 'transactionexistsrequest'))
+    elif get_dict_item(dic, get_key(dic, 'transactionexistsresponse')) is not None:
+        return get_dict_item(dic, get_key(dic, 'transactionexistsresponse'))
+
+    elif get_dict_item(dic, get_key(dic, 'arbillingsyncrequest')) is not None:
+        return get_dict_item(dic, get_key(dic, 'arbillingsyncrequest'))
+    elif get_dict_item(dic, get_key(dic, 'arbillingsyncresponse')) is not None:
+        return get_dict_item(dic, get_key(dic, 'arbillingsyncresponse'))
+
+    elif get_dict_item(dic, get_key(dic, 'purchaseorderrequest')) is not None:
+        return get_dict_item(dic, get_key(dic, 'purchaseorderrequest'))
+    elif get_dict_item(dic, get_key(dic, 'purchaseorderresponse')) is not None:
+        return get_dict_item(dic, get_key(dic, 'purchaseorderresponse'))
+
+    elif get_dict_item(dic, get_key(dic, 'reversalrequest')) is not None:
+        return get_dict_item(dic, get_key(dic, 'reversalrequest'))
+    elif get_dict_item(dic, get_key(dic, 'reversalresponse')) is not None:
+        return get_dict_item(dic, get_key(dic, 'reversalresponse'))
+
+    elif get_dict_item(dic, get_key(dic, 'distributetaxrequest')) is not None:
+        return get_dict_item(dic, get_key(dic, 'distributetaxrequest'))
+    elif get_dict_item(dic, get_key(dic, 'distributetaxresponse')) is not None:
+        return get_dict_item(dic, get_key(dic, 'distributetaxresponse'))
+
+    elif get_dict_item(dic, get_key(dic, 'invoiceverificationrequest')) is not None:
+        return get_dict_item(dic, get_key(dic, 'invoiceverificationrequest'))
+    elif get_dict_item(dic, get_key(dic, 'invoiceverificationresponse')) is not None:
+        return get_dict_item(dic, get_key(dic, 'invoiceverificationresponse'))
+
+    elif get_dict_item(dic, get_key(dic, 'rollbackrequest')) is not None:
+        return get_dict_item(dic, get_key(dic, 'rollbackrequest'))
+    elif get_dict_item(dic, get_key(dic, 'rollbackresponse')) is not None:
+        return get_dict_item(dic, get_key(dic, 'rollbackresponse'))
+
+    elif get_dict_item(dic, get_key(dic, 'distributetaxprocurementrequest')) is not None:
+        return get_dict_item(dic, get_key(dic, 'distributetaxprocurementrequest'))
+    elif get_dict_item(dic, get_key(dic, 'distributetaxprocurementresponse')) is not None:
+        return get_dict_item(dic, get_key(dic, 'distributetaxprocurementresponse'))
+
+    elif get_dict_item(dic, get_key(dic, 'deleterequest')) is not None:
+        return get_dict_item(dic, get_key(dic, 'deleterequest'))
+    elif get_dict_item(dic, get_key(dic, 'deleteresponse')) is not None:
+        return get_dict_item(dic, get_key(dic, 'deleteresponse'))
     else:
         return None
 
